@@ -1,21 +1,24 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+namespace Managers
 {
-    
-    public static GameManager Instance;
-
-    private void Awake()
+    public class GameManager : MonoBehaviour
     {
-        if (Instance != null)
-        {
-            Destroy(this);
-        }
-
-        Instance = this;
-    }
     
+        public static GameManager Instance;
+
+        private void Awake()
+        {
+            if (Instance != null)
+            {
+                Destroy(transform.parent.gameObject);
+                return;
+            }
+            Instance = this;
+            DontDestroyOnLoad(transform.parent);
+        }
+    
+        /*
     #region "State Machine"
 
     public enum GameState
@@ -46,6 +49,7 @@ public class GameManager : MonoBehaviour
         };
     }
 
-    #endregion
+    #endregion */
 
+    }
 }
