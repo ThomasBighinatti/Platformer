@@ -33,15 +33,15 @@ namespace Controllers
             _rb = GetComponent<Rigidbody2D>();
         }
 
-        public void Jump(InputAction.CallbackContext ctx)
+        public void Jump(InputAction.CallbackContext context)
         {
-            if (ctx.started)
+            if (context.started)
             {
                 jumpButtonPressed = true;
                 _jumpBufferCounter = jumpBufferTime;
             }
         
-            if (ctx.canceled)
+            if (context.canceled)
             {
                 _jumpButtonReleased = true;
             }
@@ -51,11 +51,7 @@ namespace Controllers
         {
             _moveInput = context.ReadValue<Vector2>();
         }
-
-        public void OnLook(InputAction.CallbackContext context)
-        {
-            //viser ? 
-        }
+        
 
         private void FixedUpdate()
         {

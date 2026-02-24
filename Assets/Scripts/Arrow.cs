@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Controllers;
 using UnityEngine;
 
 public class Arrow : MonoBehaviour
@@ -17,15 +18,16 @@ public class Arrow : MonoBehaviour
     [SerializeField] private float destroyTime = 10f;
     
     private Rigidbody2D _rb;
-    private float _gravityScale;
+   
     private bool _canUseGravity;
+    
     
     private void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
-        _gravityScale = _rb.gravityScale;
+
         
-        ArrowShot(new Vector3(1,0));
+        ArrowShot(WeaponController.Direction);
 
         if (!useDestroy)
             return;
@@ -37,9 +39,14 @@ public class Arrow : MonoBehaviour
         if (!_canUseGravity)
             return;
         _rb.gravityScale = Mathf.Lerp(_rb.gravityScale, gravityForce, gravityLerpForce);
+
+        
+        Vector3 direction = _rb.linearVelocity;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.eulerAngles = new Vector3(0,0, angle);
     }
 
-    private void ArrowShot(Vector3 direction)
+    private void ArrowShot(Vector2 direction)
     {
         _rb.AddForce(direction * strength * 10);
         StartCoroutine(WaitForGravity());

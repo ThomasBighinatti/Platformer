@@ -7,17 +7,16 @@ namespace Controllers
     public class WeaponController : MonoBehaviour
     {
         [SerializeField] private List<GameObject> arrowList;
-        public bool isLooking;
-        public Vector3 direction;
-
+        
+        public static Vector2 Direction = Vector2.right;
+        
         public void OnShoot(InputAction.CallbackContext context)
         {
             
             if (context.started)
             {
                 Debug.Log("oui" + context);
-                isLooking = true;
-                GameObject arrow = Instantiate(arrowList[0]); 
+                GameObject arrow = Instantiate(arrowList[0],transform.position,Quaternion.Euler(new Vector3(0,0,0.5f)/*Direction.x,0,Direction.y*/)); 
             }
 
             if (context.canceled)
@@ -28,9 +27,7 @@ namespace Controllers
 
         public void OnLook(InputAction.CallbackContext context)
         {
-            if (!isLooking) 
-                return;
-            direction = new Vector3(0, 0);
+            Direction = context.ReadValue<Vector2>();
         }
     }
 }
