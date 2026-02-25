@@ -301,6 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Controllers.WeaponController
   arrowList:
   - {fileID: 2782368242074907524, guid: 8c3fd71490e01ed49861aa5aedff7d8e, type: 3}
+  deadZoneOnLook: 0.3
 --- !u!212 &842007467
 SpriteRenderer:
   serializedVersion: 2

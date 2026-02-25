@@ -7,6 +7,7 @@ namespace Controllers
     public class WeaponController : MonoBehaviour
     {
         [SerializeField] private List<GameObject> arrowList;
+        [SerializeField, Range(0f, 1f)] private float deadZoneOnLook;
         
         public static Vector2 Direction = Vector2.right;
         private Arrow _arrowScript;
@@ -15,10 +16,12 @@ namespace Controllers
         {
             if (context.started && _arrowScript == null)
             {
-				float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
-        		Vector3 rotation = new Vector3(0,0, angle);
-                GameObject arrow = Instantiate(arrowList[0],transform.position,Quaternion.Euler(rotation));
+
+                GameObject arrow = Instantiate(arrowList[0],transform.position,Quaternion.identity);
+                float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
+                Vector3 rotation = new Vector3(0,0, angle);
                 _arrowScript = arrow.GetComponent<Arrow>();
+                _arrowScript.transform.eulerAngles = rotation;
             }
 
             if (context.canceled && _arrowScript != null)
@@ -31,7 +34,11 @@ namespace Controllers
         private Vector2 _lastDirection = Vector2.right;
         public void OnLook(InputAction.CallbackContext context)
         {
+            Vector2 input = context.ReadValue<Vector2>();
+            if (Mathf.Abs(input.x) <= deadZoneOnLook && Mathf.Abs(input.y) <= deadZoneOnLook)
+                return;
             Direction = context.ReadValue<Vector2>().normalized;
+            
             if (Direction != Vector2.zero)
             {
                 _lastDirection = Direction;
@@ -40,7 +47,8 @@ namespace Controllers
                 float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
                 Vector3 rotation = new Vector3(0,0, angle);
                 _arrowScript.transform.eulerAngles = rotation;
-            }
+            } 
+            
             else
             {
                 Direction = _lastDirection;

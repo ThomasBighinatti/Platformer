@@ -10,7 +10,7 @@ namespace Controllers
     
         private Vector2 _moveInput;
         private Rigidbody2D _rb;
-    
+        
     
         private float _coyoteTimeCounter;
         private float _jumpBufferCounter;
