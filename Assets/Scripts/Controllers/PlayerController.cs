@@ -6,30 +6,41 @@ namespace Controllers
     public class PlayerController : MonoBehaviour
     {
     
-        //TODO empecher le joueur de rester collé au mur quand on se déplace dessus, mvt en l'air si besoin, limiter vitesse de chute
+        //TODO empecher le joueur de rester collé au mur quand on se déplace dessus (déplacer le perso avec addforce), mvt en l'air si besoin, limiter vitesse de chute
     
         private Vector2 _moveInput;
         private Rigidbody2D _rb;
-    
+        private CapsuleCollider2D playerCollider;
     
         private float _coyoteTimeCounter;
         private float _jumpBufferCounter;
+        
+        
+        
 
         [Header("Player")] [SerializeField] private float jumpStrength = 5f;
         [SerializeField] private bool jumpButtonPressed = false;
         [SerializeField] private float playerSpeed = 5f;
         [SerializeField] private bool grounded = true;
+        [SerializeField] private bool onWall = true;
         [SerializeField] private float coyoteTime = 0.1f;
         [SerializeField] private float jumpCutMultiplier = 0.5f; // reduit la vitesse quand on relache le bouton saut
         [SerializeField] private float jumpBufferTime = 0.2f;
         private bool _jumpButtonReleased = false;
 
-        [Header("Misc")] [SerializeField] private float groundCheckDistance = 0.5f;
+        [Header("Misc")] [SerializeField] private float groundCheckDistance = 0.5f; 
+        [SerializeField] private float sideCheckDistance = 0.5f;
+        
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private Vector2 boxSize = new Vector2(0.8f, 0.2f);
+        [SerializeField] private Vector2 sideBoxSize = new Vector2(1.1f, 1.5f);
+        [SerializeField] private PhysicsMaterial2D noFrictionMaterial;
+        [SerializeField] private PhysicsMaterial2D frictionMaterial;
+        
 
         private void Start()
         {
+            playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
             _rb = GetComponent<Rigidbody2D>();
         }
 
@@ -60,22 +71,20 @@ namespace Controllers
             //mvt
             if (grounded)
             {
+                playerCollider.sharedMaterial = frictionMaterial;
+                _rb.sharedMaterial = frictionMaterial;
+                Debug.Log(_rb.sharedMaterial);
                 _rb.linearVelocity = new Vector2(_moveInput.x * playerSpeed, _rb.linearVelocity.y);
+                _coyoteTimeCounter = coyoteTime;
             }
             else //mvt en l'air
             {
+                playerCollider.sharedMaterial = noFrictionMaterial;
+                _rb.sharedMaterial = noFrictionMaterial;
+                Debug.Log(_rb.sharedMaterial);
                 _rb.linearVelocity = new Vector2(_moveInput.x * playerSpeed, _rb.linearVelocity.y);
-                //TODO
-            }
-        
-            //coyoteTime
-            if (grounded)
-            {
-                _coyoteTimeCounter = coyoteTime;
-            }
-            else
-            {
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
+                //TODO
             }
         
             //saut
@@ -98,14 +107,18 @@ namespace Controllers
             }
         
         
-            RaycastHit2D hit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
-            grounded = hit.collider;
+            RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
+            grounded = groundHit.collider;
+            RaycastHit2D sideHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
+            grounded = sideHit.collider;
         }
     
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = grounded ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
+            Gizmos.color = onWall ? Color.green : Color.red;
+            Gizmos.DrawWireCube(transform.position + Vector3.zero * sideCheckDistance, sideBoxSize);
         }
     }
 }
