@@ -9,25 +9,42 @@ namespace Controllers
         [SerializeField] private List<GameObject> arrowList;
         
         public static Vector2 Direction = Vector2.right;
+        private Arrow _arrowScript;
         
         public void OnShoot(InputAction.CallbackContext context)
         {
-            
-            if (context.started)
+            if (context.started && _arrowScript == null)
             {
-                Debug.Log("oui" + context);
-                GameObject arrow = Instantiate(arrowList[0],transform.position,Quaternion.Euler(new Vector3(0,0,0.5f)/*Direction.x,0,Direction.y*/)); 
+				float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
+        		Vector3 rotation = new Vector3(0,0, angle);
+                GameObject arrow = Instantiate(arrowList[0],transform.position,Quaternion.Euler(rotation));
+                _arrowScript = arrow.GetComponent<Arrow>();
             }
 
-            if (context.canceled)
+            if (context.canceled && _arrowScript != null)
             {
-                Debug.Log("non" + context);
+                _arrowScript.CanStartMoving = true;
+                _arrowScript = null;
             }
         }
 
+        private Vector2 _lastDirection = Vector2.right;
         public void OnLook(InputAction.CallbackContext context)
         {
-            Direction = context.ReadValue<Vector2>();
+            Direction = context.ReadValue<Vector2>().normalized;
+            if (Direction != Vector2.zero)
+            {
+                _lastDirection = Direction;
+                if (_arrowScript == null) 
+                    return;
+                float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
+                Vector3 rotation = new Vector3(0,0, angle);
+                _arrowScript.transform.eulerAngles = rotation;
+            }
+            else
+            {
+                Direction = _lastDirection;
+            }
         }
     }
 }
