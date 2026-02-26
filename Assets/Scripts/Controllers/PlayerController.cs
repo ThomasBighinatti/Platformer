@@ -11,7 +11,7 @@ namespace Controllers
         private Vector2 _moveInput;
         private Rigidbody2D _rb;
         private CapsuleCollider2D playerCollider;
-    
+        private Quaternion slopeRotation;
         private float _coyoteTimeCounter;
         private float _jumpBufferCounter;
         
@@ -22,7 +22,6 @@ namespace Controllers
         [SerializeField] private bool jumpButtonPressed = false;
         [SerializeField] private float playerSpeed = 5f;
         [SerializeField] private bool grounded = true;
-        [SerializeField] private bool onWall = true;
         [SerializeField] private float coyoteTime = 0.1f;
         [SerializeField] private float jumpCutMultiplier = 0.5f; // reduit la vitesse quand on relache le bouton saut
         [SerializeField] private float jumpBufferTime = 0.2f;
@@ -109,15 +108,21 @@ namespace Controllers
         
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             grounded = groundHit.collider;
-            RaycastHit2D sideHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
-            onWall = sideHit.collider;
+            var ray = new Ray(transform.position, Vector3.down);
+            /*
+            if (Physics2D.Raycast(ray, out RaycastHit hitInfo, 0.2f, groundLayer))
+            { 
+                slopeRotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+                Vector3 rotatedVector = new Vector3(slopeRotation * _moveInput );
+            }
+            */
         }
     
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = grounded ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
-            Gizmos.color = onWall ? Color.green : Color.red;
+            // Gizmos.color =  ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.zero * sideCheckDistance, sideBoxSize);
         }
     }
