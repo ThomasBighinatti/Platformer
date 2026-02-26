@@ -29,7 +29,7 @@ namespace Controllers
         {
             if (context.started && _arrowScript == null)
             {
-
+                Debug.Log("Shoot");
                 GameObject arrow = Instantiate(arrowList[0],transform.position,Quaternion.identity);
                 float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
                 Vector3 rotation = new Vector3(0,0, angle);

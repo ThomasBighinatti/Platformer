@@ -110,7 +110,7 @@ namespace Controllers
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             grounded = groundHit.collider;
             RaycastHit2D sideHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
-            grounded = sideHit.collider;
+            onWall = sideHit.collider;
         }
     
         private void OnDrawGizmosSelected()
