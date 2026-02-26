@@ -306,17 +306,15 @@ MonoBehaviour:
   jumpButtonPressed: 0
   playerSpeed: 5
   grounded: 0
-  onWall: 1
   coyoteTime: 0.2
   jumpCutMultiplier: 0.5
   jumpBufferTime: 0.2
-  groundCheckDistance: 1
-  sideCheckDistance: 0.5
+  boxCastCooldown: 0.1
+  groundCheckDistance: 0.76
   groundLayer:
     serializedVersion: 2
     m_Bits: 55
-  boxSize: {x: 0.8, y: 0.2}
-  sideBoxSize: {x: 1.1, y: 1.5}
+  boxSize: {x: 0.56, y: 0.03}
   noFrictionMaterial: {fileID: 6200000, guid: 35c8df58f1f23ac45bd72afd6d907b2a, type: 2}
   frictionMaterial: {fileID: 6200000, guid: 52780fa616b2e8549bc8bd6442099720, type: 2}
 --- !u!1 &198733871378204264
