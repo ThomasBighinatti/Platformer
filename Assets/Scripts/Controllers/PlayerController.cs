@@ -6,7 +6,7 @@ namespace Controllers
     public class PlayerController : MonoBehaviour
     {
     
-        //TODO empecher le joueur de rester collé au mur quand on se déplace dessus (déplacer le perso avec addforce), mvt en l'air si besoin, limiter vitesse de chute
+        //TODO empecher le joueur de rester collé au mur quand on se déplace dessus, mvt en l'air si besoin, limiter vitesse de chute
     
         private Vector2 _moveInput;
         private Rigidbody2D _rb;
@@ -28,11 +28,9 @@ namespace Controllers
         private bool _jumpButtonReleased = false;
 
         [Header("Misc")] [SerializeField] private float groundCheckDistance = 0.5f; 
-        [SerializeField] private float sideCheckDistance = 0.5f;
         
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private Vector2 boxSize = new Vector2(0.8f, 0.2f);
-        [SerializeField] private Vector2 sideBoxSize = new Vector2(1.1f, 1.5f);
         [SerializeField] private PhysicsMaterial2D noFrictionMaterial;
         [SerializeField] private PhysicsMaterial2D frictionMaterial;
         
@@ -108,10 +106,11 @@ namespace Controllers
         
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             grounded = groundHit.collider;
-            var ray = new Ray(transform.position, Vector3.down);
             /*
+            var ray = new Ray(transform.position, Vector3.down);
+
             if (Physics2D.Raycast(ray, out RaycastHit hitInfo, 0.2f, groundLayer))
-            { 
+            {
                 slopeRotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
                 Vector3 rotatedVector = new Vector3(slopeRotation * _moveInput );
             }
@@ -122,8 +121,6 @@ namespace Controllers
         {
             Gizmos.color = grounded ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
-            // Gizmos.color =  ? Color.green : Color.red;
-            Gizmos.DrawWireCube(transform.position + Vector3.zero * sideCheckDistance, sideBoxSize);
         }
     }
 }
