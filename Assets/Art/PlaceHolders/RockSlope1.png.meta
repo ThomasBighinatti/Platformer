@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e399a4c2c2b2d0f4ca84141a7a547f80
+guid: 1108cce5058fded4bbd0dcb7c247f455
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7856493677412862020
-    second: Bow_0
-  - first:
-      213: 9177565795109621906
-    second: Bow_1
+      213: 3736327613194391375
+    second: RockSlope1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bow_0
+      name: RockSlope1_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 2
-        width: 11
-        height: 29
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb734b930a028f290800000000000000
-      internalID: -7856493677412862020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bow_1
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 3
-        width: 19
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 290d84047734d5f70800000000000000
-      internalID: 9177565795109621906
+      spriteID: f4f4fe41b2a1ad330800000000000000
+      internalID: 3736327613194391375
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bow_0: -7856493677412862020
-      Bow_1: 9177565795109621906
+      RockSlope1_0: 3736327613194391375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
