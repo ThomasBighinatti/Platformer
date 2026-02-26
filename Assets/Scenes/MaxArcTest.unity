@@ -302,6 +302,8 @@ MonoBehaviour:
   arrowList:
   - {fileID: 2782368242074907524, guid: 8c3fd71490e01ed49861aa5aedff7d8e, type: 3}
   deadZoneOnLook: 0.3
+  bowPlaceHolder1: {fileID: -7856493677412862020, guid: e399a4c2c2b2d0f4ca84141a7a547f80, type: 3}
+  bowPlaceHolder2: {fileID: 9177565795109621906, guid: e399a4c2c2b2d0f4ca84141a7a547f80, type: 3}
 --- !u!212 &842007467
 SpriteRenderer:
   serializedVersion: 2
