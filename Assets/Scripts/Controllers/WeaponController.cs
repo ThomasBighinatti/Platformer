@@ -19,6 +19,7 @@ namespace Controllers
         
         public static Vector2 Direction = Vector2.right;
         private Arrow _arrowScript;
+        
 
         private void Start()
         {
@@ -30,7 +31,8 @@ namespace Controllers
             if (context.started && _arrowScript == null)
             {
                 Debug.Log("Shoot");
-                GameObject arrow = Instantiate(arrowList[0],transform.position,Quaternion.identity);
+                GameObject arrow = Instantiate(arrowList[0],transform);
+
                 float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
                 Vector3 rotation = new Vector3(0,0, angle);
                 _arrowScript = arrow.GetComponent<Arrow>();
@@ -44,6 +46,8 @@ namespace Controllers
 
             if (context.canceled && _arrowScript != null)
             {
+                _arrowScript.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                _arrowScript.gameObject.transform.parent = null;
                 _arrowScript.CanStartMoving = true;
                 _arrowScript = null;
                 
@@ -55,6 +59,7 @@ namespace Controllers
         private Vector2 _lastDirection = Vector2.right;
         public void OnLook(InputAction.CallbackContext context)
         {
+            //Debug.Log(context.ReadValue<Vector2>());
             Vector2 input = context.ReadValue<Vector2>();
             if (Mathf.Abs(input.x) <= deadZoneOnLook && Mathf.Abs(input.y) <= deadZoneOnLook)
                 return;
