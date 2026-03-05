@@ -6,11 +6,14 @@ namespace Controllers
     public class PlayerController : MonoBehaviour
     {
     
-        //TODO empecher le joueur de rester collé au mur quand on se déplace dessus, mvt en l'air si besoin, limiter vitesse de chute
+        //TODO réorganiser tout le bordel dans fixed update ,mvt en l'air si besoin, limiter vitesse de chute, saut en 3 phases
         
         [Header("Player Settings")] 
         [SerializeField] private float jumpStrength = 5f;
+        [SerializeField] private float playerAcceleration = 5f;
         [SerializeField] private float playerSpeed = 5f;
+        [SerializeField] private float maxSpeed = 10f;
+        [SerializeField] private float minSpeed = 3f;
         [SerializeField] private float coyoteTime = 0.1f;
         [SerializeField] private float jumpCutMultiplier = 0.5f;
         [SerializeField] private float jumpBufferTime = 0.2f;
@@ -40,6 +43,8 @@ namespace Controllers
         private float _boxCastCooldownCounter = 0;
         private bool _jumpButtonReleased = false;
         
+        
+        
         private void Start()
         {
             _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
@@ -67,7 +72,7 @@ namespace Controllers
         private void FixedUpdate()
         {
             _jumpBufferCounter -= Time.fixedDeltaTime;
-            _boxCastCooldownCounter -= Time.fixedDeltaTime; //pauvre con que je suis j'ai ecrit =- au lieu de -=
+            _boxCastCooldownCounter -= Time.fixedDeltaTime; //j'ai ecrit "=-" au lieu de "-="...
             
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             grounded = groundHit.collider is not null && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
@@ -83,7 +88,15 @@ namespace Controllers
 
                 #region mvtSlope
                 Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
-                targetVelocity = slopeRotation * new Vector2(_moveInput.x * playerSpeed, 0f); //on force a 0 la velocite Y. AHHHHHHH CA EMPECHE GROUNDED D'ETRE VRAI ???????? JE PEUX METTRE UN TIMER DE 0.1 SEC AU SAUT ?
+                targetVelocity = slopeRotation * new Vector2(_moveInput.x * playerSpeed, 0f);
+                /* if(speed < maxSpeed)
+                    {
+                     speed += acceleration * Time.deltaTime;
+                    }
+                transform.position.x = transform.position.x + speed*Time.deltaTime;
+                
+                faire un truc comme ca mais partout en gros
+                    */
                 // Debug.Log(slopeRotation);
                 #endregion
                 
@@ -126,7 +139,6 @@ namespace Controllers
             }
             #endregion
             
-            // Debug.Log(targetVelocity.y); //se met a 0 dans l'editeur alors pk ca descent
             _rb.linearVelocity = targetVelocity;
         }
     
@@ -136,7 +148,4 @@ namespace Controllers
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
         }
     }
-    /* L'idée est d'ajouter un petit chronomètre (un "cooldown" de saut, par exemple 0.1 seconde).
-     Quand tu valides un saut dans ta région #saut, tu lances ce chronomètre. Et tout en haut de ton script,
-    tu modifies ton BoxCast pour qu'il ne puisse renvoyer true que si ce chronomètre est tombé à zéro. (il m'a dit de la merde ca fonctionne pas) */
 }
