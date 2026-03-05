@@ -84,7 +84,7 @@ namespace Controllers
                 #region mvtSlope
                 Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
                 targetVelocity = slopeRotation * new Vector2(_moveInput.x * playerSpeed, 0f); //on force a 0 la velocite Y. AHHHHHHH CA EMPECHE GROUNDED D'ETRE VRAI ???????? JE PEUX METTRE UN TIMER DE 0.1 SEC AU SAUT ?
-                Debug.Log(slopeRotation);
+                // Debug.Log(slopeRotation);
                 #endregion
                 
                 if (slopeRotation != new Quaternion(0, 0, 0, 1))
@@ -126,7 +126,7 @@ namespace Controllers
             }
             #endregion
             
-            Debug.Log(targetVelocity.y); //se met a 0 dans l'editeur alors pk ca descent
+            // Debug.Log(targetVelocity.y); //se met a 0 dans l'editeur alors pk ca descent
             _rb.linearVelocity = targetVelocity;
         }
     

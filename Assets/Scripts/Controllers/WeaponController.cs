@@ -55,32 +55,41 @@ namespace Controllers
                 _bowSpriteRenderer.sprite = bowPlaceHolder1;
             }
         }
-
-        private Vector2 _lastDirection = Vector2.right;
+        
         public void OnLook(InputAction.CallbackContext context)
         {
-            //Debug.Log(context.ReadValue<Vector2>());
-            Vector2 input = context.ReadValue<Vector2>();
-            if (Mathf.Abs(input.x) <= deadZoneOnLook && Mathf.Abs(input.y) <= deadZoneOnLook)
+            if (context.canceled)
                 return;
-            Direction = context.ReadValue<Vector2>().normalized;
             
-            if (Direction != Vector2.zero)
+            Vector2 input = new Vector2();
+            InputDevice device = context.control.device;
+            switch (device)
             {
-                _lastDirection = Direction;
-                if (_arrowScript == null) 
-                    return;
-                float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
-                Vector3 rotation = new Vector3(0,0, angle);
-                _arrowScript.transform.eulerAngles = rotation;
+                case Keyboard or Mouse:
+                    Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
+                    Vector2 playerScreenPosition= Camera.main.WorldToScreenPoint(transform.position);
+                    input = new Vector2
+                    (
+                        mouseScreenPosition.x - playerScreenPosition.x, 
+                        mouseScreenPosition.y - playerScreenPosition.y
+                    );
+                    break;
                 
-                gameObject.transform.eulerAngles = rotation;
-            } 
-            
-            else
-            {
-                Direction = _lastDirection;
+                case Gamepad:
+                    input = context.ReadValue<Vector2>();
+                    if (Mathf.Abs(input.x) <= deadZoneOnLook && Mathf.Abs(input.y) <= deadZoneOnLook)
+                        return;
+                    break;
             }
+                
+            Direction = input.normalized;
+            float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
+            Vector3 rotation = new Vector3(0, 0, angle);
+            
+            if (!(_arrowScript == null))
+                _arrowScript.transform.eulerAngles = rotation;
+            gameObject.transform.eulerAngles = rotation;
+            
         }
     }
 }
