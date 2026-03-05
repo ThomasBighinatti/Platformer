@@ -20,12 +20,6 @@ namespace Controllers
         public static Vector2 Direction = Vector2.right;
         private Arrow _arrowScript;
         
-
-        private void Start()
-        {
-            _bowSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        }
-
         public void OnShoot(InputAction.CallbackContext context)
         {
             if (context.started && _arrowScript == null)
@@ -56,40 +50,79 @@ namespace Controllers
             }
         }
         
+        private void Start()
+        {
+            _bowSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+            if (Camera.main is not null)
+            {
+                _camera = Camera.main;
+            }
+        }
+
+        private void Update()
+        {
+            
+            if (_isUsingMouse)
+            {
+                _mouseScreenPosition = Mouse.current.position.ReadValue();
+                _playerScreenPosition= _camera.WorldToScreenPoint(transform.position);
+                _inputOnLook = new Vector2
+                (
+                    _mouseScreenPosition.x - _playerScreenPosition.x, 
+                    _mouseScreenPosition.y - _playerScreenPosition.y
+                );
+            }
+            
+            if (_deadZoneUse)
+                return;
+            
+            if (_currentInputOnLook == _inputOnLook)
+                return;
+            
+            _currentInputOnLook = _inputOnLook;
+
+            Direction = _currentInputOnLook.normalized;
+            float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
+            Vector3 rotation = new Vector3(0, 0, angle);
+            
+            if (_arrowScript is not null)
+                _arrowScript.transform.eulerAngles = rotation;
+            gameObject.transform.eulerAngles = rotation;
+        }
+
+        
+        private Vector2 _inputOnLook = Vector2.right;
+        private Vector2 _currentInputOnLook = Vector2.right;
+        private Camera _camera;
+        private bool _deadZoneUse;
+        private bool _isUsingMouse;
+        private Vector2 _mouseScreenPosition;
+        private Vector2 _playerScreenPosition;
+        
         public void OnLook(InputAction.CallbackContext context)
         {
             if (context.canceled)
                 return;
             
-            Vector2 input = new Vector2();
             InputDevice device = context.control.device;
             switch (device)
             {
                 case Keyboard or Mouse:
-                    Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
-                    Vector2 playerScreenPosition= Camera.main.WorldToScreenPoint(transform.position);
-                    input = new Vector2
-                    (
-                        mouseScreenPosition.x - playerScreenPosition.x, 
-                        mouseScreenPosition.y - playerScreenPosition.y
-                    );
+                    _deadZoneUse = false;
+                    _isUsingMouse = true;
                     break;
                 
                 case Gamepad:
-                    input = context.ReadValue<Vector2>();
-                    if (Mathf.Abs(input.x) <= deadZoneOnLook && Mathf.Abs(input.y) <= deadZoneOnLook)
-                        return;
+                    _inputOnLook = context.ReadValue<Vector2>();
+                    _deadZoneUse = false;
+                    _isUsingMouse = false;
+                    if (Mathf.Abs(_inputOnLook.x) <= deadZoneOnLook && Mathf.Abs(_inputOnLook.y) <= deadZoneOnLook)
+                    {
+                        _deadZoneUse = true;
+                    }
                     break;
             }
-                
-            Direction = input.normalized;
-            float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
-            Vector3 rotation = new Vector3(0, 0, angle);
-            
-            if (!(_arrowScript == null))
-                _arrowScript.transform.eulerAngles = rotation;
-            gameObject.transform.eulerAngles = rotation;
-            
+           
         }
     }
 }
