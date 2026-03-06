@@ -22,7 +22,6 @@ namespace Controllers
         
         [Header("Visualisation")]
         [SerializeField] private bool grounded = true;
-        [SerializeField] private bool jumpButtonPressed = false;
         [Space(10f)]
         
         [Header("Raycast Settings")]
@@ -43,19 +42,12 @@ namespace Controllers
         private float _boxCastCooldownCounter = 0;
         private bool _jumpButtonReleased = false;
         
+        private Vector2 _velocity;
         
-        
-        private void Start()
-        {
-            _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
-            _rb = GetComponent<Rigidbody2D>();
-        }
-
-        public void Jump(InputAction.CallbackContext context)
+        public void OnJump(InputAction.CallbackContext context)
         {
             if (context.started)
             {
-                jumpButtonPressed = true;
                 _jumpBufferCounter = jumpBufferTime;
             }
             if (context.canceled)
@@ -69,24 +61,38 @@ namespace Controllers
             _moveInput = context.ReadValue<Vector2>();
         }
         
+        
+        private void Start()
+        {
+            _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
+            _rb = GetComponent<Rigidbody2D>();
+        }
+        
         private void FixedUpdate()
         {
             _jumpBufferCounter -= Time.fixedDeltaTime;
             _boxCastCooldownCounter -= Time.fixedDeltaTime; //j'ai ecrit "=-" au lieu de "-="...
-            
+
+            _velocity = _rb.linearVelocity;
+            _velocity = Movement(_velocity);
+            _velocity = Jump(_velocity);
+            _velocity = JumpCut(_velocity);
+
+            _rb.linearVelocity = _velocity;
+        }
+        
+        private Vector2 Movement(Vector2 targetVelocity)
+        {
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             grounded = groundHit.collider is not null && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
             
-            Vector2 targetVelocity = _rb.linearVelocity;
-
-            #region Movement
             if (grounded)
             {
                 _playerCollider.sharedMaterial = frictionMaterial;
                 _rb.sharedMaterial = frictionMaterial;
                 _coyoteTimeCounter = coyoteTime;
 
-                #region mvtSlope
+                #region MovementSlope
                 Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
                 targetVelocity = slopeRotation * new Vector2(_moveInput.x * playerSpeed, 0f);
                 /* if(speed < maxSpeed)
@@ -113,35 +119,38 @@ namespace Controllers
                 _rb.sharedMaterial = noFrictionMaterial;
                 targetVelocity = new Vector2(_moveInput.x * playerSpeed, targetVelocity.y);
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
-                //TODO
             }
-            #endregion
-            
-            #region Jump
+
+            return targetVelocity;
+        }
+        
+        private Vector2 Jump(Vector2 targetVelocity)
+        {
             if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f)
             {
                 targetVelocity = new Vector2(targetVelocity.x, jumpStrength);
                 _coyoteTimeCounter = 0f;
                 _jumpBufferCounter = 0f;
-                jumpButtonPressed = false;
                 _boxCastCooldownCounter = boxCastCooldown;
             }
-            #endregion
-            
-            #region Jumpcut
-            if (_jumpButtonReleased)
-            {
-                if (targetVelocity.y > 0f)
-                {
-                    targetVelocity = new Vector2(targetVelocity.x, targetVelocity.y * jumpCutMultiplier);
-                }
-                _jumpButtonReleased = false;
-            }
-            #endregion
-            
-            _rb.linearVelocity = targetVelocity;
+
+            return targetVelocity;
         }
-    
+        
+        private Vector2 JumpCut(Vector2 targetVelocity)
+        {
+            if (!_jumpButtonReleased) 
+                return targetVelocity;
+            
+            if (targetVelocity.y > 0f)
+            {
+                targetVelocity = new Vector2(targetVelocity.x, targetVelocity.y * jumpCutMultiplier);
+            }
+            _jumpButtonReleased = false;
+
+            return targetVelocity;
+        }
+        
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = grounded ? Color.green : Color.red;
