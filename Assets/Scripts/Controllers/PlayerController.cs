@@ -6,14 +6,18 @@ namespace Controllers
     public class PlayerController : MonoBehaviour
     {
     
-        //TODO réorganiser tout le bordel dans fixed update ,mvt en l'air si besoin, limiter vitesse de chute, saut en 3 phases
+        /*TODO mvt en l'air si besoin,
+         faire glisser sur les slopes,
+         rendre la deceleration moins degueulasse,
+         
+         */
         
         [Header("Player Settings")] 
         [SerializeField] private float jumpStrength = 5f;
         [SerializeField] private float playerAcceleration = 5f;
         [SerializeField] private float playerSpeed = 5f;
         [SerializeField] private float maxSpeed = 10f;
-        [SerializeField] private float minSpeed = 3f;
+        [SerializeField] private float maxFallSpeed = -5f;
         [SerializeField] private float coyoteTime = 0.1f;
         [SerializeField] private float jumpCutMultiplier = 0.5f;
         [SerializeField] private float jumpBufferTime = 0.2f;
@@ -77,48 +81,49 @@ namespace Controllers
             _velocity = Movement(_velocity);
             _velocity = Jump(_velocity);
             _velocity = JumpCut(_velocity);
+            _velocity = new Vector2(Mathf.Clamp(_velocity.x, -maxSpeed, maxSpeed), Mathf.Max(_velocity.y, maxFallSpeed));
 
             _rb.linearVelocity = _velocity;
         }
         
         private Vector2 Movement(Vector2 targetVelocity)
         {
+            float targetSpeedX = _moveInput.x * playerSpeed;
+            
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             grounded = groundHit.collider is not null && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
             
             if (grounded)
             {
-                _playerCollider.sharedMaterial = frictionMaterial;
-                _rb.sharedMaterial = frictionMaterial;
+                /*
+                 _playerCollider.sharedMaterial = frictionMaterial;
+                _rb.sharedMaterial = frictionMaterial; 
+                */
                 _coyoteTimeCounter = coyoteTime;
-
-                #region MovementSlope
-                Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
-                targetVelocity = slopeRotation * new Vector2(_moveInput.x * playerSpeed, 0f);
-                /* if(speed < maxSpeed)
+                
+                    #region MovementSlope
+                    Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
+                    float newVelocityX = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, playerAcceleration * Time.fixedDeltaTime);
+                    Vector2 flatVelocity = new Vector2(newVelocityX, 0f);
+                    targetVelocity = slopeRotation * flatVelocity;
+                    #endregion
+                 /*
+                    if (slopeRotation != new Quaternion(0, 0, 0, 1))
                     {
-                     speed += acceleration * Time.deltaTime;
+                        _rb.bodyType = RigidbodyType2D.Kinematic;
+                        _rb.linearVelocity = Vector2.zero;
                     }
-                transform.position.x = transform.position.x + speed*Time.deltaTime;
-                
-                faire un truc comme ca mais partout en gros
-                    */
-                // Debug.Log(slopeRotation);
-                #endregion
-                
-                if (slopeRotation != new Quaternion(0, 0, 0, 1))
-                {
-                    _rb.bodyType = RigidbodyType2D.Kinematic;
-                    _rb.linearVelocity = Vector2.zero;
-                }
+                */
             }
             else //mvt en l'air
             {
-                _rb.bodyType = RigidbodyType2D.Dynamic;
+                /*
+                 _rb.bodyType = RigidbodyType2D.Dynamic;
                 _playerCollider.sharedMaterial = noFrictionMaterial;
                 _rb.sharedMaterial = noFrictionMaterial;
-                targetVelocity = new Vector2(_moveInput.x * playerSpeed, targetVelocity.y);
+                */
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
+                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, playerAcceleration * Time.fixedDeltaTime);
             }
 
             return targetVelocity;
