@@ -2734,11 +2734,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
       propertyPath: maxFallSpeed
-      value: -3
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
       propertyPath: playerAcceleration
-      value: 2
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6218711720720456140, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
       propertyPath: m_LocalPosition.x
