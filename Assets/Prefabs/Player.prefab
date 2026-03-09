@@ -568,6 +568,10 @@ PrefabInstance:
       value: Bow
       objectReference: {fileID: 0}
     - target: {fileID: 1593040802955283702, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593040802955283702, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
