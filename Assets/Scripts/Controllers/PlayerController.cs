@@ -26,6 +26,7 @@ namespace Controllers
         
         [Header("Visualisation")]
         [SerializeField] private bool grounded = true;
+        [SerializeField] private bool onSlope = false;
         [Space(10f)]
         
         [Header("Raycast Settings")]
@@ -98,30 +99,32 @@ namespace Controllers
                 /*
                  _playerCollider.sharedMaterial = frictionMaterial;
                 _rb.sharedMaterial = frictionMaterial; 
+                rip
                 */
                 _coyoteTimeCounter = coyoteTime;
                 
-                    #region MovementSlope
-                    Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
-                    float newVelocityX = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, playerAcceleration * Time.fixedDeltaTime);
-                    Vector2 flatVelocity = new Vector2(newVelocityX, 0f);
-                    targetVelocity = slopeRotation * flatVelocity;
-                    #endregion
-                 /*
-                    if (slopeRotation != new Quaternion(0, 0, 0, 1))
-                    {
-                        _rb.bodyType = RigidbodyType2D.Kinematic;
-                        _rb.linearVelocity = Vector2.zero;
-                    }
-                */
+                #region MovementSlope
+                Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
+                if (slopeRotation != new Quaternion(0, 0, 0, 1))
+                {
+                    onSlope = true; 
+                    _playerCollider.sharedMaterial = noFrictionMaterial;
+                    _rb.sharedMaterial = noFrictionMaterial;
+                }
+                else
+                {
+                    onSlope = false;
+                    targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, playerAcceleration * Time.fixedDeltaTime);
+                    _playerCollider.sharedMaterial = frictionMaterial;
+                    _rb.sharedMaterial = frictionMaterial;
+                }
+                #endregion
             }
             else //mvt en l'air
             {
-                /*
-                 _rb.bodyType = RigidbodyType2D.Dynamic;
                 _playerCollider.sharedMaterial = noFrictionMaterial;
                 _rb.sharedMaterial = noFrictionMaterial;
-                */
+                
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
                 targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, playerAcceleration * Time.fixedDeltaTime);
             }

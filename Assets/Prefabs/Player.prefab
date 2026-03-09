@@ -48,7 +48,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 52780fa616b2e8549bc8bd6442099720, type: 2}
+  m_Material: {fileID: 6200000, guid: 35c8df58f1f23ac45bd72afd6d907b2a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -91,7 +91,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 52780fa616b2e8549bc8bd6442099720, type: 2}
+  m_Material: {fileID: 6200000, guid: 35c8df58f1f23ac45bd72afd6d907b2a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -269,13 +269,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   jumpStrength: 8
-  playerSpeed: 5
+  playerAcceleration: 25
+  playerSpeed: 10
+  maxSpeed: 20
+  maxFallSpeed: -8
   coyoteTime: 0.2
   jumpCutMultiplier: 0.5
   jumpBufferTime: 0.2
   boxCastCooldown: 0.1
   grounded: 0
-  jumpButtonPressed: 0
   groundCheckDistance: 1
   groundLayer:
     serializedVersion: 2
@@ -521,11 +523,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 193763554225509095, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.66
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 193763554225509095, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 193763554225509095, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -533,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193763554225509095, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.54246277
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 193763554225509095, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -545,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193763554225509095, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.8400799
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 193763554225509095, guid: 2aa01fa768c006546b474017f5e422f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="418ffaef-1b64-4cb2-9485-c86bf9b42b85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PS2KK/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PS2KK/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Maxence&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Thomas&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -106,7 +107,8 @@
       <workItem from="1772097654753" duration="5915000" />
       <workItem from="1772114663459" duration="483000" />
       <workItem from="1772717168264" duration="3149000" />
-      <workItem from="1772724891444" duration="1567000" />
+      <workItem from="1772724891444" duration="1804000" />
+      <workItem from="1773051012730" duration="874000" />
     </task>
     <servers />
   </component>
