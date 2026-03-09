@@ -83,8 +83,7 @@ namespace Arrows
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            _rb.linearVelocity = Vector2.zero;
-            _rb.angularVelocity = 0;
+            _rb.constraints = RigidbodyConstraints2D.FreezeAll;
             _isPlanted = true;
         }
     }
