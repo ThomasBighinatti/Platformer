@@ -17,6 +17,8 @@ namespace Arrows
         [SerializeField] private bool useDestroy = true;
         [SerializeField] private float destroyTime = 10f;
 
+        [SerializeField] private GameObject player;
+
         private bool _canStartMoving;
         public bool CanStartMoving
         {
@@ -52,11 +54,23 @@ namespace Arrows
 
         private void FixedUpdate()
         {
+            if (_recalling)
+            {
+                Transform target = player.transform;
+                Vector2 directionToPlayer= target.position - transform.position;
+                _isPlanted = false;
+                _rb.constraints = RigidbodyConstraints2D.None;
+                _rb.AddForce(directionToPlayer * 10);
+            }
+            else if (!_canUseGravity)
+            {
+                _rb.gravityScale = Mathf.Lerp(_rb.gravityScale, gravityForce, gravityLerpForce);
+            }
+            
             if (_isPlanted)
                 return;
             if (!_canUseGravity)
                 return;
-            _rb.gravityScale = Mathf.Lerp(_rb.gravityScale, gravityForce, gravityLerpForce);
         
             Vector3 direction = _rb.linearVelocity;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -78,6 +92,10 @@ namespace Arrows
         private IEnumerator WaitForDestroy()
         {
             yield return new WaitForSeconds(destroyTime);
+            if (_recalling)
+            {
+                WeaponController.MomentumArrowShot.Dequeue();
+            }
             Destroy(gameObject);
         }
 
@@ -85,6 +103,13 @@ namespace Arrows
         {
             _rb.constraints = RigidbodyConstraints2D.FreezeAll;
             _isPlanted = true;
+        }
+
+        private bool _recalling;
+
+        public void Recall()
+        {
+            _recalling = true;
         }
     }
 }

@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using Arrows;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,6 +18,10 @@ namespace Controllers
         
         public static Vector2 Direction = Vector2.right;
         private Arrow _arrowScript;
+
+        public static Queue<Arrow> MomentumArrowShot;
+        
+        // TODO adapter le script en fonction des différentes flèches tirées
         
         public void OnShoot(InputAction.CallbackContext context)
         {
@@ -44,6 +46,8 @@ namespace Controllers
                 _arrowScript.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 _arrowScript.gameObject.transform.parent = null;
                 _arrowScript.CanStartMoving = true;
+                
+                MomentumArrowShot.Enqueue(_arrowScript);
                 _arrowScript = null;
                 
                 // Placeholder 
@@ -124,6 +128,16 @@ namespace Controllers
                     break;
             }
            
+        }
+
+        public void OnRecall(InputAction.CallbackContext context)
+        {
+            // TODO passer le recall de arrow dans le script momentum
+            if (MomentumArrowShot.Count <= 0) 
+                return;
+            
+            Arrow arrowCalled = MomentumArrowShot.Dequeue();
+            arrowCalled.Recall();
         }
     }
 }

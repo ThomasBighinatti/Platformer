@@ -113,6 +113,7 @@ MonoBehaviour:
   gravityLerpForce: 0.2
   useDestroy: 1
   destroyTime: 10
+  player: {fileID: 2319816284571021, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
 --- !u!50 &6736019095112636382
 Rigidbody2D:
   serializedVersion: 5
