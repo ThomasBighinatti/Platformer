@@ -21,6 +21,7 @@ namespace Controllers
         [SerializeField] private float coyoteTime = 0.2f;
         [SerializeField] private float jumpCutMultiplier = 0.5f;
         [SerializeField] private float jumpBufferTime = 0.2f;
+        [SerializeField] private float airControl = 13f;
         [SerializeField] private float boxCastCooldown = 0.1f;
         [Space(10f)]
         
@@ -121,7 +122,7 @@ namespace Controllers
                 _rb.sharedMaterial = noFrictionMaterial;
                 
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
-                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, playerAcceleration * Time.fixedDeltaTime);
+                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, airControl * Time.fixedDeltaTime);
             }
 
             return targetVelocity;
