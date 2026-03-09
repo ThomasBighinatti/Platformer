@@ -8,13 +8,13 @@ namespace Managers
         public static SoundManager Instance;
 
         [Header("Sounds")]
-        [SerializeField] private AudioClip[] vfx;
+        [SerializeField] private AudioClip[] sfx;
         [SerializeField] private AudioClip mainMusic;
         
 
         [Header("Audio Sources")] 
         [SerializeField] private AudioSource musicSource;
-        [SerializeField] private AudioSource vfxSource;
+        [SerializeField] private AudioSource sfxSource;
 
         private void Awake()
         {
@@ -35,26 +35,10 @@ namespace Managers
             musicSource.Play();
         }
 
-        private AudioSource FindEmptyAudioSource()
-        {
-            if (!vfxSource.isPlaying)
-            {
-                return vfxSource;
-            }
-
-            AudioSource newSource = gameObject.AddComponent<AudioSource>();
-            return newSource;
-            
-            // TODO systeme de pulling des audiosources et ajouter à la liste si ça en crée une nouvelle
-            // faire un test d'audio source tous les temps de temps pour voir combien il y en a et en supprimer
-        }
-
         public void SoundExample()
         {
-            var soundToPlay = vfx[0];
-            AudioSource source = FindEmptyAudioSource();
-            source.clip = soundToPlay;
-            source.Play();
+            var soundToPlay = sfx[0];
+            sfxSource.PlayOneShot(soundToPlay);
         }
     }
 }
