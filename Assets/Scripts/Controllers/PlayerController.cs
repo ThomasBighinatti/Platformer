@@ -13,14 +13,15 @@ namespace Controllers
          */
         
         [Header("Player Settings")] 
-        [SerializeField] private float jumpStrength = 5f;
-        [SerializeField] private float playerAcceleration = 5f;
-        [SerializeField] private float playerSpeed = 5f;
-        [SerializeField] private float maxSpeed = 10f;
-        [SerializeField] private float maxFallSpeed = -5f;
-        [SerializeField] private float coyoteTime = 0.1f;
+        [SerializeField] private float jumpStrength = 8f;
+        [SerializeField] private float playerAcceleration = 25f;
+        [SerializeField] private float playerSpeed = 10f;
+        [SerializeField] private float maxSpeed = 20f;
+        [SerializeField] private float maxFallSpeed = -8f;
+        [SerializeField] private float coyoteTime = 0.2f;
         [SerializeField] private float jumpCutMultiplier = 0.5f;
         [SerializeField] private float jumpBufferTime = 0.2f;
+        [SerializeField] private float airControl = 13f;
         [SerializeField] private float boxCastCooldown = 0.1f;
         [Space(10f)]
         
@@ -96,11 +97,6 @@ namespace Controllers
             
             if (grounded)
             {
-                /*
-                 _playerCollider.sharedMaterial = frictionMaterial;
-                _rb.sharedMaterial = frictionMaterial; 
-                rip
-                */
                 _coyoteTimeCounter = coyoteTime;
                 
                 #region MovementSlope
@@ -126,7 +122,7 @@ namespace Controllers
                 _rb.sharedMaterial = noFrictionMaterial;
                 
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
-                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, playerAcceleration * Time.fixedDeltaTime);
+                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, airControl * Time.fixedDeltaTime);
             }
 
             return targetVelocity;
@@ -134,7 +130,7 @@ namespace Controllers
         
         private Vector2 Jump(Vector2 targetVelocity)
         {
-            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f)
+            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && onSlope == false)
             {
                 targetVelocity = new Vector2(targetVelocity.x, jumpStrength);
                 _coyoteTimeCounter = 0f;
