@@ -2724,46 +2724,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: maxSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: playerSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: maxFallSpeed
-      value: -8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: playerAcceleration
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218711720720456140, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218711720720456140, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218711720720456140, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218711720720456140, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8114097620147816760, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 35c8df58f1f23ac45bd72afd6d907b2a, type: 2}
+      objectReference: {fileID: 6200000, guid: 52780fa616b2e8549bc8bd6442099720, type: 2}
     - target: {fileID: 9175197938561302699, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 35c8df58f1f23ac45bd72afd6d907b2a, type: 2}
+      objectReference: {fileID: 6200000, guid: 52780fa616b2e8549bc8bd6442099720, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
