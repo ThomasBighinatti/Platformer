@@ -56,20 +56,24 @@ namespace Arrows
         {
             if (_recalling)
             {
-                Transform target = player.transform;
-                Vector2 directionToPlayer= target.position - transform.position;
+                Vector2 target = WeaponController.Player.transform.position;
+                Vector2 directionToPlayer= (target - (Vector2)transform.position);
+                Debug.Log("Vector" + directionToPlayer);
+                Debug.Log("Player" + target);
                 _isPlanted = false;
                 _rb.constraints = RigidbodyConstraints2D.None;
                 _rb.AddForce(directionToPlayer * 10);
             }
-            else if (!_canUseGravity)
+            else if (_canUseGravity)
             {
                 _rb.gravityScale = Mathf.Lerp(_rb.gravityScale, gravityForce, gravityLerpForce);
             }
+            else
+            {
+                return;
+            }
             
             if (_isPlanted)
-                return;
-            if (!_canUseGravity)
                 return;
         
             Vector3 direction = _rb.linearVelocity;

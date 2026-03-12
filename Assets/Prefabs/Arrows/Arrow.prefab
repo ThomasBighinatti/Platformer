@@ -111,7 +111,7 @@ MonoBehaviour:
   gravityActivationTime: 0.1
   gravityForce: 1
   gravityLerpForce: 0.2
-  useDestroy: 1
+  useDestroy: 0
   destroyTime: 10
   player: {fileID: 2319816284571021, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
 --- !u!50 &6736019095112636382

@@ -19,7 +19,9 @@ namespace Controllers
         public static Vector2 Direction = Vector2.right;
         private Arrow _arrowScript;
 
-        public static Queue<Arrow> MomentumArrowShot;
+        public static Queue<Arrow> MomentumArrowShot = new Queue<Arrow>();
+        
+        public static GameObject Player;
         
         // TODO adapter le script en fonction des différentes flèches tirées
         
@@ -34,7 +36,6 @@ namespace Controllers
                 Vector3 rotation = new Vector3(0,0, angle);
                 _arrowScript = arrow.GetComponent<Arrow>();
                 _arrowScript.transform.eulerAngles = rotation;
-                
                 gameObject.transform.eulerAngles = rotation;
                 
                 //Placeholder
@@ -62,6 +63,8 @@ namespace Controllers
             {
                 _camera = Camera.main;
             }
+
+            Player = transform.parent.gameObject;
         }
 
         private void Update()
@@ -135,7 +138,7 @@ namespace Controllers
             // TODO passer le recall de arrow dans le script momentum
             if (MomentumArrowShot.Count <= 0) 
                 return;
-            
+            Debug.Log("t'as cliqué frr");
             Arrow arrowCalled = MomentumArrowShot.Dequeue();
             arrowCalled.Recall();
         }
