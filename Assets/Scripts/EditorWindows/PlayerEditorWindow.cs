@@ -7,8 +7,6 @@ namespace EditorWindows
 {
     public class PlayerEditorWindow : EditorWindow
     {
-        
-
         [SerializeField] private PlayerData dataCible;
 
         [MenuItem("Tools/PlayerModifier")]
@@ -23,16 +21,16 @@ namespace EditorWindows
             EditorGUILayout.Space();
 
             dataCible = (PlayerData)EditorGUILayout.ObjectField("Entity to modify", dataCible, typeof(PlayerData), false);
-
+            dataCible.PlayerSpeed = 0;
             if (dataCible is not null)
             {
                 EditorGUILayout.BeginVertical("box");
             
-                dataCible.PlayerSpeed = EditorGUILayout.IntField("Speed", dataCible.speed);
+                dataCible.PlayerSpeed = EditorGUILayout.FloatField("Speed", dataCible.PlayerSpeed);
 
                 EditorGUILayout.BeginHorizontal();
-                if (GUILayout.Button("-10")) dataCible.speed -= 10;
-                if (GUILayout.Button("+10")) dataCible.speed += 10;
+                if (GUILayout.Button("-10")) dataCible.PlayerSpeed -= 10;
+                if (GUILayout.Button("+10")) dataCible.PlayerSpeed += 10;
                 EditorGUILayout.EndHorizontal();
 
                 EditorGUILayout.EndVertical();
@@ -45,7 +43,7 @@ namespace EditorWindows
             }
             else
             {
-                EditorGUILayout.HelpBox("Glisse un ScriptableObject 'Speed data' chef", MessageType.Info);
+                EditorGUILayout.HelpBox("Glisse un ScriptableObject 'PlayerData data' chef", MessageType.Info);
             }
         }
     
@@ -56,12 +54,12 @@ namespace EditorWindows
     
         private void Prefill()
         {
-            string[] guids = AssetDatabase.FindAssets("t:EntityData");
+            string[] guids = AssetDatabase.FindAssets("t:PlayerData");
 
             if (guids.Length > 0)
             {
                 string path = AssetDatabase.GUIDToAssetPath(guids[0]);
-                dataCible = AssetDatabase.LoadAssetAtPath<EntityData>(path);
+                dataCible = AssetDatabase.LoadAssetAtPath<PlayerData>(path);
             }
         }
     
