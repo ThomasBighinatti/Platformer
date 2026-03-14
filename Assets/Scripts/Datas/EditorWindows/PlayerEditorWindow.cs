@@ -21,7 +21,7 @@ namespace EditorWindows
             EditorGUILayout.Space();
 
             dataCible = (PlayerData)EditorGUILayout.ObjectField("Entity to modify", dataCible, typeof(PlayerData), false);
-            dataCible.PlayerSpeed = 0;
+     
             if (dataCible is not null)
             {
                 EditorGUILayout.BeginVertical("box");
@@ -43,7 +43,7 @@ namespace EditorWindows
             }
             else
             {
-                EditorGUILayout.HelpBox("Glisse un ScriptableObject 'PlayerData data' chef", MessageType.Info);
+                EditorGUILayout.HelpBox("Glisse un ScriptableObject 'PlayerData' chef", MessageType.Info);
             }
         }
     

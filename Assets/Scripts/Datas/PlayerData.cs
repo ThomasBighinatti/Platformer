@@ -10,38 +10,35 @@ namespace Datas
     {
         #region Serialization
         
-        // J't'ai retiré les fields: et les get/set, la sécu est contraingnante ici
+        [field:Header("Movement")] 
+        [field:Tooltip("Player base speed")]
+        [field:SerializeField, Range(0f, 20f)] public float PlayerSpeed { get; internal set; } = 10f;
+        [field:Tooltip("Max reachable speed")]
+        [field:SerializeField, Min(0f)] public float MaxSpeed { get; internal set; } = 20f;
+        [field:Tooltip("Accel speed towards base speed")]
+        [field:SerializeField, Min(0f)] public float PlayerAcceleration { get; internal set; } = 25f;
+        [field:Space(10f)]
         
-        [Header("Movement")] 
-        [Tooltip("Player base speed")]
-        [Range(0f, 20f), Obsolete("PAS TOUCHER, PASSE PAR LE WRAPPER")] 
-        public float PlayerSpeed  = 10f;
-        
-        [Tooltip("Max reachable speed")]
-        [Min(0f), Obsolete("PAS TOUCHER, PASSE PAR LE WRAPPER")] public float MaxSpeed  = 20f;
-        [Tooltip("Accel speed towards base speed")]
-        [Min(0f), Obsolete("PAS TOUCHER, PASSE PAR LE WRAPPER")] public float PlayerAcceleration  = 25f;
-        [Space(10f)]
-        
-        [Header("Jump")]
-        [Tooltip("Jump force applied (height reached)")]
-        [ Min(0f), Obsolete("PAS TOUCHER, PASSE PAR LE WRAPPER")] public float JumpStrength  = 8f;
-        [Tooltip("Max falling speed (has to be negative)")]
-        [SerializeField] public float MaxFallSpeed  = -8f;
-        [Tooltip("JumpCut parameter allowing jumps depending on player input")]
-        [ Range(0f, 1f), Obsolete("PAS TOUCHER, PASSE PAR LE WRAPPER")] public float JumpCutMultiplier  = 0.5f;
-        [Space(10f)]
+        [field:Header("Jump")]
+        [field:Tooltip("Jump force applied (height reached)")]
+        [field:SerializeField, Min(0f)] public float JumpStrength { get; internal set; } = 8f;
+        [field:Tooltip("Max falling speed (has to be negative)")]
+        [field:SerializeField] public float MaxFallSpeed { get; internal set; } = -8f;
+        [field:Tooltip("JumpCut parameter allowing jumps depending on player input")]
+        [field:SerializeField, Range(0f, 1f)] public float JumpCutMultiplier { get; internal set; } = 0.5f;
+        [field:Space(10f)]
 
-        [Header("Other")]
-        [Tooltip("Time to jump after leaving platform")]
-        [Min(0f), Range(0f, 0.5f), Obsolete("PAS TOUCHER, PASSE PAR LE WRAPPER")] public float CoyoteTime  = 0.2f;
-        [Tooltip("Time before landing where you can press jump to jump on landing")]
-        [Min(0f), Range(0f, 1f), Obsolete("PAS TOUCHER, PASSE PAR LE WRAPPER")] public float JumpBufferTime  = 0.2f;
-        [Tooltip("Amount of air control")]
-        [Min(0f), Obsolete("PAS TOUCHER, PASSE PAR LE WRAPPER")] public float AirControl  = 13f;
+        [field:Header("Other")]
+        [field:Tooltip("Time to jump after leaving platform")]
+        [field:SerializeField, Min(0f), Range(0f, 0.5f)] public float CoyoteTime { get; internal set; } = 0.2f;
+        [field:Tooltip("Time before landing where you can press jump to jump on landing")]
+        [field:SerializeField, Min(0f), Range(0f, 1f)] public float JumpBufferTime { get; internal set; } = 0.2f;
+        [field:Tooltip("Amount of air control")]
+        [field:SerializeField, Min(0f)] public float AirControl { get; internal set; } = 13f;
         
         #endregion
 
+        // -> potentiellement devenu obsolete avec l'assembly et l'internal
         public PlayerDataWrapper GetRuntimeData()
         {
             return new PlayerDataWrapper(this);
@@ -53,7 +50,8 @@ namespace Datas
     {
         // readonly -> modifiable SEULEMENT quand tu le déclares ou
         // dans le constructor, pour que tes copains aient une erreur si ils essaient de le modif
-        // ( pas qu'on fasse pas confiance aux autres devs, mais on a tendance à faire des dingueries quand on dev à 3h)
+        // ( pas qu'on fasse pas confiance aux autres devs, mais on a tendance à faire des dingueries quand on dev à 3h,
+        // alors un petit coup d'pouce pour dire "tu fais quoi chef? vas dormir et recommence demain là ca va pas", c'est jamais de refus)
         public readonly float PlayerSpeed;
         public readonly float MaxSpeed;
         public readonly float PlayerAcceleration;
