@@ -106,13 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf64b74d743753478bc1552c8faf597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArrowController
-  strength: 200
-  useGravity: 1
-  gravityActivationTime: 0.1
-  gravityForce: 1
-  gravityLerpForce: 0.2
-  useDestroy: 0
-  destroyTime: 10
+  data: {fileID: 11400000, guid: cd7f1c6221d3b3c4fa6fc71ee6a2e47c, type: 2}
   player: {fileID: 2319816284571021, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
 --- !u!50 &6736019095112636382
 Rigidbody2D:

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Controllers;
+using Datas;
 using UnityEngine;
 
 namespace Arrows
@@ -8,16 +9,17 @@ namespace Arrows
     public class Arrow : MonoBehaviour
     {
 
-        [Header("Arrow Settings")]
-        [SerializeField] private float strength = 10f;
-        [SerializeField] private bool useGravity = true;
-        [SerializeField] private float gravityActivationTime = 1f;
-        [SerializeField] private float gravityForce = 0.3f;
-        [SerializeField] private float gravityLerpForce = 0.25f;
-        [SerializeField] private bool useDestroy = true;
-        [SerializeField] private float destroyTime = 10f;
-
+        
+        [Header("Player Settings")] 
+        [SerializeField] private ArrowData data;
+        [Space(10f)]
+        
+        [Header("To add to data")]
+        // serializefield temporaire qu'il faudra mettre par la suite dans le data
+        [Space(10f)]
+        
         [SerializeField] private GameObject player;
+
 
         private bool _canStartMoving;
         public bool CanStartMoving
@@ -47,7 +49,7 @@ namespace Arrows
         {
             ArrowShot(WeaponController.Direction);
 
-            if (!useDestroy)
+            if (!data.UseDestroy)
                 return;
             StartCoroutine(WaitForDestroy());
         }
@@ -58,15 +60,13 @@ namespace Arrows
             {
                 Vector2 target = WeaponController.Player.transform.position;
                 Vector2 directionToPlayer= (target - (Vector2)transform.position);
-                Debug.Log("Vector" + directionToPlayer);
-                Debug.Log("Player" + target);
                 _isPlanted = false;
                 _rb.constraints = RigidbodyConstraints2D.None;
                 _rb.AddForce(directionToPlayer * 10);
             }
             else if (_canUseGravity)
             {
-                _rb.gravityScale = Mathf.Lerp(_rb.gravityScale, gravityForce, gravityLerpForce);
+                _rb.gravityScale = Mathf.Lerp(_rb.gravityScale, data.GravityForce, data.GravityLerpForce);
             }
             else
             {
@@ -83,19 +83,22 @@ namespace Arrows
 
         private void ArrowShot(Vector2 direction)
         {
-            _rb.AddForce(direction * strength * 10);
-            StartCoroutine(WaitForGravity());
+            _rb.AddForce(direction * data.Strength * 10);
+            if (data.UseGravity)
+            {
+                StartCoroutine(WaitForGravity());
+            }
         }
 
         private IEnumerator WaitForGravity()
         {
-            yield return new WaitForSeconds(gravityActivationTime);
+            yield return new WaitForSeconds(data.GravityActivationTime);
             _canUseGravity = true;
         }
 
         private IEnumerator WaitForDestroy()
         {
-            yield return new WaitForSeconds(destroyTime);
+            yield return new WaitForSeconds(data.DestroyTime);
             if (_recalling)
             {
                 WeaponController.MomentumArrowShot.Dequeue();
