@@ -16,7 +16,6 @@ namespace Controllers
         
         [Header("Player Settings")] 
         [SerializeField] private PlayerData data;
-        public PlayerDataWrapper RuntimeData;
         [Space(10f)]
         
         [Header("To add to data")]
@@ -49,16 +48,11 @@ namespace Controllers
         
         private Vector2 _velocity;
 
-        private void Awake()
-        {
-            RuntimeData = data.GetRuntimeData();
-        }
-
         public void OnJump(InputAction.CallbackContext context)
         {
             if (context.started)
             {
-                _jumpBufferCounter = RuntimeData.JumpBufferTime;
+                _jumpBufferCounter = data.JumpBufferTime;
             }
             if (context.canceled)
             {
@@ -87,21 +81,21 @@ namespace Controllers
             _velocity = Movement(_velocity);
             _velocity = Jump(_velocity);
             _velocity = JumpCut(_velocity);
-            _velocity = new Vector2(Mathf.Clamp(_velocity.x, -RuntimeData.MaxSpeed, RuntimeData.MaxSpeed), Mathf.Max(_velocity.y, RuntimeData.MaxFallSpeed));
+            _velocity = new Vector2(Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), Mathf.Max(_velocity.y, data.MaxFallSpeed));
 
             _rb.linearVelocity = _velocity;
         }
         
         private Vector2 Movement(Vector2 targetVelocity)
         {
-            float targetSpeedX = _moveInput.x * RuntimeData.PlayerSpeed;
+            float targetSpeedX = _moveInput.x * data.PlayerSpeed;
             
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             grounded = groundHit.collider is not null && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
             
             if (grounded)
             {
-                _coyoteTimeCounter = RuntimeData.CoyoteTime;
+                _coyoteTimeCounter = data.CoyoteTime;
                 
                 #region MovementSlope
                 Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
@@ -114,7 +108,7 @@ namespace Controllers
                 else
                 {
                     onSlope = false;
-                    targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, RuntimeData.PlayerAcceleration * Time.fixedDeltaTime);
+                    targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.PlayerAcceleration * Time.fixedDeltaTime);
                     _playerCollider.sharedMaterial = frictionMaterial;
                     _rb.sharedMaterial = frictionMaterial;
                 }
@@ -126,7 +120,7 @@ namespace Controllers
                 _rb.sharedMaterial = noFrictionMaterial;
                 
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
-                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, RuntimeData.AirControl * Time.fixedDeltaTime);
+                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
             }
 
             return targetVelocity;
@@ -136,7 +130,7 @@ namespace Controllers
         {
             if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && onSlope == false)
             {
-                targetVelocity = new Vector2(targetVelocity.x, RuntimeData.JumpStrength);
+                targetVelocity = new Vector2(targetVelocity.x, data.JumpStrength);
                 _coyoteTimeCounter = 0f;
                 _jumpBufferCounter = 0f;
                 _boxCastCooldownCounter = boxCastCooldown;
@@ -152,7 +146,7 @@ namespace Controllers
             
             if (targetVelocity.y > 0f)
             {
-                targetVelocity = new Vector2(targetVelocity.x, targetVelocity.y * RuntimeData.JumpCutMultiplier);
+                targetVelocity = new Vector2(targetVelocity.x, targetVelocity.y * data.JumpCutMultiplier);
             }
             _jumpButtonReleased = false;
 

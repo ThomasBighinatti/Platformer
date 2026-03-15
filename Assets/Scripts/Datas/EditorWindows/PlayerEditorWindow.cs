@@ -1,14 +1,11 @@
-using System;
 using UnityEditor;
 using UnityEngine;
-using Datas;
 
-namespace EditorWindows
+namespace Datas.EditorWindows
 {
     public class PlayerEditorWindow : EditorWindow
     {
         
-
         [SerializeField] private PlayerData dataCible;
 
         [MenuItem("Tools/PlayerModifier")]
@@ -28,11 +25,12 @@ namespace EditorWindows
             {
                 EditorGUILayout.BeginVertical("box");
             
-                dataCible.PlayerSpeed = EditorGUILayout.IntField("Speed", dataCible.speed);
+                dataCible.PlayerSpeed = EditorGUILayout.FloatField("Speed", dataCible.PlayerSpeed);
 
                 EditorGUILayout.BeginHorizontal();
-                if (GUILayout.Button("-10")) dataCible.speed -= 10;
-                if (GUILayout.Button("+10")) dataCible.speed += 10;
+                
+                if (GUILayout.Button("-10")) dataCible.PlayerSpeed -= 1;
+                if (GUILayout.Button("+10")) dataCible.PlayerSpeed += 1;
                 EditorGUILayout.EndHorizontal();
 
                 EditorGUILayout.EndVertical();
@@ -45,7 +43,7 @@ namespace EditorWindows
             }
             else
             {
-                EditorGUILayout.HelpBox("Glisse un ScriptableObject 'Speed data' chef", MessageType.Info);
+                EditorGUILayout.HelpBox("Glisse un ScriptableObject 'Ton nom data' chef", MessageType.Info);
             }
         }
     
@@ -58,11 +56,11 @@ namespace EditorWindows
         {
             string[] guids = AssetDatabase.FindAssets("t:EntityData");
 
-            if (guids.Length > 0)
-            {
-                string path = AssetDatabase.GUIDToAssetPath(guids[0]);
-                dataCible = AssetDatabase.LoadAssetAtPath<EntityData>(path);
-            }
+            if (guids.Length <= 0) 
+                return;
+            
+            string path = AssetDatabase.GUIDToAssetPath(guids[0]);
+            dataCible = AssetDatabase.LoadAssetAtPath<PlayerData>(path);
         }
     
 
