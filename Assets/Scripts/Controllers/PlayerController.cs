@@ -1,3 +1,5 @@
+using System;
+using Datas;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,26 +8,30 @@ namespace Controllers
     public class PlayerController : MonoBehaviour
     {
     
-        //TODO empecher le joueur de rester collé au mur quand on se déplace dessus, mvt en l'air si besoin, limiter vitesse de chute
+        /*TODO mvt en l'air si besoin,
+         faire glisser sur les slopes,
+         rendre la deceleration moins degueulasse,
+         
+         */
         
         [Header("Player Settings")] 
-        [SerializeField] private float jumpStrength = 5f;
-        [SerializeField] private float playerSpeed = 5f;
-        [SerializeField] private float coyoteTime = 0.1f;
-        [SerializeField] private float jumpCutMultiplier = 0.5f;
-        [SerializeField] private float jumpBufferTime = 0.2f;
-        [SerializeField] private float boxCastCooldown = 0.1f;
+        [SerializeField] private PlayerData data;
+        [Space(10f)]
+        
+        [Header("To add to data")]
+        // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [Space(10f)]
         
         [Header("Visualisation")]
         [SerializeField] private bool grounded = true;
-        [SerializeField] private bool jumpButtonPressed = false;
+        [SerializeField] private bool onSlope = false;
         [Space(10f)]
         
         [Header("Raycast Settings")]
         [SerializeField] private float groundCheckDistance = 0.5f;
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private Vector2 boxSize = new Vector2(0.8f, 0.2f);
+        [SerializeField] private float boxCastCooldown = 0.1f;
         [Space(10f)]
         
         [Header("Friction")]
@@ -40,18 +46,13 @@ namespace Controllers
         private float _boxCastCooldownCounter = 0;
         private bool _jumpButtonReleased = false;
         
-        private void Start()
-        {
-            _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
-            _rb = GetComponent<Rigidbody2D>();
-        }
+        private Vector2 _velocity;
 
-        public void Jump(InputAction.CallbackContext context)
+        public void OnJump(InputAction.CallbackContext context)
         {
             if (context.started)
             {
-                jumpButtonPressed = true;
-                _jumpBufferCounter = jumpBufferTime;
+                _jumpBufferCounter = data.JumpBufferTime;
             }
             if (context.canceled)
             {
@@ -64,79 +65,98 @@ namespace Controllers
             _moveInput = context.ReadValue<Vector2>();
         }
         
+        
+        private void Start()
+        {
+            _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
+            _rb = GetComponent<Rigidbody2D>();
+        }
+        
         private void FixedUpdate()
         {
             _jumpBufferCounter -= Time.fixedDeltaTime;
-            _boxCastCooldownCounter -= Time.fixedDeltaTime; //pauvre con que je suis j'ai ecrit =- au lieu de -=
+            _boxCastCooldownCounter -= Time.fixedDeltaTime; //j'ai ecrit "=-" au lieu de "-="...
+
+            _velocity = _rb.linearVelocity;
+            _velocity = Movement(_velocity);
+            _velocity = Jump(_velocity);
+            _velocity = JumpCut(_velocity);
+            _velocity = new Vector2(Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), Mathf.Max(_velocity.y, -data.MaxFallSpeed));
+
+            _rb.linearVelocity = _velocity;
+        }
+        
+        private Vector2 Movement(Vector2 targetVelocity)
+        {
+            float targetSpeedX = _moveInput.x * data.PlayerSpeed;
             
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             grounded = groundHit.collider is not null && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
             
-            Vector2 targetVelocity = _rb.linearVelocity;
-
-            #region Movement
             if (grounded)
             {
-                _playerCollider.sharedMaterial = frictionMaterial;
-                _rb.sharedMaterial = frictionMaterial;
-                _coyoteTimeCounter = coyoteTime;
-
-                #region mvtSlope
-                Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
-                targetVelocity = slopeRotation * new Vector2(_moveInput.x * playerSpeed, 0f); //on force a 0 la velocite Y. AHHHHHHH CA EMPECHE GROUNDED D'ETRE VRAI ???????? JE PEUX METTRE UN TIMER DE 0.1 SEC AU SAUT ?
-                Debug.Log(slopeRotation);
-                #endregion
+                _coyoteTimeCounter = data.CoyoteTime;
                 
+                #region MovementSlope
+                Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
                 if (slopeRotation != new Quaternion(0, 0, 0, 1))
                 {
-                    _rb.bodyType = RigidbodyType2D.Kinematic;
-                    _rb.linearVelocity = Vector2.zero;
+                    onSlope = true; 
+                    _playerCollider.sharedMaterial = noFrictionMaterial;
+                    _rb.sharedMaterial = noFrictionMaterial;
                 }
+                else
+                {
+                    onSlope = false;
+                    targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.PlayerAcceleration * Time.fixedDeltaTime);
+                    _playerCollider.sharedMaterial = frictionMaterial;
+                    _rb.sharedMaterial = frictionMaterial;
+                }
+                #endregion
             }
             else //mvt en l'air
             {
-                _rb.bodyType = RigidbodyType2D.Dynamic;
                 _playerCollider.sharedMaterial = noFrictionMaterial;
                 _rb.sharedMaterial = noFrictionMaterial;
-                targetVelocity = new Vector2(_moveInput.x * playerSpeed, targetVelocity.y);
+                
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
-                //TODO
+                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
             }
-            #endregion
-            
-            #region Jump
-            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f)
+
+            return targetVelocity;
+        }
+        
+        private Vector2 Jump(Vector2 targetVelocity)
+        {
+            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && onSlope == false)
             {
-                targetVelocity = new Vector2(targetVelocity.x, jumpStrength);
+                targetVelocity = new Vector2(targetVelocity.x, data.JumpStrength);
                 _coyoteTimeCounter = 0f;
                 _jumpBufferCounter = 0f;
-                jumpButtonPressed = false;
                 _boxCastCooldownCounter = boxCastCooldown;
             }
-            #endregion
-            
-            #region Jumpcut
-            if (_jumpButtonReleased)
-            {
-                if (targetVelocity.y > 0f)
-                {
-                    targetVelocity = new Vector2(targetVelocity.x, targetVelocity.y * jumpCutMultiplier);
-                }
-                _jumpButtonReleased = false;
-            }
-            #endregion
-            
-            Debug.Log(targetVelocity.y); //se met a 0 dans l'editeur alors pk ca descent
-            _rb.linearVelocity = targetVelocity;
+
+            return targetVelocity;
         }
-    
+        
+        private Vector2 JumpCut(Vector2 targetVelocity)
+        {
+            if (!_jumpButtonReleased) 
+                return targetVelocity;
+            
+            if (targetVelocity.y > 0f)
+            {
+                targetVelocity = new Vector2(targetVelocity.x, targetVelocity.y * data.JumpCutMultiplier);
+            }
+            _jumpButtonReleased = false;
+
+            return targetVelocity;
+        }
+        
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = grounded ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
         }
     }
-    /* L'idée est d'ajouter un petit chronomètre (un "cooldown" de saut, par exemple 0.1 seconde).
-     Quand tu valides un saut dans ta région #saut, tu lances ce chronomètre. Et tout en haut de ton script,
-    tu modifies ton BoxCast pour qu'il ne puisse renvoyer true que si ce chronomètre est tombé à zéro. (il m'a dit de la merde ca fonctionne pas) */
 }
