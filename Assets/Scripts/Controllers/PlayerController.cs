@@ -81,7 +81,7 @@ namespace Controllers
             _velocity = Movement(_velocity);
             _velocity = Jump(_velocity);
             _velocity = JumpCut(_velocity);
-            _velocity = new Vector2(Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), Mathf.Max(_velocity.y, data.MaxFallSpeed));
+            _velocity = new Vector2(Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), Mathf.Max(_velocity.y, -data.MaxFallSpeed));
 
             _rb.linearVelocity = _velocity;
         }

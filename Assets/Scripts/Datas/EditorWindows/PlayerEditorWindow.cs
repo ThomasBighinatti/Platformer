@@ -29,8 +29,10 @@ namespace Datas.EditorWindows
 
                 EditorGUILayout.BeginHorizontal();
                 
-                if (GUILayout.Button("-10")) dataCible.PlayerSpeed -= 1;
-                if (GUILayout.Button("+10")) dataCible.PlayerSpeed += 1;
+                if (GUILayout.Button("-2")) dataCible.PlayerSpeed -= 2;
+                if (GUILayout.Button("-0.5")) dataCible.PlayerSpeed -= 0.5f;
+                if (GUILayout.Button("+0.5")) dataCible.PlayerSpeed += 0.5f;
+                if (GUILayout.Button("+2")) dataCible.PlayerSpeed += 2;
                 EditorGUILayout.EndHorizontal();
 
                 EditorGUILayout.EndVertical();

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Datas
 {
@@ -7,32 +6,84 @@ namespace Datas
     public class PlayerData : ScriptableObject
     {
         #region Serialization
-        
-        [field:Header("Movement")] 
-        [field:Tooltip("Player base speed")]
-        [field:SerializeField, Range(0f, 20f)] public float PlayerSpeed { get; internal set; } = 10f;
-        [field:Tooltip("Max reachable speed")]
-        [field:SerializeField, Min(0f)] public float MaxSpeed { get; internal set; } = 20f;
-        [field:Tooltip("Accel speed towards base speed")]
-        [field:SerializeField, Min(0f)] public float PlayerAcceleration { get; internal set; } = 25f;
-        [field:Space(10f)]
-        
-        [field:Header("Jump")]
-        [field:Tooltip("Jump force applied (height reached)")]
-        [field:SerializeField, Min(0f)] public float JumpStrength { get; internal set; } = 8f;
-        [field:Tooltip("Max falling speed (has to be negative)")]
-        [field:SerializeField] public float MaxFallSpeed { get; internal set; } = -8f;
-        [field:Tooltip("JumpCut parameter allowing jumps depending on player input")]
-        [field:SerializeField, Range(0f, 1f)] public float JumpCutMultiplier { get; internal set; } = 0.5f;
-        [field:Space(10f)]
 
-        [field:Header("Other")]
-        [field:Tooltip("Time to jump after leaving platform")]
-        [field:SerializeField, Min(0f), Range(0f, 0.5f)] public float CoyoteTime { get; internal set; } = 0.2f;
-        [field:Tooltip("Time before landing where you can press jump to jump on landing")]
-        [field:SerializeField, Min(0f), Range(0f, 1f)] public float JumpBufferTime { get; internal set; } = 0.2f;
-        [field:Tooltip("Amount of air control")]
-        [field:SerializeField, Min(0f)] public float AirControl { get; internal set; } = 13f;
+        [Header("Movement")] 
+        [Tooltip("Player base speed")] [SerializeField, Range(0f, 30f)]
+        private float playerSpeed = 10f;
+        public float PlayerSpeed 
+        { 
+            get => playerSpeed; 
+            internal set => playerSpeed = Mathf.Clamp(value,0f,30f); 
+        }
+        
+        [Tooltip("Max reachable speed")]
+        [SerializeField, Min(0f)] private float maxSpeed = 20f;
+        public float MaxSpeed
+        {
+            get => maxSpeed; 
+            internal set => maxSpeed = Mathf.Max(value,0f);
+        }
+        
+        [Tooltip("Accel speed towards base speed")]
+        [SerializeField, Min(0f)] private float playerAcceleration = 25f;
+
+        public float PlayerAcceleration
+        {
+            get => playerAcceleration; 
+            internal set => playerAcceleration = Mathf.Max(value,0f);
+        }
+        [Space(10f)]
+        
+        [Header("Jump")]
+        [Tooltip("Jump force applied (height reached)")]
+        [SerializeField, Min(0f)] private float jumpStrength = 8f;
+        public float JumpStrength
+        {
+            get => jumpStrength; 
+            internal set => jumpStrength = Mathf.Max(value,0f);
+        }
+        
+        [Tooltip("Max falling speed")]
+        [SerializeField, Min(0f)] private float maxFallSpeed = 8f;
+        public float MaxFallSpeed
+        {
+            get => maxFallSpeed; 
+            internal set => maxFallSpeed = Mathf.Max(value,0f);
+        }
+        
+        [Tooltip("JumpCut parameter allowing jumps depending on player input")]
+        [SerializeField, Range(0f, 1f)] private float jumpCutMultiplier = 0.5f;
+        public float JumpCutMultiplier 
+        { 
+            get => jumpCutMultiplier; 
+            internal set => jumpCutMultiplier = Mathf.Clamp(value,0f,1f); 
+        } 
+        [Space(10f)]
+
+        [Header("Other")]
+        [Tooltip("Time to jump after leaving platform")]
+        [SerializeField, Range(0f, 0.5f)] private float coyoteTime = 0.2f;
+        public float CoyoteTime
+        {
+            get => coyoteTime; 
+            internal set => coyoteTime = Mathf.Clamp(value, 0f, 0.5f);
+        }
+        
+        [Tooltip("Time before landing where you can press jump to jump on landing")]
+        [SerializeField, Range(0f, 1f)] private float jumpBufferTime = 0.2f;
+        public float JumpBufferTime
+        {
+            get => jumpBufferTime; 
+            internal set => jumpBufferTime = Mathf.Clamp(value,0f,1f);
+        }
+        
+        [Tooltip("Amount of air control")]
+        [SerializeField, Min(0f)] private float airControl = 13f;
+        public float AirControl
+        {
+            get => airControl; 
+            internal set => airControl = Mathf.Max(value,0f);
+        }
         
         #endregion
         
