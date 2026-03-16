@@ -5,63 +5,79 @@ namespace Datas
     [CreateAssetMenu(fileName = "ArrowData", menuName = "Scriptable Objects/ArrowData")]
     public class ArrowData : ScriptableObject
     {
-        
         #region Serialization
         
-        [field:Header("Force")]
-        [field:Tooltip("Initial arrow strength (speed)")]
-        [field:SerializeField, Min(0f)] public float Strength { get; private set; } = 10f;
-        [field:Space(10f)]
-
-        [field:Header("Gravity")]
-        [field:Tooltip("Activates the use of gravity after designated amount of time")]
-        [field:SerializeField] public bool UseGravity { get; private set; } = true;
-        [field:Tooltip("Strength of gravity applied to arrow (1 = normal gravity")]
-        [field:SerializeField] public float GravityForce { get; private set; } = 0.3f;
-        [field:Tooltip("The bigger the faster to get to gravity force")]
-        [field:SerializeField] public float GravityLerpForce { get; private set; } = 0.25f;
-        [field:Tooltip("Time to activation of gravity")]
-        [field:SerializeField] public float GravityActivationTime { get; private set; } = 0.1f;
-        [field:Space(10f)]
+        [Header("Force")]
+        [Tooltip("Initial arrow strength (speed)")] 
+        [SerializeField, Min(0f)] 
+        private float strength = 200f;
+        public float Strength
+        {
+            get => strength; 
+            internal set => strength = Mathf.Max(value,0f);
+        }
         
-        [field:Header("Destroy (Not really GD important)")]
-        [field:Tooltip("Activates destruction of arrow after designated amount of time")]
-        [field:SerializeField] public bool UseDestroy { get; private set; } = true;
-        [field:Tooltip("Time to destroy")]
-        [field:SerializeField, Min(0f)] public float DestroyTime { get; private set; } = 10f;
+        [Space(10f)]
+        
+        [Header("Gravity")]
+        [Tooltip("Activates the use of gravity after designated amount of time")] 
+        [SerializeField] 
+        private bool useGravity = true;
+        public bool UseGravity
+        {
+            get => useGravity; 
+            internal set => useGravity = value;
+        } 
+        
+        [Tooltip("Strength of gravity applied to arrow (1 = normal gravity")] 
+        [SerializeField, Min(0f)] 
+        private float gravityForce = 1f;
+        public float GravityForce
+        {
+            get => gravityForce; 
+            internal set => gravityForce = Mathf.Max(value,0f);
+        }
+        
+        [Tooltip("The bigger the faster to get to gravity force")] 
+        [SerializeField, Range(0f, 1f)] 
+        private float gravityLerpForce = 0.2f;
+        public float GravityLerpForce
+        {
+            get => gravityLerpForce; 
+            internal set => gravityLerpForce = Mathf.Round(Mathf.Clamp(value,0f,1f) * 1000f) / 1000f;
+        }
+        
+        [Tooltip("Time to activation of gravity")]
+        [SerializeField, Min(0f)] 
+        private float gravityActivationTime = 0.1f;
+        public float GravityActivationTime
+        {
+            get => gravityActivationTime; 
+            internal set => gravityActivationTime = Mathf.Max(value,0f);
+        }
+        
+        [Space(10f)]
+        
+        [Header("Destroy (Not really GD important)")]
+        [Tooltip("Activates destruction of arrow after designated amount of time")]
+        [SerializeField] 
+        private bool useDestroy = true;
+        public bool UseDestroy
+        {
+            get => useDestroy;
+            internal set => useDestroy = value;
+        }
+        
+        [Tooltip("Time to destroy")]
+        [SerializeField, Min(0f)]
+        private float destroyTime = 10f;
+        public float DestroyTime
+        {
+            get => destroyTime; 
+            internal set => destroyTime = Mathf.Max(value,0f);
+        }
 
         #endregion
         
-        public ArrowDataWrapper GetRuntimeData()
-        {
-            return new ArrowDataWrapper(this);
-        }
-        
-    }
-
-    public class ArrowDataWrapper
-    {
-        public float Strength;
-
-        public bool UseGravity;
-        public float GravityForce;
-        public float GravityLerpForce;
-        public float GravityActivationTime;
-        
-        public bool UseDestroy;
-        public float DestroyTime;
-
-        public ArrowDataWrapper(ArrowData data)
-        {
-            Strength = data.Strength;
-
-            UseGravity = data.UseGravity;
-            GravityForce = data.GravityForce;
-            GravityLerpForce = data.GravityLerpForce;
-            GravityActivationTime = data.GravityActivationTime;
-
-            UseDestroy = data.UseDestroy;
-            DestroyTime = data.DestroyTime;
-        }
     }
 }

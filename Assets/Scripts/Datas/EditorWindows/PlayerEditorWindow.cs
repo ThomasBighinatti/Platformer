@@ -9,10 +9,10 @@ namespace Datas.EditorWindows
         [SerializeField] private PlayerData dataCible;
         private Vector2 _scrollPosition;
 
-        [MenuItem("Tools/PlayerModifier")]
+        [MenuItem("Tools/Player Modifier")]
         public static void ShowWindow()
         {
-            GetWindow<PlayerEditorWindow>("PlayerModifier");
+            GetWindow<PlayerEditorWindow>("Player Modifier");
         }
 
         private void OnGUI()
@@ -142,6 +142,8 @@ namespace Datas.EditorWindows
                 if (GUILayout.Button("+2")) dataCible.AirControl += 2f;
                 EditorGUILayout.EndHorizontal();
                 
+                EditorGUILayout.EndVertical();
+                
                 EditorGUILayout.EndScrollView();
 
                 if (GUI.changed)
@@ -152,7 +154,7 @@ namespace Datas.EditorWindows
             }
             else
             {
-                EditorGUILayout.HelpBox("Glisse un ScriptableObject 'Ton nom data' chef", MessageType.Info);
+                EditorGUILayout.HelpBox("Glisse un ScriptableObject 'Ton nom player data' chef", MessageType.Info);
             }
         }
     
@@ -163,7 +165,7 @@ namespace Datas.EditorWindows
     
         private void Prefill()
         {
-            string[] guids = AssetDatabase.FindAssets("t:EntityData");
+            string[] guids = AssetDatabase.FindAssets("t:PlayerData");
 
             if (guids.Length <= 0) 
                 return;

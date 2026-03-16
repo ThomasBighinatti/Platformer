@@ -12,7 +12,6 @@ namespace Arrows
         
         [Header("Player Settings")] 
         [SerializeField] private ArrowData data;
-        public ArrowDataWrapper RuntimeData;
         [Space(10f)]
         
         [Header("To add to data")]
@@ -40,12 +39,6 @@ namespace Arrows
         private bool _canUseGravity;
         private bool _isPlanted;
 
-        private void Awake()
-        {
-            RuntimeData = data.GetRuntimeData();
-        }
-
-
         private void Start()
         {
             _rb = gameObject.GetComponent<Rigidbody2D>();
@@ -55,7 +48,7 @@ namespace Arrows
         {
             ArrowShot(WeaponController.Direction);
 
-            if (!RuntimeData.UseDestroy)
+            if (!data.UseDestroy)
                 return;
             StartCoroutine(WaitForDestroy());
         }
@@ -72,7 +65,7 @@ namespace Arrows
             }
             else if (_canUseGravity)
             {
-                _rb.gravityScale = Mathf.Lerp(_rb.gravityScale, RuntimeData.GravityForce, RuntimeData.GravityLerpForce);
+                _rb.gravityScale = Mathf.Lerp(_rb.gravityScale, data.GravityForce, data.GravityLerpForce);
             }
             else
             {
@@ -89,8 +82,8 @@ namespace Arrows
 
         private void ArrowShot(Vector2 direction)
         {
-            _rb.AddForce(direction * RuntimeData.Strength * 10);
-            if (RuntimeData.UseGravity)
+            _rb.AddForce(direction * data.Strength * 10);
+            if (data.UseGravity)
             {
                 StartCoroutine(WaitForGravity());
             }
@@ -98,13 +91,13 @@ namespace Arrows
 
         private IEnumerator WaitForGravity()
         {
-            yield return new WaitForSeconds(RuntimeData.GravityActivationTime);
+            yield return new WaitForSeconds(data.GravityActivationTime);
             _canUseGravity = true;
         }
 
         private IEnumerator WaitForDestroy()
         {
-            yield return new WaitForSeconds(RuntimeData.DestroyTime);
+            yield return new WaitForSeconds(data.DestroyTime);
             if (_recalling)
             {
                 WeaponController.MomentumArrowShot.Dequeue();
