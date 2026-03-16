@@ -13,7 +13,7 @@ namespace Datas
         public float PlayerSpeed 
         { 
             get => playerSpeed; 
-            internal set => playerSpeed = Mathf.Clamp(value,0f,30f); 
+            internal set => playerSpeed = Mathf.Round(Mathf.Clamp(value,0f,30f) * 10f) / 10f; 
         }
         
         [Tooltip("Max reachable speed")]
@@ -24,7 +24,7 @@ namespace Datas
             internal set => maxSpeed = Mathf.Max(value,0f);
         }
         
-        [Tooltip("Accel speed towards base speed")]
+        [Tooltip("Acceleration speed towards base speed")]
         [SerializeField, Min(0f)] private float playerAcceleration = 25f;
 
         public float PlayerAcceleration
@@ -36,7 +36,7 @@ namespace Datas
         
         [Header("Jump")]
         [Tooltip("Jump force applied (height reached)")]
-        [SerializeField, Min(0f)] private float jumpStrength = 8f;
+        [SerializeField, Min(0f)] private float jumpStrength = 9f;
         public float JumpStrength
         {
             get => jumpStrength; 
@@ -56,7 +56,7 @@ namespace Datas
         public float JumpCutMultiplier 
         { 
             get => jumpCutMultiplier; 
-            internal set => jumpCutMultiplier = Mathf.Clamp(value,0f,1f); 
+            internal set => jumpCutMultiplier = Mathf.Round(Mathf.Clamp(value,0f,1f) * 1000f) / 1000f; 
         } 
         [Space(10f)]
 
@@ -66,7 +66,7 @@ namespace Datas
         public float CoyoteTime
         {
             get => coyoteTime; 
-            internal set => coyoteTime = Mathf.Clamp(value, 0f, 0.5f);
+            internal set => coyoteTime = Mathf.Round(Mathf.Clamp(value, 0f, 0.5f) * 1000f) / 1000f;
         }
         
         [Tooltip("Time before landing where you can press jump to jump on landing")]
@@ -74,7 +74,7 @@ namespace Datas
         public float JumpBufferTime
         {
             get => jumpBufferTime; 
-            internal set => jumpBufferTime = Mathf.Clamp(value,0f,1f);
+            internal set => jumpBufferTime = Mathf.Round(Mathf.Clamp(value,0f,1f) * 1000f) / 1000f;
         }
         
         [Tooltip("Amount of air control")]
