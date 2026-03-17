@@ -29,7 +29,7 @@ namespace Datas
             internal set => useGravity = value;
         } 
         
-        [Tooltip("Strength of gravity applied to arrow (1 = normal gravity")] 
+        [Tooltip("Strength of gravity applied to arrow (1 = normal gravity)")] 
         [SerializeField, Min(0f)] 
         private float gravityForce = 1f;
         public float GravityForce
@@ -47,7 +47,7 @@ namespace Datas
             internal set => gravityLerpForce = Mathf.Round(Mathf.Clamp(value,0f,1f) * 1000f) / 1000f;
         }
         
-        [Tooltip("Time to activation of gravity")]
+        [Tooltip("Time for activation of gravity")]
         [SerializeField, Min(0f)] 
         private float gravityActivationTime = 0.1f;
         public float GravityActivationTime

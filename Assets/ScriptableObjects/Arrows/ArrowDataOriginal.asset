@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d3045bd5a5fb545b46ff12dbb78d0d, type: 3}
   m_Name: ArrowDataOriginal
   m_EditorClassIdentifier: Assembly-CSharp::Datas.ArrowData
-  <Strength>k__BackingField: 200
-  <UseGravity>k__BackingField: 1
-  <GravityForce>k__BackingField: 1
-  <GravityLerpForce>k__BackingField: 0.2
-  <GravityActivationTime>k__BackingField: 0.1
-  <UseDestroy>k__BackingField: 1
-  <DestroyTime>k__BackingField: 10
+  strength: 200
+  useGravity: 1
+  gravityForce: 1
+  gravityLerpForce: 0.2
+  gravityActivationTime: 0.1
+  useDestroy: 1
+  destroyTime: 10
