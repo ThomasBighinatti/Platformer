@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8d3045bd5a5fb545b46ff12dbb78d0d, type: 3}
-  m_Name: ArrowData clem
+  m_Name: ArrowDataClem
   m_EditorClassIdentifier: AssemblyData::Datas.ArrowData
   strength: 200
   useGravity: 1
