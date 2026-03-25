@@ -18,8 +18,6 @@ namespace Controllers
         
         public static Vector2 Direction = Vector2.right;
         private Arrow _arrowScript;
-
-        public static Queue<Arrow> MomentumArrowShot = new Queue<Arrow>();
         
         public static GameObject Player;
         
@@ -48,7 +46,6 @@ namespace Controllers
                 _arrowScript.gameObject.transform.parent = null;
                 _arrowScript.CanStartMoving = true;
                 
-                MomentumArrowShot.Enqueue(_arrowScript);
                 _arrowScript = null;
                 
                 // Placeholder 
