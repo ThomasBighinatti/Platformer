@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf45a1b59bf103d4e8618273217e1c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrows.Momentum
-  data: {fileID: 11400000, guid: cd7f1c6221d3b3c4fa6fc71ee6a2e47c, type: 2}
+  data: {fileID: 11400000, guid: cfd70a492182fe64ea0952781dce568b, type: 2}
   recallStrength: 50
 --- !u!50 &6736019095112636382
 Rigidbody2D:

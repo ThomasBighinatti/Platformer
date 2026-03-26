@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8d3045bd5a5fb545b46ff12dbb78d0d, type: 3}
-  m_Name: ArrowDataOriginal
+  m_Name: ArrowDataPols
   m_EditorClassIdentifier: Assembly-CSharp::Datas.ArrowData
-  strength: 2000
+  strength: 3500
   useGravity: 1
-  gravityForce: 1
+  gravityForce: 10
   gravityLerpForce: 0.2
   gravityActivationTime: 0.1
   useDestroy: 1
