@@ -106,8 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf45a1b59bf103d4e8618273217e1c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrows.Momentum
-  data: {fileID: 11400000, guid: cfd70a492182fe64ea0952781dce568b, type: 2}
-  recallStrength: 50
+  data: {fileID: 11400000, guid: 0501991f632f53848a8b324eb475de91, type: 2}
+  recallInitialSpeed: 25
+  recallAcceleration: 100
 --- !u!50 &6736019095112636382
 Rigidbody2D:
   serializedVersion: 5

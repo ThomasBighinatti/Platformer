@@ -6,8 +6,10 @@ namespace Arrows
 {
     public class Momentum : Arrow
     {
+        public float recallInitialSpeed = 200f;
+        public float recallAcceleration = 200f;
+        private float _recallSpeed;
         
-        public float recallStrength = 100;
         public override void StartArrow()
         {
             ArrowShot(ArrowManager.Instance.LookingTowards);
@@ -18,13 +20,14 @@ namespace Arrows
         {
             if (Recalling)
             {
-                Vector2 target = ArrowManager.PlayerTransform.transform.position;
+                Vector2 target = ArrowManager.PlayerTransform.position;
                 Vector2 directionToPlayer = (target - (Vector2)transform.position).normalized;
-                Rb.linearVelocity = Vector2.zero; 
-                Rb.AddForce(directionToPlayer * recallStrength, ForceMode2D.Impulse);
+                _recallSpeed += recallAcceleration * Time.fixedDeltaTime;
+                Debug.Log(_recallSpeed);
+                Rb.linearVelocity = directionToPlayer * _recallSpeed; 
                 if (Vector2.Distance(transform.position, target) <= 1)
                 {
-                    PlayerController.ActivateKnockback(directionToPlayer);
+                    PlayerController.ActivateKnockback(directionToPlayer,_recallSpeed);
                     Destroy(gameObject);
                 }
             }
@@ -58,6 +61,8 @@ namespace Arrows
                 
                 IsPlanted = false;
                 Rb.constraints = RigidbodyConstraints2D.None;
+                Rb.linearVelocity = Vector2.zero;
+                _recallSpeed = recallInitialSpeed;
             } 
         }
 
