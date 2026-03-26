@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using Arrows;
 using Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,8 +10,6 @@ namespace Controllers
         [Header("Settings")]
         [SerializeField, Range(0f, 1f)] private float deadZoneOnLook;
         
-        private Arrow _arrowScript;
-        
         private Vector2 _inputOnLook = Vector2.right;
         private Vector2 _currentInputOnLook = Vector2.right;
         private Camera _camera;
@@ -24,12 +20,12 @@ namespace Controllers
         
         public void OnShoot(InputAction.CallbackContext context)
         {
-            if (context.started && ArrowManager.Instance.ArrowScriptIsNull())
+            if (context.started && ArrowManager.Instance.ArrowScriptIsNull)
             {
                 ArrowManager.Instance.CreateArrow();
             }
 
-            if (context.canceled && !ArrowManager.Instance.ArrowScriptIsNull())
+            if (context.canceled && !ArrowManager.Instance.ArrowScriptIsNull)
             {
                 ArrowManager.Instance.ShootArrow();
             }
@@ -95,6 +91,9 @@ namespace Controllers
 
         public void OnRecall(InputAction.CallbackContext context)
         {
+            if (!context.started)
+                return;
+            
             ArrowManager.Instance.RecallArrow();
         }
     }

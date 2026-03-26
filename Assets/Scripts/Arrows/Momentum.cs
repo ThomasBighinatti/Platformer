@@ -5,10 +5,12 @@ namespace Arrows
 {
     public class Momentum : Arrow
     {
+        
+        public float recallStrength = 10;
         public override void StartArrow()
         {
             ArrowShot(ArrowManager.Instance.LookingTowards);
-            ArrowManager.Instance.MomentumQueue.Enqueue(this);
+            ArrowManager.Instance.EnqueueArrow(this);
         }
 
         protected override void FixedUpdate()
@@ -50,6 +52,8 @@ namespace Arrows
         {
             _recalling = true;
         }
+        
+        
         
     }
 }

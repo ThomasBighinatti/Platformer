@@ -1,8 +1,5 @@
-using System;
 using System.Collections;
-using Controllers;
 using Datas;
-using Managers;
 using UnityEngine;
 
 namespace Arrows
@@ -13,7 +10,6 @@ namespace Arrows
         [SerializeField] protected ArrowData data;
 
         [Header("To add to data")] 
-        public float recallStrength = 10;
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         
         private bool _canStartMoving;
@@ -48,7 +44,7 @@ namespace Arrows
 
         protected virtual void ArrowShot(Vector2 direction)
         {
-            Rb.AddForce(direction * data.Strength * 10);
+            Rb.AddForce(direction * data.Strength);
             if (data.UseGravity)
             {
                 StartCoroutine(WaitForGravity());

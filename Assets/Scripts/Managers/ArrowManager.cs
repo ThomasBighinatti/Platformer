@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Arrows;
 using Datas;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Managers
 {
@@ -50,11 +49,7 @@ namespace Managers
         }
 
         private Arrow CurrentArrowScript { get; set; }
-
-        public bool ArrowScriptIsNull()
-        {
-            return CurrentArrowScript is null;
-        }
+        public bool ArrowScriptIsNull => CurrentArrowScript is null;
 
         private int _arrowNum;
         
@@ -66,14 +61,14 @@ namespace Managers
             {
                 _lookingTowards = value;
                 
-                float angle = Mathf.Atan2(-_lookingTowards.y, _lookingTowards.x) * Mathf.Rad2Deg;
+                float angle = Mathf.Atan2( _lookingTowards.y, _lookingTowards.x) * Mathf.Rad2Deg;
                 Vector3 rotation = new Vector3(0, 0, angle);
 
-                if (!ArrowScriptIsNull())
+                if (!ArrowScriptIsNull)
                 {
                     CurrentArrowScript.transform.eulerAngles = rotation;
-                    bow.gameObject.transform.eulerAngles = rotation;
                 }
+                bow.gameObject.transform.eulerAngles = rotation;
             }
         }
 
@@ -92,6 +87,7 @@ namespace Managers
             else
             {
                 Debug.Log("no more arrows");
+                _arrowNum = 0;
                 CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);
             }
 
@@ -108,7 +104,12 @@ namespace Managers
             _bowSpriteRenderer.sprite = bowPlaceHolder2;
         }
 
-        public Queue<Arrow> MomentumQueue = new Queue<Arrow>();
+        private Queue<Arrow> _momentumQueue = new Queue<Arrow>();
+
+        public void EnqueueArrow(Arrow arrow)
+        {
+            _momentumQueue.Enqueue(arrow);
+        }
 
 
         public void ShootArrow()
@@ -128,10 +129,10 @@ namespace Managers
 
         public void RecallArrow()
         {
-            if (MomentumQueue.Count <= 0)
+            if (_momentumQueue.Count <= 0)
                 return;
             Debug.Log("T'as cliqué frr");
-            Momentum momentumArrowCalled = MomentumQueue.Dequeue() as Momentum;
+            Momentum momentumArrowCalled = _momentumQueue.Dequeue() as Momentum;
             if (momentumArrowCalled != null)
             {
                 momentumArrowCalled.Recall();

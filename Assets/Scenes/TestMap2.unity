@@ -1873,59 +1873,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &290231472
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 290231473}
-  - component: {fileID: 290231474}
-  m_Layer: 0
-  m_Name: ArrowManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &290231473
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290231472}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 841181775}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &290231474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290231472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f50d94231aa53654184a81a32f6aaf20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Managers.ArrowManager
-  arrowGroupDatas:
-  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
-  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
-  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
-  momentumPrefab: {fileID: 8920119914344864403, guid: 8c3fd71490e01ed49861aa5aedff7d8e, type: 3}
-  playerTransform: {fileID: 1873199001419656685, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-  bow: {fileID: 908044806}
-  bowPlaceHolder1: {fileID: -7856493677412862020, guid: e399a4c2c2b2d0f4ca84141a7a547f80, type: 3}
-  bowPlaceHolder2: {fileID: 9177565795109621906, guid: e399a4c2c2b2d0f4ca84141a7a547f80, type: 3}
 --- !u!1 &572265521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,10 +1918,10 @@ Transform:
   - {fileID: 272693934}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &841181775 stripped
+--- !u!4 &756207340 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6856572127645976601, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
-  m_PrefabInstance: {fileID: 1653397256}
+  m_CorrespondingSourceObject: {fileID: 1873199001419656685, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
+  m_PrefabInstance: {fileID: 2132069382}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &908044806 stripped
 GameObject:
@@ -1989,6 +1936,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 924778786697297489, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 908044806}
+    - target: {fileID: 924778786697297489, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 756207340}
     - target: {fileID: 2455506443512566023, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -2035,10 +1990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6856572127645976601, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 290231473}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
 --- !u!1001 &2132069382
@@ -2093,10 +2045,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 11400000, guid: 6042f5b031a902249a2b7405a72f13a3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

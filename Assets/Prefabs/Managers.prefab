@@ -44,6 +44,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78bcd06393d8944b58f99c2c767a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &361566208199902176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3177156383152068282}
+  - component: {fileID: 924778786697297489}
+  m_Layer: 0
+  m_Name: ArrowManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3177156383152068282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361566208199902176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6856572127645976601}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &924778786697297489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361566208199902176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50d94231aa53654184a81a32f6aaf20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Managers.ArrowManager
+  arrowGroupDatas:
+  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
+  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
+  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
+  momentumPrefab: {fileID: 8920119914344864403, guid: 8c3fd71490e01ed49861aa5aedff7d8e, type: 3}
+  playerTransform: {fileID: 0}
+  bow: {fileID: 0}
+  bowPlaceHolder1: {fileID: -7856493677412862020, guid: e399a4c2c2b2d0f4ca84141a7a547f80, type: 3}
+  bowPlaceHolder2: {fileID: 9177565795109621906, guid: e399a4c2c2b2d0f4ca84141a7a547f80, type: 3}
 --- !u!1 &2455506443512566023
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,5 +127,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2667726469268029871}
+  - {fileID: 3177156383152068282}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
