@@ -19,7 +19,7 @@ namespace Controllers
         [Space(10f)] 
         
         [Header("To add to data")] 
-        private static float _knockbackForce = 0.25f;
+        private static float _knockbackForce = 0.3f;
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [Space(10f)]
         
