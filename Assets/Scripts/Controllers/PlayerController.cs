@@ -19,7 +19,7 @@ namespace Controllers
         [Space(10f)] 
         
         [Header("To add to data")] 
-        private static float _knockbackForce = 10;
+        private static float _knockbackForce = 0.3f;
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [Space(10f)]
         
@@ -160,9 +160,9 @@ namespace Controllers
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
         }
 
-        public static void ActivateKnockback(Vector2 direction)
+        public static void ActivateKnockback(Vector2 direction,float recallSpeed)
         {
-            _rb.AddForce(direction * _knockbackForce, ForceMode2D.Impulse);
+            _rb.AddForce(direction * _knockbackForce * recallSpeed, ForceMode2D.Impulse);
         }
     }
 }

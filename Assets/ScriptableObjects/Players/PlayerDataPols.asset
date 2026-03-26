@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a53be2f2f0093941b7027b9a993bf1e, type: 3}
-  m_Name: PlayerDataPierre
+  m_Name: PlayerDataPols
   m_EditorClassIdentifier: Assembly-CSharp::Datas.PlayerData
-  playerSpeed: 10
-  maxSpeed: 15
+  playerSpeed: 5
+  maxSpeed: 20
   playerAcceleration: 25
-  jumpStrength: 10
-  maxFallSpeed: 15
+  jumpStrength: 9
+  maxFallSpeed: 500
   jumpCutMultiplier: 0.2
   coyoteTime: 0.2
   jumpBufferTime: 0.2
-  airControl: 17
+  airControl: 3
