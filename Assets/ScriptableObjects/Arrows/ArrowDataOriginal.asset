@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Datas.ArrowData
   strength: 2000
   useGravity: 1
-  gravityForce: 1
+  gravityForce: 10
   gravityLerpForce: 0.2
   gravityActivationTime: 0.1
   useDestroy: 1
