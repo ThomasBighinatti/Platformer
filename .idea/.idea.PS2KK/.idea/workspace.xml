@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="418ffaef-1b64-4cb2-9485-c86bf9b42b85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PS2KK/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PS2KK/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/ProjectData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Datas/ProjectData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3b7fb1003c7040c9b41929b39196d63d8b200/0d/8cce7a19/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Crea_Modules/Assets/Scripts/v2/SaveManagerV2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Crea_Modules/Assets/Scripts/v2/SaveSystemV2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Crea_Modules/Assets/Scripts/v2/SystemData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Shaders/2D/Sprite-Lit-Default.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -109,6 +112,8 @@
       <workItem from="1772717168264" duration="3149000" />
       <workItem from="1772724891444" duration="1804000" />
       <workItem from="1773051012730" duration="874000" />
+      <workItem from="1774454397794" duration="1024000" />
+      <workItem from="1774516558015" duration="9481000" />
     </task>
     <servers />
   </component>
