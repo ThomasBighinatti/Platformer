@@ -63,7 +63,7 @@ namespace Arrows
             Destroy(gameObject);
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        protected virtual void OnTriggerEnter2D(Collider2D other)
         {
             Rb.constraints = RigidbodyConstraints2D.FreezeAll;
             IsPlanted = true;

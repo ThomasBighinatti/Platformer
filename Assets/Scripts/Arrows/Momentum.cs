@@ -1,3 +1,4 @@
+using Controllers;
 using Managers;
 using UnityEngine;
 
@@ -6,7 +7,7 @@ namespace Arrows
     public class Momentum : Arrow
     {
         
-        public float recallStrength = 10;
+        public float recallStrength = 100;
         public override void StartArrow()
         {
             ArrowShot(ArrowManager.Instance.LookingTowards);
@@ -15,13 +16,17 @@ namespace Arrows
 
         protected override void FixedUpdate()
         {
-            if (_recalling)
+            if (Recalling)
             {
                 Vector2 target = ArrowManager.PlayerTransform.transform.position;
-                Vector2 directionToPlayer = (target - (Vector2)transform.position);
-                IsPlanted = false;
-                Rb.constraints = RigidbodyConstraints2D.None;
-                Rb.AddForce(directionToPlayer * recallStrength);
+                Vector2 directionToPlayer = (target - (Vector2)transform.position).normalized;
+                Rb.linearVelocity = Vector2.zero; 
+                Rb.AddForce(directionToPlayer * recallStrength, ForceMode2D.Impulse);
+                if (Vector2.Distance(transform.position, target) <= 1)
+                {
+                    PlayerController.ActivateKnockback(directionToPlayer);
+                    Destroy(gameObject);
+                }
             }
             else if (CanUseGravity)
             {
@@ -41,19 +46,24 @@ namespace Arrows
             
         }
 
-        protected override void ArrowShot(Vector2 direction)
-        {
-            base.ArrowShot(direction);
-        }
-        
         private bool _recalling;
+        public bool Recalling
+        {
+            get => _recalling;
+            set
+            {
+                _recalling = value;
+                if (!_recalling) 
+                    return;
+                
+                IsPlanted = false;
+                Rb.constraints = RigidbodyConstraints2D.None;
+            } 
+        }
 
         public void Recall()
         {
-            _recalling = true;
+            Recalling = true;
         }
-        
-        
-        
     }
 }

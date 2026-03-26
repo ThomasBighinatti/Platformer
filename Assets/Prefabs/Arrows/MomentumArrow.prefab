@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrows.Momentum
   data: {fileID: 11400000, guid: cd7f1c6221d3b3c4fa6fc71ee6a2e47c, type: 2}
-  recallStrength: 10
+  recallStrength: 50
 --- !u!50 &6736019095112636382
 Rigidbody2D:
   serializedVersion: 5
