@@ -8,7 +8,7 @@ public class SaveManagerV2 : MonoBehaviour
 {
     public static SaveManagerV2 SINGLETON;
     public SystemOption systemOption;
-    public NumCheckPoint currentCheckpoint = NumCheckPoint.Checkpoint0;
+    private NumCheckPoint _currentCheckpoint = NumCheckPoint.Checkpoint0;
     
     [Header("Settings")]
     public bool EncryptData = false;
@@ -30,18 +30,25 @@ public class SaveManagerV2 : MonoBehaviour
     {
         SaveSystemV2 save = new SaveSystemV2(systemOption);
         
-        ObjectData test = new ObjectData();
-        test.arrows = new List<KeyValue>();
+        ObjectData data1 = new ObjectData();
+        data1.arrows = new List<KeyValue>();
         KeyValue currentKey = new KeyValue();
         currentKey.key = 0;
         currentKey.value = "dirt";
-        test.arrows.Add(currentKey);
+        data1.arrows.Add(currentKey);
         
-        Data.DatasToSave.Add(test);
+        
+        Data.DatasToSave.Add(data1);
     }
 
-    public void ChangeCurrentCheckpoint()
+    public void ChangeCurrentCheckpoint(NumCheckPoint checkpoint)
     {
-        currentCheckpoint = NumCheckPoint.Checkpoint1;
+        if (checkpoint > _currentCheckpoint)
+            _currentCheckpoint = checkpoint;
+    }
+
+    public void Update()
+    {
+        print(_currentCheckpoint);
     }
 }

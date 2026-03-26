@@ -1,6 +1,5 @@
 using System;
 using Datas;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -50,14 +49,11 @@ namespace Controllers
         
         private Vector2 _velocity;
 
-
-        private bool _isJumping;
         public void OnJump(InputAction.CallbackContext context)
         {
             if (context.started)
             {
                 _jumpBufferCounter = data.JumpBufferTime;
-                _isJumping = true;
             }
             if (context.canceled)
             {
@@ -80,7 +76,7 @@ namespace Controllers
         private void FixedUpdate()
         {
             _jumpBufferCounter -= Time.fixedDeltaTime;
-            _boxCastCooldownCounter -= Time.fixedDeltaTime;
+            _boxCastCooldownCounter -= Time.fixedDeltaTime; //j'ai ecrit "=-" au lieu de "-="...
 
             _velocity = _rb.linearVelocity;
             _velocity = Movement(_velocity);
@@ -101,7 +97,6 @@ namespace Controllers
             if (grounded)
             {
                 _coyoteTimeCounter = data.CoyoteTime;
-                _isJumping = false;
                 
                 #region MovementSlope
                 Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
@@ -125,7 +120,7 @@ namespace Controllers
                 _playerCollider.sharedMaterial = noFrictionMaterial;
                 _rb.sharedMaterial = noFrictionMaterial;
                 
-                _coyoteTimeCounter -= Time.fixedDeltaTime;
+                _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
                 targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
             }
 
@@ -136,19 +131,10 @@ namespace Controllers
         {
             if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && onSlope == false)
             {
-                if (_isJumping)
-                {
-                    _jumpTarget = _rb.position.y + jumpHeight;
-                }
-
-                if (_jumpTarget - _rb.position.y >= 1)
-                {
-                    var currentVelocityY = Mathf.Lerp(_rb.position.y, _jumpTarget, jumpLerpForce);
-                    targetVelocity = new Vector2(targetVelocity.x,currentVelocityY);
-                }
+                targetVelocity = new Vector2(targetVelocity.x, data.JumpStrength);
                 _coyoteTimeCounter = 0f;
                 _jumpBufferCounter = 0f;
-                _boxCastCooldownCounter = boxCastCooldown; 
+                _boxCastCooldownCounter = boxCastCooldown;
             }
 
             return targetVelocity;

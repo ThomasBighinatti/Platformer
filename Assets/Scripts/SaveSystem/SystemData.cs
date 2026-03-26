@@ -1,13 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Datas;
 
 [Serializable]
 public struct ObjectData
 {
     public List<KeyValue> arrows;
     //POUR AJOUTER DE LA DATA A SAVE C4EST ICI
-
+    public NumCheckPoint checkpoint;
 }
 
 [Serializable]
