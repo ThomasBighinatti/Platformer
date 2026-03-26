@@ -16,9 +16,10 @@ namespace Controllers
         
         [Header("Player Settings")] 
         [SerializeField] private PlayerData data;
-        [Space(10f)]
+        [Space(10f)] 
         
-        [Header("To add to data")]
+        [Header("To add to data")] 
+        private static float _knockbackForce = 10;
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [Space(10f)]
         
@@ -39,7 +40,7 @@ namespace Controllers
         [SerializeField] private PhysicsMaterial2D frictionMaterial;
      
         private Vector2 _moveInput;
-        private Rigidbody2D _rb;
+        private static Rigidbody2D _rb;
         private CapsuleCollider2D _playerCollider;
         private float _coyoteTimeCounter;
         private float _jumpBufferCounter;
@@ -157,6 +158,11 @@ namespace Controllers
         {
             Gizmos.color = grounded ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
+        }
+
+        public static void ActivateKnockback(Vector2 direction)
+        {
+            _rb.AddForce(direction * _knockbackForce, ForceMode2D.Impulse);
         }
     }
 }

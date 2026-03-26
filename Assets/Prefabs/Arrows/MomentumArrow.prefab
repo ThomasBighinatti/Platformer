@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 311998533757644856}
   - component: {fileID: 3343251347439543544}
-  - component: {fileID: 4143683624433558965}
+  - component: {fileID: 8920119914344864403}
   - component: {fileID: 6736019095112636382}
   - component: {fileID: 7623565337996462262}
   m_Layer: 6
-  m_Name: Arrow
+  m_Name: MomentumArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2782368242074907524}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9696749, w: 0.24439849}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
@@ -94,7 +94,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4143683624433558965
+--- !u!114 &8920119914344864403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,11 +103,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2782368242074907524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cf64b74d743753478bc1552c8faf597, type: 3}
+  m_Script: {fileID: 11500000, guid: bf45a1b59bf103d4e8618273217e1c37, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ArrowController
+  m_EditorClassIdentifier: Assembly-CSharp::Arrows.Momentum
   data: {fileID: 11400000, guid: cd7f1c6221d3b3c4fa6fc71ee6a2e47c, type: 2}
-  player: {fileID: 2319816284571021, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
+  recallStrength: 50
 --- !u!50 &6736019095112636382
 Rigidbody2D:
   serializedVersion: 5
