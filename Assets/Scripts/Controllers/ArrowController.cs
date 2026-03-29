@@ -25,7 +25,7 @@ namespace Controllers
                 ArrowManager.Instance.CreateArrow();
             }
 
-            if (context.canceled && !ArrowManager.Instance.ArrowScriptIsNull)
+            else if (context.canceled && !ArrowManager.Instance.ArrowScriptIsNull)
             {
                 ArrowManager.Instance.ShootArrow();
             }
@@ -37,19 +37,17 @@ namespace Controllers
             {
                 _camera = Camera.main;
             }
+            else
+            {
+                Debug.LogError("camera problem");
+            }
         }
 
         private void Update()
         {
             if (_isUsingMouse)
             {
-                _mouseScreenPosition = Mouse.current.position.ReadValue();
-                _playerScreenPosition= _camera.WorldToScreenPoint(transform.position);
-                _inputOnLook = new Vector2
-                (
-                    _mouseScreenPosition.x - _playerScreenPosition.x, 
-                    _mouseScreenPosition.y - _playerScreenPosition.y
-                );
+                _inputOnLook = Mouse.current.position.ReadValue() - (Vector2)_camera.WorldToScreenPoint(transform.position);
             }
             
             if (_deadZoneUse)
@@ -61,7 +59,6 @@ namespace Controllers
             _currentInputOnLook = _inputOnLook;
 
             ArrowManager.Instance.LookingTowards = _currentInputOnLook.normalized;
-            
         }
         
         public void OnLook(InputAction.CallbackContext context)
@@ -81,7 +78,7 @@ namespace Controllers
                     _inputOnLook = context.ReadValue<Vector2>();
                     _deadZoneUse = false;
                     _isUsingMouse = false;
-                    if (Mathf.Abs(_inputOnLook.x) <= deadZoneOnLook && Mathf.Abs(_inputOnLook.y) <= deadZoneOnLook)
+                    if (_inputOnLook.magnitude <= deadZoneOnLook)
                     {
                         _deadZoneUse = true;
                     }
@@ -96,5 +93,7 @@ namespace Controllers
             
             ArrowManager.Instance.RecallArrow();
         }
+        
+        // TODO bug sur recall deux fleches recall à cause du canceled qui devrait pourtant pas avoir lieu
     }
 }

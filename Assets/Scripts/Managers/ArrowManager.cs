@@ -26,18 +26,19 @@ namespace Managers
         
         [SerializeField] private Momentum momentumPrefab;
 
+        [SerializeField] private GameObject pointerParent;
+        [SerializeField] private GameObject pointer;
+        
         [SerializeField] private Transform playerTransform;
-        public static Transform PlayerTransform;
+        public static Transform PlayerTransform { get; private set; }
         
         private void Start()
         {
             CurrentArrowGroupData = arrowGroupDatas[0];
-            
-            _bowSpriteRenderer = bow.GetComponent<SpriteRenderer>();
             PlayerTransform = playerTransform;
         }
 
-        public ArrowGroupData CurrentArrowGroupData { get; set; }
+        private ArrowGroupData CurrentArrowGroupData { get; set; }
 
         private Arrow GetArrowByType(ArrowType arrowType)
         {
@@ -68,15 +69,10 @@ namespace Managers
                 {
                     CurrentArrowScript.transform.eulerAngles = rotation;
                 }
-                bow.gameObject.transform.eulerAngles = rotation;
+                pointerParent.transform.eulerAngles = rotation;
             }
         }
-
-        [SerializeField] private GameObject bow;
-        [SerializeField] private Sprite bowPlaceHolder1;
-        [SerializeField] private Sprite bowPlaceHolder2;
-        private SpriteRenderer _bowSpriteRenderer;
-
+        
         public void CreateArrow()
         {
             Debug.Log("Shoot");
@@ -91,55 +87,37 @@ namespace Managers
                 CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);
             }
 
-            GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,bow.transform);
+            GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,pointer.transform);
             CurrentArrowScript = arrowCreation.GetComponent<Arrow>();
 
             float angle = Mathf.Atan2(LookingTowards.y, LookingTowards.x) * Mathf.Rad2Deg;
             Vector3 rotation = new Vector3(0, 0, angle);
-
             arrowCreation.transform.eulerAngles = rotation;
-            bow.gameObject.transform.eulerAngles = rotation;
-                
-            //Placeholder
-            _bowSpriteRenderer.sprite = bowPlaceHolder2;
         }
-
-        private Queue<Arrow> _momentumQueue = new Queue<Arrow>();
-
-        public void EnqueueArrow(Arrow arrow)
-        {
-            _momentumQueue.Enqueue(arrow);
-        }
-
-
+        
         public void ShootArrow()
         {
-            CurrentArrowScript.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            CurrentArrowScript.SetDynamic();
             CurrentArrowScript.gameObject.transform.parent = null;
             CurrentArrowScript.CanStartMoving = true;
             
             CurrentArrowScript = null;
-
             _arrowNum++;
-                
-            // Placeholder 
-            _bowSpriteRenderer.sprite = bowPlaceHolder1;
-            
         }
+        
+        private readonly Queue<Arrow> _momentumQueue = new Queue<Arrow>();
+        public void EnqueueMomentumArrow(Arrow arrow) => _momentumQueue.Enqueue(arrow);
+        private Momentum DequeueMomentumArrow() => _momentumQueue.Dequeue() as Momentum;
+        private bool MomentumQueueEmpty => _momentumQueue.Count <= 0;
 
         public void RecallArrow()
         {
-            if (_momentumQueue.Count <= 0)
+            if (MomentumQueueEmpty)
                 return;
+            
             Debug.Log("T'as cliqué frr");
-            Momentum momentumArrowCalled = _momentumQueue.Dequeue() as Momentum;
-            if (momentumArrowCalled != null)
-            {
-                momentumArrowCalled.Recall();
-                return;
-            }
-            Debug.Log("ya plu");
+            Momentum momentumArrowCalled = DequeueMomentumArrow();
+            momentumArrowCalled?.Recall();
         }
-        
     }
 }

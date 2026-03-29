@@ -7,6 +7,8 @@ namespace Arrows
     public abstract class Arrow : MonoBehaviour
     {
         
+        // TODO passer les fleches dans une state machine avec l'instanciation et le lancé
+        
         [SerializeField] protected ArrowData data;
 
         [Header("To add to data")] 
@@ -19,7 +21,7 @@ namespace Arrows
             set
             {
                 _canStartMoving = value;
-                if (CanStartMoving)
+                if (_canStartMoving)
                 {
                     StartArrow();
                 }
@@ -32,10 +34,10 @@ namespace Arrows
 
         private void Start()
         {
-            Rb = gameObject.GetComponent<Rigidbody2D>();
+            Rb = GetComponent<Rigidbody2D>();
         }
 
-        public abstract void StartArrow();
+        protected abstract void StartArrow();
         /*if (!data.UseDestroy)
                 return;
             StartCoroutine(WaitForDestroy());*/
@@ -68,6 +70,8 @@ namespace Arrows
             Rb.constraints = RigidbodyConstraints2D.FreezeAll;
             IsPlanted = true;
         }
-        
+
+        public void SetDynamic() => Rb.bodyType = RigidbodyType2D.Dynamic;
+
     }
 }

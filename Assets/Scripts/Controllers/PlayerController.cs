@@ -162,7 +162,7 @@ namespace Controllers
 
         public static void ActivateKnockback(Vector2 direction,float recallSpeed)
         {
-            _rb.AddForce(direction * _knockbackForce * recallSpeed, ForceMode2D.Impulse);
+            _rb.AddForce(_knockbackForce * recallSpeed * direction, ForceMode2D.Impulse);
         }
     }
 }
