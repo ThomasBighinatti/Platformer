@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEngine;
 using System;
 using Datas;
 
@@ -7,8 +6,7 @@ using Datas;
 public struct ObjectData
 {
     public List<KeyValue> arrows;
-    //POUR AJOUTER DE LA DATA A SAVE C4EST ICI
-    public NumCheckPoint checkpoint;
+    public int checkpointIndex;
 }
 
 [Serializable]
@@ -22,10 +20,7 @@ public enum SaveType
 public struct DataToSave
 {
     public List<ObjectData> DatasToSave;
-
 }
-
-//SI ON VEUT AJOUTER DE LA DATA + COMPLEXE ON PEUT CREER DES STRUCTS/ENUM/CLASS ICI
 
 [Serializable]
 public class KeyValue
@@ -33,4 +28,3 @@ public class KeyValue
     public int key;
     public string value;
 }
-

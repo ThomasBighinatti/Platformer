@@ -7,12 +7,6 @@ namespace Controllers
 {
     public class PlayerController : MonoBehaviour
     {
-    
-        /*TODO mvt en l'air si besoin,
-         faire glisser sur les slopes,
-         rendre la deceleration moins degueulasse,
-         
-         */
         
         [Header("Player Settings")] 
         [SerializeField] private PlayerData data;
@@ -162,7 +156,7 @@ namespace Controllers
 
         public static void ActivateKnockback(Vector2 direction,float recallSpeed)
         {
-            _rb.AddForce(direction * _knockbackForce * recallSpeed, ForceMode2D.Impulse);
+            _rb.AddForce(direction * (_knockbackForce * recallSpeed), ForceMode2D.Impulse);
         }
     }
 }
