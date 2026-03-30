@@ -49,6 +49,6 @@ public class SaveManagerV2 : MonoBehaviour
 
     public void Update()
     {
-        print(_currentCheckpoint);
+        //print(_currentCheckpoint);
     }
 }

@@ -25,6 +25,7 @@ namespace Arrows
                 Vector2 directionToPlayer = (target - (Vector2)transform.position).normalized;
                 _recallSpeed += recallAcceleration * Time.fixedDeltaTime;
                 Debug.Log(_recallSpeed);
+                Debug.Log(directionToPlayer);
                 Rb.linearVelocity = directionToPlayer * _recallSpeed; 
                 if (Vector2.Distance(transform.position, target) <= 1)
                 {
