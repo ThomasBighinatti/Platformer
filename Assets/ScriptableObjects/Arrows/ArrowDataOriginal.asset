@@ -18,4 +18,4 @@ MonoBehaviour:
   gravityLerpForce: 0.2
   gravityActivationTime: 0.1
   useDestroy: 1
-  destroyTime: 10
+  destroyTime: 2

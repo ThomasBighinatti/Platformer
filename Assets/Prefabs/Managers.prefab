@@ -93,10 +93,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
   - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
   momentumPrefab: {fileID: 8920119914344864403, guid: 8c3fd71490e01ed49861aa5aedff7d8e, type: 3}
+  pointerParent: {fileID: 0}
+  pointer: {fileID: 0}
   playerTransform: {fileID: 0}
-  bow: {fileID: 0}
-  bowPlaceHolder1: {fileID: -7856493677412862020, guid: e399a4c2c2b2d0f4ca84141a7a547f80, type: 3}
-  bowPlaceHolder2: {fileID: 9177565795109621906, guid: e399a4c2c2b2d0f4ca84141a7a547f80, type: 3}
 --- !u!1 &2455506443512566023
 GameObject:
   m_ObjectHideFlags: 0

@@ -57,7 +57,7 @@ namespace Arrows
             CanUseGravity = true;
         }
 
-        private IEnumerator WaitForDestroy()
+        protected IEnumerator WaitForDestroy()
         {
             yield return new WaitForSeconds(data.DestroyTime);
             Destroy(gameObject);

@@ -16,6 +16,7 @@ namespace Arrows
             ArrowManager.Instance.EnqueueMomentumArrow(this);
         }
 
+        // TODO bug related to framerate knockback towwards wrong side
         protected override void FixedUpdate()
         {
             if (_recalling)
@@ -31,24 +32,23 @@ namespace Arrows
                     Destroy(gameObject);
                 }
             }
+            else if (CanUseGravity)
+            {
+                Rb.gravityScale = Mathf.Lerp(Rb.gravityScale, data.GravityForce, data.GravityLerpForce);
+            }
+            
             else
             {
-                if (CanUseGravity)
-                {
-                    Rb.gravityScale = Mathf.Lerp(Rb.gravityScale, data.GravityForce, data.GravityLerpForce);
-                }
-                else
-                {
-                    return;
-                }
-
-                if (IsPlanted)
-                    return;
-
-                Vector3 direction = Rb.linearVelocity;
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                transform.eulerAngles = new Vector3(0, 0, angle);
+                return;
             }
+
+            if (IsPlanted)
+                return;
+
+            Vector3 direction = Rb.linearVelocity;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.eulerAngles = new Vector3(0, 0, angle);
+            
             
         }
 
@@ -61,6 +61,21 @@ namespace Arrows
             Rb.constraints = RigidbodyConstraints2D.None;
             Rb.linearVelocity = Vector2.zero;
             _recallSpeed = recallInitialSpeed;
+        }
+
+        protected override void OnTriggerEnter2D(Collider2D other)
+        {
+            base.OnTriggerEnter2D(other);
+            
+            if (!IsPlanted || !_recalling)
+                return;
+            
+            _recalling = false;
+            
+            if (data.UseDestroy)
+            {
+                StartCoroutine(WaitForDestroy());
+            }
         }
     }
 }
