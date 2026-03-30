@@ -7,8 +7,6 @@ namespace Arrows
     public abstract class Arrow : MonoBehaviour
     {
         
-        // TODO passer les fleches dans une state machine avec l'instanciation et le lancé
-        
         [SerializeField] protected ArrowData data;
 
         [Header("To add to data")] 
@@ -67,6 +65,9 @@ namespace Arrows
 
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
+            if (!CanStartMoving)
+                return;
+            
             Rb.constraints = RigidbodyConstraints2D.FreezeAll;
             IsPlanted = true;
         }

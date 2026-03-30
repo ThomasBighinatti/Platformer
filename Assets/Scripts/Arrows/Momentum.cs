@@ -37,6 +37,10 @@ namespace Arrows
                 {
                     Rb.gravityScale = Mathf.Lerp(Rb.gravityScale, data.GravityForce, data.GravityLerpForce);
                 }
+                else
+                {
+                    return;
+                }
 
                 if (IsPlanted)
                     return;
