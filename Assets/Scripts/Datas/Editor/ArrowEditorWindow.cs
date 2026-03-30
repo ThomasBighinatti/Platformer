@@ -1,7 +1,9 @@
+#if UNITY_EDITOR
+
 using UnityEditor;
 using UnityEngine;
 
-namespace Datas.EditorWindows
+namespace Datas.Editor
 {
     public class ArrowEditorWindow : EditorWindow
     {
@@ -132,3 +134,4 @@ namespace Datas.EditorWindows
         }
     }
 }
+#endif
