@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: PlayerDataPierre
   m_EditorClassIdentifier: Assembly-CSharp::Datas.PlayerData
   playerSpeed: 10
-  maxSpeed: 25
+  maxSpeed: 15
   playerAcceleration: 25
-  jumpStrength: 12
-  maxFallSpeed: 7
-  jumpCutMultiplier: 0.5
+  jumpStrength: 10
+  maxFallSpeed: 15
+  jumpCutMultiplier: 0.2
   coyoteTime: 0.2
   jumpBufferTime: 0.2
-  airControl: 15
+  airControl: 17
