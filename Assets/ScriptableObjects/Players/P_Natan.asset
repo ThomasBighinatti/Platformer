@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a53be2f2f0093941b7027b9a993bf1e, type: 3}
-  m_Name: PlayerDataClem
-  m_EditorClassIdentifier: AssemblyData::Datas.PlayerData
-  playerSpeed: 10
+  m_Name: P_Natan
+  m_EditorClassIdentifier: Assembly-CSharp::Datas.PlayerData
+  playerSpeed: 30
   maxSpeed: 20
-  playerAcceleration: 25
-  jumpStrength: 9
+  playerAcceleration: 10
+  jumpStrength: 15
   maxFallSpeed: 8
   jumpCutMultiplier: 0.5
   coyoteTime: 0.2
   jumpBufferTime: 0.2
-  airControl: 13
+  airControl: 100
