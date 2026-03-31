@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5bc50321ccce647a2a756d35a7cbc6, type: 3}
   m_Name: SaveSystemData
   m_EditorClassIdentifier: Assembly-CSharp::SaveSystemOption
-  SaveType: 0
-  SaveFolderName: 
-  SaveExtentionName: 
+  saveType: 0
+  saveFolderName: saves
+  saveExtensionName: lun
