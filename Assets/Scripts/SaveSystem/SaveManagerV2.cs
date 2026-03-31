@@ -61,7 +61,7 @@ public class SaveManagerV2 : MonoBehaviour
         SaveSystemV2.SaveData(Data);
     }
 
-    public void Load()
+    private void Load()
     {
         DataToSave loadedData = SaveSystemV2.LoadData();
 

@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="418ffaef-1b64-4cb2-9485-c86bf9b42b85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PS2KK/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PS2KK/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestMap2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestMap2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveManagerV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveManagerV2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SystemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SystemData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/../Crea_Modules/Assets/Scripts/v2/SaveManagerV2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Crea_Modules/Assets/Scripts/v2/SaveSystemV2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Crea_Modules/Assets/Scripts/v2/SystemData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveManagerV2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Shaders/2D/Sprite-Lit-Default.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -117,6 +114,8 @@
       <workItem from="1773051012730" duration="874000" />
       <workItem from="1774454397794" duration="1024000" />
       <workItem from="1774516558015" duration="9481000" />
+      <workItem from="1774945801771" duration="265000" />
+      <workItem from="1774946096865" duration="461000" />
     </task>
     <servers />
   </component>
