@@ -9,12 +9,6 @@ namespace Controllers
 {
     public class PlayerController : MonoBehaviour
     {
-    
-        /*TODO mvt en l'air si besoin,
-         faire glisser sur les slopes,
-         rendre la deceleration moins degueulasse,
-         
-         */
         
         [Header("Player Settings")] 
         [SerializeField] private PlayerData data;
@@ -25,10 +19,14 @@ namespace Controllers
         [Space(10f)]
         
         [Header("Visualisation")]
-        [SerializeField] private bool grounded = true;
+        [SerializeField] private bool grounded = false;
         [SerializeField] private bool onSlope = false;
         [Space(10f)]
         
+        [Header("Slope Settings")]
+        [SerializeField] private float slopeAngleThreshold = 5f;
+        [Space(10f)]
+
         [Header("Raycast Settings")]
         [SerializeField] private float groundCheckDistance = 0.5f;
         [SerializeField] private LayerMask groundLayer;
@@ -93,15 +91,16 @@ namespace Controllers
             float targetSpeedX = _moveInput.x * data.PlayerSpeed;
             
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
-            grounded = groundHit.collider is not null && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
+            bool isFloorNormal = groundHit.collider is not null && groundHit.normal.y > 0.5f;
+            grounded = isFloorNormal && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
             
             if (grounded)
             {
                 _coyoteTimeCounter = data.CoyoteTime;
                 
                 #region MovementSlope
-                Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
-                if (slopeRotation != new Quaternion(0, 0, 0, 1))
+                float slopeAngle = Vector2.Angle(groundHit.normal, Vector2.up);
+                if (slopeAngle > slopeAngleThreshold)
                 {
                     onSlope = true; 
                     _playerCollider.sharedMaterial = noFrictionMaterial;

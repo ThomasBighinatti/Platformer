@@ -33,6 +33,9 @@ public class EncryptionUtility
 
    public static string DecryptString(string _saveText)
    {
+      if (IsEncrypted(_saveText))
+         _saveText = _saveText.Substring(4);
+
       byte[] fullCipher = Convert.FromBase64String(_saveText);
       byte[] iv = new byte[16];
       byte[] cipher = new byte[fullCipher.Length - 16];
