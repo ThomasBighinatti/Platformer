@@ -16,20 +16,36 @@ namespace Arrows
             ArrowManager.Instance.EnqueueMomentumArrow(this);
         }
 
-        // TODO bug related to framerate knockback towwards wrong side
+        // TODO bug related to framerate knockback towards wrong side
+
+        private Vector2 _lastDirectionToPlayer;
+        private Vector2 _directionToPlayer;
+        private Vector2 DirectionToPlayer
+        {
+            get => _directionToPlayer;
+            set
+            {
+                if (_directionToPlayer != Vector2.zero)
+                {
+                    _lastDirectionToPlayer = _directionToPlayer;
+                }
+                _directionToPlayer = value;
+            }
+        }
+        
         protected override void FixedUpdate()
         {
             if (_recalling)
             {
                 Vector2 target = ArrowManager.PlayerTransform.position;
-                Vector2 directionToPlayer = (target - (Vector2)transform.position).normalized;
+                DirectionToPlayer = (target - (Vector2)transform.position).normalized;
                 _recallSpeed += recallAcceleration * Time.fixedDeltaTime;
-                Debug.Log(_recallSpeed);
-                Debug.Log(directionToPlayer);
-                Rb.linearVelocity = directionToPlayer * _recallSpeed; 
+                Debug.Log(DirectionToPlayer);
+                Debug.Log(_lastDirectionToPlayer);
+                Rb.linearVelocity = DirectionToPlayer * _recallSpeed; 
                 if (Vector2.Distance(transform.position, target) <= 1)
                 {
-                    PlayerController.ActivateKnockback(directionToPlayer,_recallSpeed);
+                    PlayerController.ActivateKnockback(_lastDirectionToPlayer,_recallSpeed);
                     Destroy(gameObject);
                 }
             }
