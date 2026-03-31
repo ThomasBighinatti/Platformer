@@ -1,3 +1,5 @@
+
+
 using System;
 using Datas;
 using UnityEngine;
@@ -7,26 +9,24 @@ namespace Controllers
 {
     public class PlayerController : MonoBehaviour
     {
-    
-        /*TODO mvt en l'air si besoin,
-         faire glisser sur les slopes,
-         rendre la deceleration moins degueulasse,
-         
-         */
         
         [Header("Player Settings")] 
         [SerializeField] private PlayerData data;
-        [Space(10f)]
+        [Space(10f)] 
         
-        [Header("To add to data")]
+        [Header("To add to data")] 
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [Space(10f)]
         
         [Header("Visualisation")]
-        [SerializeField] private bool grounded = true;
+        [SerializeField] private bool grounded = false;
         [SerializeField] private bool onSlope = false;
         [Space(10f)]
         
+        [Header("Slope Settings")]
+        [SerializeField] private float slopeAngleThreshold = 5f;
+        [Space(10f)]
+
         [Header("Raycast Settings")]
         [SerializeField] private float groundCheckDistance = 0.5f;
         [SerializeField] private LayerMask groundLayer;
@@ -39,7 +39,7 @@ namespace Controllers
         [SerializeField] private PhysicsMaterial2D frictionMaterial;
      
         private Vector2 _moveInput;
-        private Rigidbody2D _rb;
+        private static Rigidbody2D _rb;
         private CapsuleCollider2D _playerCollider;
         private float _coyoteTimeCounter;
         private float _jumpBufferCounter;
@@ -91,15 +91,16 @@ namespace Controllers
             float targetSpeedX = _moveInput.x * data.PlayerSpeed;
             
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
-            grounded = groundHit.collider is not null && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
+            bool isFloorNormal = groundHit.collider is not null && groundHit.normal.y > 0.5f;
+            grounded = isFloorNormal && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
             
             if (grounded)
             {
                 _coyoteTimeCounter = data.CoyoteTime;
                 
                 #region MovementSlope
-                Quaternion slopeRotation = Quaternion.FromToRotation(Vector2.up, groundHit.normal);
-                if (slopeRotation != new Quaternion(0, 0, 0, 1))
+                float slopeAngle = Vector2.Angle(groundHit.normal, Vector2.up);
+                if (slopeAngle > slopeAngleThreshold)
                 {
                     onSlope = true; 
                     _playerCollider.sharedMaterial = noFrictionMaterial;
@@ -157,6 +158,11 @@ namespace Controllers
         {
             Gizmos.color = grounded ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
+        }
+
+        public static void ActivateKnockback(Vector2 direction,float force)
+        {
+            _rb.AddForce(force * direction, ForceMode2D.Impulse);
         }
     }
 }
