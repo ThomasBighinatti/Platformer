@@ -1,4 +1,5 @@
 using Controllers;
+using Datas;
 using Managers;
 using UnityEngine;
 
@@ -6,8 +7,8 @@ namespace Arrows
 {
     public class Momentum : Arrow
     {
-        [SerializeField] private float recallInitialSpeed = 200f;
-        [SerializeField] private float recallAcceleration = 200f;
+        private MomentumArrowData MomentumData => data as MomentumArrowData;
+        
         private float _recallSpeed;
 
         protected override void StartArrow()
@@ -15,8 +16,6 @@ namespace Arrows
             ArrowShot(ArrowManager.Instance.LookingTowards);
             ArrowManager.Instance.EnqueueMomentumArrow(this);
         }
-
-        // TODO bug related to framerate knockback towards wrong side
 
         private Vector2 _lastDirectionToPlayer;
         private Vector2 _directionToPlayer;
@@ -39,13 +38,11 @@ namespace Arrows
             {
                 Vector2 target = ArrowManager.PlayerTransform.position;
                 DirectionToPlayer = (target - (Vector2)transform.position).normalized;
-                _recallSpeed += recallAcceleration * Time.fixedDeltaTime;
-                Debug.Log(DirectionToPlayer);
-                Debug.Log(_lastDirectionToPlayer);
+                _recallSpeed += MomentumData.RecallAcceleration * Time.fixedDeltaTime;
                 Rb.linearVelocity = DirectionToPlayer * _recallSpeed; 
                 if (Vector2.Distance(transform.position, target) <= 1)
                 {
-                    PlayerController.ActivateKnockback(_lastDirectionToPlayer,_recallSpeed);
+                    PlayerController.ActivateKnockback(_lastDirectionToPlayer,_recallSpeed * MomentumData.KnockbackForce);
                     Destroy(gameObject);
                 }
             }
@@ -65,8 +62,6 @@ namespace Arrows
             Vector3 direction = Rb.linearVelocity;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.eulerAngles = new Vector3(0, 0, angle);
-            
-            
         }
 
         private bool _recalling;
@@ -77,7 +72,7 @@ namespace Arrows
             IsPlanted = false;
             Rb.constraints = RigidbodyConstraints2D.None;
             Rb.linearVelocity = Vector2.zero;
-            _recallSpeed = recallInitialSpeed;
+            _recallSpeed = MomentumData.RecallInitialSpeed;
         }
 
         protected override void OnTriggerEnter2D(Collider2D other)

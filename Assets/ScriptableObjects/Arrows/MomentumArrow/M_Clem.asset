@@ -9,13 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d3045bd5a5fb545b46ff12dbb78d0d, type: 3}
-  m_Name: ArrowDataPols
-  m_EditorClassIdentifier: Assembly-CSharp::Datas.ArrowData
-  strength: 3500
+  m_Script: {fileID: 11500000, guid: b5d88d71773148d5aef26bea3824f80a, type: 3}
+  m_Name: M_Clem
+  m_EditorClassIdentifier: AssemblyData::Datas.MomentumArrowData
+  strength: 2000
   useGravity: 1
-  gravityForce: 10
+  gravityForce: 1
   gravityLerpForce: 0.2
   gravityActivationTime: 0.1
   useDestroy: 1
   destroyTime: 10
+  recallInitialSpeed: 25
+  recallAcceleration: 100

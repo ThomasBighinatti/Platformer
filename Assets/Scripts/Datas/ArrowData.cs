@@ -5,8 +5,7 @@ namespace Datas
     [CreateAssetMenu(fileName = "ArrowData", menuName = "Scriptable Objects/ArrowData")]
     public class ArrowData : ScriptableObject
     {
-        #region Serialization
-        
+
         [Header("Force")]
         [Tooltip("Initial arrow strength (speed)")] 
         [SerializeField, Min(0f)] 
@@ -76,8 +75,6 @@ namespace Datas
             get => destroyTime; 
             internal set => destroyTime = Mathf.Max(value,0f);
         }
-
-        #endregion
         
     }
 }
