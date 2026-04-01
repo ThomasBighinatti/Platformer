@@ -73,6 +73,10 @@ namespace Arrows
             Rb.constraints = RigidbodyConstraints2D.None;
             Rb.linearVelocity = Vector2.zero;
             _recallSpeed = MomentumData.RecallInitialSpeed;
+            if (transform.parent != null)
+            {
+                transform.SetParent(null);
+            }
         }
 
         protected override void OnTriggerEnter2D(Collider2D other)

@@ -98,7 +98,7 @@ namespace Managers
         public void ShootArrow()
         {
             CurrentArrowScript.SetDynamic();
-            CurrentArrowScript.gameObject.transform.parent = null;
+            CurrentArrowScript.gameObject.transform.SetParent(null);
             CurrentArrowScript.CanStartMoving = true;
             
             CurrentArrowScript = null;
