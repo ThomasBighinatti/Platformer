@@ -135,7 +135,7 @@ namespace Controllers
         {
             if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope)
             {
-                float jumpForce = (2f * data.jumpHeight) / data.timeToJumpApex;
+                float jumpForce = (2f * data.JumpHeight) / data.TimeToJumpApex;
                 targetVelocity.y = jumpForce;
 
                 _coyoteTimeCounter = 0f;
@@ -171,19 +171,19 @@ namespace Controllers
             float gravity;
 
             // ca c'est pour ton temps de flotement en haut
-            if (Mathf.Abs(targetVelocity.y) < data.apexHangThreshold)
+            if (Mathf.Abs(targetVelocity.y) < data.ApexHangThreshold)
             {
                 // en gros on fait ce que ta demandé le gd, on bricole ta gravité au sommet
-                float apexGravity = (2f * data.jumpHeight) / Mathf.Pow(data.timeToJumpApex, 2);
-                gravity = apexGravity * data.apexHangGravityMult;
+                float apexGravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToJumpApex, 2);
+                gravity = apexGravity * data.ApexHangGravityMult;
             }
             else if (targetVelocity.y < 0)
             {
-                gravity = (2f * data.jumpHeight) / Mathf.Pow(data.timeToFall, 2);
+                gravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToFall, 2);
             }
             else
             {
-                gravity = (2f * data.jumpHeight) / Mathf.Pow(data.timeToJumpApex, 2);
+                gravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToJumpApex, 2);
             }
 
             targetVelocity.y -= gravity * Time.fixedDeltaTime;

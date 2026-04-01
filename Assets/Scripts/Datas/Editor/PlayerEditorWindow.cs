@@ -68,17 +68,6 @@ namespace Datas.Editor
                 
                 EditorGUILayout.Space(25f);
                 
-                GUIContent jumpStrengthLabel = new GUIContent("Jump Strength", "Jump force applied (height reached)");
-                dataCible.JumpStrength = EditorGUILayout.FloatField(jumpStrengthLabel, dataCible.JumpStrength);
-                EditorGUILayout.BeginHorizontal();
-                if (GUILayout.Button("-2")) dataCible.JumpStrength -= 2f;
-                if (GUILayout.Button("-0.5")) dataCible.JumpStrength -= 0.5f;
-                if (GUILayout.Button("+0.5")) dataCible.JumpStrength += 0.5f;
-                if (GUILayout.Button("+2")) dataCible.JumpStrength += 2f;
-                EditorGUILayout.EndHorizontal();
-                
-                EditorGUILayout.Space(25f);
-                
                 GUIContent maxFallSpeedLabel = new GUIContent("Max Fall Speed", "Max falling speed");
                 dataCible.MaxFallSpeed = EditorGUILayout.FloatField(maxFallSpeedLabel, dataCible.MaxFallSpeed);
                 EditorGUILayout.BeginHorizontal();
