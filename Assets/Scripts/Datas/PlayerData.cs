@@ -95,6 +95,12 @@ namespace Datas
             internal set => airControl = Mathf.Max(value,0f);
         }
         
+        public float jumpHeight = 4.5f;       
+        public float timeToJumpApex = 0.4f;   
+        public float timeToFall = 0.35f;        
+        public float apexHangThreshold = 1f;   
+        public float apexHangGravityMult = 0.5f;
+        
         #endregion
         
     }
