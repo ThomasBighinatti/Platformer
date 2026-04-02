@@ -2008,6 +2008,11 @@ PrefabInstance:
       insertIndex: 3
       addedObject: {fileID: 964958784}
   m_SourcePrefab: {fileID: 100100000, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
+--- !u!1 &963853148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2319816284571021, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
+  m_PrefabInstance: {fileID: 2132069382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &964958778 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8920502731959835487, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
@@ -2162,9 +2167,9 @@ PrefabInstance:
       value: Managers
       objectReference: {fileID: 0}
     - target: {fileID: 5845566442675088626, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
-      propertyPath: encryptData
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 963853148}
     - target: {fileID: 6856572127645976601, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2334,18 +2339,6 @@ PrefabInstance:
     - target: {fileID: 1873199001419656685, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9175197938561302699, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9175197938561302699, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_GravityScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveManagerV2
   saveSystemOption: {fileID: 11400000, guid: cc127ba1767b4ae44a06ce60b31796a7, type: 2}
-  EncryptData: 1
-  Data:
-    DatasToSave: []
+  encryptData: 1
+  player: {fileID: 0}
+  data:
+    datasToSave: []

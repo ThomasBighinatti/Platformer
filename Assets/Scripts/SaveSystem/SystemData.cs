@@ -17,7 +17,7 @@ namespace SaveSystem
     }
 
     [Serializable]
-    public class KeyValue
+    public struct KeyValue
     {
         public int key;
         public string value;

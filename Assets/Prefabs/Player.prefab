@@ -288,6 +288,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 6042f5b031a902249a2b7405a72f13a3, type: 2}
   grounded: 0
   onSlope: 0
+  slopeAngleThreshold: 5
   groundCheckDistance: 1
   groundLayer:
     serializedVersion: 2

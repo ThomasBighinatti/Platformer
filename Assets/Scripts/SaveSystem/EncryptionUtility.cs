@@ -8,8 +8,7 @@ namespace SaveSystem
    public class EncryptionUtility
    {
       private const string EncryptionKey = "7e8f9a2b4c6d8e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f";
-
-
+      
       public static string EncryptString(string plainText)
       {
          byte[] key = Encoding.UTF8.GetBytes(EncryptionKey.Substring(0, 32)); // Ensure key is 32 bytes long for AES256

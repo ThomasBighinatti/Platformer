@@ -1,5 +1,7 @@
+using System;
 using System.IO;
 using Datas;
+using Managers;
 using UnityEngine;
 
 namespace SaveSystem
@@ -14,22 +16,21 @@ namespace SaveSystem
       {
          _folderName = saveSystemOption.saveFolderName;
          _extensionName = saveSystemOption.saveExtensionName;
-         if (saveSystemOption.saveType == SaveType.PersistentDataPath)
+         _stringSaveType = saveSystemOption.saveType switch
          {
-            _stringSaveType = Application.persistentDataPath;
-         }
-         else
-         {
-            _stringSaveType = Application.dataPath;
-         }
+            SaveType.ProjectFolder => Application.dataPath,
+            SaveType.PersistentDataPath => Application.persistentDataPath,
+            _ => throw new ArgumentOutOfRangeException()
+         };
       }
    
       public static void SaveData(object currentDataToSave, string fileName = "DefaultSave")
       {
-         if (currentDataToSave == null)
-         {
+         if (fileName == string.Empty)
             return;
-         }
+            
+         if (currentDataToSave == null)
+            return;
       
          string folderPath = _stringSaveType + "/" + _folderName;
          string filePath = folderPath + "/" + fileName +"."+  _extensionName;
@@ -53,6 +54,7 @@ namespace SaveSystem
       public static DataToSave LoadData(string saveName = "DefaultSave")
       {
          DataToSave emptyData = new DataToSave();
+         
          if (saveName == string.Empty)
             return emptyData;
             

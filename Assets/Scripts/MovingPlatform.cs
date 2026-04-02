@@ -79,13 +79,32 @@ public class MovingPlatform : MonoBehaviour
     
     //TODO count number of interactions
 
+    private int _numberOfInteractions;
+    private int NumberOfInteractions
+    {
+        get => _numberOfInteractions;
+        set
+        {
+            if (value < 0) value = 0;
+            _numberOfInteractions = value;
+            if (_numberOfInteractions > 0)
+            {
+                _movingState = MovingState.MoveTo;
+            }
+            else
+            {
+                _movingState = MovingState.MoveBack;
+            }
+        }
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Arrow"))
         {
             Debug.Log("ouui");
             other.transform.SetParent(transform);
-            _movingState = MovingState.MoveTo;
+            NumberOfInteractions++;
         }
     }
 
@@ -94,7 +113,7 @@ public class MovingPlatform : MonoBehaviour
         if (other.gameObject.CompareTag("Arrow"))
         {
             Debug.Log("nonn");
-            _movingState = MovingState.MoveBack;
+            NumberOfInteractions--;
         }
     }
 

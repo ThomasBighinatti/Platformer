@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using Datas;
+using SaveSystem;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace SaveSystem
+namespace Managers
 {
     public class SaveManager : MonoBehaviour
     {
         public static SaveManager Instance;
+        
         public SaveSystemOption saveSystemOption;
         private int _currentCheckpointIndex = 0;
 
@@ -17,6 +18,8 @@ namespace SaveSystem
         [Header("Settings")]
         public bool encryptData = false;
 
+
+        [SerializeField] private GameObject player;
         public DataToSave data;
 
         public void Awake()
@@ -29,7 +32,7 @@ namespace SaveSystem
             Instance = this;
             DontDestroyOnLoad(transform.parent);
 
-            SaveSystem saveSystem = new SaveSystem(saveSystemOption);
+            SaveSystem.SaveSystem saveSystem = new SaveSystem.SaveSystem(saveSystemOption);
             data.datasToSave = new List<ObjectData> { new ObjectData() };
         }
 
@@ -64,12 +67,12 @@ namespace SaveSystem
             objectData.checkpointIndex = _currentCheckpointIndex;
             data.datasToSave[0] = objectData;
 
-            SaveSystem.SaveData(data);
+            SaveSystem.SaveSystem.SaveData(data);
         }
 
         private void Load()
         {
-            DataToSave loadedData = SaveSystem.LoadData();
+            DataToSave loadedData = SaveSystem.SaveSystem.LoadData();
 
             if (loadedData.datasToSave == null || loadedData.datasToSave.Count == 0)
                 return;
@@ -79,8 +82,7 @@ namespace SaveSystem
 
             if (!_checkpointPositions.TryGetValue(_currentCheckpointIndex, out Vector3 spawnPosition))
                 return;
-
-            GameObject player = GameObject.FindWithTag("Player");
+            
             if (player is not null)
                 player.transform.position = spawnPosition;
         }
