@@ -15,11 +15,14 @@ namespace Controllers
         private Camera _camera;
         private bool _deadZoneUse;
         private bool _isUsingMouse;
-        private Vector2 _mouseScreenPosition;
-        private Vector2 _playerScreenPosition;
         
         public void OnShoot(InputAction.CallbackContext context)
         {
+
+            InputDevice device = context.control.device;
+            if (device is Keyboard or Mouse && !_isUsingMouse) return;
+            if (device is Gamepad && _isUsingMouse) return;
+            
             if (context.started && ArrowManager.Instance.ArrowScriptIsNull)
             {
                 ArrowManager.Instance.CreateArrow();
@@ -76,12 +79,8 @@ namespace Controllers
                 
                 case Gamepad:
                     _inputOnLook = context.ReadValue<Vector2>();
-                    _deadZoneUse = false;
                     _isUsingMouse = false;
-                    if (_inputOnLook.magnitude <= deadZoneOnLook)
-                    {
-                        _deadZoneUse = true;
-                    }
+                    _deadZoneUse = _inputOnLook.magnitude <= deadZoneOnLook;
                     break;
             }
         }
