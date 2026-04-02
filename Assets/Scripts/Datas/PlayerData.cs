@@ -38,15 +38,51 @@ namespace Datas
         [Space(10f)]
         
         [Header("Jump")]
-        [Tooltip("Jump force applied (height reached)")] 
+        [Tooltip("Height reached by jump")]
         [SerializeField, Min(0f)] 
-        private float jumpStrength = 9f;
-        public float JumpStrength
+        private float jumpHeight = 6f;
+        public float JumpHeight
         {
-            get => jumpStrength; 
-            internal set => jumpStrength = Mathf.Max(value,0f);
+            get => jumpHeight;
+            internal set => jumpHeight = Mathf.Max(value,0f);
         }
         
+        [Tooltip("Time in seconds to reach jump apex")]
+        [SerializeField, Min(0f)] 
+        private float timeToJumpApex = 0.3f;
+        public float TimeToJumpApex
+        {
+            get => timeToJumpApex;
+            internal set => timeToJumpApex = Mathf.Max(value, 0f);
+        }
+
+        [Tooltip("Time in seconds to fall back to ground")]
+        [SerializeField, Min(0f)] 
+        private float timeToFall = 0.2f;
+        public float TimeToFall
+        {
+            get => timeToFall;
+            internal set => timeToFall = Mathf.Max(value, 0f);
+        }
+
+        [Tooltip("Vertical speed at which apex is reached")]
+        [SerializeField, Min(0f)] 
+        private float apexHangThreshold = 1f;
+        public float ApexHangThreshold
+        {
+            get => apexHangThreshold;
+            internal set => apexHangThreshold = Mathf.Max(value, 0f);
+        }
+
+        [Tooltip("Gravity multiplier at apex (1 = floaty, 0 = no gravity)")]
+        [SerializeField, Range(0f, 1f)] 
+        private float apexHangGravityMult = 0.5f;
+        public float ApexHangGravityMult
+        {
+            get => apexHangGravityMult;
+            internal set => apexHangGravityMult = Mathf.Round(Mathf.Clamp(value, 0f, 1f) * 1000f) / 1000f;
+        }
+
         [Tooltip("Max falling speed")] 
         [SerializeField, Min(0f)] 
         private float maxFallSpeed = 8f;

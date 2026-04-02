@@ -146,7 +146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2506760122838975589
 Transform:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8e75dee7e884d4785ce95c2965268c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveManagerV2
-  systemOption: {fileID: 11400000, guid: f28ec45269f117345af0d92038e4d093, type: 2}
+  saveSystemOption: {fileID: 11400000, guid: cc127ba1767b4ae44a06ce60b31796a7, type: 2}
   EncryptData: 1
   Data:
     DatasToSave: []

@@ -1,30 +1,26 @@
-using System.Collections.Generic;
 using System;
-using Datas;
+using System.Collections.Generic;
 
-[Serializable]
-public struct ObjectData
+namespace SaveSystem
 {
-    public List<KeyValue> arrows;
-    public int checkpointIndex;
-}
+    [Serializable]
+    public struct ObjectData
+    {
+        public List<KeyValue> arrows;
+        public int checkpointIndex;
+    }
 
-[Serializable]
-public enum SaveType
-{
-    PersistentDataPath,
-    ProjectFolder
-}
+    [Serializable]
+    public struct DataToSave
+    {
+        public List<ObjectData> datasToSave;
+    }
 
-[Serializable]
-public struct DataToSave
-{
-    public List<ObjectData> DatasToSave;
-}
-
-[Serializable]
-public class KeyValue
-{
-    public int key;
-    public string value;
+    [Serializable]
+    public class KeyValue
+    {
+        public int key;
+        public string value;
+    }
+    
 }

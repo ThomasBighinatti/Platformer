@@ -1,5 +1,3 @@
-
-
 using System;
 using Datas;
 using UnityEngine;
@@ -9,7 +7,6 @@ namespace Controllers
 {
     public class PlayerController : MonoBehaviour
     {
-        
         [Header("Player Settings")] 
         [SerializeField] private PlayerData data;
         [Space(10f)] 
@@ -53,6 +50,7 @@ namespace Controllers
             if (context.started)
             {
                 _jumpBufferCounter = data.JumpBufferTime;
+                _jumpButtonReleased = false;
             }
             if (context.canceled)
             {
@@ -65,11 +63,11 @@ namespace Controllers
             _moveInput = context.ReadValue<Vector2>();
         }
         
-        
         private void Start()
         {
             _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
             _rb = GetComponent<Rigidbody2D>();
+            _rb.gravityScale = 0; 
         }
         
         private void FixedUpdate()
@@ -78,10 +76,16 @@ namespace Controllers
             _boxCastCooldownCounter -= Time.fixedDeltaTime; //j'ai ecrit "=-" au lieu de "-="...
 
             _velocity = _rb.linearVelocity;
+            
             _velocity = Movement(_velocity);
             _velocity = Jump(_velocity);
             _velocity = JumpCut(_velocity);
-            _velocity = new Vector2(Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), Mathf.Max(_velocity.y, -data.MaxFallSpeed));
+            _velocity = ApplyCustomGravity(_velocity);
+
+            _velocity = new Vector2(
+                Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), 
+                Mathf.Max(_velocity.y, -data.MaxFallSpeed)
+            );
 
             _rb.linearVelocity = _velocity;
         }
@@ -129,9 +133,11 @@ namespace Controllers
         
         private Vector2 Jump(Vector2 targetVelocity)
         {
-            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && onSlope == false)
+            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope)
             {
-                targetVelocity = new Vector2(targetVelocity.x, data.JumpStrength);
+                float jumpForce = (2f * data.JumpHeight) / data.TimeToJumpApex;
+                targetVelocity.y = jumpForce;
+
                 _coyoteTimeCounter = 0f;
                 _jumpBufferCounter = 0f;
                 _boxCastCooldownCounter = boxCastCooldown;
@@ -147,10 +153,40 @@ namespace Controllers
             
             if (targetVelocity.y > 0f)
             {
-                targetVelocity = new Vector2(targetVelocity.x, targetVelocity.y * data.JumpCutMultiplier);
+                targetVelocity.y *= data.JumpCutMultiplier;
+                _jumpButtonReleased = false; 
             }
-            _jumpButtonReleased = false;
 
+            return targetVelocity;
+        }
+
+        private Vector2 ApplyCustomGravity(Vector2 targetVelocity)
+        {
+            if (grounded && targetVelocity.y <= 0.01f)
+            {
+                targetVelocity.y = -0.1f;
+                return targetVelocity;
+            }
+
+            float gravity;
+
+            // ca c'est pour ton temps de flotement en haut
+            if (Mathf.Abs(targetVelocity.y) < data.ApexHangThreshold)
+            {
+                // en gros on fait ce que ta demandé le gd, on bricole ta gravité au sommet
+                float apexGravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToJumpApex, 2);
+                gravity = apexGravity * data.ApexHangGravityMult;
+            }
+            else if (targetVelocity.y < 0)
+            {
+                gravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToFall, 2);
+            }
+            else
+            {
+                gravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToJumpApex, 2);
+            }
+
+            targetVelocity.y -= gravity * Time.fixedDeltaTime;
             return targetVelocity;
         }
         
@@ -160,7 +196,7 @@ namespace Controllers
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
         }
 
-        public static void ActivateKnockback(Vector2 direction,float force)
+        public static void ActivateKnockback(Vector2 direction, float force)
         {
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
         }

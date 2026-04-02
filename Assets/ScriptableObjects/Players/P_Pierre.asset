@@ -15,7 +15,11 @@ MonoBehaviour:
   playerSpeed: 10
   maxSpeed: 15
   playerAcceleration: 25
-  jumpStrength: 10
+  jumpHeight: 6
+  timeToJumpApex: 0.8
+  timeToFall: 0.4
+  apexHangThreshold: 1
+  apexHangGravityMult: 0.5
   maxFallSpeed: 15
   jumpCutMultiplier: 0.2
   coyoteTime: 0.2
