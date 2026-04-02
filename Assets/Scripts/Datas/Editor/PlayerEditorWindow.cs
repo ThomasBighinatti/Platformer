@@ -67,6 +67,65 @@ namespace Datas.Editor
                 EditorGUILayout.EndHorizontal();
                 
                 EditorGUILayout.Space(25f);
+
+                GUIContent jumpHeightLabel = new GUIContent("Jump Height", "Height reached by jump");
+                dataCible.JumpHeight = EditorGUILayout.FloatField(jumpHeightLabel, dataCible.JumpHeight);
+                EditorGUILayout.BeginHorizontal();
+                if (GUILayout.Button("-2")) dataCible.JumpHeight -= 2f;
+                if (GUILayout.Button("-0.5")) dataCible.JumpHeight -= 0.5f;
+                if (GUILayout.Button("+0.5")) dataCible.JumpHeight += 0.5f;
+                if (GUILayout.Button("+2")) dataCible.JumpHeight += 2f;
+                EditorGUILayout.EndHorizontal();
+                
+                EditorGUILayout.Space(25f);
+                
+                GUIContent timeToJumpApexLabel = new GUIContent("Time To Jump Apex", "Time in seconds to reach jump apex");
+                dataCible.TimeToJumpApex = EditorGUILayout.FloatField(timeToJumpApexLabel, dataCible.TimeToJumpApex);
+                EditorGUILayout.BeginHorizontal();
+                if (GUILayout.Button("-0.2")) dataCible.TimeToJumpApex -= 0.2f;
+                if (GUILayout.Button("-0.05")) dataCible.TimeToJumpApex -= 0.05f;
+                if (GUILayout.Button("+0.05")) dataCible.TimeToJumpApex += 0.05f;
+                if (GUILayout.Button("+0.2")) dataCible.TimeToJumpApex += 0.2f;
+                EditorGUILayout.EndHorizontal();
+                
+                EditorGUILayout.Space(25f);
+                
+                GUIContent timeToFallLabel = new GUIContent("Time To Fall", "Time in seconds to fall back to ground");
+                dataCible.TimeToFall = EditorGUILayout.FloatField(timeToFallLabel, dataCible.TimeToFall);
+                EditorGUILayout.BeginHorizontal();
+                if (GUILayout.Button("-0.2")) dataCible.TimeToFall -= 0.2f;
+                if (GUILayout.Button("-0.05")) dataCible.TimeToFall -= 0.05f;
+                if (GUILayout.Button("+0.05")) dataCible.TimeToFall += 0.05f;
+                if (GUILayout.Button("+0.2")) dataCible.TimeToFall += 0.2f;
+                EditorGUILayout.EndHorizontal();
+                
+                EditorGUILayout.Space(25f);
+                
+                GUIContent apexHangThresholdLabel = new GUIContent("Apex Hang Threshold", "Vertical speed at which apex is reached");
+                dataCible.ApexHangThreshold = EditorGUILayout.FloatField(apexHangThresholdLabel, dataCible.ApexHangThreshold);
+                EditorGUILayout.BeginHorizontal();
+                if (GUILayout.Button("-0.2")) dataCible.ApexHangThreshold -= 0.2f;
+                if (GUILayout.Button("-0.05")) dataCible.ApexHangThreshold -= 0.05f;
+                if (GUILayout.Button("+0.05")) dataCible.ApexHangThreshold += 0.05f;
+                if (GUILayout.Button("+0.2")) dataCible.ApexHangThreshold += 0.2f;
+                EditorGUILayout.EndHorizontal();
+                
+                EditorGUILayout.Space(25f);
+                
+                GUIContent apexHangGravityMultLabel = new GUIContent("Apex Hang Gravity Multiplier", "Gravity multiplier at apex (1 = floaty, 0 = no gravity)");
+                dataCible.ApexHangGravityMult = EditorGUILayout.FloatField(apexHangGravityMultLabel, dataCible.ApexHangGravityMult);
+                EditorGUILayout.BeginHorizontal();
+                dataCible.ApexHangGravityMult = GUILayout.HorizontalSlider(dataCible.ApexHangGravityMult, 0f, 1f);
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.Space(10f);
+                EditorGUILayout.BeginHorizontal();
+                if (GUILayout.Button("-0.2")) dataCible.ApexHangGravityMult -= 0.2f;
+                if (GUILayout.Button("-0.05")) dataCible.ApexHangGravityMult -= 0.05f;
+                if (GUILayout.Button("+0.05")) dataCible.ApexHangGravityMult += 0.05f;
+                if (GUILayout.Button("+0.2")) dataCible.ApexHangGravityMult += 0.2f;
+                EditorGUILayout.EndHorizontal();
+                
+                EditorGUILayout.Space(25f);
                 
                 GUIContent maxFallSpeedLabel = new GUIContent("Max Fall Speed", "Max falling speed");
                 dataCible.MaxFallSpeed = EditorGUILayout.FloatField(maxFallSpeedLabel, dataCible.MaxFallSpeed);
@@ -164,8 +223,7 @@ namespace Datas.Editor
             string path = AssetDatabase.GUIDToAssetPath(guids[0]);
             dataCible = AssetDatabase.LoadAssetAtPath<PlayerData>(path);
         }
-    
-
+        
     }
 }
 #endif

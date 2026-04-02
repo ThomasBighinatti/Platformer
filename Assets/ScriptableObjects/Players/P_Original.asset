@@ -15,7 +15,6 @@ MonoBehaviour:
   playerSpeed: 10
   maxSpeed: 25
   playerAcceleration: 25
-  jumpStrength: 12
   jumpHeight: 6
   timeToJumpApex: 0.8
   timeToFall: 0.4

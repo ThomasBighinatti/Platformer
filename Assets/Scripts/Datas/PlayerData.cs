@@ -49,7 +49,7 @@ namespace Datas
         
         [Tooltip("Time in seconds to reach jump apex")]
         [SerializeField, Min(0f)] 
-        private float timeToJumpApex = 0.3f;
+        private float timeToJumpApex = 0.8f;
         public float TimeToJumpApex
         {
             get => timeToJumpApex;
@@ -58,7 +58,7 @@ namespace Datas
 
         [Tooltip("Time in seconds to fall back to ground")]
         [SerializeField, Min(0f)] 
-        private float timeToFall = 0.2f;
+        private float timeToFall = 0.4f;
         public float TimeToFall
         {
             get => timeToFall;
