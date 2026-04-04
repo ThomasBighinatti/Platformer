@@ -13,6 +13,8 @@ namespace Controllers
         
         [Header("To add to data")] 
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
+        [SerializeField] private bool stopVelocity;
+        private static bool _stopVelocity;
         [Space(10f)]
         
         [Header("Visualisation")]
@@ -67,7 +69,8 @@ namespace Controllers
         {
             _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
             _rb = GetComponent<Rigidbody2D>();
-            _rb.gravityScale = 0; 
+            _rb.gravityScale = 0;
+            _stopVelocity = stopVelocity;
         }
         
         private void FixedUpdate()
@@ -198,7 +201,12 @@ namespace Controllers
 
         public static void ActivateKnockback(Vector2 direction, float force)
         {
+            if (_stopVelocity)
+            {
+                _rb.linearVelocity = Vector2.zero;
+            }
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
         }
+        
     }
 }
