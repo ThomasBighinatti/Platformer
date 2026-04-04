@@ -107,6 +107,7 @@ namespace Controllers
                 
                 #region MovementSlope
                 float slopeAngle = Vector2.Angle(groundHit.normal, Vector2.up);
+
                 if (slopeAngle > slopeAngleThreshold)
                 {
                     onSlope = true; 
@@ -117,6 +118,7 @@ namespace Controllers
                 {
                     onSlope = false;
                     targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.PlayerAcceleration * Time.fixedDeltaTime);
+    
                     _playerCollider.sharedMaterial = frictionMaterial;
                     _rb.sharedMaterial = frictionMaterial;
                 }
@@ -165,7 +167,7 @@ namespace Controllers
 
         private Vector2 ApplyCustomGravity(Vector2 targetVelocity)
         {
-            if (grounded && targetVelocity.y <= 0.01f)
+            if (grounded && !onSlope && targetVelocity.y <= 0.01f)
             {
                 targetVelocity.y = -0.1f;
                 return targetVelocity;
