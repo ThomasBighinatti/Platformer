@@ -487,7 +487,7 @@
                     "name": "",
                     "id": "46effb25-6565-4bd3-a920-df16ce5ac7df",
                     "path": "<Gamepad>/leftTrigger",
-                    "interactions": "Press",
+                    "interactions": "Press(pressPoint=0.2)",
                     "processors": "",
                     "groups": ";Gamepad",
                     "action": "Recall",

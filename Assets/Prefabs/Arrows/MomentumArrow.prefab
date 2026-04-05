@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrows.Momentum
   data: {fileID: 11400000, guid: ae8147664bfc8c444b87815385935ded, type: 2}
+  hitCollider: {fileID: 7623565337996462262}
 --- !u!50 &6736019095112636382
 Rigidbody2D:
   serializedVersion: 5
@@ -179,7 +180,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9, y: 0.2}
+  m_Size: {x: 0.88, y: 0.19}
   m_EdgeRadius: 0
 --- !u!61 &-5133349783467087320
 BoxCollider2D:

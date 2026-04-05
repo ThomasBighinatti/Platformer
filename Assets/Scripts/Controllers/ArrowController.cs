@@ -87,7 +87,7 @@ namespace Controllers
 
         public void OnRecall(InputAction.CallbackContext context)
         {
-            if (!context.started)
+            if (!context.performed)
                 return;
             
             ArrowManager.Instance.RecallArrow();

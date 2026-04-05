@@ -14,6 +14,8 @@ namespace Arrows
         protected override void StartArrow()
         {
             ArrowShot(ArrowManager.Instance.LookingTowards);
+            hitCollider.enabled = false;
+            hitCollider.enabled = true;
             ArrowManager.Instance.EnqueueMomentumArrow(this);
         }
 

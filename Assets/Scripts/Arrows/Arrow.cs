@@ -10,6 +10,7 @@ namespace Arrows
         [SerializeField] protected ArrowData data;
 
         [Header("To add to data")] 
+        [SerializeField] protected Collider2D hitCollider;
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         
         private bool _canStartMoving;
@@ -70,6 +71,7 @@ namespace Arrows
             
             Rb.constraints = RigidbodyConstraints2D.FreezeAll;
             IsPlanted = true;
+            
         }
 
         public void SetDynamic() => Rb.bodyType = RigidbodyType2D.Dynamic;
