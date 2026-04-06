@@ -21,4 +21,4 @@ MonoBehaviour:
   destroyTime: 10
   recallInitialSpeed: 25
   recallAcceleration: 100
-  knockbackForce: 0.25
+  knockbackForce: 0.4
