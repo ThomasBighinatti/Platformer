@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a53be2f2f0093941b7027b9a993bf1e, type: 3}
   m_Name: P_Pols
   m_EditorClassIdentifier: Assembly-CSharp::Datas.PlayerData
-  playerSpeed: 5
+  playerSpeed: 7
   maxSpeed: 20
   playerAcceleration: 25
-  jumpHeight: 6
-  timeToJumpApex: 0.8
-  timeToFall: 0.4
+  jumpHeight: 3.5
+  timeToJumpApex: 0.5
+  timeToFall: 0.5
   apexHangThreshold: 1
-  apexHangGravityMult: 0.5
+  apexHangGravityMult: 0.8
   maxFallSpeed: 500
-  jumpCutMultiplier: 0.2
+  jumpCutMultiplier: 0.8
   coyoteTime: 0.2
-  jumpBufferTime: 0.2
-  airControl: 3
+  jumpBufferTime: 0.312
+  airControl: 10
