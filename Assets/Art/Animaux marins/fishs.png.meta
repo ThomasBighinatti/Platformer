@@ -112,10 +112,10 @@ TextureImporter:
       name: fishs_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1589
-        width: 1062
-        height: 482
+        x: 0
+        y: 33
+        width: 173
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: fishs_1
       rect:
         serializedVersion: 2
-        x: 279
-        y: 1409
-        width: 172
-        height: 62
+        x: 38
+        y: 4
+        width: 29
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: fishs_2
       rect:
         serializedVersion: 2
-        x: 659
-        y: 1389
-        width: 142
-        height: 52
+        x: 100
+        y: 1
+        width: 25
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: fishs_3
       rect:
         serializedVersion: 2
-        x: 859
-        y: 1379
-        width: 142
-        height: 62
+        x: 132
+        y: 0
+        width: 25
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

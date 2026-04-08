@@ -103,10 +103,10 @@ TextureImporter:
       name: TREE2_0
       rect:
         serializedVersion: 2
-        x: 459
+        x: 0
         y: 0
-        width: 792
-        height: 1161
+        width: 141
+        height: 209
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
