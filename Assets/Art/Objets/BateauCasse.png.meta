@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7500ad0a1d11f9f4fb80616335cd7245
+guid: f0d54836cf88edf4385cba442b145642
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -106,67 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BateauCasse_0
+      name: "Bateau cass\xE9_0"
       rect:
         serializedVersion: 2
-        x: 683
-        y: 615
-        width: 67
-        height: 54
+        x: 0
+        y: 6
+        width: 68
+        height: 56
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cde15c4c41e0cf844a338292b7962d2f
-      internalID: -649188041
+      spriteID: 5190ecb17ba3c40b0800000000000000
+      internalID: -5743150866684311275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BateauCasse_1
+      name: "Bateau cass\xE9_1"
       rect:
         serializedVersion: 2
-        x: 756
-        y: 608
-        width: 27
-        height: 15
+        x: 72
+        y: 0
+        width: 29
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0faf8380e78fcb14d874c1a0a63f67c2
-      internalID: -722399019
+      spriteID: 71e3f6fc7b2928fb0800000000000000
+      internalID: -4646990547336085993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BateauCasse_2
+      name: "Bateau cass\xE9_2"
       rect:
         serializedVersion: 2
-        x: 804
-        y: 608
-        width: 107
+        x: 120
+        y: 0
+        width: 108
         height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7bf4e10c622019941bcfab938ee603b9
-      internalID: -1793573072
+      spriteID: 18378b6fee654c7c0800000000000000
+      internalID: -4052018180385115263
       vertices: []
       indices: 
       edges: []
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3e5442c622a060349986f5dc31d249f8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -183,13 +183,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      BateauCasse_0: -649188041
-      BateauCasse_1: -722399019
-      BateauCasse_2: -1793573072
+      "Bateau cass\xE9_0": -5743150866684311275
+      "Bateau cass\xE9_1": -4646990547336085993
+      "Bateau cass\xE9_2": -4052018180385115263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

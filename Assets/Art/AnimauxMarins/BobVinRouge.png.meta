@@ -3,8 +3,8 @@ guid: e1271b7f9e60e2a4897d717807c3794e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5024991776500411556
-    second: Bob vin rouge_0
+      213: 676076767391794803
+    second: BobVinRouge_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,20 +103,20 @@ TextureImporter:
       name: BobVinRouge_0
       rect:
         serializedVersion: 2
-        x: 187
-        y: 429
-        width: 54
-        height: 101
+        x: 0
+        y: 0
+        width: 52
+        height: 99
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ace09da56b5cb540800000000000000
-      internalID: 5024991776500411556
+      spriteID: 3764849ec38e16900800000000000000
+      internalID: 676076767391794803
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 44c3e8071347fe3448d4b3042c627822
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BobVinRouge_0: 5024991776500411556
+      BobVinRouge_0: 676076767391794803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

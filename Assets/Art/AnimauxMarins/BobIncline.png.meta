@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb0324a181b55b84db6c8dff2d586336
+guid: c6b117f78b3df684f803814eaf9d6bdf
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -100,15 +100,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BobIncline_0
+      name: "Bob inclin\xE9_0"
       rect:
         serializedVersion: 2
-        x: 206
-        y: 501
-        width: 75
-        height: 92
+        x: 0
+        y: 0
+        width: 73
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 31edab8e04b93ec46aeb1a4306f5efff
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BobIncline_0: -3356768091506174392
+      "Bob inclin\xE9_0": -3356768091506174392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

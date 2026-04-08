@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0c68a7fdecadd2142be6b269a8e2bd2c
+guid: 4b7269e8cfcab214dbbce20cf281001f
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -100,15 +100,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BobJauneCaca+Rouge_0
+      name: Bob jaunecaca+rouge_0
       rect:
         serializedVersion: 2
-        x: 187
-        y: 429
-        width: 54
-        height: 101
+        x: 0
+        y: 0
+        width: 52
+        height: 99
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 33d29edab0bf6404a91f15c8507751b7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BobJauneCaca+Rouge_0: 8836521007818832695
+      Bob jaunecaca+rouge_0: 8836521007818832695
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
