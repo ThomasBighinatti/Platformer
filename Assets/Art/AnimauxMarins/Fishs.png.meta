@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,89 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fishs_0
+      name: fishs_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 1578
-        width: 1062
-        height: 484
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8dedb92243a68640bf35c7dfc393fa3
-      internalID: -1076692085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fishs_1
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 1408
+        x: 0
+        y: 33
         width: 173
-        height: 64
+        height: 79
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b8e1817a4cba62342b5f0f3fc16ab32b
-      internalID: 340116805
+      spriteID: 77c4e03331622f3b0800000000000000
+      internalID: -5480275932653663113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fishs_2
+      name: fishs_1
       rect:
         serializedVersion: 2
-        x: 658
-        y: 1389
-        width: 143
-        height: 53
+        x: 38
+        y: 4
+        width: 29
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 72bf4babcd480a847bd1050fa3f11a1e
-      internalID: -400579866
+      spriteID: b8dccb13780bb2860800000000000000
+      internalID: 7506287298644594059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fishs_3
+      name: fishs_2
       rect:
         serializedVersion: 2
-        x: 859
-        y: 1378
-        width: 142
-        height: 64
+        x: 100
+        y: 1
+        width: 25
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9b4360b8bd553a84d92643841a65bb4b
-      internalID: -1140907938
+      spriteID: 0413ba54a1a2fd1c0800000000000000
+      internalID: -4476813212256620224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishs_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d610035c7623dfa40800000000000000
+      internalID: 5403530549185741165
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 07e2d9d69d4ef184b9a1489e4fa4a239
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -208,14 +208,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Fishs_0: -1076692085
-      Fishs_1: 340116805
-      Fishs_2: -400579866
-      Fishs_3: -1140907938
+      fishs_0: -5480275932653663113
+      fishs_1: 7506287298644594059
+      fishs_2: -4476813212256620224
+      fishs_3: 5403530549185741165
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

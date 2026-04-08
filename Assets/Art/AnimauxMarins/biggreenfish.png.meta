@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1ecf11c930ff1164eb0239cf63b2bb74
+guid: 9c168d774d051cf4d80d7dc2fb813bc4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6229250455568762919
-    second: "M\xE9duse1_0"
+      213: -846652382692627233
+    second: biggreenfish_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,17 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meduse_0
+<<<<<<<< HEAD:Assets/Art/AnimauxMarins/FFFFish.png.meta
+      name: FFFFish_0
+========
+      name: biggreenfish_0
+>>>>>>>> origin/wenbo:Assets/Art/AnimauxMarins/biggreenfish.png.meta
       rect:
         serializedVersion: 2
-        x: 591
-        y: 599
-        width: 65
-        height: 87
+        x: 0
+        y: 0
+        width: 177
+        height: 178
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d732e2f6b14d89a0800000000000000
-      internalID: -6229250455568762919
+      spriteID: fdc2e59c4261044f0800000000000000
+      internalID: -846652382692627233
       vertices: []
       indices: 
       edges: []
@@ -125,7 +129,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8b98e998d08fde84b959eb731069de81
+    spriteID: 1d3dafadbbc6d844ba223b93cab7fccb
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +139,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Meduse_0: -6229250455568762919
+<<<<<<<< HEAD:Assets/Art/AnimauxMarins/FFFFish.png.meta
+      FFFFish_0: 2309890462330427046
+========
+      biggreenfish_0: -846652382692627233
+>>>>>>>> origin/wenbo:Assets/Art/AnimauxMarins/biggreenfish.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
