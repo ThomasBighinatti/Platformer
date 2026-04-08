@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: eb0324a181b55b84db6c8dff2d586336
+guid: 7500ad0a1d11f9f4fb80616335cd7245
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3356768091506174392
-    second: "Bob inclin\xE9_0"
+      213: -5743150866684311275
+    second: "Bateau cass\xE9_0"
+  - first:
+      213: -4646990547336085993
+    second: "Bateau cass\xE9_1"
+  - first:
+      213: -4052018180385115263
+    second: "Bateau cass\xE9_2"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Bob inclin\xE9_0"
+      name: BateauCasse_0
       rect:
         serializedVersion: 2
-        x: 206
-        y: 501
-        width: 75
-        height: 92
+        x: 683
+        y: 615
+        width: 67
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8469868a43d5a61d0800000000000000
-      internalID: -3356768091506174392
+      spriteID: cde15c4c41e0cf844a338292b7962d2f
+      internalID: -649188041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BateauCasse_1
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 608
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faf8380e78fcb14d874c1a0a63f67c2
+      internalID: -722399019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BateauCasse_2
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 608
+        width: 107
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf4e10c622019941bcfab938ee603b9
+      internalID: -1793573072
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3e5442c622a060349986f5dc31d249f8
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +183,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "Bob inclin\xE9_0": -3356768091506174392
+      BateauCasse_0: -649188041
+      BateauCasse_1: -722399019
+      BateauCasse_2: -1793573072
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

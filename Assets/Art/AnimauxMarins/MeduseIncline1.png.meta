@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 348560014b5759e45b6bd25fe398dc8a
+guid: ad33060c1fffea640b01a8285214dddd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5352150867050963400
-    second: Poisson_0
+      213: -236001195304833179
+    second: "m\xE9duse2 inclin\xE9_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Poisson_0
+      name: MeduseIncline1_0
       rect:
         serializedVersion: 2
-        x: 1038
-        y: 599
-        width: 43
-        height: 71
+        x: 293
+        y: 469
+        width: 102
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c12fde4bd8a64a40800000000000000
-      internalID: 5352150867050963400
+      spriteID: 56fa94bc92e89bcf0800000000000000
+      internalID: -236001195304833179
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d1347d680de2a77459923566835c5b15
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Poisson_0: 5352150867050963400
+      MeduseIncline1_0: -236001195304833179
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

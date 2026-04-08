@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b111a26f55a5874ca77587870047c11
+guid: 41950fe33a9431d42874697b82ae6611
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2309890462330427046
-    second: ffffish_0
+      213: -734054533454126883
+    second: "m\xE9duse2.2 inclin\xE9_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ffffish_0
+      name: MeduseIncline2_0
       rect:
         serializedVersion: 2
-        x: 739
-        y: 709
-        width: 1112
-        height: 1122
+        x: 16
+        y: 452
+        width: 102
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a6944d13216e0020800000000000000
-      internalID: 2309890462330427046
+      spriteID: dd0a3bf7a4d10d5f0800000000000000
+      internalID: -734054533454126883
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1c33d66dc1c0a4d45b6791e4d29dfcf1
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ffffish_0: 2309890462330427046
+      MeduseIncline2_0: -734054533454126883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

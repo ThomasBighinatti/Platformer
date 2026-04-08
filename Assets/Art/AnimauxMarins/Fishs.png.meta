@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: b20db854adc96c944a0710aef6340297
+guid: 4a4650853a5a086468baba89413902e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8125898144621484845
-    second: Tiles_cauchemars_0
+      213: -5480275932653663113
+    second: fishs_0
   - first:
-      213: -3956156532796135469
-    second: Tiles_cauchemars_1
+      213: 7506287298644594059
+    second: fishs_1
   - first:
-      213: -14813263744722566
-    second: Tiles_cauchemars_2
+      213: -4476813212256620224
+    second: fishs_2
   - first:
-      213: 2130883314320411848
-    second: Tiles_cauchemars_3
-  - first:
-      213: 6070275647088122530
-    second: Tiles_cauchemars_4
+      213: 5403530549185741165
+    second: fishs_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,111 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tiles_cauchemars_0
+      name: Fishs_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 406
-        width: 168
-        height: 167
+        x: 36
+        y: 1578
+        width: 1062
+        height: 484
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d2b5b274f4df4c070800000000000000
-      internalID: 8125898144621484845
+      spriteID: e8dedb92243a68640bf35c7dfc393fa3
+      internalID: -1076692085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_cauchemars_1
+      name: Fishs_1
       rect:
         serializedVersion: 2
-        x: 223
-        y: 439
-        width: 130
-        height: 130
+        x: 279
+        y: 1408
+        width: 173
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3d768d21898e819c0800000000000000
-      internalID: -3956156532796135469
+      spriteID: b8e1817a4cba62342b5f0f3fc16ab32b
+      internalID: 340116805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_cauchemars_2
+      name: Fishs_2
       rect:
         serializedVersion: 2
-        x: 381
-        y: 502
-        width: 38
-        height: 37
+        x: 658
+        y: 1389
+        width: 143
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a7918844a6f5bcff0800000000000000
-      internalID: -14813263744722566
+      spriteID: 72bf4babcd480a847bd1050fa3f11a1e
+      internalID: -400579866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_cauchemars_3
+      name: Fishs_3
       rect:
         serializedVersion: 2
-        x: 477
-        y: 503
-        width: 38
-        height: 34
+        x: 859
+        y: 1378
+        width: 142
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8cc00ef951b629d10800000000000000
-      internalID: 2130883314320411848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars_4
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 215
-        width: 162
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2aa54611a83fd3450800000000000000
-      internalID: 6070275647088122530
+      spriteID: 9b4360b8bd553a84d92643841a65bb4b
+      internalID: -1140907938
       vertices: []
       indices: 
       edges: []
@@ -225,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 07e2d9d69d4ef184b9a1489e4fa4a239
     internalID: 0
     vertices: []
     indices: 
@@ -233,13 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Tiles_cauchemars_0: 8125898144621484845
-      Tiles_cauchemars_1: -3956156532796135469
-      Tiles_cauchemars_2: -14813263744722566
-      Tiles_cauchemars_3: 2130883314320411848
-      Tiles_cauchemars_4: 6070275647088122530
+      Fishs_0: -1076692085
+      Fishs_1: 340116805
+      Fishs_2: -400579866
+      Fishs_3: -1140907938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

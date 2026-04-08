@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1ecf11c930ff1164eb0239cf63b2bb74
+guid: eb0324a181b55b84db6c8dff2d586336
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6229250455568762919
-    second: "M\xE9duse1_0"
+      213: -3356768091506174392
+    second: "Bob inclin\xE9_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "M\xE9duse1_0"
+      name: BobIncline_0
       rect:
         serializedVersion: 2
-        x: 591
-        y: 599
-        width: 65
-        height: 87
+        x: 206
+        y: 501
+        width: 75
+        height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d732e2f6b14d89a0800000000000000
-      internalID: -6229250455568762919
+      spriteID: 8469868a43d5a61d0800000000000000
+      internalID: -3356768091506174392
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 31edab8e04b93ec46aeb1a4306f5efff
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "M\xE9duse1_0": -6229250455568762919
+      BobIncline_0: -3356768091506174392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

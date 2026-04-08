@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 4a4650853a5a086468baba89413902e6
+guid: 348560014b5759e45b6bd25fe398dc8a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5480275932653663113
-    second: fishs_0
-  - first:
-      213: 7506287298644594059
-    second: fishs_1
-  - first:
-      213: -4476813212256620224
-    second: fishs_2
-  - first:
-      213: 5403530549185741165
-    second: fishs_3
+      213: 5352150867050963400
+    second: Poisson_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fishs_0
+      name: Poisson_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1589
-        width: 1062
-        height: 482
+        x: 1038
+        y: 599
+        width: 43
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77c4e03331622f3b0800000000000000
-      internalID: -5480275932653663113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fishs_1
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 1409
-        width: 172
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b8dccb13780bb2860800000000000000
-      internalID: 7506287298644594059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fishs_2
-      rect:
-        serializedVersion: 2
-        x: 659
-        y: 1389
-        width: 142
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0413ba54a1a2fd1c0800000000000000
-      internalID: -4476813212256620224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fishs_3
-      rect:
-        serializedVersion: 2
-        x: 859
-        y: 1379
-        width: 142
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d610035c7623dfa40800000000000000
-      internalID: 5403530549185741165
+      spriteID: 8c12fde4bd8a64a40800000000000000
+      internalID: 5352150867050963400
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fishs_0: -5480275932653663113
-      fishs_1: 7506287298644594059
-      fishs_2: -4476813212256620224
-      fishs_3: 5403530549185741165
+      Poisson_0: 5352150867050963400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
