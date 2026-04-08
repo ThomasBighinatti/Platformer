@@ -106,15 +106,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Bateau cass\xE9_0"
+      name: BateauCasse_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 6
-        width: 68
-        height: 56
+        y: 7
+        width: 67
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,15 +128,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bateau cass\xE9_1"
+      name: BateauCasse_1
       rect:
         serializedVersion: 2
-        x: 72
+        x: 73
         y: 0
-        width: 29
-        height: 16
+        width: 27
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,15 +150,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bateau cass\xE9_2"
+      name: BateauCasse_2
       rect:
         serializedVersion: 2
-        x: 120
+        x: 121
         y: 0
-        width: 108
+        width: 107
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 19c6a201d3324da4a930158fc5cd7db9
     internalID: 0
     vertices: []
     indices: 
@@ -183,11 +183,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "Bateau cass\xE9_0": -5743150866684311275
-      "Bateau cass\xE9_1": -4646990547336085993
-      "Bateau cass\xE9_2": -4052018180385115263
+      BateauCasse_0: -5743150866684311275
+      BateauCasse_1: -4646990547336085993
+      BateauCasse_2: -4052018180385115263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -109,89 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fishs_0
+      name: Fishs_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 33
+        y: 34
         width: 173
-        height: 79
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 77c4e03331622f3b0800000000000000
-      internalID: -5480275932653663113
+      spriteID: f5c52365a21984d48b18114f2116746f
+      internalID: 1171103211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fishs_1
+      name: Fishs_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 4
-        width: 29
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b8dccb13780bb2860800000000000000
-      internalID: 7506287298644594059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fishs_2
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 1
-        width: 25
+        x: 39
+        y: 5
+        width: 27
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0413ba54a1a2fd1c0800000000000000
-      internalID: -4476813212256620224
+      spriteID: 18ae9ea3e010cc24b9bacad7d10f673c
+      internalID: 1637344529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fishs_3
+      name: Fishs_2
       rect:
         serializedVersion: 2
-        x: 132
-        y: 0
-        width: 25
-        height: 11
+        x: 101
+        y: 2
+        width: 23
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d610035c7623dfa40800000000000000
-      internalID: 5403530549185741165
+      spriteID: dd03062ef1255a04a92024a9ba125a12
+      internalID: 1698559183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishs_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd69e02e799839642a1c66cc29cc78bc
+      internalID: 989580620
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: eac389cbf0cd56344ba2bd8ee68d4631
     internalID: 0
     vertices: []
     indices: 
@@ -208,12 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      fishs_0: -5480275932653663113
-      fishs_1: 7506287298644594059
-      fishs_2: -4476813212256620224
-      fishs_3: 5403530549185741165
+      Fishs_0: 1171103211
+      Fishs_1: 1637344529
+      Fishs_2: 1698559183
+      Fishs_3: 989580620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
