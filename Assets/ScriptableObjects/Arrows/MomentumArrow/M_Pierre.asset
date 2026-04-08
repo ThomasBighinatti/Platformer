@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d88d71773148d5aef26bea3824f80a, type: 3}
   m_Name: M_Pierre
   m_EditorClassIdentifier: AssemblyData::Datas.MomentumArrowData
-  strength: 2000
+  strength: 3500
   useGravity: 1
   gravityForce: 1
   gravityLerpForce: 0.2
   gravityActivationTime: 0.1
   useDestroy: 1
   destroyTime: 10
-  recallInitialSpeed: 25
+  recallInitialSpeed: 80
   recallAcceleration: 100
+  knockbackForce: 0.2
