@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: da2b7329ed5d45c43b9a65200da87190
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4031119256089859907
+    second: Idle_scling2_pritesheet_0
+  - first:
+      213: -3427231313104908514
+    second: Idle_scling2_pritesheet_1
+  - first:
+      213: 7491609819886193542
+    second: Idle_scling2_pritesheet_2
+  - first:
+      213: 1092981428768643665
+    second: Idle_scling2_pritesheet_3
+  - first:
+      213: -2073981082922851782
+    second: Idle_scling2_pritesheet_4
+  - first:
+      213: 5955818526374148691
+    second: Idle_scling2_pritesheet_5
+  - first:
+      213: -3316710730427944258
+    second: Idle_scling2_pritesheet_6
+  - first:
+      213: 4406001992872356945
+    second: Idle_scling2_pritesheet_7
+  - first:
+      213: 2906434615167075801
+    second: Idle_scling2_pritesheet_8
+  - first:
+      213: -781795616270937097
+    second: Idle_scling2_pritesheet_9
+  - first:
+      213: 3354422116259001478
+    second: Idle_scling2_pritesheet_10
+  - first:
+      213: -2195027504888987777
+    second: Idle_scling2_pritesheet_11
+  - first:
+      213: 3820849777025434797
+    second: Idle_scling2_pritesheet_12
+  - first:
+      213: 1761894524921934698
+    second: Idle_scling2_pritesheet_13
+  - first:
+      213: -7562065549385534956
+    second: Idle_scling2_pritesheet_14
+  - first:
+      213: -4577003683287274074
+    second: Idle_scling2_pritesheet_15
+  - first:
+      213: -3223212084770384524
+    second: Idle_scling2_pritesheet_16
+  - first:
+      213: 298820462459918265
+    second: Idle_scling2_pritesheet_17
+  - first:
+      213: -100836943895739669
+    second: Idle_scling2_pritesheet_18
+  - first:
+      213: -3094936398794619785
+    second: Idle_scling2_pritesheet_19
+  - first:
+      213: -2140335564349331010
+    second: Idle_scling2_pritesheet_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 10
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347197a0b9961f730800000000000000
+      internalID: 4031119256089859907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 10
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f494b67470070d0800000000000000
+      internalID: -3427231313104908514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 10
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b052e507b87f760800000000000000
+      internalID: 7491609819886193542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 10
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a9adf81dc0b2f00800000000000000
+      internalID: 1092981428768643665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 10
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32e089813db733e0800000000000000
+      internalID: -2073981082922851782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 10
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ab83bf46157a250800000000000000
+      internalID: 5955818526374148691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 10
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2bd12d92da8f1d0800000000000000
+      internalID: -3316710730427944258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 10
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ce1d0f773452d30800000000000000
+      internalID: 4406001992872356945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 10
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5ceef22eab55820800000000000000
+      internalID: 2906434615167075801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 10
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3963577018625f0800000000000000
+      internalID: -781795616270937097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 10
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684f45a642d4d8e20800000000000000
+      internalID: 3354422116259001478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 10
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f31e23d12b981e0800000000000000
+      internalID: -2195027504888987777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 10
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da44bb3e0a2660530800000000000000
+      internalID: 3820849777025434797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 10
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a637da94cb1837810800000000000000
+      internalID: 1761894524921934698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 10
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412f7a8c2752e0790800000000000000
+      internalID: -7562065549385534956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 10
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ade10a66673b70c0800000000000000
+      internalID: -4577003683287274074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 10
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475d38bafa9d443d0800000000000000
+      internalID: -3223212084770384524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 10
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b79a8c90af952400800000000000000
+      internalID: 298820462459918265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 10
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2cbd27551c99ef0800000000000000
+      internalID: -100836943895739669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 10
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7748b633eb39c05d0800000000000000
+      internalID: -3094936398794619785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_scling2_pritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 10
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9a2dae4200c42e0800000000000000
+      internalID: -2140335564349331010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Idle_scling2_pritesheet_0: 4031119256089859907
+      Idle_scling2_pritesheet_1: -3427231313104908514
+      Idle_scling2_pritesheet_10: 3354422116259001478
+      Idle_scling2_pritesheet_11: -2195027504888987777
+      Idle_scling2_pritesheet_12: 3820849777025434797
+      Idle_scling2_pritesheet_13: 1761894524921934698
+      Idle_scling2_pritesheet_14: -7562065549385534956
+      Idle_scling2_pritesheet_15: -4577003683287274074
+      Idle_scling2_pritesheet_16: -3223212084770384524
+      Idle_scling2_pritesheet_17: 298820462459918265
+      Idle_scling2_pritesheet_18: -100836943895739669
+      Idle_scling2_pritesheet_19: -3094936398794619785
+      Idle_scling2_pritesheet_2: 7491609819886193542
+      Idle_scling2_pritesheet_20: -2140335564349331010
+      Idle_scling2_pritesheet_3: 1092981428768643665
+      Idle_scling2_pritesheet_4: -2073981082922851782
+      Idle_scling2_pritesheet_5: 5955818526374148691
+      Idle_scling2_pritesheet_6: -3316710730427944258
+      Idle_scling2_pritesheet_7: 4406001992872356945
+      Idle_scling2_pritesheet_8: 2906434615167075801
+      Idle_scling2_pritesheet_9: -781795616270937097
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
