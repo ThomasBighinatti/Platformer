@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d88d71773148d5aef26bea3824f80a, type: 3}
+  m_Name: M_Natan
+  m_EditorClassIdentifier: AssemblyData::Datas.MomentumArrowData
+  strength: 3500
+  useGravity: 1
+  gravityForce: 10
+  gravityLerpForce: 0.2
+  gravityActivationTime: 0.1
+  useDestroy: 1
+  destroyTime: 10
+  recallInitialSpeed: 80
+  recallAcceleration: 100
+  knockbackForce: 0.2
