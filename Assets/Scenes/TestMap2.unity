@@ -12395,26 +12395,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 744969735408390107, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
-      propertyPath: settings.speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 744969735408390107, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
-      propertyPath: settings.distance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 744969735408390107, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
-      propertyPath: settings.direction
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3327354728066637798, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8360905490234644430, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
-      propertyPath: m_BodyType
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8920502731959835487, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
       propertyPath: m_Name
       value: MovingPlatform
@@ -12462,10 +12442,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8920502731959835487, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 964958784}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
 --- !u!1 &947685275
 GameObject:
@@ -12587,57 +12564,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2319816284571021, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
   m_PrefabInstance: {fileID: 2132069382}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &964958778 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8920502731959835487, guid: bd2053ded914ff144922d3baa4e2a4b1, type: 3}
-  m_PrefabInstance: {fileID: 786788126}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &964958784
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964958778}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1057634581
 GameObject:
   m_ObjectHideFlags: 0
@@ -16536,26 +16462,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3090317613841144837, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090317613841144837, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090317613841144837, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3614686623679956798, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: orthographic size
-      value: 12.7740135
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 11400000, guid: e04da0a828136814aa2413c4406cc82c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
