@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: f309fab6d8e4bdc489e04d4a70a840a8
+guid: 88af2d11639cb2e48b51573cfb4a6ff9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2910769865586621110
-    second: Animation_tir_morphing_fin_0
+      213: 3383661446709293824
+    second: Animation_tir_middle_0
   - first:
-      213: 7815917639701744269
-    second: Animation_tir_morphing_fin_1
+      213: -3455505262072010636
+    second: Animation_tir_middle_1
   - first:
-      213: 6679864638187232678
-    second: Animation_tir_morphing_fin_2
+      213: -972418401797492809
+    second: Animation_tir_middle_2
+  - first:
+      213: -2613873228821285929
+    second: Animation_tir_middle_3
+  - first:
+      213: -4475429692187070090
+    second: Animation_tir_middle_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,67 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animation_tir_morphing_fin_0
+      name: PapillonShoot_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 5
-        width: 22
-        height: 13
+        x: 16
+        y: 8
+        width: 48
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6bab33555c1256820800000000000000
-      internalID: 2910769865586621110
+      spriteID: f2ffad6d542065c4e8d8de8d3b9b8c16
+      internalID: 8844243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animation_tir_morphing_fin_1
+      name: PapillonShoot_1
       rect:
         serializedVersion: 2
-        x: 153
-        y: 5
-        width: 22
-        height: 12
+        x: 113
+        y: 8
+        width: 47
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d8ac12ccea7b77c60800000000000000
-      internalID: 7815917639701744269
+      spriteID: e5e35320dbb4e3b4b9126cf1660b6482
+      internalID: -519842126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animation_tir_morphing_fin_2
+      name: PapillonShoot_2
       rect:
         serializedVersion: 2
-        x: 246
+        x: 208
+        y: 8
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e032a88a6d24814e832fc5fdf04438f
+      internalID: -2097291339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapillonShoot_3
+      rect:
+        serializedVersion: 2
+        x: 310
         y: 7
-        width: 10
-        height: 10
+        width: 42
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6add7da3f75a3bc50800000000000000
-      internalID: 6679864638187232678
+      spriteID: 8a1abe93c4977aa40b870a70f455137f
+      internalID: 1883445563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapillonShoot_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 8
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eeb05505083c341a7057fb72814f77
+      internalID: 761826209
       vertices: []
       indices: 
       edges: []
@@ -188,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dba9b14b322a2314cb0f2cf298503e52
     internalID: 0
     vertices: []
     indices: 
@@ -196,11 +246,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Animation_tir_morphing_fin_0: 2910769865586621110
-      Animation_tir_morphing_fin_1: 7815917639701744269
-      Animation_tir_morphing_fin_2: 6679864638187232678
+      PapillonShoot_0: 8844243
+      PapillonShoot_1: -519842126
+      PapillonShoot_2: -2097291339
+      PapillonShoot_3: 1883445563
+      PapillonShoot_4: 761826209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

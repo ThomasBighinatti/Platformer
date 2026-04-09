@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 88af2d11639cb2e48b51573cfb4a6ff9
+guid: f309fab6d8e4bdc489e04d4a70a840a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3383661446709293824
-    second: Animation_tir_middle_0
+      213: 2910769865586621110
+    second: Animation_tir_morphing_fin_0
   - first:
-      213: -3455505262072010636
-    second: Animation_tir_middle_1
+      213: 7815917639701744269
+    second: Animation_tir_morphing_fin_1
   - first:
-      213: -972418401797492809
-    second: Animation_tir_middle_2
-  - first:
-      213: -2613873228821285929
-    second: Animation_tir_middle_3
-  - first:
-      213: -4475429692187070090
-    second: Animation_tir_middle_4
+      213: 6679864638187232678
+    second: Animation_tir_morphing_fin_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,111 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animation_tir_middle_0
+      name: PapillonDetransform_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 7
-        width: 50
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 003ba4b882e25fe20800000000000000
-      internalID: 3383661446709293824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animation_tir_middle_1
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 7
-        width: 49
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47864bea5449b00d0800000000000000
-      internalID: -3455505262072010636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animation_tir_middle_2
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 7
-        width: 50
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7bfaecb9d964182f0800000000000000
-      internalID: -972418401797492809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animation_tir_middle_3
-      rect:
-        serializedVersion: 2
-        x: 309
+        x: 57
         y: 6
-        width: 44
-        height: 10
+        width: 20
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d33434b528a9bbd0800000000000000
-      internalID: -2613873228821285929
+      spriteID: 49486c94c72af1942909b0c39793088d
+      internalID: 575343611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animation_tir_middle_4
+      name: PapillonDetransform_1
       rect:
         serializedVersion: 2
-        x: 399
-        y: 7
-        width: 50
-        height: 9
+        x: 154
+        y: 6
+        width: 20
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 67134f3286414e1c0800000000000000
-      internalID: -4475429692187070090
+      spriteID: 38d7fc3a7f41ae6418d5d4da90d8c776
+      internalID: -277303212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapillonDetransform_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3c8bda454f73440b0cf2bf71e83d59
+      internalID: 305266608
       vertices: []
       indices: 
       edges: []
@@ -238,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b36ebfa512c9474e9117d9e91e74dc0
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +196,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Animation_tir_middle_0: 3383661446709293824
-      Animation_tir_middle_1: -3455505262072010636
-      Animation_tir_middle_2: -972418401797492809
-      Animation_tir_middle_3: -2613873228821285929
-      Animation_tir_middle_4: -4475429692187070090
+      PapillonDetransform_0: 575343611
+      PapillonDetransform_1: -277303212
+      PapillonDetransform_2: 305266608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
