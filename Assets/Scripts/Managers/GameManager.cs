@@ -17,6 +17,19 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
+
+        [SerializeField] private GameObject player;
+
+        public void RespawnPlayer()
+        {
+            if (player is null) 
+                return;
+            
+            if (!SaveManager.Instance.CheckpointPositions.TryGetValue(SaveManager.Instance.CurrentCheckpointIndex, out Vector3 spawnPosition))
+                return;
+            
+            player.transform.position = spawnPosition;
+        }
     
         /*
     #region "State Machine"

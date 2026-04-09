@@ -1,5 +1,6 @@
 using System;
 using Datas;
+using Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -208,6 +209,14 @@ namespace Controllers
                 _rb.linearVelocity = Vector2.zero;
             }
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
+        }
+
+        public void OnRetry(InputAction.CallbackContext context)
+        {
+            if (!context.performed)
+                return;
+            
+            GameManager.Instance.RespawnPlayer();
         }
         
     }
