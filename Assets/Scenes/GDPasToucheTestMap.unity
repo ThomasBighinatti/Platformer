@@ -4308,6 +4308,7 @@ GameObject:
   - component: {fileID: 1565711993}
   - component: {fileID: 1565711992}
   - component: {fileID: 1565711991}
+  - component: {fileID: 1565711994}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -4411,6 +4412,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2093820161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565711994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565711990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a461c6e4ca9aa4283ccb6747c61a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  butterflyController: {fileID: 2093820160}
 --- !u!1001 &1653397256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4423,6 +4437,10 @@ PrefabInstance:
       propertyPath: pointer
       value: 
       objectReference: {fileID: 1461515979}
+    - target: {fileID: 924778786697297489, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
+      propertyPath: butterfly
+      value: 
+      objectReference: {fileID: 2093820160}
     - target: {fileID: 924778786697297489, guid: 360a00855a31dce438bb69b3240ff073, type: 3}
       propertyPath: pointerParent
       value: 
@@ -4585,6 +4603,7 @@ MonoBehaviour:
   pointerRef: {fileID: 1856405329}
   butterflyPointerOffset: 1.2
   shapeModifier: 0.5
+  animator: {fileID: 1565711991}
   smoothTime: 0.3
 --- !u!4 &2093820161
 Transform:

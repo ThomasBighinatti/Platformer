@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Arrows;
+using Controllers;
 using Datas;
 using UnityEngine;
 
@@ -21,6 +22,8 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
+
+        [SerializeField] private ButterflyController butterfly;
         
         [SerializeField] private List<ArrowGroupData> arrowGroupDatas;
         
@@ -76,6 +79,8 @@ namespace Managers
         public void CreateArrow()
         {
             Debug.Log("Shoot");
+            butterfly.ToTransState();
+            
             if (_arrowNum < CurrentArrowGroupData.ArrowTypeList.Count)
             {
                 CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
@@ -97,6 +102,8 @@ namespace Managers
         
         public void ShootArrow()
         {
+            butterfly.ToShootState();
+            
             CurrentArrowScript.SetDynamic();
             CurrentArrowScript.gameObject.transform.SetParent(null);
             CurrentArrowScript.CanStartMoving = true;

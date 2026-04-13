@@ -6,7 +6,7 @@ namespace Controllers
 {
     public class ButterflyController : MonoBehaviour
     {
-
+        
         [SerializeField] private GameObject bfVisual;
         [SerializeField] private float speed = 1;
         [SerializeField] private float distance = 1;
@@ -20,27 +20,42 @@ namespace Controllers
 
         public enum ButterflyState
         {
-            Idle = 1,
-            Trans = 2,
-            Prepared = 4,
-            Shoot = 8
+            Idle = 0,
+            Trans = 1,
+            Prepared = 2,
+            Shoot = 3
         }
 
-        public static ButterflyState CurrentButterflyState { get; private set; } = ButterflyState.Idle;
+        [SerializeField] private Animator animator;
+        
+        private ButterflyState _currentButterflyState = ButterflyState.Idle;
+        public ButterflyState CurrentButterflyState
+        {
+            get => _currentButterflyState;
+            private set
+            {
+                _currentButterflyState = value;
+                animator.SetInteger(nameof(State), (int)_currentButterflyState);
+                Debug.Log(_currentButterflyState);
+            }
+        }
 
-        public static void ToIdleState() => CurrentButterflyState = ButterflyState.Idle;
-        public static void ToTransState() => CurrentButterflyState = ButterflyState.Trans;
-        public static void ToPreparedState() => CurrentButterflyState = ButterflyState.Prepared;
-        public static void ToShootState() => CurrentButterflyState = ButterflyState.Shoot;
+        public void ToIdleState() => CurrentButterflyState = ButterflyState.Idle;
+        public bool IsIdleState => CurrentButterflyState == ButterflyState.Idle;
+        
+        public void ToTransState() => CurrentButterflyState = ButterflyState.Trans;
+        
+        public void ToPreparedState() => CurrentButterflyState = ButterflyState.Prepared;
+        
+        public void ToShootState() => CurrentButterflyState = ButterflyState.Shoot;
 
         private void Update()
         {
-            if (CurrentButterflyState == ButterflyState.Idle)
+            if (IsIdleState)
             {
                 ButterFlyPointerRefresh();
-
+                
                 MoveButterfly();
-
                 MoveButterflyVisual();
             }
 
@@ -75,6 +90,7 @@ namespace Controllers
         private bool IsMovingRight => bfVisual.transform.position.x > _previousXWorldPosition;
         private float _previousXWorldPosition;
         
+
         private void MoveButterflyVisual()
         {
             _time += Time.deltaTime * speed;
