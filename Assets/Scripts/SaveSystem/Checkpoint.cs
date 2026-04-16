@@ -5,6 +5,7 @@ namespace SaveSystem
 {
     public class Checkpoint : MonoBehaviour
     {
+        [Tooltip("n° of the checkpoint (first checkpoint must be set to 1)")]
         [SerializeField] private int index;
 
         private void Start()

@@ -25,6 +25,7 @@ namespace Controllers
         
         [Header("Slope Settings")]
         [SerializeField] private float slopeAngleThreshold = 5f;
+        [SerializeField] private bool canJumpOnSlope = false;
         [Space(10f)]
 
         [Header("Raycast Settings")]
@@ -139,7 +140,7 @@ namespace Controllers
         
         private Vector2 Jump(Vector2 targetVelocity)
         {
-            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope)
+            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope || _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && canJumpOnSlope)
             {
                 float jumpForce = (2f * data.JumpHeight) / data.TimeToJumpApex;
                 targetVelocity.y = jumpForce;
