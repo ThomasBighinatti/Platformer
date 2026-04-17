@@ -46,6 +46,7 @@ namespace Controllers
         private float _jumpBufferCounter;
         private float _boxCastCooldownCounter = 0;
         private bool _jumpButtonReleased = false;
+        private float _slopeDirection;
         
         private Vector2 _velocity;
 
@@ -94,6 +95,8 @@ namespace Controllers
 
             _rb.linearVelocity = _velocity;
         }
+
+        
         
         private Vector2 Movement(Vector2 targetVelocity)
         {
@@ -112,7 +115,8 @@ namespace Controllers
 
                 if (slopeAngle > slopeAngleThreshold)
                 {
-                    onSlope = true; 
+                    onSlope = true;
+                    _slopeDirection = Mathf.Sign(groundHit.normal.x);
                     _playerCollider.sharedMaterial = noFrictionMaterial;
                     _rb.sharedMaterial = noFrictionMaterial;
                 }
@@ -143,7 +147,17 @@ namespace Controllers
             if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope || _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && canJumpOnSlope)
             {
                 float jumpForce = (2f * data.JumpHeight) / data.TimeToJumpApex;
-                targetVelocity.y = jumpForce;
+                switch (onSlope)
+                {
+                    case false:
+                        targetVelocity.y = jumpForce;
+                        break;
+                    case true:
+                        Vector2 jumpForceVector = Vector2.one.normalized * jumpForce;
+                        jumpForceVector.x *= _slopeDirection;
+                        targetVelocity = jumpForceVector;
+                        break;
+                }
 
                 _coyoteTimeCounter = 0f;
                 _jumpBufferCounter = 0f;

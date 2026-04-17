@@ -78,20 +78,20 @@ namespace Managers
         
         public void CreateArrow()
         {
-            Debug.Log("Shoot");
-            butterfly.ToTransState();
             
-            if (_arrowNum < CurrentArrowGroupData.ArrowTypeList.Count)
-            {
-                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
-            }
-            else
+            if (_arrowNum >= CurrentArrowGroupData.ArrowTypeList.Count)
             {
                 Debug.Log("no more arrows");
-                _arrowNum = 0;
-                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);
+                /*_arrowNum = 0;
+                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);*/
+                return;
             }
+            
+            Debug.Log("Shoot");
+            butterfly.ToTransState();
 
+            CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
+            
             GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,pointer.transform);
             CurrentArrowScript = arrowCreation.GetComponent<Arrow>();
 
