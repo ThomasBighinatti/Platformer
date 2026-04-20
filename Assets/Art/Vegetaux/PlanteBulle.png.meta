@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 4a4650853a5a086468baba89413902e6
+guid: 25fb76c78a7b66344b19653db4e15b71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5480275932653663113
-    second: fishs_0
-  - first:
-      213: 7506287298644594059
-    second: fishs_1
-  - first:
-      213: -4476813212256620224
-    second: fishs_2
-  - first:
-      213: 5403530549185741165
-    second: fishs_3
+      213: -2663440429037044082
+    second: Plante bulle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,89 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fishs_0
+      name: Plante bulle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 34
-        width: 173
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5c52365a21984d48b18114f2116746f
-      internalID: 1171103211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fishs_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 5
-        width: 27
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18ae9ea3e010cc24b9bacad7d10f673c
-      internalID: 1637344529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fishs_2
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 2
-        width: 23
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd03062ef1255a04a92024a9ba125a12
-      internalID: 1698559183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fishs_3
-      rect:
-        serializedVersion: 2
-        x: 133
         y: 0
-        width: 23
-        height: 10
+        width: 39
+        height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fd69e02e799839642a1c66cc29cc78bc
-      internalID: 989580620
+      spriteID: e8e35d29a0f890bd0800000000000000
+      internalID: -2663440429037044082
       vertices: []
       indices: 
       edges: []
@@ -200,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: eac389cbf0cd56344ba2bd8ee68d4631
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -208,14 +133,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Fishs_0: 1171103211
-      Fishs_1: 1637344529
-      Fishs_2: 1698559183
-      Fishs_3: 989580620
+      Plante bulle_0: -2663440429037044082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

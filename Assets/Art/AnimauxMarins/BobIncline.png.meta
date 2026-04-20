@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb0324a181b55b84db6c8dff2d586336
+guid: c6b117f78b3df684f803814eaf9d6bdf
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,10 +103,10 @@ TextureImporter:
       name: BobIncline_0
       rect:
         serializedVersion: 2
-        x: 206
-        y: 501
-        width: 75
-        height: 92
+        x: 0
+        y: 0
+        width: 73
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 31edab8e04b93ec46aeb1a4306f5efff
+    spriteID: dc599a5befd1c02448f4fccefad4ca27
     internalID: 0
     vertices: []
     indices: 

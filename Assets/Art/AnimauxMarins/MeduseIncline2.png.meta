@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 41950fe33a9431d42874697b82ae6611
+guid: 4b23ba7141e47974d8910c36c4077f31
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -734054533454126883
-    second: "m\xE9duse2.2 inclin\xE9_0"
+      213: 5033532942828804932
+    second: "m\xE9duse2_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MeduseIncline2_0
+      name: "m\xE9duse2_0"
       rect:
         serializedVersion: 2
-        x: 16
-        y: 452
-        width: 102
-        height: 116
+        x: 0
+        y: 0
+        width: 100
+        height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd0a3bf7a4d10d5f0800000000000000
-      internalID: -734054533454126883
+      spriteID: 44b998eea83bad540800000000000000
+      internalID: 5033532942828804932
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1c33d66dc1c0a4d45b6791e4d29dfcf1
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MeduseIncline2_0: -734054533454126883
+      "m\xE9duse2_0": 5033532942828804932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

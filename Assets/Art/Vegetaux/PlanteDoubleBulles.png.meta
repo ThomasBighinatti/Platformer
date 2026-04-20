@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b111a26f55a5874ca77587870047c11
+guid: 8061a57e854805a469a72e901366aa72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2309890462330427046
-    second: ffffish_0
+      213: 7992336579180181258
+    second: Plantedouble bulles_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FFFFish_0
+      name: Plantedouble bulles_0
       rect:
         serializedVersion: 2
-        x: 739
-        y: 709
-        width: 1112
-        height: 1122
+        x: 0
+        y: 0
+        width: 88
+        height: 113
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a6944d13216e0020800000000000000
-      internalID: 2309890462330427046
+      spriteID: a07356706cb7aee60800000000000000
+      internalID: 7992336579180181258
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1d3dafadbbc6d844ba223b93cab7fccb
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FFFFish_0: 2309890462330427046
+      Plantedouble bulles_0: 7992336579180181258
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
