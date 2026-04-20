@@ -11,9 +11,9 @@ namespace Managers
         public static SaveManager Instance;
         
         public SaveSystemOption saveSystemOption;
-        private int _currentCheckpointIndex = 0;
+        public int CurrentCheckpointIndex { get; private set; }
 
-        private readonly Dictionary<int, Vector3> _checkpointPositions = new Dictionary<int, Vector3>();
+        public readonly Dictionary<int, Vector3> CheckpointPositions = new Dictionary<int, Vector3>();
 
         [Header("Settings")]
         public bool encryptData = false;
@@ -43,28 +43,28 @@ namespace Managers
 
         private IEnumerator LoadAfterRegistration()
         {
-            yield return null; // attend que les checkpoints enregistrent leur position dabs le start
+            yield return null; // attend que les checkpoints enregistrent leur position dans le start
             Load();
         }
 
         public void RegisterCheckpoint(int index, Vector3 position)
         {
-            _checkpointPositions[index] = position;
+            CheckpointPositions[index] = position;
         }
 
         public bool ChangeCurrentCheckpoint(int index)
         {
-            if (index <= _currentCheckpointIndex)
+            if (index <= CurrentCheckpointIndex)
                 return false;
 
-            _currentCheckpointIndex = index;
+            CurrentCheckpointIndex = index;
             return true;
         }
 
         public void Save()
         {
             ObjectData objectData = data.datasToSave[0];
-            objectData.checkpointIndex = _currentCheckpointIndex;
+            objectData.checkpointIndex = CurrentCheckpointIndex;
             data.datasToSave[0] = objectData;
 
             SaveSystem.SaveSystem.SaveData(data);
@@ -78,9 +78,9 @@ namespace Managers
                 return;
 
             data = loadedData;
-            _currentCheckpointIndex = data.datasToSave[0].checkpointIndex;
+            CurrentCheckpointIndex = data.datasToSave[0].checkpointIndex;
 
-            if (!_checkpointPositions.TryGetValue(_currentCheckpointIndex, out Vector3 spawnPosition))
+            if (!CheckpointPositions.TryGetValue(CurrentCheckpointIndex, out Vector3 spawnPosition))
                 return;
             
             if (player is not null)
