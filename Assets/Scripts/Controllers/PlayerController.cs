@@ -15,6 +15,8 @@ namespace Controllers
         [Header("To add to data")] 
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [SerializeField] private bool stopVelocity;
+        [SerializeField] private float jumpSlopeAngle;
+        private Vector2 _jumpSlopeVector;
         private static bool _stopVelocity;
         [Space(10f)]
         
@@ -153,7 +155,9 @@ namespace Controllers
                         targetVelocity.y = jumpForce;
                         break;
                     case true:
-                        Vector2 jumpForceVector = Vector2.one.normalized * jumpForce;
+                        float jumpSlopeRadians = jumpSlopeAngle * Mathf.Deg2Rad;
+                        _jumpSlopeVector = new Vector2(Mathf.Sin(jumpSlopeRadians), Mathf.Cos(jumpSlopeRadians));
+                        Vector2 jumpForceVector = _jumpSlopeVector * jumpForce;
                         jumpForceVector.x *= _slopeDirection;
                         targetVelocity = jumpForceVector;
                         break;
