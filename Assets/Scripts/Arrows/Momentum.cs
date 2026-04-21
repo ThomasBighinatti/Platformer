@@ -11,6 +11,9 @@ namespace Arrows
         
         private float _recallSpeed;
 
+        private bool _isOnStickyBlock;
+        public bool IsOnStickyBlock() => _isOnStickyBlock = true;
+
         protected override void StartArrow()
         {
             ArrowShot(ArrowManager.Instance.LookingTowards);
