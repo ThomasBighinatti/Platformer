@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 47b3a83573f06524ea6b9224aa26f69d
+guid: 5fcd0ec0fc2ef6d449a773d2c5ee9562
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6678758027717472611
-    second: Lampadaires_0
+      213: -5144370408467197716
+    second: UI anim_0
   - first:
-      213: -2554338151886190194
-    second: Lampadaires_1
-  - first:
-      213: 7684155323390799900
-    second: Lampadaires_2
-  - first:
-      213: -6491880682951682246
-    second: Lampadaires_3
+      213: 4814171284083556410
+    second: UI anim_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,89 +116,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lampadaires_0
+      name: UIArrowHeadAnim_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 19
-        height: 192
+        x: 13
+        y: 12
+        width: 7
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d9e8c1995f84053a0800000000000000
-      internalID: -6678758027717472611
+      spriteID: c7df4dfb819248c4096b39ee2055e48a
+      internalID: 296282566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lampadaires_1
+      name: UIArrowHeadAnim_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 0
-        width: 15
-        height: 110
+        x: 46
+        y: 11
+        width: 5
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e89889cfbfa2d8cd0800000000000000
-      internalID: -2554338151886190194
+      spriteID: 27aa62e07f259b84fa6e21186306bf9a
+      internalID: -1912484984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lampadaires_2
+      name: UIArrowHeadAnim_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 0
-        width: 14
-        height: 155
+        x: 80
+        y: 8
+        width: 1
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c10b2a1ed8a93aa60800000000000000
-      internalID: 7684155323390799900
+      spriteID: a27bdc15858785f49ae7380401b0b983
+      internalID: 2120992847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lampadaires_3
+      name: UIArrowHeadAnim_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 0
-        width: 18
-        height: 189
+        x: 112
+        y: 6
+        width: 1
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2294f12b0a6a7e4e8acd59bf1d0b6de
+      internalID: -40488492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIArrowHeadAnim_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 6
+        width: 1
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a8b5192ec29894090bbcb9e2d0b0b9
+      internalID: -527599570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIArrowHeadAnim_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 6
+        width: 1
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a37d1701ae438e5a0800000000000000
-      internalID: -6491880682951682246
+      spriteID: d79761462b698f24eb7657cbe09a292c
+      internalID: 1050750611
       vertices: []
       indices: 
       edges: []
@@ -213,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a6d7e3a0815401a499923bb29943c09a
     internalID: 0
     vertices: []
     indices: 
@@ -221,12 +259,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Lampadaires_0: -6678758027717472611
-      Lampadaires_1: -2554338151886190194
-      Lampadaires_2: 7684155323390799900
-      Lampadaires_3: -6491880682951682246
+      UIArrowHeadAnim_0: 296282566
+      UIArrowHeadAnim_1: -1912484984
+      UIArrowHeadAnim_2: 2120992847
+      UIArrowHeadAnim_3: -40488492
+      UIArrowHeadAnim_4: -527599570
+      UIArrowHeadAnim_5: 1050750611
+      UIArrowHeadAnim_6: -396101665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

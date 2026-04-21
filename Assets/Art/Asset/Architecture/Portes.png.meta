@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: f351a85d11c58f448b18c42e2dc590d4
+guid: d3f99f0472ce632499b5707bb6cab140
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8303723299879790770
-    second: "Fl\xE8che_animation_0"
+      213: 9057056972388392529
+    second: Portes_0
   - first:
-      213: -3137970288277126097
-    second: "Fl\xE8che_animation_1"
+      213: 5148481163015156134
+    second: Portes_1
   - first:
-      213: 2021061609621858025
-    second: "Fl\xE8che_animation_2"
+      213: -6826055487419651521
+    second: Portes_2
   - first:
-      213: -6944783601918899286
-    second: "Fl\xE8che_animation_3"
+      213: -1693870721742087940
+    second: Portes_3
   - first:
-      213: 8138200560307975092
-    second: "Fl\xE8che_animation_4"
+      213: 4250018411426432653
+    second: Portes_4
   - first:
-      213: 6626925053944620782
-    second: "Fl\xE8che_animation_5"
+      213: -3893303184768068544
+    second: Portes_5
+  - first:
+      213: 742708895109379807
+    second: Portes_6
+  - first:
+      213: -3352909935222793642
+    second: Portes_7
+  - first:
+      213: -2621503923693929695
+    second: Portes_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,133 +137,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Fl\xE8che_animation_0"
+      name: Portes_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 17
+        x: 0
+        y: 270
         width: 38
-        height: 21
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b82872a850cc3370800000000000000
-      internalID: 8303723299879790770
+      spriteID: 15e5fad745121bd70800000000000000
+      internalID: 9057056972388392529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Fl\xE8che_animation_1"
+      name: Portes_1
       rect:
         serializedVersion: 2
-        x: 74
-        y: 5
+        x: 64
+        y: 270
         width: 38
-        height: 21
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f24038306a0b374d0800000000000000
-      internalID: -3137970288277126097
+      spriteID: 6a1fe460754137740800000000000000
+      internalID: 5148481163015156134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Fl\xE8che_animation_2"
+      name: Portes_2
       rect:
         serializedVersion: 2
-        x: 135
-        y: 17
-        width: 41
-        height: 13
+        x: 128
+        y: 270
+        width: 38
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e6a0be63d04c0c10800000000000000
-      internalID: 2021061609621858025
+      spriteID: f3aee3f33baf441a0800000000000000
+      internalID: -6826055487419651521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Fl\xE8che_animation_3"
+      name: Portes_3
       rect:
         serializedVersion: 2
-        x: 199
-        y: 13
-        width: 41
-        height: 13
+        x: 0
+        y: 142
+        width: 48
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aab8aadeb1c2f9f90800000000000000
-      internalID: -6944783601918899286
+      spriteID: cf8d0279d892e78e0800000000000000
+      internalID: -1693870721742087940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Fl\xE8che_animation_4"
+      name: Portes_4
       rect:
         serializedVersion: 2
-        x: 262
-        y: 17
-        width: 42
-        height: 11
+        x: 62
+        y: 142
+        width: 48
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b3ba04aa42b0f070800000000000000
-      internalID: 8138200560307975092
+      spriteID: d8641f54a391bfa30800000000000000
+      internalID: 4250018411426432653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Fl\xE8che_animation_5"
+      name: Portes_5
       rect:
         serializedVersion: 2
-        x: 326
-        y: 15
-        width: 42
-        height: 11
+        x: 128
+        y: 142
+        width: 48
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee66181c93197fb50800000000000000
-      internalID: 6626925053944620782
+      spriteID: 044900d816538f9c0800000000000000
+      internalID: -3893303184768068544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portes_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 48
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd674881ec1ae4a00800000000000000
+      internalID: 742708895109379807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portes_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 14
+        width: 48
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ada2bad221871d0800000000000000
+      internalID: -3352909935222793642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portes_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 14
+        width: 48
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b3eea121c8e9bd0800000000000000
+      internalID: -2621503923693929695
       vertices: []
       indices: 
       edges: []
@@ -263,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1d6dbd6aab5eedc489f364f0ac0873a2
     internalID: 0
     vertices: []
     indices: 
@@ -271,14 +346,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "Fl\xE8che_animation_0": 8303723299879790770
-      "Fl\xE8che_animation_1": -3137970288277126097
-      "Fl\xE8che_animation_2": 2021061609621858025
-      "Fl\xE8che_animation_3": -6944783601918899286
-      "Fl\xE8che_animation_4": 8138200560307975092
-      "Fl\xE8che_animation_5": 6626925053944620782
+      Portes_0: 9057056972388392529
+      Portes_1: 5148481163015156134
+      Portes_2: -6826055487419651521
+      Portes_3: -1693870721742087940
+      Portes_4: 4250018411426432653
+      Portes_5: -3893303184768068544
+      Portes_6: 742708895109379807
+      Portes_7: -3352909935222793642
+      Portes_8: -2621503923693929695
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: d425c26edc7ca5e43a2283597dc805bf
+guid: f351a85d11c58f448b18c42e2dc590d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3068507779807640226
-    second: "D\xE9corations_0"
+      213: 8303723299879790770
+    second: "Fl\xE8che_animation_0"
   - first:
-      213: -204492763166568117
-    second: "D\xE9corations_1"
+      213: -3137970288277126097
+    second: "Fl\xE8che_animation_1"
   - first:
-      213: -3811249459413639415
-    second: "D\xE9corations_2"
+      213: 2021061609621858025
+    second: "Fl\xE8che_animation_2"
   - first:
-      213: 6247082465663409687
-    second: "D\xE9corations_3"
+      213: -6944783601918899286
+    second: "Fl\xE8che_animation_3"
   - first:
-      213: -7051505545814743202
-    second: "D\xE9corations_4"
+      213: 8138200560307975092
+    second: "Fl\xE8che_animation_4"
+  - first:
+      213: 6626925053944620782
+    second: "Fl\xE8che_animation_5"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,111 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "D\xE9corations_0"
+      name: ArrowPlant_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 31
-        width: 12
-        height: 97
+        x: 11
+        y: 18
+        width: 36
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e550b029e687a65d0800000000000000
-      internalID: -3068507779807640226
+      spriteID: 1e77cad053ba39546afd3edac8a2aeb5
+      internalID: 744532042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE9corations_1"
+      name: ArrowPlant_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 31
-        width: 12
-        height: 97
+        x: 75
+        y: 6
+        width: 36
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b4191545aee792df0800000000000000
-      internalID: -204492763166568117
+      spriteID: 0cf30cc283f815a458ab41d4323f8a41
+      internalID: 292234970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE9corations_2"
+      name: ArrowPlant_2
       rect:
         serializedVersion: 2
-        x: 63
-        y: 95
-        width: 33
-        height: 16
+        x: 136
+        y: 18
+        width: 39
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90f104d3fc8bb1bc0800000000000000
-      internalID: -3811249459413639415
+      spriteID: 44c4e0baab9dc4e4194ad496c586c635
+      internalID: -1920384665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE9corations_3"
+      name: ArrowPlant_3
       rect:
         serializedVersion: 2
-        x: 74
-        y: 31
-        width: 11
-        height: 55
+        x: 200
+        y: 14
+        width: 39
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 71e5070776812b650800000000000000
-      internalID: 6247082465663409687
+      spriteID: e85130ebf245e404f8b80839fd6055ef
+      internalID: -801410019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE9corations_4"
+      name: ArrowPlant_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 51
-        height: 5
+        x: 263
+        y: 18
+        width: 40
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e57e30a0115042e90800000000000000
-      internalID: -7051505545814743202
+      spriteID: a9d97ae265a0ade448a9c8335827ba35
+      internalID: -1468809227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArrowPlant_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 16
+        width: 40
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789de1725fbca6149bf2a7129a380ddb
+      internalID: 1614889610
       vertices: []
       indices: 
       edges: []
@@ -238,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 93e74e26d8ef948469c6aa826764c21e
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +271,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "D\xE9corations_0": -3068507779807640226
-      "D\xE9corations_1": -204492763166568117
-      "D\xE9corations_2": -3811249459413639415
-      "D\xE9corations_3": 6247082465663409687
-      "D\xE9corations_4": -7051505545814743202
+      ArrowPlant_0: 744532042
+      ArrowPlant_1: 292234970
+      ArrowPlant_2: -1920384665
+      ArrowPlant_3: -801410019
+      ArrowPlant_4: -1468809227
+      ArrowPlant_5: 1614889610
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

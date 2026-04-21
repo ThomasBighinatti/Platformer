@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,133 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "fen\xEAtres_0"
+      name: Windows_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 197
-        width: 47
-        height: 73
+        y: 198
+        width: 46
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 820fc1a33a2f61930800000000000000
-      internalID: 4113742092518092840
+      spriteID: d6541652a07f5554cbf3f177dd91bbb4
+      internalID: -280339966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "fen\xEAtres_1"
+      name: Windows_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 197
-        width: 48
-        height: 73
+        x: 64
+        y: 198
+        width: 46
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6b2d25f14223148b0800000000000000
-      internalID: -5169795766518885706
+      spriteID: 5eb2bcc9e0935c9439695eff255d3598
+      internalID: -1572089886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "fen\xEAtres_2"
+      name: Windows_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 95
-        width: 47
-        height: 73
+        y: 96
+        width: 46
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 731f6f4270ede2930800000000000000
-      internalID: 4120474831356883255
+      spriteID: d8c45574e7754ad40b9ff094abc233d8
+      internalID: 1923257893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "fen\xEAtres_3"
+      name: Windows_3
       rect:
         serializedVersion: 2
-        x: 63
-        y: 95
-        width: 48
-        height: 73
+        x: 64
+        y: 96
+        width: 46
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fdd153f017802b740800000000000000
-      internalID: 5166201004226846175
+      spriteID: a5a704aa7f564844585e2e532998308a
+      internalID: 114228550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "fen\xEAtres_4"
+      name: Windows_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 47
-        height: 72
+        width: 46
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 82cdd875be27568a0800000000000000
-      internalID: -6312512947578086360
+      spriteID: 2b3ee1c5c0e87a044abd1c28674faecb
+      internalID: -1909439596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "fen\xEAtres_5"
+      name: Windows_5
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 0
-        width: 48
-        height: 72
+        width: 46
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6e0a2fbe3211b1690800000000000000
-      internalID: -7630486297669099290
+      spriteID: 3557a256fc7d91448bb7e9cc70f6686d
+      internalID: 1638744103
       vertices: []
       indices: 
       edges: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5dcc84c88a0374848b3ad189d4b5fbf9
     internalID: 0
     vertices: []
     indices: 
@@ -271,14 +271,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "fen\xEAtres_0": 4113742092518092840
-      "fen\xEAtres_1": -5169795766518885706
-      "fen\xEAtres_2": 4120474831356883255
-      "fen\xEAtres_3": 5166201004226846175
-      "fen\xEAtres_4": -6312512947578086360
-      "fen\xEAtres_5": -7630486297669099290
+      Windows_0: -280339966
+      Windows_1: -1572089886
+      Windows_2: 1923257893
+      Windows_3: 114228550
+      Windows_4: -1909439596
+      Windows_5: 1638744103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
