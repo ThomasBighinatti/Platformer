@@ -138,7 +138,13 @@ namespace Controllers
                 _rb.sharedMaterial = noFrictionMaterial;
                 
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
-                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+
+                if (!_isKnockedBack || _moveInput.x != 0)
+                {
+                    targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+                    _isKnockedBack = false;
+                }
+                
             }
 
             return targetVelocity;
@@ -220,6 +226,8 @@ namespace Controllers
             Gizmos.color = grounded ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
         }
+        
+        private static bool _isKnockedBack = false;
 
         public static void ActivateKnockback(Vector2 direction, float force)
         {
@@ -228,6 +236,7 @@ namespace Controllers
                 _rb.linearVelocity = Vector2.zero;
             }
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
+            _isKnockedBack = true;
         }
 
         public void OnRetry(InputAction.CallbackContext context)
