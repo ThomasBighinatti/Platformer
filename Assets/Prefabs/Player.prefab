@@ -303,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   data: {fileID: 11400000, guid: f6a6328d752cb3a4684e9900d7e2813d, type: 2}
   stopVelocity: 1
+  jumpSlopeAngle: 58
   grounded: 0
   onSlope: 0
   slopeAngleThreshold: 5
