@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: 4a997ea8bd0ac534bae9e982454452f9
+guid: 3d62ef08e8f353c4384efa41e75029ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8862894370400360904
-    second: nenuphares assets_0
+      213: -2700899554197599595
+    second: jump land_0
   - first:
-      213: -8568050624656205348
-    second: nenuphares assets_1
+      213: 7181926889825595430
+    second: jump land_1
   - first:
-      213: -4962293906268122060
-    second: nenuphares assets_2
+      213: 2193067975102759300
+    second: jump land_2
   - first:
-      213: -3574207327633439905
-    second: nenuphares assets_3
+      213: 6857636456874397403
+    second: jump land_3
   - first:
-      213: -998119223261068489
-    second: nenuphares assets_4
+      213: -2499067374135738450
+    second: jump land_4
   - first:
-      213: -4961761798565800260
-    second: nenuphares assets_5
-  - first:
-      213: -2162277640364022807
-    second: nenuphares assets_6
-  - first:
-      213: 261885021289576134
-    second: nenuphares assets_7
-  - first:
-      213: -1701531278441005789
-    second: nenuphares assets_8
+      213: -5058587091289015069
+    second: jump land_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,199 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nenuphares assets_0
+      name: JumpLandAnim_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 225
-        width: 132
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c9d585e8735ffa70800000000000000
-      internalID: 8862894370400360904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nenuphares assets_1
-      rect:
-        serializedVersion: 2
-        x: 181
-        y: 224
-        width: 132
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd99dc33a5b281980800000000000000
-      internalID: -8568050624656205348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nenuphares assets_2
-      rect:
-        serializedVersion: 2
-        x: 343
-        y: 224
-        width: 132
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4349dcdcbf3622bb0800000000000000
-      internalID: -4962293906268122060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nenuphares assets_3
-      rect:
-        serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 108
-        height: 222
+        width: 55
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f538fca5f5dd56ec0800000000000000
-      internalID: -3574207327633439905
+      spriteID: f16325c5d88e9744b8d21776f1d4fb7e
+      internalID: -1768866378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nenuphares assets_4
+      name: JumpLandAnim_1
       rect:
         serializedVersion: 2
-        x: 146
+        x: 81
         y: 0
-        width: 92
-        height: 174
+        width: 42
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 733090ecad7f522f0800000000000000
-      internalID: -998119223261068489
+      spriteID: ff8464edfed273c428b8a074481c260c
+      internalID: 1889711890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nenuphares assets_5
+      name: JumpLandAnim_2
       rect:
         serializedVersion: 2
-        x: 269
+        x: 148
         y: 0
-        width: 108
-        height: 222
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cb6d168cee7442bb0800000000000000
-      internalID: -4961761798565800260
+      spriteID: 11e39737c4737574587420314d15db04
+      internalID: -1409115860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nenuphares assets_6
+      name: JumpLandAnim_3
       rect:
         serializedVersion: 2
-        x: 405
+        x: 210
         y: 0
-        width: 92
-        height: 174
+        width: 45
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e3255c31fb0ef1e0800000000000000
-      internalID: -2162277640364022807
+      spriteID: cd1f50989bb2dcb4e833253e24536b74
+      internalID: 1548475601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nenuphares assets_7
+      name: JumpLandAnim_4
       rect:
         serializedVersion: 2
-        x: 526
+        x: 271
         y: 0
-        width: 108
-        height: 222
+        width: 48
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c6f5f11a0762a300800000000000000
-      internalID: 261885021289576134
+      spriteID: 0901c46e27d069342a25b697fe7b0c8b
+      internalID: -1468889385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nenuphares assets_8
+      name: JumpLandAnim_5
       rect:
         serializedVersion: 2
-        x: 661
+        x: 339
         y: 0
-        width: 92
-        height: 174
+        width: 45
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 32dbe4e3152f268e0800000000000000
-      internalID: -1701531278441005789
+      spriteID: e9d55f65ffd8d6a4f8f850aa4e0ce85e
+      internalID: 822531398
       vertices: []
       indices: 
       edges: []
@@ -338,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9da315c836d88f746929898d7e922c1c
     internalID: 0
     vertices: []
     indices: 
@@ -346,17 +271,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      nenuphares assets_0: 8862894370400360904
-      nenuphares assets_1: -8568050624656205348
-      nenuphares assets_2: -4962293906268122060
-      nenuphares assets_3: -3574207327633439905
-      nenuphares assets_4: -998119223261068489
-      nenuphares assets_5: -4961761798565800260
-      nenuphares assets_6: -2162277640364022807
-      nenuphares assets_7: 261885021289576134
-      nenuphares assets_8: -1701531278441005789
+      JumpLandAnim_0: -1768866378
+      JumpLandAnim_1: 1889711890
+      JumpLandAnim_2: -1409115860
+      JumpLandAnim_3: 1548475601
+      JumpLandAnim_4: -1468889385
+      JumpLandAnim_5: 822531398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,43 +1,34 @@
 fileFormatVersion: 2
-guid: 1123e693fb5d8e74892ff59f16206fea
+guid: 442d304ec40a6fe4ba66b7301cba27ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1897759960961599479
-    second: jump fall_0
+      213: -266293830706584982
+    second: eyes asset_0
   - first:
-      213: -1368811910884263037
-    second: jump fall_1
+      213: 5521312609761325732
+    second: eyes asset_1
   - first:
-      213: -6232879401444602171
-    second: jump fall_2
+      213: 639459136024747844
+    second: eyes asset_2
   - first:
-      213: -3179772136991520255
-    second: jump fall_3
+      213: -3554402066782345755
+    second: eyes asset_3
   - first:
-      213: -2977005323137951888
-    second: jump fall_4
+      213: -5559366511577687142
+    second: eyes asset_4
   - first:
-      213: -6192890842555426564
-    second: jump fall_5
+      213: -3911352164932273090
+    second: eyes asset_5
   - first:
-      213: -3995054971299323178
-    second: jump fall_6
+      213: 6918954752255181264
+    second: eyes asset_6
   - first:
-      213: -2004424137974644582
-    second: jump fall_7
+      213: -4261206029594918698
+    second: eyes asset_7
   - first:
-      213: 9142546104453462127
-    second: jump fall_8
-  - first:
-      213: -5526090765336987435
-    second: jump fall_9
-  - first:
-      213: -101358235536128301
-    second: jump fall_10
-  - first:
-      213: -5235080554344308156
-    second: jump fall_11
+      213: 1209863465668422047
+    second: eyes asset_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -70,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,265 +137,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump fall_0
+      name: Eyes_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 19
+        x: 2
+        y: 193
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a83003845b03bf4e97e5ab3f31ea2da
+      internalID: -123171059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 135
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e944dfe157f194a8c23ded2345a438
+      internalID: -1141442245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 144
         width: 58
-        height: 65
+        height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7f7431631a2365a10800000000000000
-      internalID: 1897759960961599479
+      spriteID: d36379999b711594b8df5a05ba66b456
+      internalID: -340509436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump fall_1
+      name: Eyes_3
       rect:
         serializedVersion: 2
-        x: 67
-        y: 19
-        width: 56
-        height: 67
+        x: 8
+        y: 166
+        width: 17
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 38b7b6fb1d0010de0800000000000000
-      internalID: -1368811910884263037
+      spriteID: dfc7a3a5b829ea248af34f46fffaa56f
+      internalID: 1754091749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump fall_2
+      name: Eyes_4
       rect:
         serializedVersion: 2
-        x: 135
-        y: 19
-        width: 52
-        height: 67
+        x: 134
+        y: 164
+        width: 22
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5ce8b05253d5089a0800000000000000
-      internalID: -6232879401444602171
+      spriteID: d3afabbe4e729794db75d58d2984efb3
+      internalID: 1392505478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump fall_3
+      name: Eyes_5
       rect:
         serializedVersion: 2
-        x: 200
-        y: 19
-        width: 51
-        height: 68
+        x: 12
+        y: 140
+        width: 7
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 10a8feba61e2fd3d0800000000000000
-      internalID: -3179772136991520255
+      spriteID: 7e64f8fd479774e4ea416589a0f2408f
+      internalID: -1765687357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump fall_4
+      name: Eyes_6
       rect:
         serializedVersion: 2
-        x: 262
-        y: 19
-        width: 53
-        height: 68
+        x: 8
+        y: 3
+        width: 118
+        height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0775ae37e6d8fa6d0800000000000000
-      internalID: -2977005323137951888
+      spriteID: a701eb97e2338204b8ba1383b6f01661
+      internalID: -100690096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump fall_5
+      name: Eyes_7
       rect:
         serializedVersion: 2
-        x: 326
-        y: 19
-        width: 53
-        height: 68
+        x: 139
+        y: 40
+        width: 43
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cf8d6bc079e6e0aa0800000000000000
-      internalID: -6192890842555426564
+      spriteID: 5c016cf0ef1e4b148bd8f708f35cf416
+      internalID: -1658958736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump fall_6
+      name: Eyes_8
       rect:
         serializedVersion: 2
-        x: 387
-        y: 19
-        width: 55
-        height: 66
+        x: 209
+        y: 14
+        width: 99
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6d2ab899ba6be88c0800000000000000
-      internalID: -3995054971299323178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump fall_7
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 19
-        width: 57
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a908dcccddade24e0800000000000000
-      internalID: -2004424137974644582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump fall_8
-      rect:
-        serializedVersion: 2
-        x: 514
-        y: 19
-        width: 56
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6874922e39d0ee70800000000000000
-      internalID: 9142546104453462127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump fall_9
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 19
-        width: 50
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d8b5873ab16f43b0800000000000000
-      internalID: -5526090765336987435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump fall_10
-      rect:
-        serializedVersion: 2
-        x: 645
-        y: 19
-        width: 53
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d60fc7c837e79ef0800000000000000
-      internalID: -101358235536128301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump fall_11
-      rect:
-        serializedVersion: 2
-        x: 706
-        y: 19
-        width: 56
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 442a0c3f8f14957b0800000000000000
-      internalID: -5235080554344308156
+      spriteID: bff4ab0ffbfa95749b0130f4a1f81821
+      internalID: 900528767
       vertices: []
       indices: 
       edges: []
@@ -413,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 07b5dfc229d703648bf61bcae47ee55d
     internalID: 0
     vertices: []
     indices: 
@@ -421,20 +346,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      jump fall_0: 1897759960961599479
-      jump fall_1: -1368811910884263037
-      jump fall_10: -101358235536128301
-      jump fall_11: -5235080554344308156
-      jump fall_2: -6232879401444602171
-      jump fall_3: -3179772136991520255
-      jump fall_4: -2977005323137951888
-      jump fall_5: -6192890842555426564
-      jump fall_6: -3995054971299323178
-      jump fall_7: -2004424137974644582
-      jump fall_8: 9142546104453462127
-      jump fall_9: -5526090765336987435
+      Eyes_0: -123171059
+      Eyes_1: -1141442245
+      Eyes_2: -340509436
+      Eyes_3: 1754091749
+      Eyes_4: 1392505478
+      Eyes_5: -1765687357
+      Eyes_6: -100690096
+      Eyes_7: -1658958736
+      Eyes_8: 900528767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
