@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,155 +131,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Assets_architecture_fond_0
+      name: ArchiBg_0
       rect:
         serializedVersion: 2
-        x: 35
+        x: 36
         y: 0
-        width: 27
-        height: 116
+        width: 25
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c3f942029d13f1f70800000000000000
-      internalID: 9160094975711813436
+      spriteID: 9350ab117f801d84cb168f9af5987ea8
+      internalID: -2122671999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets_architecture_fond_1
+      name: ArchiBg_1
       rect:
         serializedVersion: 2
-        x: 67
+        x: 68
         y: 0
-        width: 34
-        height: 125
+        width: 32
+        height: 124
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 567156df29add4e50800000000000000
-      internalID: 6795327737623287653
+      spriteID: 71ea43a8357565c43860a551732e330b
+      internalID: -1937777688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets_architecture_fond_2
+      name: ArchiBg_2
       rect:
         serializedVersion: 2
-        x: 105
+        x: 106
         y: 0
-        width: 120
-        height: 161
+        width: 118
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 687e6e5d898f59520800000000000000
-      internalID: 2708344086240618374
+      spriteID: 5d1f0c0fdf6c5e3469f9faf2a13c4368
+      internalID: -537941448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets_architecture_fond_3
+      name: ArchiBg_3
       rect:
         serializedVersion: 2
-        x: 251
+        x: 252
         y: 0
-        width: 70
-        height: 378
+        width: 68
+        height: 377
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1406cb4d31a816e0800000000000000
-      internalID: -1866564760908725218
+      spriteID: 00ec16e4e2728484da534c5792b29a26
+      internalID: -1958770410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets_architecture_fond_4
+      name: ArchiBg_4
       rect:
         serializedVersion: 2
-        x: 349
+        x: 350
         y: 0
-        width: 229
-        height: 304
+        width: 227
+        height: 303
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f4932a62b8cd4ea20800000000000000
-      internalID: 3090837734489733455
+      spriteID: d885383fb114f5949a7e641800bc2537
+      internalID: -1051610169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets_architecture_fond_5
+      name: ArchiBg_5
       rect:
         serializedVersion: 2
-        x: 584
+        x: 585
         y: 0
-        width: 170
-        height: 466
+        width: 168
+        height: 465
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 330491a08157c8430800000000000000
-      internalID: 3786530132820836403
+      spriteID: f833bb77e104e314b83ee3c139fa4862
+      internalID: -1695597287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets_architecture_fond_6
+      name: ArchiBg_6
       rect:
         serializedVersion: 2
-        x: 767
+        x: 768
         y: 0
-        width: 283
-        height: 289
+        width: 281
+        height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fc72f59e9345b5970800000000000000
-      internalID: 8744675709175146447
+      spriteID: 6fdc6d3daf6c9d94d9268dd50af1df1c
+      internalID: 75328053
       vertices: []
       indices: 
       edges: []
@@ -288,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fa270774d4fcb014792de622785a203e
     internalID: 0
     vertices: []
     indices: 
@@ -296,15 +296,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Assets_architecture_fond_0: 9160094975711813436
-      Assets_architecture_fond_1: 6795327737623287653
-      Assets_architecture_fond_2: 2708344086240618374
-      Assets_architecture_fond_3: -1866564760908725218
-      Assets_architecture_fond_4: 3090837734489733455
-      Assets_architecture_fond_5: 3786530132820836403
-      Assets_architecture_fond_6: 8744675709175146447
+      ArchiBg_0: -2122671999
+      ArchiBg_1: -1937777688
+      ArchiBg_2: -537941448
+      ArchiBg_3: -1958770410
+      ArchiBg_4: -1051610169
+      ArchiBg_5: -1695597287
+      ArchiBg_6: 75328053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
