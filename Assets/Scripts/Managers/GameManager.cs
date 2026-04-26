@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Managers
 {
@@ -19,6 +20,22 @@ namespace Managers
         }
 
         [SerializeField] private GameObject player;
+        
+        void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+        
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (player == null)
+                player = LevelManager.Instance.player;
+        }
 
         public void RespawnPlayer()
         {

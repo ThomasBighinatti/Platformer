@@ -4,6 +4,7 @@ using Arrows;
 using Controllers;
 using Datas;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Managers
 {
@@ -39,6 +40,32 @@ namespace Managers
         {
             CurrentArrowGroupData = arrowGroupDatas[0];
             PlayerTransform = playerTransform;
+        }
+        
+        void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+        
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if(butterfly == null)
+                butterfly = LevelManager.Instance.butterfly;
+            if (momentumPrefab == null)
+                momentumPrefab = LevelManager.Instance.momentumPrefab;
+            if(pointerParent == null)
+                pointerParent = LevelManager.Instance.pointerParent;
+            if(pointer == null)
+                pointer = LevelManager.Instance.pointer;
+            if(playerTransform == null)
+                playerTransform = LevelManager.Instance.playerTransform;
+            //remettre les fleches
+
         }
 
         private ArrowGroupData CurrentArrowGroupData { get; set; }

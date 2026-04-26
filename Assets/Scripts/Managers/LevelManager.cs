@@ -1,3 +1,4 @@
+using Controllers;
 using UnityEngine;
 
 namespace Managers
@@ -15,7 +16,13 @@ namespace Managers
             }
             Instance = this;
         }
-
+        
         public GameObject player;
+        public ButterflyController butterfly;
+        public Arrows.Momentum momentumPrefab;
+        public GameObject pointerParent;
+        public GameObject pointer;
+        public Transform playerTransform;
+        
     }
 }
