@@ -1,4 +1,3 @@
-using System;
 using Datas;
 using Managers;
 using UnityEngine;
@@ -141,12 +140,30 @@ namespace Controllers
 
                 if (!_isKnockedBack || _moveInput.x != 0)
                 {
-                    targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
-                    _isKnockedBack = false;
+                    if (_isKnockedBack)
+                    {
+                        if (Mathf.Sign(_rb.linearVelocity.x) != Mathf.Sign(targetSpeedX))
+                        {
+                            targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+                            _isKnockedBack = false;
+                        }
+                        else if (Mathf.Abs(_rb.linearVelocity.x) - Mathf.Abs(targetSpeedX) <= 0)
+                        {
+                            targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+                            _isKnockedBack = false;
+                        }
+                        else
+                        {
+                            return targetVelocity;
+                        }
+                    }
+                    else
+                    {
+                        targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+                        _isKnockedBack = false;
+                    }
                 }
-                
             }
-
             return targetVelocity;
         }
         
