@@ -1,5 +1,5 @@
-using System;
 using Datas;
+using Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +14,8 @@ namespace Controllers
         [Header("To add to data")] 
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [SerializeField] private bool stopVelocity;
+        [SerializeField] private float jumpSlopeAngle;
+        private Vector2 _jumpSlopeVector;
         private static bool _stopVelocity;
         [Space(10f)]
         
@@ -24,6 +26,7 @@ namespace Controllers
         
         [Header("Slope Settings")]
         [SerializeField] private float slopeAngleThreshold = 5f;
+        [SerializeField] private bool canJumpOnSlope = false;
         [Space(10f)]
 
         [Header("Raycast Settings")]
@@ -44,6 +47,7 @@ namespace Controllers
         private float _jumpBufferCounter;
         private float _boxCastCooldownCounter = 0;
         private bool _jumpButtonReleased = false;
+        private float _slopeDirection;
         
         private Vector2 _velocity;
 
@@ -92,6 +96,8 @@ namespace Controllers
 
             _rb.linearVelocity = _velocity;
         }
+
+        
         
         private Vector2 Movement(Vector2 targetVelocity)
         {
@@ -110,7 +116,8 @@ namespace Controllers
 
                 if (slopeAngle > slopeAngleThreshold)
                 {
-                    onSlope = true; 
+                    onSlope = true;
+                    _slopeDirection = Mathf.Sign(groundHit.normal.x);
                     _playerCollider.sharedMaterial = noFrictionMaterial;
                     _rb.sharedMaterial = noFrictionMaterial;
                 }
@@ -130,18 +137,54 @@ namespace Controllers
                 _rb.sharedMaterial = noFrictionMaterial;
                 
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
-                targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
-            }
 
+                if (!_isKnockedBack || _moveInput.x != 0)
+                {
+                    if (_isKnockedBack)
+                    {
+                        if (Mathf.Sign(_rb.linearVelocity.x) != Mathf.Sign(targetSpeedX))
+                        {
+                            targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+                            _isKnockedBack = false;
+                        }
+                        else if (Mathf.Abs(_rb.linearVelocity.x) - Mathf.Abs(targetSpeedX) <= 0)
+                        {
+                            targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+                            _isKnockedBack = false;
+                        }
+                        else
+                        {
+                            return targetVelocity;
+                        }
+                    }
+                    else
+                    {
+                        targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+                        _isKnockedBack = false;
+                    }
+                }
+            }
             return targetVelocity;
         }
         
         private Vector2 Jump(Vector2 targetVelocity)
         {
-            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope)
+            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope || _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && canJumpOnSlope)
             {
                 float jumpForce = (2f * data.JumpHeight) / data.TimeToJumpApex;
-                targetVelocity.y = jumpForce;
+                switch (onSlope)
+                {
+                    case false:
+                        targetVelocity.y = jumpForce;
+                        break;
+                    case true:
+                        float jumpSlopeRadians = jumpSlopeAngle * Mathf.Deg2Rad;
+                        _jumpSlopeVector = new Vector2(Mathf.Sin(jumpSlopeRadians), Mathf.Cos(jumpSlopeRadians));
+                        Vector2 jumpForceVector = _jumpSlopeVector * jumpForce;
+                        jumpForceVector.x *= _slopeDirection;
+                        targetVelocity = jumpForceVector;
+                        break;
+                }
 
                 _coyoteTimeCounter = 0f;
                 _jumpBufferCounter = 0f;
@@ -200,6 +243,8 @@ namespace Controllers
             Gizmos.color = grounded ? Color.green : Color.red;
             Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
         }
+        
+        private static bool _isKnockedBack = false;
 
         public static void ActivateKnockback(Vector2 direction, float force)
         {
@@ -208,6 +253,15 @@ namespace Controllers
                 _rb.linearVelocity = Vector2.zero;
             }
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
+            _isKnockedBack = true;
+        }
+
+        public void OnRetry(InputAction.CallbackContext context)
+        {
+            if (!context.performed)
+                return;
+            
+            GameManager.Instance.RespawnPlayer();
         }
         
     }

@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using Arrows;
+using Controllers;
 using Datas;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Managers
 {
@@ -21,6 +23,8 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
+
+        [SerializeField] private ButterflyController butterfly;
         
         [SerializeField] private List<ArrowGroupData> arrowGroupDatas;
         
@@ -36,6 +40,32 @@ namespace Managers
         {
             CurrentArrowGroupData = arrowGroupDatas[0];
             PlayerTransform = playerTransform;
+        }
+        
+        void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+        
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if(butterfly == null)
+                butterfly = LevelManager.Instance.butterfly;
+            if (momentumPrefab == null)
+                momentumPrefab = LevelManager.Instance.momentumPrefab;
+            if(pointerParent == null)
+                pointerParent = LevelManager.Instance.pointerParent;
+            if(pointer == null)
+                pointer = LevelManager.Instance.pointer;
+            if(playerTransform == null)
+                playerTransform = LevelManager.Instance.playerTransform;
+            //remettre les fleches
+
         }
 
         private ArrowGroupData CurrentArrowGroupData { get; set; }
@@ -75,18 +105,20 @@ namespace Managers
         
         public void CreateArrow()
         {
-            Debug.Log("Shoot");
-            if (_arrowNum < CurrentArrowGroupData.ArrowTypeList.Count)
-            {
-                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
-            }
-            else
+            
+            if (_arrowNum >= CurrentArrowGroupData.ArrowTypeList.Count)
             {
                 Debug.Log("no more arrows");
-                _arrowNum = 0;
-                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);
+                /*_arrowNum = 0;
+                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);*/
+                return;
             }
+            
+            Debug.Log("Shoot");
+            butterfly.ToTransState();
 
+            CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
+            
             GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,pointer.transform);
             CurrentArrowScript = arrowCreation.GetComponent<Arrow>();
 
@@ -97,6 +129,8 @@ namespace Managers
         
         public void ShootArrow()
         {
+            butterfly.ToShootState();
+            
             CurrentArrowScript.SetDynamic();
             CurrentArrowScript.gameObject.transform.SetParent(null);
             CurrentArrowScript.CanStartMoving = true;

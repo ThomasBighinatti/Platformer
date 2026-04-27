@@ -77,8 +77,6 @@ public class MovingPlatform : MonoBehaviour
         }
     }
     
-    //TODO count number of interactions
-
     private int _numberOfInteractions;
     private int NumberOfInteractions
     {
@@ -117,4 +115,19 @@ public class MovingPlatform : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.transform.SetParent(transform);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.transform.SetParent(null);
+        }
+    }
 }

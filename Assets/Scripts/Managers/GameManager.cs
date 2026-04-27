@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Managers
 {
@@ -16,6 +17,35 @@ namespace Managers
             }
             Instance = this;
             DontDestroyOnLoad(transform.parent);
+        }
+
+        [SerializeField] private GameObject player;
+        
+        void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+        
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (player == null)
+                player = LevelManager.Instance.player;
+        }
+
+        public void RespawnPlayer()
+        {
+            if (player is null) 
+                return;
+            
+            if (!SaveManager.Instance.CheckpointPositions.TryGetValue(SaveManager.Instance.CurrentCheckpointIndex, out Vector3 spawnPosition))
+                return;
+            
+            player.transform.position = spawnPosition;
         }
     
         /*
