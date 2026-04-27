@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   settings:
-    direction: 2
+    direction: 1
     speed: 5
     distance: 5
 --- !u!61 &3327354728066637798
