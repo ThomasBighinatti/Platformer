@@ -1,0 +1,2090 @@
+fileFormatVersion: 2
+guid: 028ca693998a47d468e174c55104e548
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8125898144621484845
+    second: Tiles_cauchemars_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -14, y: 13}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65d5bce76ef98d4194a375855506329
+      internalID: -799954269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a3593a6585a8f43acc35cb3d2c9ea2
+      internalID: 915161884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01b252fe6232ac4eb925b9dd03cd838
+      internalID: -1904981626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e04ea3800fca744bde13d94270d1b1
+      internalID: -805812593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49105caf9ca33ee428ba0c54160a8f75
+      internalID: 1754279950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09dc651cd51db4046b77e84ff90b4b4a
+      internalID: -2053800948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4260e83efbe601f4a8c05f9a80bc0c5f
+      internalID: -1765400663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dab7f2f231b26f47a888d313babda83
+      internalID: -514002030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd249443d2f2ffa43b9fe732107377a1
+      internalID: 1736091856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -14, y: 13}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e2ef5019c4c9f4a88d562772e894a0
+      internalID: -2055594654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a5e5976018fe84c9fae7f6d1d88648
+      internalID: -764365406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: df95cce3a50fec449957042cc5ae2ed1
+      internalID: 46137978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678ae0d6c839b8e448c0999e44111165
+      internalID: -1483966286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec51809e1ce8284fb562145a7a8719c
+      internalID: 1403177546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeebff9803f76a044a97cea540e64f93
+      internalID: 1011358898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 13, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2608fae07a819e049b0278e5322238c8
+      internalID: 824033187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7554fa7bb8f9b304e83e57208fc690e8
+      internalID: -69607058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 13}
+        - {x: -14, y: 13}
+        - {x: -14, y: -14}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca0311e9c7fa4e43b65e61f5c65fdbc
+      internalID: -263932238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc6239c80503f84d9be08187526b311
+      internalID: -602248776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d523bfed9646c4741bd1aead1da6c621
+      internalID: -44956036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ba0370b7c445440bdfc6cb0c6a8223
+      internalID: -679351291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: de52cb6ba5f231240a67d6d464fd9204
+      internalID: -1526425235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a815cfd8c0a7aa74b88647c47c810743
+      internalID: -23445410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_23
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 13}
+        - {x: -14, y: 13}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ae09f8abf4cdc45b90f7cd3d89b65e
+      internalID: 967112944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_24
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 13, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5697a31722520ce409d4fea7ad342b21
+      internalID: 161203729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7a358eabe70024c99a8885b0e4f6dd
+      internalID: 1048148841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fea7f13fb132246abeecb50a56fd09
+      internalID: 218979789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b109021ca1fef445ba50ec95f5204d4
+      internalID: -1292464408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62749b76d7f91944af34e57096f3539
+      internalID: 1945499869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bec0c2a6ae1ac4a8b998bc0697f132
+      internalID: -2062227664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfb9b301bc86ea44b317c01492057cf
+      internalID: -691978343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0e4dfef4a041246a307901b97bb19c
+      internalID: 109405928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_32
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c63ea62be784474e9fe9b23bf8f58be
+      internalID: 1845214305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: 11, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80558687b2c15cc42b2391f12bc2fcaf
+      internalID: 1135050083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_34
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: 11, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d4c3e8c503b3641ab98acc8be5e064
+      internalID: 868053528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 13, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82b481cfb5c37a45817fea913e4a699
+      internalID: 1181767790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_36
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab143ca5b68c65b4c899dddb130fa8b3
+      internalID: -2004482300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f868ddbdcb35fa141854565c0e503f9b
+      internalID: 1348104234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdd714561f964f4d827b0d409d1bb17
+      internalID: -1328980071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46993ff8e82c1b042a822f6d2cb2e3e9
+      internalID: 1882523250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70088c13d46762043b1164c12c92e431
+      internalID: -954527989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d259d18c4d1bd4795932b15891ce10
+      internalID: -1011967026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688e8aa3c958331439180e44168b2b98
+      internalID: 727539332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_43
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f256ddb4d14b8143ab221aff08958f7
+      internalID: 1001096689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_44
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 13, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151872f5fdd5ff34e990fc7ba4001dad
+      internalID: -977328194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc8fd7dac4ec974ea87e71a5ac6b56a
+      internalID: 1139070771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1532a2776d6b3cf45bde1ffd12a92eae
+      internalID: 332865683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a61cae61a144c41a9e9c14303fa1e0
+      internalID: -1909028579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d043e0cf9f4bad942a5f2ba58985a725
+      internalID: 1922147346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c494999a491807942b207fc8af39b785
+      internalID: -270399576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ad12826f690de44a77d391b979f44c
+      internalID: -521817259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e2023fe5e7f424b9c17adfd319a184
+      internalID: -1263465947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_52
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a720a1687065817439dbb2a63eb25545
+      internalID: -387686695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6769574cfb0b7a54c84f796744995fbf
+      internalID: 740923785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_54
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9f571e617bedf4b998e06cb2da3a4b
+      internalID: 932712285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f65c56b0e15e9245ad9d22c106b5314
+      internalID: -596770768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec0bb94734b82c4bab75a98b7abe491
+      internalID: 965178084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaca85a7d3743f14a8dd410663e3ddd7
+      internalID: -565145613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08da858c366fc746906b25cd7c802d2
+      internalID: 1450920697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_59
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc0faecfbd6d3a40a747df1c7ee6453
+      internalID: 2084617436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_60
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dab1be34b76c36499fcb5f04c988c4d
+      internalID: 1910173958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_61
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1017eb9d2072b6d4e89e32a4c8b5b92e
+      internalID: 1687264741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6c317ff4a1b5f4f9dc7183d09811ba
+      internalID: -708539825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_63
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: 14, y: 13}
+        - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: -14, y: -14}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eca76d872f45a14bb3ddf0d733b49f1
+      internalID: 1018772316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_64
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -14}
+        - {x: 14, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0027e92fbe5f44fa068e0cd8919ff5
+      internalID: -667818446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -14, y: 13}
+        - {x: -14, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fdc5ea7f29b7c47aae23f6a4ac46e1
+      internalID: 1125239825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec986970777b4e44b8555fd4b4b9c67
+      internalID: -1829182129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_67
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a884625f971524092c7bb86fcbbeb3
+      internalID: -1112921747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_68
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4daeb145c189d45a420fe60910b7a2
+      internalID: -1582073822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesGroundCauchemars_69
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 13, y: 13}
+        - {x: -16, y: 13}
+        - {x: -16, y: -14}
+        - {x: 13, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b910bd69667a10e4299844aa248cbaf4
+      internalID: 1823755849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3a10af1eaa7cc9b4d90b9cc1694f1c56
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      TilesGroundCauchemars_0: -799954269
+      TilesGroundCauchemars_1: 915161884
+      TilesGroundCauchemars_10: -764365406
+      TilesGroundCauchemars_11: 46137978
+      TilesGroundCauchemars_12: -1483966286
+      TilesGroundCauchemars_13: 1403177546
+      TilesGroundCauchemars_14: 1011358898
+      TilesGroundCauchemars_15: 824033187
+      TilesGroundCauchemars_16: -69607058
+      TilesGroundCauchemars_17: -263932238
+      TilesGroundCauchemars_18: -602248776
+      TilesGroundCauchemars_19: -44956036
+      TilesGroundCauchemars_2: -1904981626
+      TilesGroundCauchemars_20: -679351291
+      TilesGroundCauchemars_21: -1526425235
+      TilesGroundCauchemars_22: -23445410
+      TilesGroundCauchemars_23: 967112944
+      TilesGroundCauchemars_24: 161203729
+      TilesGroundCauchemars_25: 1048148841
+      TilesGroundCauchemars_26: 218979789
+      TilesGroundCauchemars_27: -1292464408
+      TilesGroundCauchemars_28: 1945499869
+      TilesGroundCauchemars_29: -2062227664
+      TilesGroundCauchemars_3: -805812593
+      TilesGroundCauchemars_30: -691978343
+      TilesGroundCauchemars_31: 109405928
+      TilesGroundCauchemars_32: 1845214305
+      TilesGroundCauchemars_33: 1135050083
+      TilesGroundCauchemars_34: 868053528
+      TilesGroundCauchemars_35: 1181767790
+      TilesGroundCauchemars_36: -2004482300
+      TilesGroundCauchemars_37: 1348104234
+      TilesGroundCauchemars_38: -1328980071
+      TilesGroundCauchemars_39: 1882523250
+      TilesGroundCauchemars_4: 1754279950
+      TilesGroundCauchemars_40: -954527989
+      TilesGroundCauchemars_41: -1011967026
+      TilesGroundCauchemars_42: 727539332
+      TilesGroundCauchemars_43: 1001096689
+      TilesGroundCauchemars_44: -977328194
+      TilesGroundCauchemars_45: 1139070771
+      TilesGroundCauchemars_46: 332865683
+      TilesGroundCauchemars_47: -1909028579
+      TilesGroundCauchemars_48: 1922147346
+      TilesGroundCauchemars_49: -270399576
+      TilesGroundCauchemars_5: -2053800948
+      TilesGroundCauchemars_50: -521817259
+      TilesGroundCauchemars_51: -1263465947
+      TilesGroundCauchemars_52: -387686695
+      TilesGroundCauchemars_53: 740923785
+      TilesGroundCauchemars_54: 932712285
+      TilesGroundCauchemars_55: -596770768
+      TilesGroundCauchemars_56: 965178084
+      TilesGroundCauchemars_57: -565145613
+      TilesGroundCauchemars_58: 1450920697
+      TilesGroundCauchemars_59: 2084617436
+      TilesGroundCauchemars_6: -1765400663
+      TilesGroundCauchemars_60: 1910173958
+      TilesGroundCauchemars_61: 1687264741
+      TilesGroundCauchemars_62: -708539825
+      TilesGroundCauchemars_63: 1018772316
+      TilesGroundCauchemars_64: -667818446
+      TilesGroundCauchemars_65: 1125239825
+      TilesGroundCauchemars_66: -1829182129
+      TilesGroundCauchemars_67: -1112921747
+      TilesGroundCauchemars_68: -1582073822
+      TilesGroundCauchemars_69: 1823755849
+      TilesGroundCauchemars_7: -514002030
+      TilesGroundCauchemars_8: 1736091856
+      TilesGroundCauchemars_9: -2055594654
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
