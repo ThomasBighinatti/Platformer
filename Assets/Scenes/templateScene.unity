@@ -2647,63 +2647,6 @@ MonoBehaviour:
     Event:
       m_PersistentCalls:
         m_Calls: []
---- !u!1001 &8402506584969206402
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -18.618595
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.49516
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595935453900439490, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7838400368658476388, guid: 3f4930676469048489092031366662a4, type: 3}
-      propertyPath: m_Name
-      value: Camera
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3f4930676469048489092031366662a4, type: 3}
 --- !u!1839735485 &8480592709879828657
 Tilemap:
   m_ObjectHideFlags: 0
@@ -2834,7 +2777,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1503364451}
   - {fileID: 1873254394147308930}
-  - {fileID: 8402506584969206402}
   - {fileID: 6625349406959012041}
   - {fileID: 185720594}
   - {fileID: 465141936}
