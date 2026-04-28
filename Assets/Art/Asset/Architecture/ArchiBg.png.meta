@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 1332a4fb4c2a58d4b8fc124359fd5742
+guid: 88a5667dede49844092f3238928a7972
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9160094975711813436
-    second: Assets_architecture_fond_0
+      213: -456105886504014381
+    second: ArchiBg 1_0
   - first:
-      213: 6795327737623287653
-    second: Assets_architecture_fond_1
+      213: -2495104820152163443
+    second: ArchiBg 1_1
   - first:
-      213: 2708344086240618374
-    second: Assets_architecture_fond_2
+      213: -2786609187224884782
+    second: ArchiBg 1_2
   - first:
-      213: -1866564760908725218
-    second: Assets_architecture_fond_3
+      213: -7008170083602455135
+    second: ArchiBg 1_3
   - first:
-      213: 3090837734489733455
-    second: Assets_architecture_fond_4
+      213: 7828947847687318198
+    second: ArchiBg 1_4
   - first:
-      213: 3786530132820836403
-    second: Assets_architecture_fond_5
+      213: 6665507412141063714
+    second: ArchiBg 1_5
   - first:
-      213: 8744675709175146447
-    second: Assets_architecture_fond_6
+      213: -6514395044418556488
+    second: ArchiBg 1_6
+  - first:
+      213: -3715534215350320645
+    second: ArchiBg 1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,155 +134,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ArchiBg_0
+      name: ArchiBg 1_0
       rect:
         serializedVersion: 2
-        x: 36
+        x: 5
         y: 0
-        width: 25
-        height: 115
+        width: 27
+        height: 116
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9350ab117f801d84cb168f9af5987ea8
-      internalID: -2122671999
+      spriteID: 3dda6fedc169ba9f0800000000000000
+      internalID: -456105886504014381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArchiBg_1
+      name: ArchiBg 1_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 37
         y: 0
-        width: 32
-        height: 124
+        width: 34
+        height: 125
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 71ea43a8357565c43860a551732e330b
-      internalID: -1937777688
+      spriteID: d83277db26b9f5dd0800000000000000
+      internalID: -2495104820152163443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArchiBg_2
+      name: ArchiBg 1_2
       rect:
         serializedVersion: 2
-        x: 106
+        x: 75
         y: 0
-        width: 118
-        height: 160
+        width: 120
+        height: 161
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5d1f0c0fdf6c5e3469f9faf2a13c4368
-      internalID: -537941448
+      spriteID: 2d9ee9355b9f359d0800000000000000
+      internalID: -2786609187224884782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArchiBg_3
+      name: ArchiBg 1_3
       rect:
         serializedVersion: 2
-        x: 252
+        x: 199
         y: 0
-        width: 68
-        height: 377
+        width: 62
+        height: 183
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 00ec16e4e2728484da534c5792b29a26
-      internalID: -1958770410
+      spriteID: 1a52b59907afdbe90800000000000000
+      internalID: -7008170083602455135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArchiBg_4
+      name: ArchiBg 1_4
       rect:
         serializedVersion: 2
-        x: 350
+        x: 270
         y: 0
-        width: 227
-        height: 303
+        width: 70
+        height: 406
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d885383fb114f5949a7e641800bc2537
-      internalID: -1051610169
+      spriteID: 6ba2672869206ac60800000000000000
+      internalID: 7828947847687318198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArchiBg_5
+      name: ArchiBg 1_5
       rect:
         serializedVersion: 2
-        x: 585
+        x: 349
         y: 0
-        width: 168
-        height: 465
+        width: 229
+        height: 304
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f833bb77e104e314b83ee3c139fa4862
-      internalID: -1695597287
+      spriteID: 22eb66c0da3a08c50800000000000000
+      internalID: 6665507412141063714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArchiBg_6
+      name: ArchiBg 1_6
       rect:
         serializedVersion: 2
-        x: 768
+        x: 584
         y: 0
-        width: 281
-        height: 288
+        width: 170
+        height: 466
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6fdc6d3daf6c9d94d9268dd50af1df1c
-      internalID: 75328053
+      spriteID: 8bdeddac8383895a0800000000000000
+      internalID: -6514395044418556488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArchiBg 1_7
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 283
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf10c3f1155cf6cc0800000000000000
+      internalID: -3715534215350320645
       vertices: []
       indices: 
       edges: []
@@ -288,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fa270774d4fcb014792de622785a203e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -296,17 +321,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      ArchiBg_0: -2122671999
-      ArchiBg_1: -1937777688
-      ArchiBg_2: -537941448
-      ArchiBg_3: -1958770410
-      ArchiBg_4: -1051610169
-      ArchiBg_5: -1695597287
-      ArchiBg_6: 75328053
+      ArchiBg 1_0: -456105886504014381
+      ArchiBg 1_1: -2495104820152163443
+      ArchiBg 1_2: -2786609187224884782
+      ArchiBg 1_3: -7008170083602455135
+      ArchiBg 1_4: 7828947847687318198
+      ArchiBg 1_5: 6665507412141063714
+      ArchiBg 1_6: -6514395044418556488
+      ArchiBg 1_7: -3715534215350320645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
