@@ -76,6 +76,8 @@ namespace Controllers
             _rb.gravityScale = 0;
             _stopVelocity = stopVelocity;
         }
+
+        [SerializeField] private GameObject visual;
         
         private void FixedUpdate()
         {
@@ -93,7 +95,8 @@ namespace Controllers
                 Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), 
                 Mathf.Max(_velocity.y, -data.MaxFallSpeed)
             );
-
+            
+            visual.transform.localScale = new Vector3(_velocity.x <= 0 ? -1 : 1, 1, 1);
             _rb.linearVelocity = _velocity;
         }
 
