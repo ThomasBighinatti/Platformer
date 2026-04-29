@@ -322,9 +322,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EyeMove
   pupil: {fileID: 3716095209480500491}
   centerDistance: 0.35
-  offsetDistance: 0.1
   offsetDistanceOnLook: 0.05
   randomTimeWaitMin: 3
   randomTimeWaitMax: 6
-  probaLookPlayer: 0.8
-  detectionDistance: 20
+  probaLookPlayer: 1
+  offsetDistance: 0.1
+  detectionDistance: 50

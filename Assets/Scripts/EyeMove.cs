@@ -14,10 +14,10 @@ public class EyeMove : MonoBehaviour
     [SerializeField] private float randomTimeWaitMin;
     [SerializeField] private float randomTimeWaitMax;
     
-    //[SerializeField, Range(0, 1)][Obsolete] private float probaLookPlayer;
-    //[SerializeField, Range(0, 1)][Obsolete] private float offsetDistance;
+    [SerializeField, Range(0, 1)][Obsolete] private float probaLookPlayer;
+    [SerializeField, Range(0, 1)][Obsolete] private float offsetDistance;
     
-    //[SerializeField] private float detectionDistance;
+    [SerializeField] private float detectionDistance;
     private GameObject _player;
     private Vector3 _pupilCenter;
     
@@ -29,27 +29,27 @@ public class EyeMove : MonoBehaviour
         //Debug.DrawRay(transform.position,Vector3.left * detectionDistance, Color.brown,float.MaxValue);
     }
 
-    //private bool IsInRange => Vector2.Distance(_player.transform.position, transform.position) <= detectionDistance;
+    private bool IsInRange => Vector2.Distance(_player.transform.position, transform.position) <= detectionDistance;
 
-    /*private void LookTowardsPlayer()
+    private void LookTowardsPlayer()
     {
         pupil.transform.position = _pupilCenter + (_player.transform.position - pupil.transform.position).normalized * centerDistance;
         pupil.transform.position += (Vector3)Random.insideUnitCircle * offsetDistanceOnLook;
-    }*/
+    }
 
-    /*private void VariationCenterLook()
+    private void VariationCenterLook()
     {
         pupil.transform.position = _pupilCenter + (Vector3)Random.insideUnitCircle * offsetDistance;
-    }*/
+    }
 
-    private IEnumerator WaitForLookCycle()
+    /*private IEnumerator WaitForLookCycle()
     {
         //LookTowardsPlayer();
         yield return new WaitForSeconds(Random.Range(randomTimeWaitMin, randomTimeWaitMax));
         StartCoroutine(WaitForLookCycle());
-    }
+    }*/
     
-    /*private IEnumerator WaitForLookCycle()
+    private IEnumerator WaitForLookCycle()
     {
         if (IsInRange)
         {
@@ -64,6 +64,6 @@ public class EyeMove : MonoBehaviour
         VariationCenterLook();
         yield return new WaitForSeconds(Random.Range(randomTimeWaitMin, randomTimeWaitMax));
         StartCoroutine(WaitForLookCycle());
-    }*/
+    }
     
 }
