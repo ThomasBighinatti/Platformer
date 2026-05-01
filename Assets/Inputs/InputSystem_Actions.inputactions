@@ -73,7 +73,7 @@
                     "name": "Next",
                     "type": "Button",
                     "id": "b7230bb6-fc9b-4f52-8b25-f5e19cb2c2ba",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -91,15 +91,6 @@
                     "name": "Recall",
                     "type": "Button",
                     "id": "f7f9655d-d7e7-4ee9-8009-82a117fd4e3f",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Retry",
-                    "type": "Button",
-                    "id": "371ccd49-f30a-4dc4-a713-b3e9ef05c6bc",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -412,28 +403,6 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Recall",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7ffbde2c-97f6-47a9-a038-d5646eb0d638",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Retry",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "29342bea-feca-459d-846e-e45ddb9592e1",
-                    "path": "<Keyboard>/enter",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Retry",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -950,6 +919,45 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "GameManager",
+            "id": "89e97b9e-124a-4044-8e19-3c3c4cb76dd6",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "cc7363df-8bd9-40fe-8782-7cb0297eff62",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1112f0e5-d436-4c46-be19-3388f2c71ae2",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b52449c2-11f1-4652-919d-cc08ebc6cf7f",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

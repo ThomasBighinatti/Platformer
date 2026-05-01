@@ -8,7 +8,7 @@ public class Spike : MonoBehaviour
         Debug.Log("tué");
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace Managers
@@ -36,16 +37,34 @@ namespace Managers
             if (player == null)
                 player = LevelManager.Instance.player;
         }
+        
+        public void OnRetry(InputAction.CallbackContext context)
+        {
+            if (player != null && !player.activeSelf)
+                RespawnPlayer();
+        }
 
         public void RespawnPlayer()
         {
-            if (player is null) 
+            if (player == null)
+            {
+                Debug.LogError("no player");
                 return;
-            
-            if (!SaveManager.Instance.CheckpointPositions.TryGetValue(SaveManager.Instance.CurrentCheckpointIndex, out Vector3 spawnPosition))
+            }
+
+            if (!SaveManager.Instance.CheckpointPositions.TryGetValue(
+                    SaveManager.Instance.CurrentCheckpointIndex, 
+                    out Vector3 spawnPosition))
+            {
+                Debug.LogWarning("no checkpoint found");
                 return;
+            }
             
             player.transform.position = spawnPosition;
+            player.SetActive(true);
+            
+            if (player.TryGetComponent<Rigidbody2D>(out var rb))
+                rb.linearVelocity = Vector2.zero;
         }
     
         /*

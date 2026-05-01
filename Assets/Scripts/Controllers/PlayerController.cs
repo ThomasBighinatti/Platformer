@@ -258,14 +258,6 @@ namespace Controllers
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
             _isKnockedBack = true;
         }
-
-        public void OnRetry(InputAction.CallbackContext context)
-        {
-            if (!context.performed)
-                return;
-            
-            GameManager.Instance.RespawnPlayer();
-        }
         
     }
 }
