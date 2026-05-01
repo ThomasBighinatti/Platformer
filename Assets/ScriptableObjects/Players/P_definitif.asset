@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a53be2f2f0093941b7027b9a993bf1e, type: 3}
-  m_Name: P_Official
+  m_Name: P_definitif
   m_EditorClassIdentifier: AssemblyData::Datas.PlayerData
   playerSpeed: 10
   maxSpeed: 25
   playerAcceleration: 500
   jumpHeight: 3.65
-  timeToJumpApex: 0.8
-  timeToFall: 0.5
+  timeToJumpApex: 0.35
+  timeToFall: 0.37
   apexHangThreshold: 1
-  apexHangGravityMult: 1
-  maxFallSpeed: 50
-  jumpCutMultiplier: 0.5
+  apexHangGravityMult: 0.414
+  maxFallSpeed: 100
+  jumpCutMultiplier: 1
   coyoteTime: 0.2
   jumpBufferTime: 0.2
   airControl: 30
