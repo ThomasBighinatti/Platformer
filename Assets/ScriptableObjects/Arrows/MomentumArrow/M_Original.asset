@@ -19,6 +19,6 @@ MonoBehaviour:
   gravityActivationTime: 0.1
   useDestroy: 1
   destroyTime: 2
-  recallInitialSpeed: 25
-  recallAcceleration: 100
+  recallInitialSpeed: 80
+  recallAcceleration: 300
   knockbackForce: 0.25
