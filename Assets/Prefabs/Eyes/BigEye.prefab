@@ -49,12 +49,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   pupil: {fileID: 8287572358013141594}
   centerDistance: 0.7
-  offsetDistance: 0.2
   offsetDistanceOnLook: 0.1
   randomTimeWaitMin: 3
   randomTimeWaitMax: 6
-  probaLookPlayer: 0.8
-  detectionDistance: 20
+  probaLookPlayer: 1
+  offsetDistance: 0.2
+  detectionDistance: 50
 --- !u!1 &655003332504637070
 GameObject:
   m_ObjectHideFlags: 0

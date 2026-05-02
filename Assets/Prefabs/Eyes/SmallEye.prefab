@@ -231,12 +231,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EyeMove
   pupil: {fileID: 9111837392766395415}
   centerDistance: 0.08
-  offsetDistance: 0.02
   offsetDistanceOnLook: 0.01
   randomTimeWaitMin: 3
   randomTimeWaitMax: 6
-  probaLookPlayer: 0.8
-  detectionDistance: 20
+  probaLookPlayer: 1
+  offsetDistance: 0.02
+  detectionDistance: 50
 --- !u!1 &9111837392766395415
 GameObject:
   m_ObjectHideFlags: 0
