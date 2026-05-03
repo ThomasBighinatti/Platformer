@@ -40,8 +40,12 @@ namespace Managers
         
         public void OnRetry(InputAction.CallbackContext context)
         {
-            if (player != null && !player.activeSelf)
-                RespawnPlayer();
+            if (context.started)
+            {
+                Debug.Log("Respawn");
+                if (player != null && !player.activeSelf)
+                    RespawnPlayer();
+            }
         }
 
         public void RespawnPlayer()
@@ -62,9 +66,6 @@ namespace Managers
             
             player.transform.position = spawnPosition;
             player.SetActive(true);
-            
-            if (player.TryGetComponent<Rigidbody2D>(out var rb))
-                rb.linearVelocity = Vector2.zero;
         }
     
         /*

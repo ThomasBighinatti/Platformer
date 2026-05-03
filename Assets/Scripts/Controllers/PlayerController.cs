@@ -1,5 +1,7 @@
+using System;
 using Datas;
 using Managers;
+using UnityEditor.Hardware;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -48,6 +50,7 @@ namespace Controllers
         private float _boxCastCooldownCounter = 0;
         private bool _jumpButtonReleased = false;
         private float _slopeDirection;
+        private PlayerInput _playerInput;
         
         private Vector2 _velocity;
 
@@ -68,13 +71,55 @@ namespace Controllers
         {
             _moveInput = context.ReadValue<Vector2>();
         }
-        
+
+        private void Awake()
+        {
+            _playerInput = GetComponent<PlayerInput>();
+        }
+
+        /*
+        private void OnEnable()
+        {
+            if(Gamepad.current != null && Gamepad.current.added)
+                _playerInput.SwitchCurrentControlScheme("Gamepad", Gamepad.current);
+            else
+                _playerInput.SwitchCurrentControlScheme();
+        }
+        */
+        /*
+        private void OnInputDeviceChange(InputDevice device, InputDeviceChange change)
+        {
+            Debug.Log("onInputDeviceChange");
+            switch (change)
+            {
+                case InputDeviceChange.Added:
+                    Debug.Log("Device added: " + device);
+                    if(Gamepad.current != null && Gamepad.current.added)
+                        _playerInput.SwitchCurrentControlScheme("Gamepad", Gamepad.current);
+                    else
+                        _playerInput.SwitchCurrentControlScheme();
+                    break;
+                case InputDeviceChange.Removed:
+                    Debug.Log("Device removed: " + device);
+                    if(Keyboard.current != null)
+                        _playerInput.SwitchCurrentControlScheme("Keyboard", Keyboard.current);
+                    else
+                        _playerInput.SwitchCurrentControlScheme();
+                    break;
+                case InputDeviceChange.ConfigurationChanged:
+                    Debug.Log("Device configuration changed: " + device);
+                    break;
+            }
+        }
+        */
+
         private void Start()
         {
             _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
             _rb = GetComponent<Rigidbody2D>();
             _rb.gravityScale = 0;
             _stopVelocity = stopVelocity;
+            //InputSystem.onDeviceChange += OnInputDeviceChange;
         }
 
         [SerializeField] private GameObject visual;
