@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: cefafede376282a4ba16cd55dedb9fb2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4112911358206271886
+    second: haut fond_0
+  - first:
+      213: 505217037212512422
+    second: haut fond_1
+  - first:
+      213: -277133434870642112
+    second: haut fond_2
+  - first:
+      213: 3610805025422391826
+    second: haut fond_3
+  - first:
+      213: -2468108738786132833
+    second: haut fond_4
+  - first:
+      213: -7362791376318732422
+    second: haut fond_5
+  - first:
+      213: -2268148551866105038
+    second: haut fond_6
+  - first:
+      213: 8596314645715267897
+    second: haut fond_7
+  - first:
+      213: 440467799796190118
+    second: haut fond_8
+  - first:
+      213: -6154439344816856941
+    second: haut fond_9
+  - first:
+      213: 5518214107059639185
+    second: haut fond_10
+  - first:
+      213: 1548213720815338918
+    second: haut fond_11
+  - first:
+      213: 3206988740867039645
+    second: haut fond_12
+  - first:
+      213: 2569411561835674758
+    second: haut fond_13
+  - first:
+      213: -8314440310631039408
+    second: haut fond_14
+  - first:
+      213: -2468087669377530929
+    second: haut fond_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: haut fond_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 1280
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81ed82d61ff31930800000000000000
+      internalID: 4112911358206271886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 390
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0f685f734e20700800000000000000
+      internalID: 505217037212512422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 110
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ac62bfb9c672cf0800000000000000
+      internalID: -277133434870642112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_3
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 26
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a3f7d2a082c1230800000000000000
+      internalID: 3610805025422391826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_4
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 28
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c7d9dbd248fbdd0800000000000000
+      internalID: -2468108738786132833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 4
+        width: 415
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a776633c04c12d990800000000000000
+      internalID: -7362791376318732422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 90
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2334434c8eae580e0800000000000000
+      internalID: -2268148551866105038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 15
+        width: 104
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931b85300ae3c4770800000000000000
+      internalID: 8596314645715267897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 17
+        width: 226
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab89d5512bdc1600800000000000000
+      internalID: 440467799796190118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_9
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 18
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390e084060a079aa0800000000000000
+      internalID: -6154439344816856941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_10
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193d6dd5e72a49c40800000000000000
+      internalID: 5518214107059639185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_11
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 20
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a585912d2c5c7510800000000000000
+      internalID: 1548213720815338918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_12
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 20
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91ae0ab443818c20800000000000000
+      internalID: 3206988740867039645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_13
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 8
+        width: 255
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c3ff0c33268a320800000000000000
+      internalID: 2569411561835674758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 4
+        width: 249
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ef5aad69c2d9c80800000000000000
+      internalID: -8314440310631039408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haut fond_15
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 7
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc30b3857579fbdd0800000000000000
+      internalID: -2468087669377530929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      haut fond_0: 4112911358206271886
+      haut fond_1: 505217037212512422
+      haut fond_10: 5518214107059639185
+      haut fond_11: 1548213720815338918
+      haut fond_12: 3206988740867039645
+      haut fond_13: 2569411561835674758
+      haut fond_14: -8314440310631039408
+      haut fond_15: -2468087669377530929
+      haut fond_2: -277133434870642112
+      haut fond_3: 3610805025422391826
+      haut fond_4: -2468108738786132833
+      haut fond_5: -7362791376318732422
+      haut fond_6: -2268148551866105038
+      haut fond_7: 8596314645715267897
+      haut fond_8: 440467799796190118
+      haut fond_9: -6154439344816856941
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
