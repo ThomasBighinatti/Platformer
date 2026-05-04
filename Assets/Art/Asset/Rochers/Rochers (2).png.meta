@@ -1,46 +1,46 @@
 fileFormatVersion: 2
-guid: 86977434bad0a4c48a5eccaa3912f138
+guid: 0272f1fca6beb9047861a47e00daf743
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8541953349314260320
-    second: Rochers_Light_0
+      213: -5269422675731465460
+    second: Rochers (2)_0
   - first:
-      213: -3664617547002352239
-    second: Rochers_Light_1
+      213: -222726598692948016
+    second: Rochers (2)_1
   - first:
-      213: -2265211730671984842
-    second: Rochers_Light_2
+      213: 3935125341065055446
+    second: Rochers (2)_2
   - first:
-      213: 7866391455634818366
-    second: Rochers_Light_3
+      213: 6687286185891390092
+    second: Rochers (2)_3
   - first:
-      213: -4287530774254603348
-    second: Rochers_Light_4
+      213: 1151954313711356940
+    second: Rochers (2)_4
   - first:
-      213: 442235015911567001
-    second: Rochers_Light_5
+      213: -9044922480105092826
+    second: Rochers (2)_5
   - first:
-      213: 5194377833011617558
-    second: Rochers_Light_6
+      213: 1057035109653219926
+    second: Rochers (2)_6
   - first:
-      213: 6242139327348807680
-    second: Rochers_Light_7
+      213: 2289529836141386601
+    second: Rochers (2)_7
   - first:
-      213: 5090273900602551635
-    second: Rochers_Light_8
+      213: 8134689058210880933
+    second: Rochers (2)_8
   - first:
-      213: 4778155049853933736
-    second: Rochers_Light_9
+      213: 1785939031258189701
+    second: Rochers (2)_9
   - first:
-      213: -4285963802669608536
-    second: Rochers_Light_10
+      213: 5168985570569282523
+    second: Rochers (2)_10
   - first:
-      213: -1440096074691197955
-    second: Rochers_Light_11
+      213: -2796306060772385406
+    second: Rochers (2)_11
   - first:
-      213: -1217806652260651487
-    second: Rochers_Light_12
+      213: -6515769996063198751
+    second: Rochers (2)_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,50 +132,81 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rochers_Light_0
+      name: Rochers (2)_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 453
-        width: 151
-        height: 123
+        x: 34
+        y: 488
+        width: 221
+        height: 196
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4deb6ea9e0958af4d84abaa4c47167fe
-      internalID: -8541953349314260320
+      spriteID: c0b33a9beff3fd6b0800000000000000
+      internalID: -5269422675731465460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_1
+      name: Rochers (2)_1
       rect:
         serializedVersion: 2
-        x: 223
-        y: 448
+        x: 371
+        y: 486
+        width: 225
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d730eaa657b8ecf0800000000000000
+      internalID: -222726598692948016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rochers (2)_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 389
+        width: 99
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc02d406af5c9630800000000000000
+      internalID: 3935125341065055446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rochers (2)_3
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 268
         width: 179
         height: 127
       alignment: 0
@@ -184,21 +215,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c0eb1e0c05ae8ef45a47c9c6f1e44dbe
-      internalID: -3664617547002352239
+      spriteID: c82ee65fa530ecc50800000000000000
+      internalID: 6687286185891390092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_2
+      name: Rochers (2)_4
       rect:
         serializedVersion: 2
-        x: 417
-        y: 418
-        width: 184
+        x: 744
+        y: 294
+        width: 183
         height: 147
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -206,42 +237,108 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a2b91bad16b26e64ea7edc7f52015abd
-      internalID: -2265211730671984842
+      spriteID: c0c8e3258509cff00800000000000000
+      internalID: 1151954313711356940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_3
+      name: Rochers (2)_5
       rect:
         serializedVersion: 2
-        x: 652
-        y: 366
-        width: 226
-        height: 207
+        x: 1003
+        y: 237
+        width: 229
+        height: 190
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d4fe9d63e78eff74990253f7dea92121
-      internalID: 7866391455634818366
+      spriteID: 62904682deaf97280800000000000000
+      internalID: -9044922480105092826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_4
+      name: Rochers (2)_6
       rect:
         serializedVersion: 2
-        x: 52
-        y: 289
+        x: 39
+        y: 229
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a0ff1f4d75bae00800000000000000
+      internalID: 1057035109653219926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rochers (2)_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 243
+        width: 151
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b9dd9614b06cf10800000000000000
+      internalID: 2289529836141386601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rochers (2)_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 127
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad9ae8599834e070800000000000000
+      internalID: 8134689058210880933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rochers (2)_9
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 40
         width: 119
         height: 148
       alignment: 0
@@ -250,86 +347,42 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 898f35ab4ea54d848a51d0e808f999e3
-      internalID: -4287530774254603348
+      spriteID: 58f46ac261ee8c810800000000000000
+      internalID: 1785939031258189701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_5
+      name: Rochers (2)_10
       rect:
         serializedVersion: 2
-        x: 197
-        y: 355
-        width: 84
-        height: 85
+        x: 520
+        y: 54
+        width: 181
+        height: 164
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6d012720b51e12f48b8a7ba966e1875a
-      internalID: 442235015911567001
+      spriteID: bd3e6ee6dfcebb740800000000000000
+      internalID: 5168985570569282523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_6
+      name: Rochers (2)_11
       rect:
         serializedVersion: 2
-        x: 293
-        y: 336
-        width: 100
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64666d1e603e6ac409b6ead5fd7640cc
-      internalID: 5194377833011617558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rochers_Light_7
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 178
-        width: 223
-        height: 196
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 672a8a068718a3d4db4a857663dc1f8a
-      internalID: 6242139327348807680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rochers_Light_8
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 147
+        x: 809
+        y: 67
         width: 172
         height: 121
       alignment: 0
@@ -338,43 +391,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4f9e3b01f79e36f46b40e7a99972b108
-      internalID: 5090273900602551635
+      spriteID: 28dd36404768139d0800000000000000
+      internalID: -2796306060772385406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_9
+      name: Rochers (2)_12
       rect:
         serializedVersion: 2
-        x: 224
-        y: 227
-        width: 128
-        height: 105
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79863431a15509d418e871231951c66e
-      internalID: 4778155049853933736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rochers_Light_10
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 32
-        width: 150
+        x: 1062
+        y: 77
+        width: 148
         height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -382,54 +413,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6f8d27c18281ddb4db04fe1c17727316
-      internalID: -4285963802669608536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rochers_Light_11
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 22
-        width: 181
-        height: 165
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc026be9193d88e40ad54a4551d71885
-      internalID: -1440096074691197955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rochers_Light_12
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 28
-        width: 230
-        height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc6a44bb6f5baa24dbc2e047b0db9e87
-      internalID: -1217806652260651487
+      spriteID: 1e1318ae5b55395a0800000000000000
+      internalID: -6515769996063198751
       vertices: []
       indices: 
       edges: []
@@ -438,7 +425,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2a74f722752c25e44a6260fd55606a39
+    spriteID: d6a349c928971e94d9a2688d2a70b507
     internalID: 0
     vertices: []
     indices: 
@@ -447,24 +434,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries:
-      - key: SpriteEditor.SliceOnImport
-        value: True
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Rochers_Light_0: -8541953349314260320
-      Rochers_Light_1: -3664617547002352239
-      Rochers_Light_10: -4285963802669608536
-      Rochers_Light_11: -1440096074691197955
-      Rochers_Light_12: -1217806652260651487
-      Rochers_Light_2: -2265211730671984842
-      Rochers_Light_3: 7866391455634818366
-      Rochers_Light_4: -4287530774254603348
-      Rochers_Light_5: 442235015911567001
-      Rochers_Light_6: 5194377833011617558
-      Rochers_Light_7: 6242139327348807680
-      Rochers_Light_8: 5090273900602551635
-      Rochers_Light_9: 4778155049853933736
+      Rochers (2)_0: -5269422675731465460
+      Rochers (2)_1: -222726598692948016
+      Rochers (2)_10: 5168985570569282523
+      Rochers (2)_11: -2796306060772385406
+      Rochers (2)_12: -6515769996063198751
+      Rochers (2)_2: 3935125341065055446
+      Rochers (2)_3: 6687286185891390092
+      Rochers (2)_4: 1151954313711356940
+      Rochers (2)_5: -9044922480105092826
+      Rochers (2)_6: 1057035109653219926
+      Rochers (2)_7: 2289529836141386601
+      Rochers (2)_8: 8134689058210880933
+      Rochers (2)_9: 1785939031258189701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
