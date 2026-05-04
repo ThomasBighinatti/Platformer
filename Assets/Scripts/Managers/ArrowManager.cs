@@ -115,7 +115,6 @@ namespace Managers
             }
             
             Debug.Log("Shoot");
-            butterfly.ToTransState();
 
             CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
             
@@ -129,7 +128,6 @@ namespace Managers
         
         public void ShootArrow()
         {
-            butterfly.ToShootState();
             
             CurrentArrowScript.SetDynamic();
             CurrentArrowScript.gameObject.transform.SetParent(null);

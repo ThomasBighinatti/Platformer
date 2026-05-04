@@ -17,52 +17,12 @@ namespace Controllers
         [SerializeField] private GameObject pointerRef;
         [SerializeField] private float butterflyPointerOffset;
         [SerializeField] private float shapeModifier = 0.5f;
-
-        public enum ButterflyState
-        {
-            Idle = 0,
-            Trans = 1,
-            Prepared = 2,
-            Shoot = 3
-        }
-
-        [SerializeField] private Animator animator;
         
-        private ButterflyState _currentButterflyState = ButterflyState.Idle;
-        public ButterflyState CurrentButterflyState
-        {
-            get => _currentButterflyState;
-            private set
-            {
-                _currentButterflyState = value;
-                animator.SetInteger(nameof(State), (int)_currentButterflyState);
-                Debug.Log(_currentButterflyState);
-            }
-        }
-
-        public void ToIdleState() => CurrentButterflyState = ButterflyState.Idle;
-        public bool IsIdleState => CurrentButterflyState == ButterflyState.Idle;
-        
-        public void ToTransState() => CurrentButterflyState = ButterflyState.Trans;
-        
-        public void ToPreparedState() => CurrentButterflyState = ButterflyState.Prepared;
-        
-        public void ToShootState() => CurrentButterflyState = ButterflyState.Shoot;
-
         private void Update()
         {
-            if (IsIdleState)
-            {
-                ButterFlyPointerRefresh();
-                
-                MoveButterfly();
-                MoveButterflyVisual();
-            }
-
-            if (CurrentButterflyState == ButterflyState.Prepared)
-            {
-                
-            }
+            ButterFlyPointerRefresh();
+            MoveButterfly();
+            MoveButterflyVisual();
         }
 
         private void ButterFlyPointerRefresh()
