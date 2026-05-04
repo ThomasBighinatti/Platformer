@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Art/Asset/Vegetaux/Animations/Animation_végé/AlguesBg_0 1.controller.meta
 guid: 9a8f6259ae7bca043b82220893258111
+========
+guid: 3c358411774d4564da1fd9957da31fc3
+>>>>>>>> origin/CLARA:Assets/Art/Asset/Vegetaux/Animations/Animation_végé/AlguesBg_0.controller.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
