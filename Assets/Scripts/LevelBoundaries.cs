@@ -1,5 +1,3 @@
-using System;
-using TreeEditor;
 using UnityEngine;
 
 public class LevelBoundaries : MonoBehaviour
@@ -15,7 +13,5 @@ public class LevelBoundaries : MonoBehaviour
         {
             //die
         }
-        
-        return;
     }
 }
