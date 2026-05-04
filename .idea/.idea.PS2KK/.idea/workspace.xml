@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="418ffaef-1b64-4cb2-9485-c86bf9b42b85" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnim.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GDPasToucheTestMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GDPasToucheTestMap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/LD1_Pols.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/LD1_Pols.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/LD2_Pols.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/LD2_Pols.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/LD_Charlies_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/LD_Charlies_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/niveaupournosgalestrotrobeauwaaaaaaaaaaaaaaaaaaaaaaah/Niveau1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/niveaupournosgalestrotrobeauwaaaaaaaaaaaaaaaaaaaaaaah/Niveau1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/niveaupournosgalestrotrobeauwaaaaaaaaaaaaaaaaaaaaaaah/Niveau2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/niveaupournosgalestrotrobeauwaaaaaaaaaaaaaaaaaaaaaaah/Niveau2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/niveaupournosgalestrotrobeauwaaaaaaaaaaaaaaaaaaaaaaah/Niveau3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/niveaupournosgalestrotrobeauwaaaaaaaaaaaaaaaaaaaaaaah/Niveau3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/niveaupournosgalestrotrobeauwaaaaaaaaaaaaaaaaaaaaaaah/Niveau4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NiveauxGDs/niveaupournosgalestrotrobeauwaaaaaaaaaaaaaaaaaaaaaaah/Niveau4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PS2KK/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PS2KK/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/niveauBETA/TousLesNiveaux.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/niveauBETA/TousLesNiveaux.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,10 +38,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "CLARA",
+    "git-widget-placeholder": "Thomas",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,13 +89,15 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="24012">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="24012" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -130,6 +128,7 @@
       <workItem from="1777303915792" duration="120000" />
       <workItem from="1777304069901" duration="2132000" />
       <workItem from="1777451448639" duration="366000" />
+      <workItem from="1777883889163" duration="3109000" />
     </task>
     <servers />
   </component>
@@ -161,6 +160,45 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs</url>
+          <line>87</line>
+          <properties documentPath="D:\Git\PS2KK\Assets\Scripts\Managers\SaveManager.cs" containingFunctionPresentation="Method 'Load'">
+            <startOffsets>
+              <option value="2493" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2535" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs</url>
+          <line>65</line>
+          <properties documentPath="D:\Git\PS2KK\Assets\Scripts\Managers\SaveManager.cs" containingFunctionPresentation="Method 'Save'">
+            <startOffsets>
+              <option value="1758" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1802" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/Checkpoint.cs</url>
+          <line>17</line>
+          <properties documentPath="D:\Git\PS2KK\Assets\Scripts\SaveSystem\Checkpoint.cs" containingFunctionPresentation="Method 'OnTriggerEnter2D'">
+            <startOffsets>
+              <option value="440" />
+            </startOffsets>
+            <endOffsets>
+              <option value="505" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
