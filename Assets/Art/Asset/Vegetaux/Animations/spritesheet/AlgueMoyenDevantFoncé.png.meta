@@ -1,46 +1,43 @@
 fileFormatVersion: 2
-guid: 86977434bad0a4c48a5eccaa3912f138
+guid: 367dfcd9acea5f84dab17b1dcbb271ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8541953349314260320
-    second: Rochers_Light_0
+      213: -4784766918536690318
+    second: "AlgueMoyenDevantFonc\xE9_0"
   - first:
-      213: -3664617547002352239
-    second: Rochers_Light_1
+      213: -279680991097342304
+    second: "AlgueMoyenDevantFonc\xE9_1"
   - first:
-      213: -2265211730671984842
-    second: Rochers_Light_2
+      213: 214458685988234031
+    second: "AlgueMoyenDevantFonc\xE9_2"
   - first:
-      213: 7866391455634818366
-    second: Rochers_Light_3
+      213: 9090445077573588104
+    second: "AlgueMoyenDevantFonc\xE9_3"
   - first:
-      213: -4287530774254603348
-    second: Rochers_Light_4
+      213: -8400660416204134871
+    second: "AlgueMoyenDevantFonc\xE9_4"
   - first:
-      213: 442235015911567001
-    second: Rochers_Light_5
+      213: 1979382200037827830
+    second: "AlgueMoyenDevantFonc\xE9_5"
   - first:
-      213: 5194377833011617558
-    second: Rochers_Light_6
+      213: 4140726145787121885
+    second: "AlgueMoyenDevantFonc\xE9_6"
   - first:
-      213: 6242139327348807680
-    second: Rochers_Light_7
+      213: 4410038652483065837
+    second: "AlgueMoyenDevantFonc\xE9_7"
   - first:
-      213: 5090273900602551635
-    second: Rochers_Light_8
+      213: -3452247247190319717
+    second: "AlgueMoyenDevantFonc\xE9_8"
   - first:
-      213: 4778155049853933736
-    second: Rochers_Light_9
+      213: -8432565128382560653
+    second: "AlgueMoyenDevantFonc\xE9_9"
   - first:
-      213: -4285963802669608536
-    second: Rochers_Light_10
+      213: -7209667097893401861
+    second: "AlgueMoyenDevantFonc\xE9_10"
   - first:
-      213: -1440096074691197955
-    second: Rochers_Light_11
-  - first:
-      213: -1217806652260651487
-    second: Rochers_Light_12
+      213: 6380794436017135756
+    second: "AlgueMoyenDevantFonc\xE9_11"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,304 +129,269 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rochers_Light_0
+      name: "AlgueMoyenDevantFonc\xE9_0"
       rect:
         serializedVersion: 2
-        x: 27
-        y: 453
-        width: 151
-        height: 123
+        x: 0
+        y: 0
+        width: 139
+        height: 315
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4deb6ea9e0958af4d84abaa4c47167fe
-      internalID: -8541953349314260320
+      spriteID: 275849f96d7199db0800000000000000
+      internalID: -4784766918536690318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_1
+      name: "AlgueMoyenDevantFonc\xE9_1"
       rect:
         serializedVersion: 2
-        x: 223
-        y: 448
-        width: 179
-        height: 127
+        x: 143
+        y: 0
+        width: 140
+        height: 315
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c0eb1e0c05ae8ef45a47c9c6f1e44dbe
-      internalID: -3664617547002352239
+      spriteID: 0a6b633de9f5e1cf0800000000000000
+      internalID: -279680991097342304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_2
+      name: "AlgueMoyenDevantFonc\xE9_2"
       rect:
         serializedVersion: 2
-        x: 417
-        y: 418
-        width: 184
-        height: 147
+        x: 290
+        y: 0
+        width: 140
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a2b91bad16b26e64ea7edc7f52015abd
-      internalID: -2265211730671984842
+      spriteID: f236355e909e9f200800000000000000
+      internalID: 214458685988234031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_3
+      name: "AlgueMoyenDevantFonc\xE9_3"
       rect:
         serializedVersion: 2
-        x: 652
-        y: 366
-        width: 226
-        height: 207
+        x: 434
+        y: 0
+        width: 140
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d4fe9d63e78eff74990253f7dea92121
-      internalID: 7866391455634818366
+      spriteID: 884d8f282afb72e70800000000000000
+      internalID: 9090445077573588104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_4
+      name: "AlgueMoyenDevantFonc\xE9_4"
       rect:
         serializedVersion: 2
-        x: 52
-        y: 289
-        width: 119
-        height: 148
+        x: 582
+        y: 0
+        width: 134
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 898f35ab4ea54d848a51d0e808f999e3
-      internalID: -4287530774254603348
+      spriteID: 926a77d2cdbda6b80800000000000000
+      internalID: -8400660416204134871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_5
+      name: "AlgueMoyenDevantFonc\xE9_5"
       rect:
         serializedVersion: 2
-        x: 197
-        y: 355
-        width: 84
-        height: 85
+        x: 726
+        y: 0
+        width: 134
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6d012720b51e12f48b8a7ba966e1875a
-      internalID: 442235015911567001
+      spriteID: 6f46cfbaf9d287b10800000000000000
+      internalID: 1979382200037827830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_6
+      name: "AlgueMoyenDevantFonc\xE9_6"
       rect:
         serializedVersion: 2
-        x: 293
-        y: 336
-        width: 100
-        height: 67
+        x: 873
+        y: 0
+        width: 135
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 64666d1e603e6ac409b6ead5fd7640cc
-      internalID: 5194377833011617558
+      spriteID: dd050d7bd70d67930800000000000000
+      internalID: 4140726145787121885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_7
+      name: "AlgueMoyenDevantFonc\xE9_7"
       rect:
         serializedVersion: 2
-        x: 367
-        y: 178
-        width: 223
-        height: 196
+        x: 1017
+        y: 0
+        width: 135
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 672a8a068718a3d4db4a857663dc1f8a
-      internalID: 6242139327348807680
+      spriteID: de7defef9ca933d30800000000000000
+      internalID: 4410038652483065837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_8
+      name: "AlgueMoyenDevantFonc\xE9_8"
       rect:
         serializedVersion: 2
-        x: 18
-        y: 147
-        width: 172
-        height: 121
+        x: 1160
+        y: 0
+        width: 137
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4f9e3b01f79e36f46b40e7a99972b108
-      internalID: 5090273900602551635
+      spriteID: b9d96626b672710d0800000000000000
+      internalID: -3452247247190319717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_9
+      name: "AlgueMoyenDevantFonc\xE9_9"
       rect:
         serializedVersion: 2
-        x: 224
-        y: 227
-        width: 128
-        height: 105
+        x: 1304
+        y: 0
+        width: 137
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 79863431a15509d418e871231951c66e
-      internalID: 4778155049853933736
+      spriteID: 376496181b289fa80800000000000000
+      internalID: -8432565128382560653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_10
+      name: "AlgueMoyenDevantFonc\xE9_10"
       rect:
         serializedVersion: 2
-        x: 33
-        y: 32
-        width: 150
-        height: 102
+        x: 1447
+        y: 0
+        width: 136
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6f8d27c18281ddb4db04fe1c17727316
-      internalID: -4285963802669608536
+      spriteID: bfa0e3119fd12fb90800000000000000
+      internalID: -7209667097893401861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_Light_11
+      name: "AlgueMoyenDevantFonc\xE9_11"
       rect:
         serializedVersion: 2
-        x: 219
-        y: 22
-        width: 181
-        height: 165
+        x: 1591
+        y: 0
+        width: 136
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cc026be9193d88e40ad54a4551d71885
-      internalID: -1440096074691197955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rochers_Light_12
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 28
-        width: 230
-        height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc6a44bb6f5baa24dbc2e047b0db9e87
-      internalID: -1217806652260651487
+      spriteID: c80279f8bb22d8850800000000000000
+      internalID: 6380794436017135756
       vertices: []
       indices: 
       edges: []
@@ -438,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2a74f722752c25e44a6260fd55606a39
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -446,25 +408,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceOnImport
-        value: True
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Rochers_Light_0: -8541953349314260320
-      Rochers_Light_1: -3664617547002352239
-      Rochers_Light_10: -4285963802669608536
-      Rochers_Light_11: -1440096074691197955
-      Rochers_Light_12: -1217806652260651487
-      Rochers_Light_2: -2265211730671984842
-      Rochers_Light_3: 7866391455634818366
-      Rochers_Light_4: -4287530774254603348
-      Rochers_Light_5: 442235015911567001
-      Rochers_Light_6: 5194377833011617558
-      Rochers_Light_7: 6242139327348807680
-      Rochers_Light_8: 5090273900602551635
-      Rochers_Light_9: 4778155049853933736
+      "AlgueMoyenDevantFonc\xE9_0": -4784766918536690318
+      "AlgueMoyenDevantFonc\xE9_1": -279680991097342304
+      "AlgueMoyenDevantFonc\xE9_10": -7209667097893401861
+      "AlgueMoyenDevantFonc\xE9_11": 6380794436017135756
+      "AlgueMoyenDevantFonc\xE9_2": 214458685988234031
+      "AlgueMoyenDevantFonc\xE9_3": 9090445077573588104
+      "AlgueMoyenDevantFonc\xE9_4": -8400660416204134871
+      "AlgueMoyenDevantFonc\xE9_5": 1979382200037827830
+      "AlgueMoyenDevantFonc\xE9_6": 4140726145787121885
+      "AlgueMoyenDevantFonc\xE9_7": 4410038652483065837
+      "AlgueMoyenDevantFonc\xE9_8": -3452247247190319717
+      "AlgueMoyenDevantFonc\xE9_9": -8432565128382560653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

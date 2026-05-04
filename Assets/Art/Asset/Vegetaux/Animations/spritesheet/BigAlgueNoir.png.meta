@@ -1,46 +1,49 @@
 fileFormatVersion: 2
-guid: 4444ae84973b0eb4c93bede1c477d43e
+guid: 8f81b5ec9cb289146873acb74943b1a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8458379102956223292
-    second: Rochers_0
+      213: 3626991903647383947
+    second: BigAlgueNoir_0
   - first:
-      213: 8440897241799353854
-    second: Rochers_1
+      213: -4040527793389054528
+    second: BigAlgueNoir_1
   - first:
-      213: -3532195586228854890
-    second: Rochers_2
+      213: 5772836957712380558
+    second: BigAlgueNoir_2
   - first:
-      213: -6667983676660759171
-    second: Rochers_3
+      213: 2182187327382842201
+    second: BigAlgueNoir_3
   - first:
-      213: -8039071039983704771
-    second: Rochers_4
+      213: 1664526384037413770
+    second: BigAlgueNoir_4
   - first:
-      213: 2638876920641657199
-    second: Rochers_5
+      213: -6940369776784126244
+    second: BigAlgueNoir_5
   - first:
-      213: 3624497250479147650
-    second: Rochers_6
+      213: 348602065124556994
+    second: BigAlgueNoir_6
   - first:
-      213: 683382610936042152
-    second: Rochers_7
+      213: 7279980662102256689
+    second: BigAlgueNoir_7
   - first:
-      213: -1808502421663329024
-    second: Rochers_8
+      213: -193626210708490018
+    second: BigAlgueNoir_8
   - first:
-      213: -1375296646693586965
-    second: Rochers_9
+      213: 7854873532273445358
+    second: BigAlgueNoir_9
   - first:
-      213: -612480062273276145
-    second: Rochers_10
+      213: 441886631198132071
+    second: BigAlgueNoir_10
   - first:
-      213: 5922081840105575186
-    second: Rochers_11
+      213: 995584707885442003
+    second: BigAlgueNoir_11
   - first:
-      213: -807053713869572717
-    second: Rochers_12
+      213: 2979299560499499898
+    second: BigAlgueNoir_12
+  - first:
+      213: -4218376291989387115
+    second: BigAlgueNoir_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -92,7 +95,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -111,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,372 +135,323 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rochers_0
+      name: BigAlgueNoir_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 452
-        width: 153
-        height: 125
+        x: 0
+        y: 0
+        width: 135
+        height: 701
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3bfa4fcaf2326570800000000000000
-      internalID: 8458379102956223292
+      spriteID: b81ce147be9a55230800000000000000
+      internalID: 3626991903647383947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_1
+      name: BigAlgueNoir_1
       rect:
         serializedVersion: 2
-        x: 222
-        y: 447
-        width: 181
-        height: 129
+        x: 133
+        y: 0
+        width: 136
+        height: 701
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef56603d157142570800000000000000
-      internalID: 8440897241799353854
+      spriteID: 0c5d3f921692de7c0800000000000000
+      internalID: -4040527793389054528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_2
+      name: BigAlgueNoir_2
       rect:
         serializedVersion: 2
-        x: 416
-        y: 417
-        width: 186
-        height: 149
+        x: 270
+        y: 0
+        width: 133
+        height: 701
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69f50a524de1bfec0800000000000000
-      internalID: -3532195586228854890
+      spriteID: e8271b290ac3d1050800000000000000
+      internalID: 5772836957712380558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_3
+      name: BigAlgueNoir_3
       rect:
         serializedVersion: 2
-        x: 651
-        y: 365
-        width: 228
-        height: 209
+        x: 404
+        y: 0
+        width: 133
+        height: 701
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d754880bc209673a0800000000000000
-      internalID: -6667983676660759171
+      spriteID: 95b630200dfa84e10800000000000000
+      internalID: 2182187327382842201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_4
+      name: BigAlgueNoir_4
       rect:
         serializedVersion: 2
-        x: 51
-        y: 288
-        width: 121
-        height: 150
+        x: 536
+        y: 0
+        width: 134
+        height: 700
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3524a16b7b7f6090800000000000000
-      internalID: -8039071039983704771
+      spriteID: a83c0df5de5991710800000000000000
+      internalID: 1664526384037413770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_5
+      name: BigAlgueNoir_5
       rect:
         serializedVersion: 2
-        x: 209
-        y: 348
-        width: 86
-        height: 87
+        x: 670
+        y: 0
+        width: 134
+        height: 700
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6992d4f39c2f9420800000000000000
-      internalID: 2638876920641657199
+      spriteID: cdecceca57adeaf90800000000000000
+      internalID: -6940369776784126244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_6
+      name: BigAlgueNoir_6
       rect:
         serializedVersion: 2
-        x: 292
-        y: 335
-        width: 102
-        height: 69
+        x: 805
+        y: 0
+        width: 134
+        height: 698
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28a8030cb0dcc4230800000000000000
-      internalID: 3624497250479147650
+      spriteID: 2c087b33bbb76d400800000000000000
+      internalID: 348602065124556994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_7
+      name: BigAlgueNoir_7
       rect:
         serializedVersion: 2
-        x: 366
-        y: 177
-        width: 225
-        height: 198
+        x: 939
+        y: 0
+        width: 134
+        height: 698
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a2958a2ddcdb7900800000000000000
-      internalID: 683382610936042152
+      spriteID: 13c615857dfa70560800000000000000
+      internalID: 7279980662102256689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_8
+      name: BigAlgueNoir_8
       rect:
         serializedVersion: 2
-        x: 17
-        y: 146
-        width: 174
-        height: 123
+        x: 1072
+        y: 0
+        width: 129
+        height: 697
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 005d25d11a8e6e6e0800000000000000
-      internalID: -1808502421663329024
+      spriteID: ed8f38bbcf9105df0800000000000000
+      internalID: -193626210708490018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_9
+      name: BigAlgueNoir_9
       rect:
         serializedVersion: 2
-        x: 202
-        y: 211
-        width: 130
-        height: 107
+        x: 1206
+        y: 0
+        width: 129
+        height: 697
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be7fa098cf6f9ece0800000000000000
-      internalID: -1375296646693586965
+      spriteID: ee9c6c65cdd120d60800000000000000
+      internalID: 7854873532273445358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_10
+      name: BigAlgueNoir_10
       rect:
         serializedVersion: 2
-        x: 448
-        y: 27
-        width: 232
-        height: 194
+        x: 1340
+        y: 0
+        width: 134
+        height: 700
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f073130e0a80087f0800000000000000
-      internalID: -612480062273276145
+      spriteID: 7670f83cc85e12600800000000000000
+      internalID: 441886631198132071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_11
+      name: BigAlgueNoir_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 31
-        width: 152
-        height: 104
+        x: 1474
+        y: 0
+        width: 134
+        height: 700
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 213d84a9e067f2250800000000000000
-      internalID: 5922081840105575186
+      spriteID: 3d3a259540701dd00800000000000000
+      internalID: 995584707885442003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rochers_12
+      name: BigAlgueNoir_12
       rect:
         serializedVersion: 2
-        x: 218
-        y: 21
-        width: 183
-        height: 167
+        x: 1610
+        y: 0
+        width: 133
+        height: 701
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 395f4265ce4ccc4f0800000000000000
-      internalID: -807053713869572717
+      spriteID: a73dc0f4a29985920800000000000000
+      internalID: 2979299560499499898
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline:
-    - - {x: -249, y: 46.5}
-      - {x: -154, y: 56.5}
-      - {x: -148, y: 139.5}
-      - {x: -249, y: 153.5}
-    - - {x: -161, y: 28.5}
-      - {x: -49, y: 39.5}
-      - {x: -53, y: 112.5}
-      - {x: -138, y: 97.5}
-    - - {x: -260, y: -73.5}
-      - {x: -104, y: -94.5}
-      - {x: -103, y: -1.5}
-      - {x: -230, y: 34.5}
-    - - {x: -427, y: 151.5}
-      - {x: -265, y: 151.5}
-      - {x: -265, y: 284.5}
-      - {x: -427, y: 284.5}
-    - - {x: -416, y: -22.5}
-      - {x: -261, y: -22.5}
-      - {x: -261, y: 146.5}
-      - {x: -416, y: 146.5}
-    - - {x: -411, y: -142.5}
-      - {x: -243, y: -159.5}
-      - {x: -243, y: -93.5}
-      - {x: -437, y: -14.5}
-    - - {x: -423, y: -268.5}
-      - {x: -254, y: -268.5}
-      - {x: -254, y: -157.5}
-      - {x: -423, y: -157.5}
-    - - {x: -226, y: -279.5}
-      - {x: -34, y: -279.5}
-      - {x: -66, y: -136.5}
-      - {x: -159, y: -103.5}
-      - {x: -231, y: -106.5}
-    - - {x: -232, y: 152.5}
-      - {x: -47, y: 152.5}
-      - {x: -32, y: 282.5}
-      - {x: -177, y: 287.5}
-      - {x: -232, y: 276.5}
-    - - {x: -38, y: 108.5}
-      - {x: 162, y: 122.5}
-      - {x: 160, y: 227.5}
-      - {x: 65, y: 278.5}
-      - {x: -38, y: 235.5}
-    - - {x: 194, y: 69.5}
-      - {x: 440, y: 69.5}
-      - {x: 440, y: 284.5}
-      - {x: 194, y: 284.5}
-    - - {x: -3, y: -276.5}
-      - {x: 280, y: -276.5}
-      - {x: 280, y: -171.5}
-      - {x: 208, y: -57.5}
-      - {x: 101, y: -150.5}
-      - {x: -3, y: -171.5}
-    - - {x: -98, y: -125.5}
-      - {x: 44, y: -145.5}
-      - {x: 151, y: -126.5}
-      - {x: 139, y: 87.5}
-      - {x: -13, y: 87.5}
+    - serializedVersion: 2
+      name: BigAlgueNoir_13
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 0
+        width: 132
+        height: 701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5980b03cc115575c0800000000000000
+      internalID: -4218376291989387115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -506,19 +460,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rochers_0: 8458379102956223292
-      Rochers_1: 8440897241799353854
-      Rochers_10: -612480062273276145
-      Rochers_11: 5922081840105575186
-      Rochers_12: -807053713869572717
-      Rochers_2: -3532195586228854890
-      Rochers_3: -6667983676660759171
-      Rochers_4: -8039071039983704771
-      Rochers_5: 2638876920641657199
-      Rochers_6: 3624497250479147650
-      Rochers_7: 683382610936042152
-      Rochers_8: -1808502421663329024
-      Rochers_9: -1375296646693586965
+      BigAlgueNoir_0: 3626991903647383947
+      BigAlgueNoir_1: -4040527793389054528
+      BigAlgueNoir_10: 441886631198132071
+      BigAlgueNoir_11: 995584707885442003
+      BigAlgueNoir_12: 2979299560499499898
+      BigAlgueNoir_13: -4218376291989387115
+      BigAlgueNoir_2: 5772836957712380558
+      BigAlgueNoir_3: 2182187327382842201
+      BigAlgueNoir_4: 1664526384037413770
+      BigAlgueNoir_5: -6940369776784126244
+      BigAlgueNoir_6: 348602065124556994
+      BigAlgueNoir_7: 7279980662102256689
+      BigAlgueNoir_8: -193626210708490018
+      BigAlgueNoir_9: 7854873532273445358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
