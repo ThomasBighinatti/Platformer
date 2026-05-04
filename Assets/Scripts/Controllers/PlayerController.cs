@@ -51,6 +51,8 @@ namespace Controllers
         private bool _jumpButtonReleased = false;
         private float _slopeDirection;
         private PlayerInput _playerInput;
+
+        [SerializeField] private PlayerAnimController playerAnimController;
         
         private Vector2 _velocity;
 
@@ -77,49 +79,12 @@ namespace Controllers
             _playerInput = GetComponent<PlayerInput>();
         }
 
-        /*
-        private void OnEnable()
-        {
-            if(Gamepad.current != null && Gamepad.current.added)
-                _playerInput.SwitchCurrentControlScheme("Gamepad", Gamepad.current);
-            else
-                _playerInput.SwitchCurrentControlScheme();
-        }
-        */
-        /*
-        private void OnInputDeviceChange(InputDevice device, InputDeviceChange change)
-        {
-            Debug.Log("onInputDeviceChange");
-            switch (change)
-            {
-                case InputDeviceChange.Added:
-                    Debug.Log("Device added: " + device);
-                    if(Gamepad.current != null && Gamepad.current.added)
-                        _playerInput.SwitchCurrentControlScheme("Gamepad", Gamepad.current);
-                    else
-                        _playerInput.SwitchCurrentControlScheme();
-                    break;
-                case InputDeviceChange.Removed:
-                    Debug.Log("Device removed: " + device);
-                    if(Keyboard.current != null)
-                        _playerInput.SwitchCurrentControlScheme("Keyboard", Keyboard.current);
-                    else
-                        _playerInput.SwitchCurrentControlScheme();
-                    break;
-                case InputDeviceChange.ConfigurationChanged:
-                    Debug.Log("Device configuration changed: " + device);
-                    break;
-            }
-        }
-        */
-
         private void Start()
         {
             _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
             _rb = GetComponent<Rigidbody2D>();
             _rb.gravityScale = 0;
             _stopVelocity = stopVelocity;
-            //InputSystem.onDeviceChange += OnInputDeviceChange;
         }
 
         [SerializeField] private GameObject visual;
@@ -142,6 +107,16 @@ namespace Controllers
             );
             
             visual.transform.localScale = new Vector3(_velocity.x <= 0 ? -1 : 1, 1, 1);
+
+            Debug.Log(_velocity);
+            if (Mathf.Abs(_velocity.x) < 0.01f && grounded)
+            {
+                playerAnimController.IdleState();
+            }
+            else if (grounded)
+            {
+                playerAnimController.WalkState();
+            }
             _rb.linearVelocity = _velocity;
         }
 

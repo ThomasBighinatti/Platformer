@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2319816284571021}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.33, y: 3.89, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -269,21 +269,9 @@ MonoBehaviour:
     m_ActionId: f7f9655d-d7e7-4ee9-8009-82a117fd4e3f
     m_ActionName: 'Player/Recall[/Mouse/rightButton]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5443203443257125303}
-        m_TargetAssemblyTypeName: Controllers.PlayerController, Assembly-CSharp
-        m_MethodName: OnRetry
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 371ccd49-f30a-4dc4-a713-b3e9ef05c6bc
-    m_ActionName: 'Player/Retry[/XInputControllerWindows/buttonNorth,/Keyboard/enter]'
+      m_Calls: []
+    m_ActionId: cc7363df-8bd9-40fe-8782-7cb0297eff62
+    m_ActionName: 'GameManager/New action[/Keyboard/enter]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -301,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc907159474a7647b466a82407ba342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  data: {fileID: 11400000, guid: f6a6328d752cb3a4684e9900d7e2813d, type: 2}
+  data: {fileID: 11400000, guid: 48e687e60479223459533112f8052741, type: 2}
   stopVelocity: 1
   jumpSlopeAngle: 58
   grounded: 0
@@ -316,6 +304,7 @@ MonoBehaviour:
   boxCastCooldown: 0.1
   noFrictionMaterial: {fileID: 6200000, guid: 35c8df58f1f23ac45bd72afd6d907b2a, type: 2}
   frictionMaterial: {fileID: 6200000, guid: 52780fa616b2e8549bc8bd6442099720, type: 2}
+  playerAnimController: {fileID: 7771198133559854260}
   visual: {fileID: 5046080455111817490}
 --- !u!114 &3339637389891186093
 MonoBehaviour:
@@ -437,6 +426,7 @@ GameObject:
   - component: {fileID: 1900943454735800183}
   - component: {fileID: 7053041039510206963}
   - component: {fileID: 4188015219223994504}
+  - component: {fileID: 7771198133559854260}
   m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
@@ -453,7 +443,7 @@ Transform:
   m_GameObject: {fileID: 5046080455111817490}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.18, z: -0.1}
+  m_LocalPosition: {x: 0, y: 0.63, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -508,12 +498,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1935857658, guid: 1b6c293430ceeb54f8bf9eedbb9169f9, type: 3}
+  m_Sprite: {fileID: -1599157391, guid: 878fbb75da7796d4a81ea6fe5f8f623b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -528,7 +518,7 @@ Animator:
   m_GameObject: {fileID: 5046080455111817490}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 72dbed42d7e23fb44b2d5cc1c0db6519, type: 2}
+  m_Controller: {fileID: 9100000, guid: a4e1965cb2631fb4b873d2107cc67620, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -540,6 +530,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7771198133559854260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5046080455111817490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c7e50972f1d8f246b304cdbe8bc0694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  animator: {fileID: 4188015219223994504}
 --- !u!1 &6751407848771513344
 GameObject:
   m_ObjectHideFlags: 0

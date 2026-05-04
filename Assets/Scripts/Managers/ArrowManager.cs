@@ -109,8 +109,8 @@ namespace Managers
             if (_arrowNum >= CurrentArrowGroupData.ArrowTypeList.Count)
             {
                 Debug.Log("no more arrows");
-                /*_arrowNum = 0;
-                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);*/
+                _arrowNum = 0;
+                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);
                 return;
             }
             
