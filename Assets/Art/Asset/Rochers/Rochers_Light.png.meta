@@ -152,19 +152,19 @@ TextureImporter:
       name: Rochers_Light_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 452
-        width: 153
-        height: 125
+        x: 27
+        y: 453
+        width: 151
+        height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0a25a2e9fa2e47980800000000000000
+      spriteID: 4deb6ea9e0958af4d84abaa4c47167fe
       internalID: -8541953349314260320
       vertices: []
       indices: 
@@ -174,19 +174,19 @@ TextureImporter:
       name: Rochers_Light_1
       rect:
         serializedVersion: 2
-        x: 222
-        y: 447
-        width: 181
-        height: 129
+        x: 223
+        y: 448
+        width: 179
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 19de249c1c9a42dc0800000000000000
+      spriteID: c0eb1e0c05ae8ef45a47c9c6f1e44dbe
       internalID: -3664617547002352239
       vertices: []
       indices: 
@@ -196,19 +196,19 @@ TextureImporter:
       name: Rochers_Light_2
       rect:
         serializedVersion: 2
-        x: 416
-        y: 417
-        width: 186
-        height: 149
+        x: 417
+        y: 418
+        width: 184
+        height: 147
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 63f9f3cbee95090e0800000000000000
+      spriteID: a2b91bad16b26e64ea7edc7f52015abd
       internalID: -2265211730671984842
       vertices: []
       indices: 
@@ -218,19 +218,19 @@ TextureImporter:
       name: Rochers_Light_3
       rect:
         serializedVersion: 2
-        x: 651
-        y: 365
-        width: 228
-        height: 209
+        x: 652
+        y: 366
+        width: 226
+        height: 207
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e350849d9590b2d60800000000000000
+      spriteID: d4fe9d63e78eff74990253f7dea92121
       internalID: 7866391455634818366
       vertices: []
       indices: 
@@ -240,19 +240,19 @@ TextureImporter:
       name: Rochers_Light_4
       rect:
         serializedVersion: 2
-        x: 51
-        y: 288
-        width: 121
-        height: 150
+        x: 52
+        y: 289
+        width: 119
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ca3bff42a71af74c0800000000000000
+      spriteID: 898f35ab4ea54d848a51d0e808f999e3
       internalID: -4287530774254603348
       vertices: []
       indices: 
@@ -262,19 +262,19 @@ TextureImporter:
       name: Rochers_Light_5
       rect:
         serializedVersion: 2
-        x: 196
-        y: 354
-        width: 86
-        height: 87
+        x: 197
+        y: 355
+        width: 84
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 99ee5a66762232600800000000000000
+      spriteID: 6d012720b51e12f48b8a7ba966e1875a
       internalID: 442235015911567001
       vertices: []
       indices: 
@@ -284,19 +284,19 @@ TextureImporter:
       name: Rochers_Light_6
       rect:
         serializedVersion: 2
-        x: 292
-        y: 335
-        width: 102
-        height: 69
+        x: 293
+        y: 336
+        width: 100
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 61f12dd3e13261840800000000000000
+      spriteID: 64666d1e603e6ac409b6ead5fd7640cc
       internalID: 5194377833011617558
       vertices: []
       indices: 
@@ -306,19 +306,19 @@ TextureImporter:
       name: Rochers_Light_7
       rect:
         serializedVersion: 2
-        x: 366
-        y: 177
-        width: 225
-        height: 198
+        x: 367
+        y: 178
+        width: 223
+        height: 196
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0081f1d55a880a650800000000000000
+      spriteID: 672a8a068718a3d4db4a857663dc1f8a
       internalID: 6242139327348807680
       vertices: []
       indices: 
@@ -328,19 +328,19 @@ TextureImporter:
       name: Rochers_Light_8
       rect:
         serializedVersion: 2
-        x: 17
-        y: 146
-        width: 174
-        height: 123
+        x: 18
+        y: 147
+        width: 172
+        height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 35d6bd6a42944a640800000000000000
+      spriteID: 4f9e3b01f79e36f46b40e7a99972b108
       internalID: 5090273900602551635
       vertices: []
       indices: 
@@ -350,19 +350,19 @@ TextureImporter:
       name: Rochers_Light_9
       rect:
         serializedVersion: 2
-        x: 223
-        y: 226
-        width: 130
-        height: 107
+        x: 224
+        y: 227
+        width: 128
+        height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8a8584cb3ba6f4240800000000000000
+      spriteID: 79863431a15509d418e871231951c66e
       internalID: 4778155049853933736
       vertices: []
       indices: 
@@ -372,19 +372,19 @@ TextureImporter:
       name: Rochers_Light_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 31
-        width: 152
-        height: 104
+        x: 33
+        y: 32
+        width: 150
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8a112b521a23584c0800000000000000
+      spriteID: 6f8d27c18281ddb4db04fe1c17727316
       internalID: -4285963802669608536
       vertices: []
       indices: 
@@ -394,19 +394,19 @@ TextureImporter:
       name: Rochers_Light_11
       rect:
         serializedVersion: 2
-        x: 218
-        y: 21
-        width: 183
-        height: 167
+        x: 219
+        y: 22
+        width: 181
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: df3c8910040c30ce0800000000000000
+      spriteID: cc026be9193d88e40ad54a4551d71885
       internalID: -1440096074691197955
       vertices: []
       indices: 
@@ -416,19 +416,19 @@ TextureImporter:
       name: Rochers_Light_12
       rect:
         serializedVersion: 2
-        x: 448
-        y: 27
-        width: 232
-        height: 194
+        x: 449
+        y: 28
+        width: 230
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12e65ee4d4b791fe0800000000000000
+      spriteID: dc6a44bb6f5baa24dbc2e047b0db9e87
       internalID: -1217806652260651487
       vertices: []
       indices: 
@@ -438,7 +438,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2a74f722752c25e44a6260fd55606a39
     internalID: 0
     vertices: []
     indices: 
@@ -446,7 +446,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: True
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Rochers_Light_0: -8541953349314260320
       Rochers_Light_1: -3664617547002352239
