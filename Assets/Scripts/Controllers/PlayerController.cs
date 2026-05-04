@@ -1,7 +1,4 @@
-using System;
 using Datas;
-using Managers;
-using UnityEditor.Hardware;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -69,6 +66,8 @@ namespace Controllers
 
         public void OnMove(InputAction.CallbackContext context)
         {
+            Debug.Log(context.action.name);
+            Debug.Log(context.ReadValue<Vector2>());
             _moveInput = context.ReadValue<Vector2>();
         }
 
