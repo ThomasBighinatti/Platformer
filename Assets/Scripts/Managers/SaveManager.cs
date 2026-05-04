@@ -82,9 +82,12 @@ namespace Managers
 
             if (!CheckpointPositions.TryGetValue(CurrentCheckpointIndex, out Vector3 spawnPosition))
                 return;
-            
+
             if (player is not null)
+            {
                 player.transform.position = spawnPosition;
+            }
+                
         }
     }
 }

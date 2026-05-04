@@ -1,49 +1,37 @@
 fileFormatVersion: 2
-guid: 8f81b5ec9cb289146873acb74943b1a7
+guid: 49159fd8851b8944c9bb4c12cdf1995c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3626991903647383947
-    second: BigAlgueNoir_0
+      213: 1814275698488090112
+    second: tree3long_noir_0
   - first:
-      213: -4040527793389054528
-    second: BigAlgueNoir_1
+      213: -6768626785661938805
+    second: tree3long_noir_1
   - first:
-      213: 5772836957712380558
-    second: BigAlgueNoir_2
+      213: 9059552518884839971
+    second: tree3long_noir_2
   - first:
-      213: 2182187327382842201
-    second: BigAlgueNoir_3
+      213: 4102462698865828610
+    second: tree3long_noir_3
   - first:
-      213: 1664526384037413770
-    second: BigAlgueNoir_4
+      213: 2258945874184417769
+    second: tree3long_noir_4
   - first:
-      213: -6940369776784126244
-    second: BigAlgueNoir_5
+      213: -1192083653857094174
+    second: tree3long_noir_5
   - first:
-      213: 348602065124556994
-    second: BigAlgueNoir_6
+      213: -5824246638553497862
+    second: tree3long_noir_6
   - first:
-      213: 7279980662102256689
-    second: BigAlgueNoir_7
+      213: 3129849104622016236
+    second: tree3long_noir_7
   - first:
-      213: -193626210708490018
-    second: BigAlgueNoir_8
+      213: -37220150056832540
+    second: tree3long_noir_8
   - first:
-      213: 7854873532273445358
-    second: BigAlgueNoir_9
-  - first:
-      213: 441886631198132071
-    second: BigAlgueNoir_10
-  - first:
-      213: 995584707885442003
-    second: BigAlgueNoir_11
-  - first:
-      213: 2979299560499499898
-    second: BigAlgueNoir_12
-  - first:
-      213: -4218376291989387115
-    second: BigAlgueNoir_13
+      213: -46573942191748274
+    second: tree3long_noir_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,309 +127,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigAlgueNoir_0
+      name: tree3long_noir_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 135
-        height: 701
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b81ce147be9a55230800000000000000
-      internalID: 3626991903647383947
+      spriteID: 00e9105a22a9d2910800000000000000
+      internalID: 1814275698488090112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_1
+      name: tree3long_noir_1
       rect:
         serializedVersion: 2
-        x: 133
+        x: 137
         y: 0
-        width: 136
-        height: 701
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c5d3f921692de7c0800000000000000
-      internalID: -4040527793389054528
+      spriteID: b831d67dcc10112a0800000000000000
+      internalID: -6768626785661938805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_2
+      name: tree3long_noir_2
       rect:
         serializedVersion: 2
-        x: 270
+        x: 274
         y: 0
-        width: 133
-        height: 701
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8271b290ac3d1050800000000000000
-      internalID: 5772836957712380558
+      spriteID: 3225020340ff9bd70800000000000000
+      internalID: 9059552518884839971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_3
+      name: tree3long_noir_3
       rect:
         serializedVersion: 2
-        x: 404
+        x: 411
         y: 0
-        width: 133
-        height: 701
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95b630200dfa84e10800000000000000
-      internalID: 2182187327382842201
+      spriteID: 203203eb610eee830800000000000000
+      internalID: 4102462698865828610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_4
+      name: tree3long_noir_4
       rect:
         serializedVersion: 2
-        x: 536
+        x: 548
         y: 0
-        width: 134
-        height: 700
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a83c0df5de5991710800000000000000
-      internalID: 1664526384037413770
+      spriteID: 9e1b89ddd43695f10800000000000000
+      internalID: 2258945874184417769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_5
+      name: tree3long_noir_5
       rect:
         serializedVersion: 2
-        x: 670
+        x: 685
         y: 0
-        width: 134
-        height: 700
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdecceca57adeaf90800000000000000
-      internalID: -6940369776784126244
+      spriteID: 2e55c459b3ed47fe0800000000000000
+      internalID: -1192083653857094174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_6
+      name: tree3long_noir_6
       rect:
         serializedVersion: 2
-        x: 805
+        x: 822
         y: 0
-        width: 134
-        height: 698
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c087b33bbb76d400800000000000000
-      internalID: 348602065124556994
+      spriteID: afe71c85a8e1c2fa0800000000000000
+      internalID: -5824246638553497862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_7
+      name: tree3long_noir_7
       rect:
         serializedVersion: 2
-        x: 939
+        x: 959
         y: 0
-        width: 134
-        height: 698
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13c615857dfa70560800000000000000
-      internalID: 7279980662102256689
+      spriteID: ce6d1919d257f6b20800000000000000
+      internalID: 3129849104622016236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_8
+      name: tree3long_noir_8
       rect:
         serializedVersion: 2
-        x: 1072
+        x: 1096
         y: 0
-        width: 129
-        height: 697
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed8f38bbcf9105df0800000000000000
-      internalID: -193626210708490018
+      spriteID: 4e130618874cb7ff0800000000000000
+      internalID: -37220150056832540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigAlgueNoir_9
+      name: tree3long_noir_9
       rect:
         serializedVersion: 2
-        x: 1206
+        x: 1233
         y: 0
-        width: 129
-        height: 697
+        width: 137
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee9c6c65cdd120d60800000000000000
-      internalID: 7854873532273445358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigAlgueNoir_10
-      rect:
-        serializedVersion: 2
-        x: 1340
-        y: 0
-        width: 134
-        height: 700
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7670f83cc85e12600800000000000000
-      internalID: 441886631198132071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigAlgueNoir_11
-      rect:
-        serializedVersion: 2
-        x: 1474
-        y: 0
-        width: 134
-        height: 700
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d3a259540701dd00800000000000000
-      internalID: 995584707885442003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigAlgueNoir_12
-      rect:
-        serializedVersion: 2
-        x: 1610
-        y: 0
-        width: 133
-        height: 701
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a73dc0f4a29985920800000000000000
-      internalID: 2979299560499499898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigAlgueNoir_13
-      rect:
-        serializedVersion: 2
-        x: 1744
-        y: 0
-        width: 132
-        height: 701
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5980b03cc115575c0800000000000000
-      internalID: -4218376291989387115
+      spriteID: e4b0fdf0f398a5ff0800000000000000
+      internalID: -46573942191748274
       vertices: []
       indices: 
       edges: []
@@ -450,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 68569e57f9e818f4bbed0fe8f3287ee4
     internalID: 0
     vertices: []
     indices: 
@@ -458,22 +358,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":137.0,"y":284.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      BigAlgueNoir_0: 3626991903647383947
-      BigAlgueNoir_1: -4040527793389054528
-      BigAlgueNoir_10: 441886631198132071
-      BigAlgueNoir_11: 995584707885442003
-      BigAlgueNoir_12: 2979299560499499898
-      BigAlgueNoir_13: -4218376291989387115
-      BigAlgueNoir_2: 5772836957712380558
-      BigAlgueNoir_3: 2182187327382842201
-      BigAlgueNoir_4: 1664526384037413770
-      BigAlgueNoir_5: -6940369776784126244
-      BigAlgueNoir_6: 348602065124556994
-      BigAlgueNoir_7: 7279980662102256689
-      BigAlgueNoir_8: -193626210708490018
-      BigAlgueNoir_9: 7854873532273445358
+      tree3long_noir_0: 1814275698488090112
+      tree3long_noir_1: -6768626785661938805
+      tree3long_noir_2: 9059552518884839971
+      tree3long_noir_3: 4102462698865828610
+      tree3long_noir_4: 2258945874184417769
+      tree3long_noir_5: -1192083653857094174
+      tree3long_noir_6: -5824246638553497862
+      tree3long_noir_7: 3129849104622016236
+      tree3long_noir_8: -37220150056832540
+      tree3long_noir_9: -46573942191748274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,55 +1,61 @@
 fileFormatVersion: 2
-guid: 089df02096a9fe143adca1a8b502b3cd
+guid: 9ced30d62ccdff845b05884516528231
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1453530324164077304
-    second: "AlguePetitDevantFonc\xE9_0"
+      213: -172337482591366974
+    second: AlguePetitDevanClair (1)_0
   - first:
-      213: -1400397878897617510
-    second: "AlguePetitDevantFonc\xE9_1"
+      213: 4578350649643616301
+    second: AlguePetitDevanClair (1)_1
   - first:
-      213: -9054410279504528177
-    second: "AlguePetitDevantFonc\xE9_2"
+      213: -7297545819516686350
+    second: AlguePetitDevanClair (1)_2
   - first:
-      213: -1138304053427359059
-    second: "AlguePetitDevantFonc\xE9_3"
+      213: -788485398252988571
+    second: AlguePetitDevanClair (1)_3
   - first:
-      213: -2402680346246829125
-    second: "AlguePetitDevantFonc\xE9_4"
+      213: 5029647326506078507
+    second: AlguePetitDevanClair (1)_4
   - first:
-      213: 7340070744386496484
-    second: "AlguePetitDevantFonc\xE9_5"
+      213: 4601014789830845869
+    second: AlguePetitDevanClair (1)_5
   - first:
-      213: -6729766697929261890
-    second: "AlguePetitDevantFonc\xE9_6"
+      213: -6153223081970756618
+    second: AlguePetitDevanClair (1)_6
   - first:
-      213: 3958738696107636960
-    second: "AlguePetitDevantFonc\xE9_7"
+      213: 6965650214521068508
+    second: AlguePetitDevanClair (1)_7
   - first:
-      213: 8080465884039545681
-    second: "AlguePetitDevantFonc\xE9_8"
+      213: -4190263603519852118
+    second: AlguePetitDevanClair (1)_8
   - first:
-      213: 5420160134221030791
-    second: "AlguePetitDevantFonc\xE9_9"
+      213: -4352833470418731507
+    second: AlguePetitDevanClair (1)_9
   - first:
-      213: -786944301238077893
-    second: "AlguePetitDevantFonc\xE9_10"
+      213: -7863376445827907697
+    second: AlguePetitDevanClair (1)_10
   - first:
-      213: -5393407580617779861
-    second: "AlguePetitDevantFonc\xE9_11"
+      213: -4884418804681626100
+    second: AlguePetitDevanClair (1)_11
   - first:
-      213: 5049375885943703314
-    second: "AlguePetitDevantFonc\xE9_12"
+      213: -6600577420848292020
+    second: AlguePetitDevanClair (1)_12
   - first:
-      213: 7854459710658384467
-    second: "AlguePetitDevantFonc\xE9_13"
+      213: -1942336221606780580
+    second: AlguePetitDevanClair (1)_13
   - first:
-      213: -301424791581491528
-    second: "AlguePetitDevantFonc\xE9_14"
+      213: -5190720501274306324
+    second: AlguePetitDevanClair (1)_14
   - first:
-      213: 7795525304546424193
-    second: "AlguePetitDevantFonc\xE9_15"
+      213: 4589873725100332729
+    second: AlguePetitDevanClair (1)_15
+  - first:
+      213: 8542614726453568994
+    second: AlguePetitDevanClair (1)_16
+  - first:
+      213: 58048489616186969
+    second: AlguePetitDevanClair (1)_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,353 +151,331 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_0"
+      name: AlguePetitDevanClair (1)_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 108
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80911fd0fd504dbe0800000000000000
-      internalID: -1453530324164077304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_1"
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 0
-        width: 108
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a95d81c7c89c09ce0800000000000000
-      internalID: -1400397878897617510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_2"
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 1
-        width: 110
-        height: 232
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fccbc77b2d5485280800000000000000
-      internalID: -9054410279504528177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_3"
-      rect:
-        serializedVersion: 2
-        x: 387
-        y: 1
-        width: 110
-        height: 232
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da233119e7ee330f0800000000000000
-      internalID: -1138304053427359059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_4"
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 1
-        width: 119
-        height: 230
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbb252d74f6f7aed0800000000000000
-      internalID: -2402680346246829125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_5"
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 1
-        width: 119
-        height: 230
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e7e461e37b2dd560800000000000000
-      internalID: 7340070744386496484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_6"
-      rect:
-        serializedVersion: 2
-        x: 765
-        y: 1
-        width: 125
-        height: 230
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebc3ca418d01b92a0800000000000000
-      internalID: -6729766697929261890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_7"
-      rect:
-        serializedVersion: 2
-        x: 892
-        y: 1
-        width: 125
-        height: 230
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e8b61caed340f630800000000000000
-      internalID: 3958738696107636960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_8"
-      rect:
-        serializedVersion: 2
-        x: 1015
-        y: 1
-        width: 125
+        width: 124
         height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15307ddc8e4932070800000000000000
-      internalID: 8080465884039545681
+      spriteID: 2c018a009fbbb9df0800000000000000
+      internalID: -172337482591366974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_9"
+      name: AlguePetitDevanClair (1)_1
       rect:
         serializedVersion: 2
-        x: 1142
-        y: 1
-        width: 125
+        x: 124
+        y: 0
+        width: 124
         height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7856af1cce6483b40800000000000000
-      internalID: 5420160134221030791
+      spriteID: d28cf21a8a1998f30800000000000000
+      internalID: 4578350649643616301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_10"
+      name: AlguePetitDevanClair (1)_2
       rect:
         serializedVersion: 2
-        x: 1273
-        y: 1
-        width: 117
-        height: 227
+        x: 248
+        y: 0
+        width: 124
+        height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b36bfa2d3563415f0800000000000000
-      internalID: -786944301238077893
+      spriteID: 2ff229fbdb8e9ba90800000000000000
+      internalID: -7297545819516686350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_11"
+      name: AlguePetitDevanClair (1)_3
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 1
-        width: 117
-        height: 227
+        x: 372
+        y: 0
+        width: 124
+        height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b65d0648164c625b0800000000000000
-      internalID: -5393407580617779861
+      spriteID: 5675c8635bcbe05f0800000000000000
+      internalID: -788485398252988571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_12"
+      name: AlguePetitDevanClair (1)_4
       rect:
         serializedVersion: 2
-        x: 1527
-        y: 1
-        width: 117
-        height: 225
+        x: 496
+        y: 0
+        width: 124
+        height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21709139d9cf21640800000000000000
-      internalID: 5049375885943703314
+      spriteID: b2153e16895ecc540800000000000000
+      internalID: 5029647326506078507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_13"
+      name: AlguePetitDevanClair (1)_5
       rect:
         serializedVersion: 2
-        x: 1654
-        y: 1
-        width: 117
-        height: 225
+        x: 620
+        y: 0
+        width: 124
+        height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 352196cfd75a00d60800000000000000
-      internalID: 7854459710658384467
+      spriteID: da5af2af2961adf30800000000000000
+      internalID: 4601014789830845869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_14"
+      name: AlguePetitDevanClair (1)_6
       rect:
         serializedVersion: 2
-        x: 1781
-        y: 1
-        width: 122
-        height: 232
+        x: 744
+        y: 0
+        width: 124
+        height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bef943cfbf11dbf0800000000000000
-      internalID: -301424791581491528
+      spriteID: 6f31667453c5b9aa0800000000000000
+      internalID: -6153223081970756618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "AlguePetitDevantFonc\xE9_15"
+      name: AlguePetitDevanClair (1)_7
       rect:
         serializedVersion: 2
-        x: 1908
-        y: 1
-        width: 122
-        height: 232
+        x: 868
+        y: 0
+        width: 124
+        height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 185fe0746f44f2c60800000000000000
-      internalID: 7795525304546424193
+      spriteID: cdbd62ae6f5faa060800000000000000
+      internalID: 6965650214521068508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlguePetitDevanClair (1)_8
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 124
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa173fc147139d5c0800000000000000
+      internalID: -4190263603519852118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlguePetitDevanClair (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 0
+        width: 124
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0eb24d5501a793c0800000000000000
+      internalID: -4352833470418731507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlguePetitDevanClair (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 124
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ff043d8ccafd290800000000000000
+      internalID: -7863376445827907697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlguePetitDevanClair (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 0
+        width: 124
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ea6b4d9fe073cb0800000000000000
+      internalID: -4884418804681626100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlguePetitDevanClair (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 0
+        width: 124
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f9fdd9ec90664a0800000000000000
+      internalID: -6600577420848292020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlguePetitDevanClair (1)_13
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 0
+        width: 124
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51e0c45f7f6b05e0800000000000000
+      internalID: -1942336221606780580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlguePetitDevanClair (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 0
+        width: 124
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3a262e37570bb4eb8d2abe6331644d
+      internalID: -5190720501274306324
       vertices: []
       indices: 
       edges: []
@@ -500,7 +484,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 528a274fdfb272b44ab3a5667aa5be9d
     internalID: 0
     vertices: []
     indices: 
@@ -508,24 +492,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":124.0,"y":229.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "AlguePetitDevantFonc\xE9_0": -1453530324164077304
-      "AlguePetitDevantFonc\xE9_1": -1400397878897617510
-      "AlguePetitDevantFonc\xE9_10": -786944301238077893
-      "AlguePetitDevantFonc\xE9_11": -5393407580617779861
-      "AlguePetitDevantFonc\xE9_12": 5049375885943703314
-      "AlguePetitDevantFonc\xE9_13": 7854459710658384467
-      "AlguePetitDevantFonc\xE9_14": -301424791581491528
-      "AlguePetitDevantFonc\xE9_15": 7795525304546424193
-      "AlguePetitDevantFonc\xE9_2": -9054410279504528177
-      "AlguePetitDevantFonc\xE9_3": -1138304053427359059
-      "AlguePetitDevantFonc\xE9_4": -2402680346246829125
-      "AlguePetitDevantFonc\xE9_5": 7340070744386496484
-      "AlguePetitDevantFonc\xE9_6": -6729766697929261890
-      "AlguePetitDevantFonc\xE9_7": 3958738696107636960
-      "AlguePetitDevantFonc\xE9_8": 8080465884039545681
-      "AlguePetitDevantFonc\xE9_9": 5420160134221030791
+      AlguePetitDevanClair (1)_0: -172337482591366974
+      AlguePetitDevanClair (1)_1: 4578350649643616301
+      AlguePetitDevanClair (1)_10: -7863376445827907697
+      AlguePetitDevanClair (1)_11: -4884418804681626100
+      AlguePetitDevanClair (1)_12: -6600577420848292020
+      AlguePetitDevanClair (1)_13: -1942336221606780580
+      AlguePetitDevanClair (1)_14: -5190720501274306324
+      AlguePetitDevanClair (1)_2: -7297545819516686350
+      AlguePetitDevanClair (1)_3: -788485398252988571
+      AlguePetitDevanClair (1)_4: 5029647326506078507
+      AlguePetitDevanClair (1)_5: 4601014789830845869
+      AlguePetitDevanClair (1)_6: -6153223081970756618
+      AlguePetitDevanClair (1)_7: 6965650214521068508
+      AlguePetitDevanClair (1)_8: -4190263603519852118
+      AlguePetitDevanClair (1)_9: -4352833470418731507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

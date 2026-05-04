@@ -1,43 +1,37 @@
 fileFormatVersion: 2
-guid: 91786a27042ea734a894aad8a4ca81b1
+guid: 9d0918e13bf3c2847a1180ae61750cb7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6098165775537490865
-    second: AlgueMoyenDevantClair_0
+      213: 2851720196825948118
+    second: tree3normal_green (1)_0
   - first:
-      213: -574756375039587493
-    second: AlgueMoyenDevantClair_1
+      213: -6370065687738401497
+    second: tree3normal_green (1)_1
   - first:
-      213: -6648508068499583940
-    second: AlgueMoyenDevantClair_2
+      213: -2741330492071651073
+    second: tree3normal_green (1)_2
   - first:
-      213: 6693465918685505927
-    second: AlgueMoyenDevantClair_3
+      213: 4512459707221006398
+    second: tree3normal_green (1)_3
   - first:
-      213: 141131268521885337
-    second: AlgueMoyenDevantClair_4
+      213: 8467935813632547994
+    second: tree3normal_green (1)_4
   - first:
-      213: 3387051607092067152
-    second: AlgueMoyenDevantClair_5
+      213: -6710939501582136066
+    second: tree3normal_green (1)_5
   - first:
-      213: 8202948559763360707
-    second: AlgueMoyenDevantClair_6
+      213: -3531240361197727903
+    second: tree3normal_green (1)_6
   - first:
-      213: 3567664068163825549
-    second: AlgueMoyenDevantClair_7
+      213: 8847085821730099570
+    second: tree3normal_green (1)_7
   - first:
-      213: 6422796081020669786
-    second: AlgueMoyenDevantClair_8
+      213: 564383061405176854
+    second: tree3normal_green (1)_8
   - first:
-      213: 197204395393454174
-    second: AlgueMoyenDevantClair_9
-  - first:
-      213: 250573186325801436
-    second: AlgueMoyenDevantClair_10
-  - first:
-      213: -7609525903649422877
-    second: AlgueMoyenDevantClair_11
+      213: -5375829463841490086
+    second: tree3normal_green (1)_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -70,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_0
+      name: tree3normal_green (1)_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 139
-        height: 315
+        width: 108
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f44b4af5986fe5ba0800000000000000
-      internalID: -6098165775537490865
+      spriteID: 6df1e92f868539720800000000000000
+      internalID: 2851720196825948118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_1
+      name: tree3normal_green (1)_1
       rect:
         serializedVersion: 2
-        x: 143
+        x: 110
         y: 0
-        width: 140
-        height: 315
+        width: 108
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5bcf514f1e0608f0800000000000000
-      internalID: -574756375039587493
+      spriteID: 72db27ec10bf897a0800000000000000
+      internalID: -6370065687738401497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_2
+      name: tree3normal_green (1)_2
       rect:
         serializedVersion: 2
-        x: 290
+        x: 219
         y: 0
-        width: 140
-        height: 314
+        width: 108
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3c83c21321cbb3a0800000000000000
-      internalID: -6648508068499583940
+      spriteID: ff85f101176d4f9d0800000000000000
+      internalID: -2741330492071651073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_3
+      name: tree3normal_green (1)_3
       rect:
         serializedVersion: 2
-        x: 434
+        x: 328
         y: 0
-        width: 140
-        height: 314
+        width: 108
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 789ee6f1ac7f3ec50800000000000000
-      internalID: 6693465918685505927
+      spriteID: e38db28123a7f9e30800000000000000
+      internalID: 4512459707221006398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_4
+      name: tree3normal_green (1)_4
       rect:
         serializedVersion: 2
-        x: 582
+        x: 435
         y: 0
-        width: 134
-        height: 311
+        width: 110
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99e72f6142665f100800000000000000
-      internalID: 141131268521885337
+      spriteID: a9c5068e1c6248570800000000000000
+      internalID: 8467935813632547994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_5
+      name: tree3normal_green (1)_5
       rect:
         serializedVersion: 2
-        x: 726
+        x: 544
         y: 0
-        width: 134
-        height: 311
+        width: 110
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05b73a4cd79310f20800000000000000
-      internalID: 3387051607092067152
+      spriteID: efc4f035414fdd2a0800000000000000
+      internalID: -6710939501582136066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_6
+      name: tree3normal_green (1)_6
       rect:
         serializedVersion: 2
-        x: 873
+        x: 655
         y: 0
-        width: 135
-        height: 311
+        width: 109
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cb4f77014ab6d170800000000000000
-      internalID: 8202948559763360707
+      spriteID: 16f894ec9938efec0800000000000000
+      internalID: -3531240361197727903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_7
+      name: tree3normal_green (1)_7
       rect:
         serializedVersion: 2
-        x: 1017
+        x: 764
         y: 0
-        width: 135
-        height: 311
+        width: 109
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8f64d45193e28130800000000000000
-      internalID: 3567664068163825549
+      spriteID: 2711e955ea927ca70800000000000000
+      internalID: 8847085821730099570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_8
+      name: tree3normal_green (1)_8
       rect:
         serializedVersion: 2
-        x: 1160
+        x: 874
         y: 0
-        width: 137
-        height: 314
+        width: 108
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5f020a910b522950800000000000000
-      internalID: 6422796081020669786
+      spriteID: 6149d44776715d700800000000000000
+      internalID: 564383061405176854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AlgueMoyenDevantClair_9
+      name: tree3normal_green (1)_9
       rect:
         serializedVersion: 2
-        x: 1304
+        x: 983
         y: 0
-        width: 137
-        height: 314
+        width: 107
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,52 +340,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e50929f4a5c9cb200800000000000000
-      internalID: 197204395393454174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AlgueMoyenDevantClair_10
-      rect:
-        serializedVersion: 2
-        x: 1447
-        y: 0
-        width: 136
-        height: 314
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd9ef214cf63a7300800000000000000
-      internalID: 250573186325801436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AlgueMoyenDevantClair_11
-      rect:
-        serializedVersion: 2
-        x: 1591
-        y: 0
-        width: 136
-        height: 314
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e1c7d3f188856690800000000000000
-      internalID: -7609525903649422877
+      spriteID: a5b36a2c5973565b0800000000000000
+      internalID: -5375829463841490086
       vertices: []
       indices: 
       edges: []
@@ -410,18 +360,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AlgueMoyenDevantClair_0: -6098165775537490865
-      AlgueMoyenDevantClair_1: -574756375039587493
-      AlgueMoyenDevantClair_10: 250573186325801436
-      AlgueMoyenDevantClair_11: -7609525903649422877
-      AlgueMoyenDevantClair_2: -6648508068499583940
-      AlgueMoyenDevantClair_3: 6693465918685505927
-      AlgueMoyenDevantClair_4: 141131268521885337
-      AlgueMoyenDevantClair_5: 3387051607092067152
-      AlgueMoyenDevantClair_6: 8202948559763360707
-      AlgueMoyenDevantClair_7: 3567664068163825549
-      AlgueMoyenDevantClair_8: 6422796081020669786
-      AlgueMoyenDevantClair_9: 197204395393454174
+      tree3normal_green (1)_0: 2851720196825948118
+      tree3normal_green (1)_1: -6370065687738401497
+      tree3normal_green (1)_2: -2741330492071651073
+      tree3normal_green (1)_3: 4512459707221006398
+      tree3normal_green (1)_4: 8467935813632547994
+      tree3normal_green (1)_5: -6710939501582136066
+      tree3normal_green (1)_6: -3531240361197727903
+      tree3normal_green (1)_7: 8847085821730099570
+      tree3normal_green (1)_8: 564383061405176854
+      tree3normal_green (1)_9: -5375829463841490086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
