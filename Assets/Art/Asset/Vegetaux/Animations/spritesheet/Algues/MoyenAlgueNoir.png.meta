@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: c86d997dc57ffac42b48193060bedf68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3510179666510563610
+    second: MoyenAlgueNoir_0
+  - first:
+      213: 1374662762752393706
+    second: MoyenAlgueNoir_1
+  - first:
+      213: 4081353872285203214
+    second: MoyenAlgueNoir_2
+  - first:
+      213: -3133455499012228368
+    second: MoyenAlgueNoir_3
+  - first:
+      213: 966789434275583296
+    second: MoyenAlgueNoir_4
+  - first:
+      213: -8831358311083888204
+    second: MoyenAlgueNoir_5
+  - first:
+      213: 8681387962401223937
+    second: MoyenAlgueNoir_6
+  - first:
+      213: 3390779847773419860
+    second: MoyenAlgueNoir_7
+  - first:
+      213: -6123211498119477539
+    second: MoyenAlgueNoir_8
+  - first:
+      213: -8320435935206342709
+    second: MoyenAlgueNoir_9
+  - first:
+      213: 454167781560535188
+    second: MoyenAlgueNoir_10
+  - first:
+      213: -5858496557133126814
+    second: MoyenAlgueNoir_11
+  - first:
+      213: -7645749457392119189
+    second: MoyenAlgueNoir_12
+  - first:
+      213: 6128082505574339929
+    second: MoyenAlgueNoir_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 98
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1949281fc9a6b030800000000000000
+      internalID: 3510179666510563610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 98
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae140dbdf78c31310800000000000000
+      internalID: 1374662762752393706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 98
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b793019b1e3a830800000000000000
+      internalID: 4081353872285203214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 0
+        width: 98
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fab1ed43dab384d0800000000000000
+      internalID: -3133455499012228368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_4
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 98
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045d8924ed9ba6d00800000000000000
+      internalID: 966789434275583296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_5
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 0
+        width: 98
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1b6a71866b07580800000000000000
+      internalID: -8831358311083888204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_6
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 99
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105f6481b5c7a7870800000000000000
+      internalID: 8681387962401223937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_7
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 0
+        width: 99
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45976127e487e0f20800000000000000
+      internalID: 3390779847773419860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_8
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 0
+        width: 101
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6400aa59bf50ba0800000000000000
+      internalID: -6123211498119477539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_9
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 0
+        width: 101
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf71a9b99fd78c80800000000000000
+      internalID: -8320435935206342709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_10
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 0
+        width: 98
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498c758e0378d4600800000000000000
+      internalID: 454167781560535188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_11
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 0
+        width: 98
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2632b32cb6072bea0800000000000000
+      internalID: -5858496557133126814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_12
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 0
+        width: 98
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62d18e9067d4e590800000000000000
+      internalID: -7645749457392119189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoyenAlgueNoir_13
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 0
+        width: 98
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9555b0322925b0550800000000000000
+      internalID: 6128082505574339929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MoyenAlgueNoir_0: 3510179666510563610
+      MoyenAlgueNoir_1: 1374662762752393706
+      MoyenAlgueNoir_10: 454167781560535188
+      MoyenAlgueNoir_11: -5858496557133126814
+      MoyenAlgueNoir_12: -7645749457392119189
+      MoyenAlgueNoir_13: 6128082505574339929
+      MoyenAlgueNoir_2: 4081353872285203214
+      MoyenAlgueNoir_3: -3133455499012228368
+      MoyenAlgueNoir_4: 966789434275583296
+      MoyenAlgueNoir_5: -8831358311083888204
+      MoyenAlgueNoir_6: 8681387962401223937
+      MoyenAlgueNoir_7: 3390779847773419860
+      MoyenAlgueNoir_8: -6123211498119477539
+      MoyenAlgueNoir_9: -8320435935206342709
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
