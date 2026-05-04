@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Controllers;
 using Datas;
 using Managers;
@@ -22,7 +23,8 @@ namespace Arrows
             ArrowManager.Instance.EnqueueMomentumArrow(this);
         }
 
-        private Vector2 _lastDirectionToPlayer;
+        private List<Vector2> _lastDirectionsToPlayer = new List<Vector2>();
+        
         private Vector2 _directionToPlayer;
         private Vector2 DirectionToPlayer
         {
@@ -31,7 +33,7 @@ namespace Arrows
             {
                 if (_directionToPlayer != Vector2.zero)
                 {
-                    _lastDirectionToPlayer = _directionToPlayer;
+                    _lastDirectionsToPlayer.Add(_directionToPlayer);
                 }
                 _directionToPlayer = value;
             }
@@ -47,7 +49,7 @@ namespace Arrows
                 Rb.linearVelocity = DirectionToPlayer * _recallSpeed; 
                 if (Vector2.Distance(transform.position, target) <= 1)
                 {
-                    PlayerController.ActivateKnockback(_lastDirectionToPlayer,_recallSpeed * MomentumData.KnockbackForce);
+                    PlayerController.ActivateKnockback(_lastDirectionsToPlayer.Count >= 3 ? _lastDirectionsToPlayer[^3] : DirectionToPlayer, _recallSpeed * MomentumData.KnockbackForce);
                     Destroy(gameObject);
                 }
             }

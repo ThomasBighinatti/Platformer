@@ -107,8 +107,7 @@ namespace Controllers
             );
             
             visual.transform.localScale = new Vector3(_velocity.x <= 0 ? -1 : 1, 1, 1);
-
-            Debug.Log(_velocity);
+            
             if (Mathf.Abs(_velocity.x) < 0.01f && grounded)
             {
                 playerAnimController.IdleState();
