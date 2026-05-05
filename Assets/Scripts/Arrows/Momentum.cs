@@ -47,7 +47,7 @@ namespace Arrows
                 DirectionToPlayer = (target - (Vector2)transform.position).normalized;
                 _recallSpeed += MomentumData.RecallAcceleration * Time.fixedDeltaTime;
                 Rb.linearVelocity = DirectionToPlayer * _recallSpeed; 
-                if (Vector2.Distance(transform.position, target) <= 1)
+                if (Vector2.Distance(transform.position, target) <= 1.75f)
                 {
                     PlayerController.ActivateKnockback(_lastDirectionsToPlayer.Count >= 3 ? _lastDirectionsToPlayer[^3] : DirectionToPlayer, _recallSpeed * MomentumData.KnockbackForce);
                     Destroy(gameObject);

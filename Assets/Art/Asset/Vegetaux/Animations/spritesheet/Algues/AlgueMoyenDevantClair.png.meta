@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 91786a27042ea734a894aad8a4ca81b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6098165775537490865
+    second: AlgueMoyenDevantClair_0
+  - first:
+      213: -574756375039587493
+    second: AlgueMoyenDevantClair_1
+  - first:
+      213: -6648508068499583940
+    second: AlgueMoyenDevantClair_2
+  - first:
+      213: 6693465918685505927
+    second: AlgueMoyenDevantClair_3
+  - first:
+      213: 141131268521885337
+    second: AlgueMoyenDevantClair_4
+  - first:
+      213: 3387051607092067152
+    second: AlgueMoyenDevantClair_5
+  - first:
+      213: 8202948559763360707
+    second: AlgueMoyenDevantClair_6
+  - first:
+      213: 3567664068163825549
+    second: AlgueMoyenDevantClair_7
+  - first:
+      213: 6422796081020669786
+    second: AlgueMoyenDevantClair_8
+  - first:
+      213: 197204395393454174
+    second: AlgueMoyenDevantClair_9
+  - first:
+      213: 250573186325801436
+    second: AlgueMoyenDevantClair_10
+  - first:
+      213: -7609525903649422877
+    second: AlgueMoyenDevantClair_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 139
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44b4af5986fe5ba0800000000000000
+      internalID: -6098165775537490865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 140
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bcf514f1e0608f0800000000000000
+      internalID: -574756375039587493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 140
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c83c21321cbb3a0800000000000000
+      internalID: -6648508068499583940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_3
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 140
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789ee6f1ac7f3ec50800000000000000
+      internalID: 6693465918685505927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_4
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 134
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e72f6142665f100800000000000000
+      internalID: 141131268521885337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_5
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 0
+        width: 134
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b73a4cd79310f20800000000000000
+      internalID: 3387051607092067152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_6
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 0
+        width: 135
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb4f77014ab6d170800000000000000
+      internalID: 8202948559763360707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_7
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 0
+        width: 135
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f64d45193e28130800000000000000
+      internalID: 3567664068163825549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_8
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 137
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f020a910b522950800000000000000
+      internalID: 6422796081020669786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_9
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 0
+        width: 137
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50929f4a5c9cb200800000000000000
+      internalID: 197204395393454174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_10
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 0
+        width: 136
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9ef214cf63a7300800000000000000
+      internalID: 250573186325801436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgueMoyenDevantClair_11
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 0
+        width: 136
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1c7d3f188856690800000000000000
+      internalID: -7609525903649422877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AlgueMoyenDevantClair_0: -6098165775537490865
+      AlgueMoyenDevantClair_1: -574756375039587493
+      AlgueMoyenDevantClair_10: 250573186325801436
+      AlgueMoyenDevantClair_11: -7609525903649422877
+      AlgueMoyenDevantClair_2: -6648508068499583940
+      AlgueMoyenDevantClair_3: 6693465918685505927
+      AlgueMoyenDevantClair_4: 141131268521885337
+      AlgueMoyenDevantClair_5: 3387051607092067152
+      AlgueMoyenDevantClair_6: 8202948559763360707
+      AlgueMoyenDevantClair_7: 3567664068163825549
+      AlgueMoyenDevantClair_8: 6422796081020669786
+      AlgueMoyenDevantClair_9: 197204395393454174
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
