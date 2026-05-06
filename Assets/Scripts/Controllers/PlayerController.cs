@@ -68,8 +68,6 @@ namespace Controllers
 
         public void OnMove(InputAction.CallbackContext context)
         {
-            Debug.Log(context.action.name);
-            Debug.Log(context.ReadValue<Vector2>());
             _moveInput = context.ReadValue<Vector2>();
         }
 
@@ -106,8 +104,12 @@ namespace Controllers
             );
             
             visual.transform.localScale = new Vector3(_velocity.x <= 0 ? -1 : 1, 1, 1);
-            
-            if (Mathf.Abs(_velocity.x) < 0.01f && grounded)
+
+            if (onSlope && grounded && _velocity.y <= 0)
+            {
+                playerAnimController.SlideState();
+            }
+            else if (Mathf.Abs(_velocity.x) < 0.01f && grounded)
             {
                 playerAnimController.IdleState();
             }

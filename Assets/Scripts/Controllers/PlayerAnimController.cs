@@ -34,11 +34,11 @@ namespace Controllers
         public void JumpState() => CurrentAnimState = AnimState.Jump;
         public void SlideState() => CurrentAnimState = AnimState.Slide;
 
-        private int _idleAnimToPlay;
+        private float _idleAnimToPlay;
         public void RandomIdleAnim()
         {
             _idleAnimToPlay = Random.Range(0, 3);
-            animator.SetInteger(IdleAnimToPlay, _idleAnimToPlay);
+            animator.SetFloat(IdleAnimToPlay, _idleAnimToPlay);
         }
     
     }

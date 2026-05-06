@@ -93,6 +93,5 @@ namespace Controllers
             ArrowManager.Instance.RecallArrow();
         }
         
-        // TODO bug sur recall deux fleches recall à cause du canceled qui devrait pourtant pas avoir lieu
     }
 }

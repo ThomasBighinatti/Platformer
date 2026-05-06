@@ -100,7 +100,6 @@ public class MovingPlatform : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Arrow"))
         {
-            Debug.Log("ouui");
             other.transform.SetParent(transform);
             NumberOfInteractions++;
         }
@@ -110,7 +109,6 @@ public class MovingPlatform : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Arrow"))
         {
-            Debug.Log("nonn");
             NumberOfInteractions--;
         }
     }

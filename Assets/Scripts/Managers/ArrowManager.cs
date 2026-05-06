@@ -114,8 +114,6 @@ namespace Managers
                 return;
             }
             
-            Debug.Log("Shoot");
-
             CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
             
             GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,pointer.transform);
@@ -147,7 +145,6 @@ namespace Managers
             if (MomentumQueueEmpty)
                 return;
             
-            Debug.Log("T'as cliqué frr");
             Momentum momentumArrowCalled = DequeueMomentumArrow();
             momentumArrowCalled?.Recall();
         }
