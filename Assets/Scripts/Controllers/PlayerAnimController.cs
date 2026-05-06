@@ -33,12 +33,16 @@ namespace Controllers
         public void WalkState() => CurrentAnimState = AnimState.Walk;
         public void JumpState() => CurrentAnimState = AnimState.Jump;
         public void SlideState() => CurrentAnimState = AnimState.Slide;
-
-        private float _idleAnimToPlay;
+        
         public void RandomIdleAnim()
         {
-            _idleAnimToPlay = Random.Range(0, 3);
-            animator.SetFloat(IdleAnimToPlay, _idleAnimToPlay);
+            float idleAnimToPlay = Random.value switch
+            {
+                >= 0.6f => 0,
+                >= 0.2f => 1,
+                _ => 2
+            };
+            animator.SetFloat(IdleAnimToPlay, idleAnimToPlay);
         }
     
     }
