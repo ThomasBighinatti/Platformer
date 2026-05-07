@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 3d62ef08e8f353c4384efa41e75029ad
+guid: 3dcb9d3530be8564990c92ea9d809d5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2700899554197599595
-    second: jump land_0
+      213: 7698755718795181967
+    second: jump contact_0
   - first:
-      213: 7181926889825595430
-    second: jump land_1
+      213: 678939794878253845
+    second: jump contact_1
   - first:
-      213: 2193067975102759300
-    second: jump land_2
+      213: 4445710543590203738
+    second: jump contact_2
   - first:
-      213: 6857636456874397403
-    second: jump land_3
-  - first:
-      213: -2499067374135738450
-    second: jump land_4
-  - first:
-      213: -5058587091289015069
-    second: jump land_5
+      213: 9092518318330286352
+    second: jump contact_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -90,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,133 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JumpLandAnim_0
+      name: jump contact_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 55
-        height: 71
+        width: 50
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f16325c5d88e9744b8d21776f1d4fb7e
-      internalID: -1768866378
+      spriteID: f8f3b47598977da60800000000000000
+      internalID: 7698755718795181967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpLandAnim_1
+      name: jump contact_1
       rect:
         serializedVersion: 2
-        x: 81
+        x: 65
         y: 0
-        width: 42
-        height: 51
+        width: 49
+        height: 83
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ff8464edfed273c428b8a074481c260c
-      internalID: 1889711890
+      spriteID: 51b489175241c6900800000000000000
+      internalID: 678939794878253845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpLandAnim_2
+      name: jump contact_2
       rect:
         serializedVersion: 2
-        x: 148
+        x: 138
         y: 0
-        width: 42
-        height: 40
+        width: 38
+        height: 99
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 11e39737c4737574587420314d15db04
-      internalID: -1409115860
+      spriteID: a5127ec5f2652bd30800000000000000
+      internalID: 4445710543590203738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpLandAnim_3
+      name: jump contact_3
       rect:
         serializedVersion: 2
-        x: 210
+        x: 194
         y: 0
-        width: 45
-        height: 40
+        width: 49
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cd1f50989bb2dcb4e833253e24536b74
-      internalID: 1548475601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpLandAnim_4
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 0
-        width: 48
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0901c46e27d069342a25b697fe7b0c8b
-      internalID: -1468889385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpLandAnim_5
-      rect:
-        serializedVersion: 2
-        x: 339
-        y: 0
-        width: 45
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9d55f65ffd8d6a4f8f850aa4e0ce85e
-      internalID: 822531398
+      spriteID: 0111fcd7c3d1f2e70800000000000000
+      internalID: 9092518318330286352
       vertices: []
       indices: 
       edges: []
@@ -263,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9da315c836d88f746929898d7e922c1c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -271,16 +221,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      JumpLandAnim_0: -1768866378
-      JumpLandAnim_1: 1889711890
-      JumpLandAnim_2: -1409115860
-      JumpLandAnim_3: 1548475601
-      JumpLandAnim_4: -1468889385
-      JumpLandAnim_5: 822531398
+      jump contact_0: 7698755718795181967
+      jump contact_1: 678939794878253845
+      jump contact_2: 4445710543590203738
+      jump contact_3: 9092518318330286352
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
