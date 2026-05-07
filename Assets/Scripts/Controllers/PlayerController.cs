@@ -105,6 +105,8 @@ namespace Controllers
             
             visual.transform.localScale = new Vector3(_velocity.x <= 0 ? -1 : 1, 1, 1);
 
+            playerAnimController.ChangeToJumpState = false;
+            
             if (playerAnimController.GetJump() && grounded && !onSlope)
             {
                 playerAnimController.SetLand();

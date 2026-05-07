@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Controllers
 {
@@ -10,6 +11,7 @@ namespace Controllers
         private static readonly int HashIdleVariant = Animator.StringToHash("idleAnimToPlay");
         private static readonly int HashMainState = Animator.StringToHash("currentState");
         private static readonly int HashJumpPhase = Animator.StringToHash("jumpState");
+        private static readonly int HashChangeJump = Animator.StringToHash("changeJump");
 
         #region Main State
 
@@ -28,7 +30,13 @@ namespace Controllers
             get => _mainState;
             set
             {
+                if (_mainState == value)
+                    return;
                 _mainState = value;
+                if (GetJump())
+                {
+                    ChangeToJumpState = true;
+                }
                 animator.SetInteger(HashMainState, (int)_mainState);
             }
         }
@@ -37,8 +45,24 @@ namespace Controllers
         public void SetWalk()  => MainState = MainAnimState.Walk;
         
         public bool GetJump()  => MainState == MainAnimState.Jump;
-        public void SetJump()  => MainState = MainAnimState.Jump;
-        
+
+        public void SetJump()
+        {
+            MainState = MainAnimState.Jump;
+        }
+        private bool _changeToJumpState = false;
+        public bool ChangeToJumpState
+        {
+            set
+            {
+                if (_changeToJumpState == value)
+                    return;
+                
+                animator.SetBool(HashChangeJump, value);
+                _changeToJumpState = value;
+            } 
+        }
+
         public void SetLand()  => MainState = MainAnimState.Land;
         public bool landed = false;
         public void SetLandedDefault() => landed = false;
@@ -58,6 +82,7 @@ namespace Controllers
         }
 
         private JumpAnimPhase _jumpPhase;
+
         private JumpAnimPhase JumpPhase
         {
             set
@@ -71,7 +96,7 @@ namespace Controllers
         public void SetJumpRise() => JumpPhase = JumpAnimPhase.Rise;
         public void SetJumpFloat() => JumpPhase = JumpAnimPhase.Float;
         public void SetJumpFall() => JumpPhase = JumpAnimPhase.Fall;
-
+        
         #endregion
         
         public void RandomIdleAnim()
