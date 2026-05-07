@@ -105,17 +105,31 @@ namespace Controllers
             
             visual.transform.localScale = new Vector3(_velocity.x <= 0 ? -1 : 1, 1, 1);
 
-            if (onSlope && grounded && _velocity.y <= 0)
+            if (playerAnimController.GetJump() && grounded && !onSlope)
+            {
+                playerAnimController.SetLand();
+                playerAnimController.landed = true;
+                Debug.Log("Land");
+            }
+            else if (!onSlope && !grounded)
+            {
+                playerAnimController.SetJump();
+                Debug.Log("Jump");
+            }
+            else if (onSlope && grounded && _velocity.y <= 0)
             {
                 playerAnimController.SetSlide();
+                Debug.Log("Slide");
             }
-            else if (Mathf.Abs(_velocity.x) < 0.01f && grounded)
+            else if (Mathf.Abs(_velocity.x) < 0.01f && grounded && !playerAnimController.landed)
             {
                 playerAnimController.SetIdle();
+                Debug.Log("Idle");
             }
-            else if (grounded)
+            else if (grounded && !playerAnimController.landed)
             {
                 playerAnimController.SetWalk();
+                Debug.Log("Walk");
             }
             
             _rb.linearVelocity = _velocity;
@@ -195,7 +209,7 @@ namespace Controllers
         {
             if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope || _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && canJumpOnSlope)
             {
-                float jumpForce = (2f * data.JumpHeight) / data.TimeToJumpApex;
+                float jumpForce = 2f * data.JumpHeight / data.TimeToJumpApex;
                 switch (onSlope)
                 {
                     case false:
@@ -213,6 +227,7 @@ namespace Controllers
                 _coyoteTimeCounter = 0f;
                 _jumpBufferCounter = 0f;
                 _boxCastCooldownCounter = boxCastCooldown;
+                playerAnimController.SetJumpContact();
             }
 
             return targetVelocity;
@@ -248,14 +263,17 @@ namespace Controllers
                 // en gros on fait ce que ta demandé le gd, on bricole ta gravité au sommet
                 float apexGravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToJumpApex, 2);
                 gravity = apexGravity * data.ApexHangGravityMult;
+                playerAnimController.SetJumpFloat();
             }
             else if (targetVelocity.y < 0)
             {
                 gravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToFall, 2);
+                playerAnimController.SetJumpFall();
             }
             else
             {
                 gravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToJumpApex, 2);
+                playerAnimController.SetJumpRise();
             }
 
             targetVelocity.y -= gravity * Time.fixedDeltaTime;

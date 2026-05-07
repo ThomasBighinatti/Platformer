@@ -8,16 +8,24 @@ namespace Controllers
         [SerializeField] private Animator animator;
         
         private static readonly int HashIdleVariant = Animator.StringToHash("idleAnimToPlay");
-        private static readonly int HashMainState   = Animator.StringToHash("currentState");
-        private static readonly int HashJumpPhase   = Animator.StringToHash("jumpState");
+        private static readonly int HashMainState = Animator.StringToHash("currentState");
+        private static readonly int HashJumpPhase = Animator.StringToHash("jumpState");
 
         #region Main State
 
-        private enum MainAnimState { Idle, Walk, Jump, Land, Slide }
+        private enum MainAnimState
+        {
+            Idle, 
+            Walk, 
+            Jump, 
+            Land, 
+            Slide
+        }
 
         private MainAnimState _mainState;
         private MainAnimState MainState
         {
+            get => _mainState;
             set
             {
                 _mainState = value;
@@ -27,15 +35,27 @@ namespace Controllers
 
         public void SetIdle()  => MainState = MainAnimState.Idle;
         public void SetWalk()  => MainState = MainAnimState.Walk;
+        
+        public bool GetJump()  => MainState == MainAnimState.Jump;
         public void SetJump()  => MainState = MainAnimState.Jump;
+        
         public void SetLand()  => MainState = MainAnimState.Land;
+        public bool landed = false;
+        public void SetLandedDefault() => landed = false;
+        
         public void SetSlide() => MainState = MainAnimState.Slide;
 
         #endregion
         
         #region Jump Phase
 
-        private enum JumpAnimPhase { Contact, Rise, Float, Fall }
+        private enum JumpAnimPhase
+        {
+            Contact, 
+            Rise, 
+            Float, 
+            Fall
+        }
 
         private JumpAnimPhase _jumpPhase;
         private JumpAnimPhase JumpPhase
@@ -48,9 +68,9 @@ namespace Controllers
         }
 
         public void SetJumpContact() => JumpPhase = JumpAnimPhase.Contact;
-        public void SetJumpRise()    => JumpPhase = JumpAnimPhase.Rise;
-        public void SetJumpFloat()   => JumpPhase = JumpAnimPhase.Float;
-        public void SetJumpFall()    => JumpPhase = JumpAnimPhase.Fall;
+        public void SetJumpRise() => JumpPhase = JumpAnimPhase.Rise;
+        public void SetJumpFloat() => JumpPhase = JumpAnimPhase.Float;
+        public void SetJumpFall() => JumpPhase = JumpAnimPhase.Fall;
 
         #endregion
         
