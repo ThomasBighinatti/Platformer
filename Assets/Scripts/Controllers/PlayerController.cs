@@ -84,7 +84,8 @@ namespace Controllers
             _stopVelocity = stopVelocity;
         }
 
-        [SerializeField] private GameObject visual;
+        [SerializeField] private SpriteRenderer visual;
+        private bool _lookingRight;
         
         private void FixedUpdate()
         {
@@ -102,36 +103,40 @@ namespace Controllers
                 Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), 
                 Mathf.Max(_velocity.y, -data.MaxFallSpeed)
             );
-            
-            visual.transform.localScale = new Vector3(_velocity.x <= 0 ? -1 : 1, 1, 1);
+
+            _lookingRight = _velocity.x switch
+            {
+                < 0 => true,
+                > 0 => false,
+                _ => _lookingRight
+            };
+
+            visual.flipX = _lookingRight;
 
             playerAnimController.ChangeToJumpState = false;
             
-            if (playerAnimController.GetJump() && grounded && !onSlope)
+            bool isJumping = playerAnimController.GetJump();
+            
+            if (isJumping && grounded && !onSlope)
             {
                 playerAnimController.SetLand();
                 playerAnimController.landed = true;
-                Debug.Log("Land");
             }
             else if (!onSlope && !grounded)
             {
                 playerAnimController.SetJump();
-                Debug.Log("Jump");
             }
             else if (onSlope && grounded && _velocity.y <= 0)
             {
                 playerAnimController.SetSlide();
-                Debug.Log("Slide");
             }
             else if (Mathf.Abs(_velocity.x) < 0.01f && grounded && !playerAnimController.landed)
             {
                 playerAnimController.SetIdle();
-                Debug.Log("Idle");
             }
             else if (grounded && !playerAnimController.landed)
             {
                 playerAnimController.SetWalk();
-                Debug.Log("Walk");
             }
             
             _rb.linearVelocity = _velocity;
