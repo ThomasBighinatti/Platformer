@@ -7,32 +7,52 @@ namespace Controllers
         
         [SerializeField] private Animator animator;
         
-        private static readonly int IdleAnimToPlay = Animator.StringToHash("idleAnimToPlay");
-        private static readonly int CurrentState = Animator.StringToHash("currentState");
+        private static readonly int HashIdleVariant = Animator.StringToHash("idleAnimToPlay");
+        private static readonly int HashMainState   = Animator.StringToHash("currentState");
+        private static readonly int HashJumpPhase   = Animator.StringToHash("jumpState");
 
-        private enum AnimState
+        #region Main State
+
+        private enum MainAnimState { Idle, Walk, Jump, Land, Slide }
+
+        private MainAnimState _mainState;
+        private MainAnimState MainState
         {
-            Idle, 
-            Walk, 
-            Jump, 
-            Slide
-        }
-        
-        private AnimState _currentAnimState = AnimState.Idle;
-        private AnimState CurrentAnimState
-        {
-            get => _currentAnimState;
             set
             {
-                _currentAnimState = value;
-                animator.SetInteger(CurrentState, (int)_currentAnimState);
+                _mainState = value;
+                animator.SetInteger(HashMainState, (int)_mainState);
             }
         }
 
-        public void IdleState() => CurrentAnimState = AnimState.Idle;
-        public void WalkState() => CurrentAnimState = AnimState.Walk;
-        public void JumpState() => CurrentAnimState = AnimState.Jump;
-        public void SlideState() => CurrentAnimState = AnimState.Slide;
+        public void SetIdle()  => MainState = MainAnimState.Idle;
+        public void SetWalk()  => MainState = MainAnimState.Walk;
+        public void SetJump()  => MainState = MainAnimState.Jump;
+        public void SetLand()  => MainState = MainAnimState.Land;
+        public void SetSlide() => MainState = MainAnimState.Slide;
+
+        #endregion
+        
+        #region Jump Phase
+
+        private enum JumpAnimPhase { Contact, Rise, Float, Fall }
+
+        private JumpAnimPhase _jumpPhase;
+        private JumpAnimPhase JumpPhase
+        {
+            set
+            {
+                _jumpPhase = value;
+                animator.SetInteger(HashJumpPhase, (int)_jumpPhase);
+            }
+        }
+
+        public void SetJumpContact() => JumpPhase = JumpAnimPhase.Contact;
+        public void SetJumpRise()    => JumpPhase = JumpAnimPhase.Rise;
+        public void SetJumpFloat()   => JumpPhase = JumpAnimPhase.Float;
+        public void SetJumpFall()    => JumpPhase = JumpAnimPhase.Fall;
+
+        #endregion
         
         public void RandomIdleAnim()
         {
@@ -42,8 +62,7 @@ namespace Controllers
                 >= 0.2f => 1,
                 _ => 2
             };
-            animator.SetFloat(IdleAnimToPlay, idleAnimToPlay);
+            animator.SetFloat(HashIdleVariant, idleAnimToPlay);
         }
-    
     }
 }

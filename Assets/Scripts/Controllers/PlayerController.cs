@@ -107,16 +107,17 @@ namespace Controllers
 
             if (onSlope && grounded && _velocity.y <= 0)
             {
-                playerAnimController.SlideState();
+                playerAnimController.SetSlide();
             }
             else if (Mathf.Abs(_velocity.x) < 0.01f && grounded)
             {
-                playerAnimController.IdleState();
+                playerAnimController.SetIdle();
             }
             else if (grounded)
             {
-                playerAnimController.WalkState();
+                playerAnimController.SetWalk();
             }
+            
             _rb.linearVelocity = _velocity;
         }
 
