@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: cb99f16a6c483eb4799bba39b52aa6fe
+guid: 1c587dcf0aad43549a1c0d4fa5d28f0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7698755718795181967
-    second: jump contact_0
+      213: -2700899554197599595
+    second: jump land_0
   - first:
-      213: 678939794878253845
-    second: jump contact_1
+      213: 7181926889825595430
+    second: jump land_1
   - first:
-      213: 4445710543590203738
-    second: jump contact_2
+      213: 2193067975102759300
+    second: jump land_2
   - first:
-      213: 9092518318330286352
-    second: jump contact_3
+      213: 6857636456874397403
+    second: jump land_3
+  - first:
+      213: -2499067374135738450
+    second: jump land_4
+  - first:
+      213: -5058587091289015069
+    second: jump land_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,89 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JumpContactAnim_0
+      name: jump land_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 105
+        width: 56
+        height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 65e88b84bbbf825488ab5bc5375692de
-      internalID: -1075728794
+      spriteID: 59a8a0a5a2a748ad0800000000000000
+      internalID: -2700899554197599595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpContactAnim_1
+      name: jump land_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 0
-        width: 64
-        height: 105
+        width: 44
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5551cc1a4eebd8a40a6403aec334865a
-      internalID: 1283959265
+      spriteID: 62071ee64745ba360800000000000000
+      internalID: 7181926889825595430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpContactAnim_2
+      name: jump land_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 147
         y: 0
-        width: 64
-        height: 105
+        width: 44
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fc6df62e0c5699743b8f9a435d691262
-      internalID: -1585539567
+      spriteID: 481094834b75f6e10800000000000000
+      internalID: 2193067975102759300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpContactAnim_3
+      name: jump land_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 209
         y: 0
-        width: 64
-        height: 105
+        width: 47
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0bfb29b0c1dfc4b42a0dab1970ece3b7
-      internalID: 1086666433
+      spriteID: bde44c236083b2f50800000000000000
+      internalID: 6857636456874397403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump land_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaffedeb677815dd0800000000000000
+      internalID: -2499067374135738450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump land_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec775e87d94cc9b0800000000000000
+      internalID: -5058587091289015069
       vertices: []
       indices: 
       edges: []
@@ -213,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b16364f03683f6c4bbcf42570609cb30
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -221,14 +271,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":105.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      JumpContactAnim_0: -1075728794
-      JumpContactAnim_1: 1283959265
-      JumpContactAnim_2: -1585539567
-      JumpContactAnim_3: 1086666433
+      jump land_0: -2700899554197599595
+      jump land_1: 7181926889825595430
+      jump land_2: 2193067975102759300
+      jump land_3: 6857636456874397403
+      jump land_4: -2499067374135738450
+      jump land_5: -5058587091289015069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
