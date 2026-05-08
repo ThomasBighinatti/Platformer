@@ -8,6 +8,7 @@ namespace Controllers
     {
         
         [SerializeField] private GameObject bfVisual;
+        [SerializeField] private SpriteRenderer bfSprite;
         [SerializeField] private float speed = 1;
         [SerializeField] private float distance = 1;
         private float _time;
@@ -61,8 +62,8 @@ namespace Controllers
             Vector2 offset = new Vector2(xCoords, yCoords) * distance;
 
             bfVisual.transform.localPosition = offset;
-            
-            bfVisual.transform.localScale = new Vector3(IsMovingRight ? 1f : -1f, 1f, 1f);
+
+            bfSprite.flipX = IsMovingRight;
             
             _previousXWorldPosition = bfVisual.transform.position.x;
         }
