@@ -14,6 +14,10 @@ public class EyeMove : MonoBehaviour
     [SerializeField, Range(0, 1)] private float offsetDistanceOnLook;
     [SerializeField] private float randomTimeWaitMin;
     [SerializeField] private float randomTimeWaitMax;
+
+    [SerializeField] private GameObject shakeParent;
+    [SerializeField] private float shakeDistance = 5;
+    [SerializeField] private float shakeStrength = 0.05f;
     
     private GameObject _player;
     private Vector3 _pupilCenter;
@@ -25,7 +29,9 @@ public class EyeMove : MonoBehaviour
         StartCoroutine(WaitForLookCycle());
     }
     
-    private void LookTowardsPlayer()
+    private bool IsInRange => Vector2.Distance(_player.transform.position, transform.position) <= shakeDistance;
+    
+    private void LookTowardsPlayer(float shakeTime)
     {
         
         Vector2 targetPosition = _pupilCenter + (_player.transform.position - pupil.transform.position).normalized * centerDistance;
@@ -33,11 +39,17 @@ public class EyeMove : MonoBehaviour
 
         pupil.transform.DOKill();
         pupil.transform.DOMove(new Vector3(targetPosition.x,targetPosition.y,pupil.transform.position.z), 0.2f).SetEase(Ease.InOutSine);
+        if (!IsInRange)
+            return;
+        
+        shakeParent.transform.DOKill();
+        shakeParent.transform.DOShakePosition(shakeTime,new Vector3(shakeStrength, shakeStrength, 0),15,90f,false,false);
     }
 
     private IEnumerator WaitForLookCycle()
     {
-        LookTowardsPlayer();
+        float randomTime = Random.Range(randomTimeWaitMin, randomTimeWaitMax);
+        LookTowardsPlayer(randomTime);
         yield return new WaitForSeconds(Random.Range(randomTimeWaitMin, randomTimeWaitMax));
         StartCoroutine(WaitForLookCycle());
     }
