@@ -1,9 +1,14 @@
+using System;
 using Datas;
 using UnityEngine;
 using UnityEngine.InputSystem;
+// ReSharper disable CompareOfFloatsByEqualityOperator
 
 namespace Controllers
 {
+    
+    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(CapsuleCollider2D))]
     public class PlayerController : MonoBehaviour
     {
         [Header("Player Settings")] 
@@ -14,18 +19,16 @@ namespace Controllers
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [SerializeField] private bool stopVelocity;
         [SerializeField] private float jumpSlopeAngle;
-        private Vector2 _jumpSlopeVector;
-        private static bool _stopVelocity;
         [Space(10f)]
         
         [Header("Visualisation")]
-        [SerializeField] private bool grounded = false;
-        [SerializeField] private bool onSlope = false;
+        [SerializeField] private bool grounded;
+        [SerializeField] private bool onSlope;
         [Space(10f)]
         
         [Header("Slope Settings")]
         [SerializeField] private float slopeAngleThreshold = 5f;
-        [SerializeField] private bool canJumpOnSlope = false;
+        [SerializeField] private bool canJumpOnSlope = true;
         [Space(10f)]
 
         [Header("Raycast Settings")]
@@ -38,111 +41,71 @@ namespace Controllers
         [Header("Friction")]
         [SerializeField] private PhysicsMaterial2D noFrictionMaterial;
         [SerializeField] private PhysicsMaterial2D frictionMaterial;
-     
+        [Space(10f)]
+        
+        [Header("Animation")]
+        [SerializeField] private PlayerAnimController playerAnimController;
+        [SerializeField] private SpriteRenderer visual;
+        
         private Vector2 _moveInput;
+        private bool _lookingRight;
+        
         private static Rigidbody2D _rb;
         private CapsuleCollider2D _playerCollider;
+        
         private float _coyoteTimeCounter;
         private float _jumpBufferCounter;
-        private float _boxCastCooldownCounter = 0;
-        private bool _jumpButtonReleased = false;
-        private float _slopeDirection;
-        private PlayerInput _playerInput;
-
-        [SerializeField] private PlayerAnimController playerAnimController;
+        private float _boxCastCooldownCounter;
         
-        private Vector2 _velocity;
-
-        public void OnJump(InputAction.CallbackContext context)
-        {
-            if (context.started)
-            {
-                _jumpBufferCounter = data.JumpBufferTime;
-                _jumpButtonReleased = false;
-            }
-            if (context.canceled)
-            {
-                _jumpButtonReleased = true;
-            }
-        }
-
-        public void OnMove(InputAction.CallbackContext context)
-        {
-            _moveInput = context.ReadValue<Vector2>();
-        }
+        private bool _jumpButtonReleased;
+        
+        private float _slopeDirection;
+        private Vector2 _jumpSlopeVector;
+        
+        private static bool _stopVelocity;
+        private static bool _isKnockedBack;
 
         private void Awake()
         {
-            _playerInput = GetComponent<PlayerInput>();
+            _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
+            _rb = GetComponent<Rigidbody2D>();
         }
 
         private void Start()
         {
-            _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
-            _rb = GetComponent<Rigidbody2D>();
             _rb.gravityScale = 0;
             _stopVelocity = stopVelocity;
+            if (data is null)
+            {
+                Debug.LogError("No Data Entered");
+            }
         }
-
-        [SerializeField] private SpriteRenderer visual;
-        private bool _lookingRight;
         
         private void FixedUpdate()
         {
             _jumpBufferCounter -= Time.fixedDeltaTime;
             _boxCastCooldownCounter -= Time.fixedDeltaTime; //j'ai ecrit "=-" au lieu de "-="...
 
-            _velocity = _rb.linearVelocity;
+            Vector2 velocity = _rb.linearVelocity;
             
-            _velocity = Movement(_velocity);
-            _velocity = Jump(_velocity);
-            _velocity = JumpCut(_velocity);
-            _velocity = ApplyCustomGravity(_velocity);
+            velocity = Movement(velocity);
+            velocity = Jump(velocity);
+            velocity = JumpCut(velocity);
+            velocity = ApplyCustomGravity(velocity);
 
-            _velocity = new Vector2(
-                Mathf.Clamp(_velocity.x, -data.MaxSpeed, data.MaxSpeed), 
-                Mathf.Max(_velocity.y, -data.MaxFallSpeed)
+            velocity = new Vector2(
+                Mathf.Clamp(velocity.x, -data.MaxSpeed, data.MaxSpeed), 
+                Mathf.Max(velocity.y, -data.MaxFallSpeed)
             );
-
-            _lookingRight = _velocity.x switch
-            {
-                < 0 => true,
-                > 0 => false,
-                _ => _lookingRight
-            };
-
-            visual.flipX = _lookingRight;
-
-            playerAnimController.ChangeToJumpState = false;
             
-            bool isJumping = playerAnimController.GetJump();
-            
-            if (isJumping && grounded && !onSlope)
-            {
-                playerAnimController.SetLand();
-                playerAnimController.landed = true;
-            }
-            else if (!onSlope && !grounded)
-            {
-                playerAnimController.SetJump();
-            }
-            else if (onSlope && grounded && _velocity.y <= 0)
-            {
-                playerAnimController.SetSlide();
-            }
-            else if (Mathf.Abs(_velocity.x) < 0.01f && grounded && !playerAnimController.landed)
-            {
-                playerAnimController.SetIdle();
-            }
-            else if (grounded && !playerAnimController.landed)
-            {
-                playerAnimController.SetWalk();
-            }
-            
-            _rb.linearVelocity = _velocity;
+            FlipTowardsDirection(velocity);
+
+            AnimationStateChange(velocity);
+
+            _rb.linearVelocity = velocity;
         }
 
-        
+        #region Movement
         
         private Vector2 Movement(Vector2 targetVelocity)
         {
@@ -157,99 +120,101 @@ namespace Controllers
                 _coyoteTimeCounter = data.CoyoteTime;
                 
                 #region MovementSlope
+                
                 float slopeAngle = Vector2.Angle(groundHit.normal, Vector2.up);
-
                 if (slopeAngle > slopeAngleThreshold)
                 {
                     onSlope = true;
                     _slopeDirection = Mathf.Sign(groundHit.normal.x);
-                    _playerCollider.sharedMaterial = noFrictionMaterial;
-                    _rb.sharedMaterial = noFrictionMaterial;
+                    
+                    ChangeToMaterial(noFrictionMaterial);
                 }
                 else
                 {
                     onSlope = false;
                     targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.PlayerAcceleration * Time.fixedDeltaTime);
     
-                    _playerCollider.sharedMaterial = frictionMaterial;
-                    _rb.sharedMaterial = frictionMaterial;
+                    ChangeToMaterial(frictionMaterial);
                 }
+                
                 #endregion
             }
             else //mvt en l'air
             {
-                _playerCollider.sharedMaterial = noFrictionMaterial;
-                _rb.sharedMaterial = noFrictionMaterial;
+                ChangeToMaterial(noFrictionMaterial);
                 
                 _coyoteTimeCounter -= Time.fixedDeltaTime; //fixeddeltatime prcq on est dans fixedupdate
 
-                if (!_isKnockedBack || _moveInput.x != 0)
+                switch (_isKnockedBack)
                 {
-                    if (_isKnockedBack)
-                    {
-                        if (Mathf.Sign(_rb.linearVelocity.x) != Mathf.Sign(targetSpeedX))
-                        {
-                            targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
-                            _isKnockedBack = false;
-                        }
-                        else if (Mathf.Abs(_rb.linearVelocity.x) - Mathf.Abs(targetSpeedX) <= 0)
-                        {
-                            targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
-                            _isKnockedBack = false;
-                        }
-                        else
-                        {
-                            return targetVelocity;
-                        }
-                    }
-                    else
-                    {
+                    case true when _moveInput.x == 0:
+                        return targetVelocity;
+                    
+                    case true when Mathf.Sign(_rb.linearVelocity.x) != Mathf.Sign(targetSpeedX) || Mathf.Abs(_rb.linearVelocity.x) - Mathf.Abs(targetSpeedX) <= 0:
                         targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
                         _isKnockedBack = false;
-                    }
+                        break;
+                    
+                    case true:
+                        return targetVelocity;
+                    
+                    default:
+                        targetVelocity.x = Mathf.MoveTowards(targetVelocity.x, targetSpeedX, data.AirControl * Time.fixedDeltaTime);
+                        _isKnockedBack = false;
+                        break;
                 }
             }
             return targetVelocity;
         }
+
+        private void ChangeToMaterial(PhysicsMaterial2D material)
+        {
+            _playerCollider.sharedMaterial = material;
+            _rb.sharedMaterial = material;
+        }
         
+        #endregion
+        
+        #region Jump
         private Vector2 Jump(Vector2 targetVelocity)
         {
-            if (_coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && !onSlope || _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && canJumpOnSlope)
+            bool canJump = _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f;
+            if (!canJump || (onSlope && !canJumpOnSlope)) 
+                return targetVelocity;
+            
+            float jumpForce = 2f * data.JumpHeight / data.TimeToJumpApex;
+            switch (onSlope)
             {
-                float jumpForce = 2f * data.JumpHeight / data.TimeToJumpApex;
-                switch (onSlope)
-                {
-                    case false:
-                        targetVelocity.y = jumpForce;
-                        break;
-                    case true:
-                        float jumpSlopeRadians = jumpSlopeAngle * Mathf.Deg2Rad;
-                        _jumpSlopeVector = new Vector2(Mathf.Sin(jumpSlopeRadians), Mathf.Cos(jumpSlopeRadians));
-                        Vector2 jumpForceVector = _jumpSlopeVector * jumpForce;
-                        jumpForceVector.x *= _slopeDirection;
-                        targetVelocity = jumpForceVector;
-                        break;
-                }
-
-                _coyoteTimeCounter = 0f;
-                _jumpBufferCounter = 0f;
-                _boxCastCooldownCounter = boxCastCooldown;
-                playerAnimController.SetJumpContact();
+                case false:
+                    targetVelocity.y = jumpForce;
+                    break;
+                    
+                case true:
+                    float jumpSlopeRadians = jumpSlopeAngle * Mathf.Deg2Rad;
+                    _jumpSlopeVector = new Vector2(Mathf.Sin(jumpSlopeRadians), Mathf.Cos(jumpSlopeRadians));
+                    Vector2 jumpForceVector = _jumpSlopeVector * jumpForce;
+                    jumpForceVector.x *= _slopeDirection;
+                        
+                    targetVelocity = jumpForceVector;
+                    break;
             }
+
+            _coyoteTimeCounter = 0f;
+            _jumpBufferCounter = 0f;
+            _boxCastCooldownCounter = boxCastCooldown;
+                
+            playerAnimController.SetJumpContact();
 
             return targetVelocity;
         }
         
         private Vector2 JumpCut(Vector2 targetVelocity)
         {
-            if (!_jumpButtonReleased) 
+            if (!_jumpButtonReleased || !(targetVelocity.y > 0f)) 
                 return targetVelocity;
-            
-            if (targetVelocity.y > 0f)
-            {
-                targetVelocity.y *= data.JumpCutMultiplier;
-                _jumpButtonReleased = false; 
-            }
+
+            targetVelocity.y *= data.JumpCutMultiplier;
+            _jumpButtonReleased = false;
 
             return targetVelocity;
         }
@@ -268,18 +233,18 @@ namespace Controllers
             if (Mathf.Abs(targetVelocity.y) < data.ApexHangThreshold)
             {
                 // en gros on fait ce que ta demandé le gd, on bricole ta gravité au sommet
-                float apexGravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToJumpApex, 2);
+                float apexGravity = 2f * data.JumpHeight / Mathf.Pow(data.TimeToJumpApex, 2);
                 gravity = apexGravity * data.ApexHangGravityMult;
                 playerAnimController.SetJumpFloat();
             }
             else if (targetVelocity.y < 0)
             {
-                gravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToFall, 2);
+                gravity = 2f * data.JumpHeight / Mathf.Pow(data.TimeToFall, 2);
                 playerAnimController.SetJumpFall();
             }
             else
             {
-                gravity = (2f * data.JumpHeight) / Mathf.Pow(data.TimeToJumpApex, 2);
+                gravity = 2f * data.JumpHeight / Mathf.Pow(data.TimeToJumpApex, 2);
                 playerAnimController.SetJumpRise();
             }
 
@@ -287,13 +252,74 @@ namespace Controllers
             return targetVelocity;
         }
         
-        private void OnDrawGizmosSelected()
+        #endregion
+
+        #region InputActions
+        
+        public void OnJump(InputAction.CallbackContext context)
         {
-            Gizmos.color = grounded ? Color.green : Color.red;
-            Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
+            if (context.started)
+            {
+                _jumpBufferCounter = data.JumpBufferTime;
+                _jumpButtonReleased = false;
+            }
+            if (context.canceled)
+            {
+                _jumpButtonReleased = true;
+            }
         }
         
-        private static bool _isKnockedBack = false;
+        public void OnMove(InputAction.CallbackContext context)
+        {
+            _moveInput = context.ReadValue<Vector2>();
+        }
+        
+        #endregion
+
+        #region Visual
+        
+        private void AnimationStateChange(Vector2 velocity)
+        {
+            playerAnimController.ChangeToJumpState = false;
+            
+            bool isJumping = playerAnimController.GetJump();
+            
+            if (isJumping && grounded && !onSlope)
+            {
+                playerAnimController.SetLand();
+                playerAnimController.landed = true;
+            }
+            else if (!onSlope && !grounded)
+            {
+                playerAnimController.SetJump();
+            }
+            else if (onSlope && grounded && velocity.y <= 0)
+            {
+                playerAnimController.SetSlide();
+            }
+            else if (Mathf.Abs(velocity.x) < 0.01f && grounded && !playerAnimController.landed)
+            {
+                playerAnimController.SetIdle();
+            }
+            else if (grounded && !playerAnimController.landed)
+            {
+                playerAnimController.SetWalk();
+            }
+        }
+        
+        private void FlipTowardsDirection(Vector2 velocity)
+        {
+            _lookingRight = velocity.x switch
+            {
+                < 0 => true,
+                > 0 => false,
+                _ => _lookingRight
+            };
+
+            visual.flipX = _lookingRight;
+        }
+        
+        #endregion
 
         public static void ActivateKnockback(Vector2 direction, float force)
         {
@@ -303,6 +329,12 @@ namespace Controllers
             }
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
             _isKnockedBack = true;
+        }
+        
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = grounded ? Color.green : Color.red;
+            Gizmos.DrawWireCube(transform.position + Vector3.down * groundCheckDistance, boxSize);
         }
         
     }
