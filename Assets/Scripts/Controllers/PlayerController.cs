@@ -1,4 +1,3 @@
-using System;
 using Datas;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -92,14 +91,9 @@ namespace Controllers
             velocity = Jump(velocity);
             velocity = JumpCut(velocity);
             velocity = ApplyCustomGravity(velocity);
-
-            velocity = new Vector2(
-                Mathf.Clamp(velocity.x, -data.MaxSpeed, data.MaxSpeed), 
-                Mathf.Max(velocity.y, -data.MaxFallSpeed)
-            );
+            velocity = RestrictVelocity(velocity);
             
             FlipTowardsDirection(velocity);
-
             AnimationStateChange(velocity);
 
             _rb.linearVelocity = velocity;
@@ -208,6 +202,15 @@ namespace Controllers
             return targetVelocity;
         }
         
+        private Vector2 RestrictVelocity(Vector2 velocity)
+        {
+            velocity = new Vector2(
+                Mathf.Clamp(velocity.x, -data.MaxSpeed, data.MaxSpeed), 
+                Mathf.Max(velocity.y, -data.MaxFallSpeed)
+            );
+            return velocity;
+        }
+        
         private Vector2 JumpCut(Vector2 targetVelocity)
         {
             if (!_jumpButtonReleased || !(targetVelocity.y > 0f)) 
@@ -229,7 +232,7 @@ namespace Controllers
 
             float gravity;
 
-            // ca c'est pour ton temps de flotement en haut
+            // ca c'est pour ton temps de flottement en haut
             if (Mathf.Abs(targetVelocity.y) < data.ApexHangThreshold)
             {
                 // en gros on fait ce que ta demandé le gd, on bricole ta gravité au sommet
