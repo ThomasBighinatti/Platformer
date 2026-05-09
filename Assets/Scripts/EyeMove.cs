@@ -1,25 +1,29 @@
-using System;
 using System.Collections;
 using DG.Tweening;
 using Managers;
 using UnityEngine;
 using Random = UnityEngine.Random;
+// ReSharper disable FunctionRecursiveOnAllPaths
 
 [SelectionBase]
 public class EyeMove : MonoBehaviour
 {
-
-    [SerializeField] private GameObject pupil;
+    
+    [Header("Eye Settings")]
     [SerializeField] private float centerDistance;
     [SerializeField, Range(0, 1)] private float offsetDistanceOnLook;
     [SerializeField] private float randomTimeWaitMin;
     [SerializeField] private float randomTimeWaitMax;
-
-    [SerializeField] private GameObject shakeParent;
+    [SerializeField] private bool useShake = true;
     [SerializeField] private float shakeDistance = 5;
     [SerializeField] private float shakeStrength = 0.05f;
+
+    [Header("Eye Parts")]
+    [SerializeField] private GameObject pupil;
+    [SerializeField] private GameObject shakeParent;
     
     private GameObject _player;
+    
     private Vector3 _pupilCenter;
     
     private void Start()
@@ -30,16 +34,14 @@ public class EyeMove : MonoBehaviour
     }
     
     private bool IsInRange => Vector2.Distance(_player.transform.position, transform.position) <= shakeDistance;
-    
     private void LookTowardsPlayer(float shakeTime)
     {
-        
         Vector2 targetPosition = _pupilCenter + (_player.transform.position - pupil.transform.position).normalized * centerDistance;
         targetPosition += Random.insideUnitCircle * offsetDistanceOnLook;
 
         pupil.transform.DOKill();
         pupil.transform.DOMove(new Vector3(targetPosition.x,targetPosition.y,pupil.transform.position.z), 0.2f).SetEase(Ease.InOutSine);
-        if (!IsInRange)
+        if (!IsInRange || !useShake)
             return;
         
         shakeParent.transform.DOKill();
@@ -48,9 +50,12 @@ public class EyeMove : MonoBehaviour
 
     private IEnumerator WaitForLookCycle()
     {
-        float randomTime = Random.Range(randomTimeWaitMin, randomTimeWaitMax);
-        LookTowardsPlayer(randomTime);
-        yield return new WaitForSeconds(Random.Range(randomTimeWaitMin, randomTimeWaitMax));
-        StartCoroutine(WaitForLookCycle());
+        while (this)
+        {
+            float randomTime = Random.Range(randomTimeWaitMin, randomTimeWaitMax);
+            LookTowardsPlayer(randomTime);
+            yield return new WaitForSeconds(Random.Range(randomTimeWaitMin, randomTimeWaitMax));
+        }
     }
+    
 }

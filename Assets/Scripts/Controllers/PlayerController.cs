@@ -7,9 +7,10 @@ namespace Controllers
 {
     
     [RequireComponent(typeof(Rigidbody2D))]
-    [RequireComponent(typeof(CapsuleCollider2D))]
+    [RequireComponent(typeof(Collider2D))]
     public class PlayerController : MonoBehaviour
     {
+        
         [Header("Player Settings")] 
         [SerializeField] private PlayerData data;
         [Space(10f)] 

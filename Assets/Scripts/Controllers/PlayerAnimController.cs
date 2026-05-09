@@ -1,17 +1,23 @@
 using UnityEngine;
-using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 namespace Controllers
 {
+    [RequireComponent(typeof(Animator))]
     public class PlayerAnimController : MonoBehaviour
     {
-        
-        [SerializeField] private Animator animator;
         
         private static readonly int HashIdleVariant = Animator.StringToHash("idleAnimToPlay");
         private static readonly int HashMainState = Animator.StringToHash("currentState");
         private static readonly int HashJumpPhase = Animator.StringToHash("jumpState");
         private static readonly int HashChangeJump = Animator.StringToHash("changeJump");
+        
+        private Animator _animator;
+
+        private void Awake()
+        {
+            _animator = gameObject.GetComponent<Animator>();
+        }
 
         #region Main State
 
@@ -37,11 +43,12 @@ namespace Controllers
                 {
                     ChangeToJumpState = true;
                 }
-                animator.SetInteger(HashMainState, (int)_mainState);
+                _animator.SetInteger(HashMainState, (int)_mainState);
             }
         }
 
         public void SetIdle()  => MainState = MainAnimState.Idle;
+        
         public void SetWalk()  => MainState = MainAnimState.Walk;
         
         public bool GetJump()  => MainState == MainAnimState.Jump;
@@ -50,7 +57,7 @@ namespace Controllers
         {
             MainState = MainAnimState.Jump;
         }
-        private bool _changeToJumpState = false;
+        private bool _changeToJumpState;
         public bool ChangeToJumpState
         {
             set
@@ -58,13 +65,13 @@ namespace Controllers
                 if (_changeToJumpState == value)
                     return;
                 
-                animator.SetBool(HashChangeJump, value);
+                _animator.SetBool(HashChangeJump, value);
                 _changeToJumpState = value;
             } 
         }
 
         public void SetLand()  => MainState = MainAnimState.Land;
-        public bool landed = false;
+        [HideInInspector] public bool landed;
         public void SetLandedDefault() => landed = false;
         
         public void SetSlide() => MainState = MainAnimState.Slide;
@@ -88,7 +95,7 @@ namespace Controllers
             set
             {
                 _jumpPhase = value;
-                animator.SetInteger(HashJumpPhase, (int)_jumpPhase);
+                _animator.SetInteger(HashJumpPhase, (int)_jumpPhase);
             }
         }
 
@@ -107,7 +114,8 @@ namespace Controllers
                 >= 0.2f => 1,
                 _ => 2
             };
-            animator.SetFloat(HashIdleVariant, idleAnimToPlay);
+            _animator.SetFloat(HashIdleVariant, idleAnimToPlay);
         }
+        
     }
 }
