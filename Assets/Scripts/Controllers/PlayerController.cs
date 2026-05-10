@@ -181,6 +181,7 @@ namespace Controllers
             switch (onSlope)
             {
                 case false:
+                    ChangeToMaterial(noFrictionMaterial);
                     targetVelocity.y = jumpForce;
                     break;
                     
