@@ -1,5 +1,6 @@
 using System.Collections;
 using Datas;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace Arrows
@@ -12,6 +13,7 @@ namespace Arrows
         [Header("To add to data")] 
         [SerializeField] protected Collider2D hitCollider;
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
+        private Vector2 arrowPosition;
         
         private bool _canStartMoving;
         public bool CanStartMoving
@@ -71,7 +73,8 @@ namespace Arrows
             
             Rb.constraints = RigidbodyConstraints2D.FreezeAll;
             IsPlanted = true;
-            
+            arrowPosition = other.transform.position;
+            TileManager.Instance.GetTileType(arrowPosition);
         }
 
         public void SetDynamic() => Rb.bodyType = RigidbodyType2D.Dynamic;
