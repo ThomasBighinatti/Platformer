@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 814551949820216096}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.016, y: 0, z: -0.3}
+  m_LocalPosition: {x: 0.016, y: 0, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1309024923, guid: 3e6a89dccafd9044b9641af215524a59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.6875, y: 3.78125}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 7058315976244356187}
   - component: {fileID: 1214383896630571218}
   m_Layer: 0
-  m_Name: BigEye
+  m_Name: BigEyeLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,14 +320,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fa7d2fe3a59b54dab0e269dd096a24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeMove
-  pupil: {fileID: 3716095209480500491}
   centerDistance: 0.35
   offsetDistanceOnLook: 0.05
   randomTimeWaitMin: 2
   randomTimeWaitMax: 4
-  shakeParent: {fileID: 8634883955733754737}
+  useShake: 1
   shakeDistance: 5
   shakeStrength: 0.05
+  pupil: {fileID: 3716095209480500491}
+  shakeParent: {fileID: 8634883955733754737}
 --- !u!1 &8634883955733754737
 GameObject:
   m_ObjectHideFlags: 0
