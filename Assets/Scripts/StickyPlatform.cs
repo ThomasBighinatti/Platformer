@@ -8,7 +8,8 @@ public class StickyPlatform : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Arrow"))
         {
-            Momentum momentumArrow = gameObject?.GetComponent<Momentum>();
+            Momentum momentumArrow = other.gameObject.GetComponent<Momentum>();
+            
             momentumArrow.IsOnStickyBlock();
         }
     }
