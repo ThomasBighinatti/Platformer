@@ -71,6 +71,10 @@ namespace Arrows
         {
             if (!CanStartMoving)
                 return;
+            
+            Rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            IsPlanted = true;
+            
             Tilemap hitMap = other.GetComponent<Tilemap>();
     
             if (hitMap != null)
@@ -78,8 +82,6 @@ namespace Arrows
                 Vector2 hitPoint = other.ClosestPoint(transform.position);
                 Vector2 flightDirection = Rb.linearVelocity.normalized; 
                 hitPoint += flightDirection * 0.1f;
-                Rb.constraints = RigidbodyConstraints2D.FreezeAll;
-                IsPlanted = true;
                 
                 TileBase touchedTile = TileManager.Instance.GetTileType(hitPoint, hitMap);
                 
