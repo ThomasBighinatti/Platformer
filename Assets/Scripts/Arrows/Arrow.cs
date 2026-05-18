@@ -1,6 +1,8 @@
 using System.Collections;
 using Datas;
+using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace Arrows
 {
@@ -12,6 +14,7 @@ namespace Arrows
         [Header("To add to data")] 
         [SerializeField] protected Collider2D hitCollider;
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
+        private Vector2 arrowPosition;
         
         private bool _canStartMoving;
         public bool CanStartMoving
@@ -68,10 +71,28 @@ namespace Arrows
         {
             if (!CanStartMoving)
                 return;
-            
-            Rb.constraints = RigidbodyConstraints2D.FreezeAll;
-            IsPlanted = true;
-            
+            Tilemap hitMap = other.GetComponent<Tilemap>();
+    
+            if (hitMap != null)
+            {
+                Vector2 hitPoint = other.ClosestPoint(transform.position);
+                Vector2 flightDirection = Rb.velocity.normalized; 
+                hitPoint += flightDirection * 0.1f;
+                Rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                IsPlanted = true;
+                
+                TileBase touchedTile = TileManager.Instance.GetTileType(hitPoint, hitMap);
+                
+                if (touchedTile != null)
+                {
+                    TileManager.Instance.SpawnParticleForTile(touchedTile, hitPoint);
+                }
+                
+            }
+            else
+            {
+                Debug.Log("No tilemap found");
+            }
         }
 
         public void SetDynamic() => Rb.bodyType = RigidbodyType2D.Dynamic;

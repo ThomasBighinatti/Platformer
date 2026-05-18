@@ -3,7 +3,21 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
+    [Header("Platform Settings")]
+    [SerializeField] private MovingPlatformSettings settings;
+    [Serializable]
+    private struct MovingPlatformSettings
+    {
+        public Direction direction;
+        public float speed;
+        public float distance;
+    }
+    
+    private Vector2 _initialPos;
+    private Vector2 _targetPos;
 
+    #region Direction GD
+    
     private enum Direction
     {
         Up = 1,
@@ -12,18 +26,6 @@ public class MovingPlatform : MonoBehaviour
         Left = 8
     }
     
-    [Serializable]
-    private struct MovingPlatformSettings
-    {
-        public Direction direction;
-        public float speed;
-        public float distance;
-    }
-
-    [SerializeField] private MovingPlatformSettings settings;
-    private Vector2 _initialPos;
-    private Vector2 _targetPos;
-
     private Vector2 GetDirection()
     {
         return settings.direction switch
@@ -35,6 +37,8 @@ public class MovingPlatform : MonoBehaviour
             _ => throw new ArgumentOutOfRangeException()
         };
     }
+    
+    #endregion
 
     private void Start()
     {
@@ -42,17 +46,21 @@ public class MovingPlatform : MonoBehaviour
         _initialPos = transform.position;
         _targetPos = _initialPos + GetDirection() * settings.distance;
     }
-
+    
+    private void FixedUpdate()
+    {
+        MovingStateLimits();
+    }
+    
     private enum MovingState
     {
         Static = 1,
         MoveTo = 2,
         MoveBack = 4,
     }
-
     private MovingState _movingState = MovingState.Static;
 
-    private void FixedUpdate()
+    private void MovingStateLimits()
     {
         switch (_movingState)
         {
@@ -74,9 +82,11 @@ public class MovingPlatform : MonoBehaviour
                     _movingState = MovingState.Static;
                 }
                 break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
     }
-    
+
     private int _numberOfInteractions;
     private int NumberOfInteractions
     {
@@ -100,7 +110,6 @@ public class MovingPlatform : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Arrow"))
         {
-            Debug.Log("ouui");
             other.transform.SetParent(transform);
             NumberOfInteractions++;
         }
@@ -110,7 +119,6 @@ public class MovingPlatform : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Arrow"))
         {
-            Debug.Log("nonn");
             NumberOfInteractions--;
         }
     }
