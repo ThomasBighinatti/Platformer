@@ -76,7 +76,7 @@ namespace Arrows
             if (hitMap != null)
             {
                 Vector2 hitPoint = other.ClosestPoint(transform.position);
-                Vector2 flightDirection = Rb.velocity.normalized; 
+                Vector2 flightDirection = Rb.linearVelocity.normalized; 
                 hitPoint += flightDirection * 0.1f;
                 Rb.constraints = RigidbodyConstraints2D.FreezeAll;
                 IsPlanted = true;
