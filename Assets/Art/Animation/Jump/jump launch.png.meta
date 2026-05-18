@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 3dcb9d3530be8564990c92ea9d809d5b
+guid: 150894f6707ee6f4a8644a74de95585a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7698755718795181967
-    second: jump contact_0
+      213: 8221193361726646661
+    second: jump launch_0
   - first:
-      213: 678939794878253845
-    second: jump contact_1
+      213: -8703385327063197843
+    second: jump launch_1
   - first:
-      213: 4445710543590203738
-    second: jump contact_2
-  - first:
-      213: 9092518318330286352
-    second: jump contact_3
+      213: 1222599118238361361
+    second: jump launch_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,89 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump contact_0
+      name: jump launch_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 105
+        width: 50
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8f3b47598977da60800000000000000
-      internalID: 7698755718795181967
+      spriteID: 58924830ecb871270800000000000000
+      internalID: 8221193361726646661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump contact_1
+      name: jump launch_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 68
         y: 0
-        width: 64
-        height: 105
+        width: 47
+        height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51b489175241c6900800000000000000
-      internalID: 678939794878253845
+      spriteID: d671d05582d573780800000000000000
+      internalID: -8703385327063197843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump contact_2
+      name: jump launch_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 138
         y: 0
-        width: 64
-        height: 105
+        width: 36
+        height: 85
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5127ec5f2652bd30800000000000000
-      internalID: 4445710543590203738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump contact_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 105
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0111fcd7c3d1f2e70800000000000000
-      internalID: 9092518318330286352
+      spriteID: 117ad41ab6b87f010800000000000000
+      internalID: 1222599118238361361
       vertices: []
       indices: 
       edges: []
@@ -213,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 81dca33b052b1ad46991234c262139d7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -221,14 +196,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":105.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      jump contact_0: 7698755718795181967
-      jump contact_1: 678939794878253845
-      jump contact_2: 4445710543590203738
-      jump contact_3: 9092518318330286352
+      jump launch_0: 8221193361726646661
+      jump launch_1: -8703385327063197843
+      jump launch_2: 1222599118238361361
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

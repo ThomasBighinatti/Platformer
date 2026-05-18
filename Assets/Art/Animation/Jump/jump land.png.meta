@@ -17,9 +17,6 @@ TextureImporter:
   - first:
       213: -2499067374135738450
     second: jump land_4
-  - first:
-      213: -5058587091289015069
-    second: jump land_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -133,10 +130,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 105
+        width: 48
+        height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,10 +152,10 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 64
-        height: 105
+        width: 52
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +172,12 @@ TextureImporter:
       name: jump land_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 0
-        width: 64
-        height: 105
+        width: 56
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +194,12 @@ TextureImporter:
       name: jump land_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 191
         y: 0
-        width: 64
-        height: 105
+        width: 57
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +216,12 @@ TextureImporter:
       name: jump land_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 262
         y: 0
-        width: 64
-        height: 105
+        width: 50
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,33 +234,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: jump land_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 105
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ec775e87d94cc9b0800000000000000
-      internalID: -5058587091289015069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 13e5d04acc193c34a88ca72a135fc28c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -271,16 +246,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":105.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
       jump land_0: -2700899554197599595
       jump land_1: 7181926889825595430
       jump land_2: 2193067975102759300
       jump land_3: 6857636456874397403
       jump land_4: -2499067374135738450
-      jump land_5: -5058587091289015069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
