@@ -96,6 +96,11 @@ namespace Controllers
             {
                 _jumpPhase = value;
                 _animator.SetInteger(HashJumpPhase, (int)_jumpPhase);
+                if (_jumpPhase == JumpAnimPhase.Contact)
+                {
+                    _animator.Play("PlayerJumpContact");
+                    Debug.Log("pipi");
+                }
             }
         }
 
