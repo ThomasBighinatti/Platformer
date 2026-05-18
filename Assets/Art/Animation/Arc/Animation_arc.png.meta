@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,20 +128,20 @@ TextureImporter:
       name: Animation_arc_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 4
-        width: 8
-        height: 39
+        x: 0
+        y: 0
+        width: 111
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 889dad87f25a81850800000000000000
-      internalID: 6348005298088368520
+      spriteID: b761294eb1f5bb1428684444bea06d11
+      internalID: -1285351371
       vertices: []
       indices: 
       edges: []
@@ -150,20 +150,20 @@ TextureImporter:
       name: Animation_arc_1
       rect:
         serializedVersion: 2
-        x: 149
-        y: 16
-        width: 10
-        height: 15
+        x: 111
+        y: 0
+        width: 111
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 45a374e83a5d565d0800000000000000
-      internalID: -3069812672539706796
+      spriteID: 90a613d83c328b74399e46a71007c37f
+      internalID: 347743176
       vertices: []
       indices: 
       edges: []
@@ -172,20 +172,20 @@ TextureImporter:
       name: Animation_arc_2
       rect:
         serializedVersion: 2
-        x: 265
-        y: 20
-        width: 22
-        height: 7
+        x: 222
+        y: 0
+        width: 111
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ac5863f444a771770800000000000000
-      internalID: 8581462048783107530
+      spriteID: 652454d6e051762488e41e69216dd09a
+      internalID: 1281412522
       vertices: []
       indices: 
       edges: []
@@ -194,20 +194,20 @@ TextureImporter:
       name: Animation_arc_3
       rect:
         serializedVersion: 2
-        x: 395
-        y: 17
-        width: 10
-        height: 13
+        x: 333
+        y: 0
+        width: 111
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07ff8e36c449f6270800000000000000
-      internalID: 8245972498553306992
+      spriteID: e51cd9eb432863f48815c47a93ec545a
+      internalID: 1001011427
       vertices: []
       indices: 
       edges: []
@@ -216,20 +216,42 @@ TextureImporter:
       name: Animation_arc_4
       rect:
         serializedVersion: 2
-        x: 507
-        y: 10
-        width: 129
-        height: 27
+        x: 444
+        y: 0
+        width: 111
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 14f09b021d9395e50800000000000000
-      internalID: 6798528682852421441
+      spriteID: 90cca40d17fbcdf4aae387208a320186
+      internalID: -61107922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_arc_5
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 0
+        width: 111
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d01813978f34b47ba7f5b80d0fe68d
+      internalID: 1436345272
       vertices: []
       indices: 
       edges: []
@@ -238,7 +260,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fd57437ea07b4f443a22003c29c85ada
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +268,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":111.0,"y":55.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Animation_arc_0: 6348005298088368520
-      Animation_arc_1: -3069812672539706796
-      Animation_arc_2: 8581462048783107530
-      Animation_arc_3: 8245972498553306992
-      Animation_arc_4: 6798528682852421441
+      Animation_arc_0: -1285351371
+      Animation_arc_1: 347743176
+      Animation_arc_2: 1281412522
+      Animation_arc_3: 1001011427
+      Animation_arc_4: -61107922
+      Animation_arc_5: 1436345272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

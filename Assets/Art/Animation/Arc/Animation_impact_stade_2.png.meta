@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -143,12 +143,12 @@ TextureImporter:
       name: Animation_impact_stade_2_0
       rect:
         serializedVersion: 2
-        x: 273
-        y: 36
-        width: 25
-        height: 23
+        x: 0
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Animation_impact_stade_2_1
       rect:
         serializedVersion: 2
-        x: 386
-        y: 58
-        width: 7
-        height: 7
+        x: 116
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: Animation_impact_stade_2_2
       rect:
         serializedVersion: 2
-        x: 386
-        y: 28
-        width: 33
-        height: 34
+        x: 232
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: Animation_impact_stade_2_3
       rect:
         serializedVersion: 2
-        x: 496
-        y: 41
-        width: 33
-        height: 30
+        x: 348
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: Animation_impact_stade_2_4
       rect:
         serializedVersion: 2
-        x: 609
-        y: 17
-        width: 53
-        height: 57
+        x: 464
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: Animation_impact_stade_2_5
       rect:
         serializedVersion: 2
-        x: 722
-        y: 14
-        width: 271
-        height: 71
+        x: 580
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: Animation_impact_stade_2_6
       rect:
         serializedVersion: 2
-        x: 50
-        y: 43
-        width: 7
-        height: 7
+        x: 696
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,12 +297,12 @@ TextureImporter:
       name: Animation_impact_stade_2_7
       rect:
         serializedVersion: 2
-        x: 160
-        y: 37
-        width: 19
-        height: 19
+        x: 812
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: Animation_impact_stade_2_8
       rect:
         serializedVersion: 2
-        x: 506
-        y: 22
-        width: 35
-        height: 31
+        x: 928
+        y: 0
+        width: 116
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -337,33 +337,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Animation_impact_stade_2_9
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 34
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0335d492533111a30800000000000000
-      internalID: 4184146647851029296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 55d9e808ff1cf0645bfe95df2dfe123a
     internalID: 0
     vertices: []
     indices: 
@@ -371,7 +349,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":116.0,"y":85.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Animation_impact_stade_2_0: 8423253171617962210
       Animation_impact_stade_2_1: -2078304011911815335
@@ -382,7 +362,6 @@ TextureImporter:
       Animation_impact_stade_2_6: -7985685131027944641
       Animation_impact_stade_2_7: 6974882667996788675
       Animation_impact_stade_2_8: -8120619450119342542
-      Animation_impact_stade_2_9: 4184146647851029296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
