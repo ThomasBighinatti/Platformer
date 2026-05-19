@@ -13,7 +13,7 @@ namespace Arrows
         private float _recallSpeed;
 
         private bool _isOnStickyBlock;
-        public bool IsOnStickyBlock() => _isOnStickyBlock = true;
+        public void IsOnStickyBlock() => _isOnStickyBlock = true;
 
         protected override void StartArrow()
         {
@@ -84,6 +84,12 @@ namespace Arrows
             {
                 transform.SetParent(null);
             }
+
+            if (_isOnStickyBlock)
+            {
+                RecallOnSticky();
+                Debug.Log("caca");
+            }
         }
 
         protected override void OnTriggerEnter2D(Collider2D other)
@@ -99,6 +105,11 @@ namespace Arrows
             {
                 StartCoroutine(WaitForDestroy());
             }
+        }
+
+        private void RecallOnSticky()
+        {
+            gameObject.layer = LayerMask.NameToLayer("ArrowNoSticky");
         }
     }
 }

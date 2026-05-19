@@ -2,6 +2,7 @@ using System.Collections;
 using Datas;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace Arrows
 {
@@ -73,8 +74,27 @@ namespace Arrows
             
             Rb.constraints = RigidbodyConstraints2D.FreezeAll;
             IsPlanted = true;
-            arrowPosition = other.transform.position;
-            TileManager.Instance.GetTileType(arrowPosition);
+            
+            Tilemap hitMap = other.GetComponent<Tilemap>();
+    
+            if (hitMap != null)
+            {
+                Vector2 hitPoint = other.ClosestPoint(transform.position);
+                Vector2 flightDirection = Rb.linearVelocity.normalized; 
+                hitPoint += flightDirection * 0.1f;
+                
+                TileBase touchedTile = TileManager.Instance.GetTileType(hitPoint, hitMap);
+                
+                if (touchedTile != null)
+                {
+                    TileManager.Instance.SpawnParticleForTile(touchedTile, hitPoint);
+                }
+                
+            }
+            else
+            {
+                Debug.Log("No tilemap found");
+            }
         }
 
         public void SetDynamic() => Rb.bodyType = RigidbodyType2D.Dynamic;
