@@ -20,7 +20,7 @@ namespace Arrows
             ArrowShot(ArrowManager.Instance.LookingTowards);
             hitCollider.enabled = false;
             hitCollider.enabled = true;
-            ArrowManager.Instance.EnqueueMomentumArrow(this);
+            ArrowManager.Instance.PushMomentumArrow(this);
         }
 
         private List<Vector2> _lastDirectionsToPlayer = new List<Vector2>();
