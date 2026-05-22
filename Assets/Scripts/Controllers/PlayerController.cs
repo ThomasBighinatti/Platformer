@@ -200,6 +200,7 @@ namespace Controllers
             _boxCastCooldownCounter = boxCastCooldown;
                 
             playerAnimController.SetJumpContact();
+            Debug.Log("caca");
 
             return targetVelocity;
         }

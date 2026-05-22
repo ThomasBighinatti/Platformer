@@ -100,226 +100,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tiles_cauchemars3_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d57b63ff53e5de00800000000000000
-      internalID: 1069010487815665109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 991c6bfcbac94dd4ab283afa6230a7ec
-      internalID: -2133180262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fda7a74689b497b498f0cd874e7b139b
-      internalID: -2106456598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 473362e4ad2a7764b9b792c123385749
-      internalID: 2055200555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9483110fecb4114e8a42fd05cfacbfe
-      internalID: 466966126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c5327a5dca70fd4fa6e98013209c942
-      internalID: -2147296758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e82f64404af2e2d448588f09f73495ae
-      internalID: 1154472041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe454c3ab95e9b74d8e4dc7b489b7cf7
-      internalID: 1839059797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2431ed7dfc44ac04192789ab086188b5
-      internalID: 796498432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 704750f327cbedc4abfd977222951339
-      internalID: -1583092927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Tiles_cauchemars3_10
       rect:
         serializedVersion: 2
@@ -335,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c7df1ffaadf5ab4980cb848c3abac2d
-      internalID: -622730919
+      spriteID: 47d6b0551c206bb45b88e18fa4e50e72
+      internalID: 1132621198
       vertices: []
       indices: 
       edges: []
@@ -357,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 909a211d7fff67f4e95d43f60672e153
-      internalID: 208504532
+      spriteID: 1e2eb10b25aaf154f8688ac6e4d7af48
+      internalID: -67366718
       vertices: []
       indices: 
       edges: []
@@ -379,96 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 274bceadf7ef42442ab1beb4ced0b072
-      internalID: 812271515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_13
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 742d6749f41748f4b8339664f4944f28
-      internalID: 703208524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_14
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a72a210054af02c489839a2474e84fd3
-      internalID: 950545456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_15
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea297f7643d15a84e9ef2a68d085c4c6
-      internalID: -1309417575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_16
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5b17d8a007b8d74b8877918dcac1ea2
-      internalID: -87837733
+      spriteID: 87b52f2db89092e43adffe7662a2a68a
+      internalID: 1082167906
       vertices: []
       indices: 
       edges: []
@@ -489,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4640d9861434df943a7876cdf97903d4
-      internalID: -1978040491
+      spriteID: 6bf7529d342ddc5428dbed9cfd2c780a
+      internalID: 1765662912
       vertices: []
       indices: 
       edges: []
@@ -511,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 804781ed2f671184186d0268a378d242
-      internalID: 1089693069
+      spriteID: 953c9baf4eff7414586c7e0def491731
+      internalID: 715452854
       vertices: []
       indices: 
       edges: []
@@ -533,140 +225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab919f8d6abcfbb4b8471021faab287b
-      internalID: -193731028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_20
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73d6f52b273b1c945b9652f5829d84c8
-      internalID: -1982467144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_21
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bb0de321e831c34a874879e807821ca
-      internalID: -293177303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_22
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9a343d1c8a5b5a4fa78217aef97ca8b
-      internalID: -687646138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_23
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b2a36c1689cfd44b8fb74455a77135e
-      internalID: -1817886341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_24
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98a3f174cd88c3e45ae8d74cadfdd4dc
-      internalID: 686621994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_25
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c17a725f4ab8bc047b63231de4453c5f
-      internalID: -900890659
+      spriteID: 194c0b83b04bcdd4bac677dda260536d
+      internalID: -1513433509
       vertices: []
       indices: 
       edges: []
@@ -687,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15262d55bc0a69a4697ee8cdfedb0b4f
-      internalID: -1123590969
+      spriteID: 8f3352da539e340488a727aa9ca92749
+      internalID: -869594748
       vertices: []
       indices: 
       edges: []
@@ -709,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3eef5ec5f0d3d74685ec854b7295c2f
-      internalID: 1315379778
+      spriteID: dc37aed75082635429c6a1f3a0ba9817
+      internalID: 1445793948
       vertices: []
       indices: 
       edges: []
@@ -731,162 +291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5419621de2c70b54299a5baa9bfcf496
-      internalID: -391741564
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_29
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7654c7aad42aaf0488789840e1fb9ce8
-      internalID: 476574304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_30
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74e0094855f7e0141b027dc1eda8dd7c
-      internalID: 686535621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_31
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38fadfe4a239ee246be36c06f2ff7ddd
-      internalID: -1501850948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8603604036b144f458294cf4694b1dee
-      internalID: -655348812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_33
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7566d7bc34402948806fc67cf61b3d5
-      internalID: 1865631647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_34
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed787434e0a6945449939339beb39b63
-      internalID: -1777435161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_35
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2372ec12d030621439d975f049106647
-      internalID: -62796100
+      spriteID: 3f3e3507949761749994621a2284a433
+      internalID: -319541071
       vertices: []
       indices: 
       edges: []
@@ -907,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9457d8bbc7416b7448e3fccf4e9115e3
-      internalID: 1662400153
+      spriteID: 267de4d12c6aa4a4b9accda7c3920981
+      internalID: 911044315
       vertices: []
       indices: 
       edges: []
@@ -929,8 +335,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a5a688cf0248be46b02f6c320cc753d
-      internalID: 1162492566
+      spriteID: 6c74a7e3886e2b84287d04502009b2d2
+      internalID: 687433182
       vertices: []
       indices: 
       edges: []
@@ -951,8 +357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7094f23977f16f14f9048f28848870f8
-      internalID: -404189169
+      spriteID: 1d91e99fde56a0f41aae0599fdafa666
+      internalID: -233846782
       vertices: []
       indices: 
       edges: []
@@ -973,162 +379,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bc905d1ef8f0734fad9cb0d1abf2fdc
-      internalID: -1931496301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_40
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7ba605a9cddd6b48aa909d9151cc14d
-      internalID: -1670262769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_41
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 643eb6e19d6cfb14a96249078826d4b3
-      internalID: 1486450357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_42
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 731efbbd8583e9b45830e55cc533674d
-      internalID: 171335702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_43
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bafa3ecba0fd8544a939b4badb137fb
-      internalID: -353798482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_44
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 179e3af4611f3394cae44038aa38d642
-      internalID: 1648778765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_45
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53ced81e23f653e48be3beb42e5362e6
-      internalID: -1824307471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_46
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3addc7649e2f43d40b426b1db8172e44
-      internalID: -558726363
+      spriteID: 4c23031684fbaad4eb9d8e12bf102f65
+      internalID: -1019161487
       vertices: []
       indices: 
       edges: []
@@ -1149,8 +401,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 880d4f4315ae29746a829b1e84879605
-      internalID: 364561839
+      spriteID: 65c99816ac24b0a4a8221f46162fef6b
+      internalID: -55268905
       vertices: []
       indices: 
       edges: []
@@ -1171,228 +423,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 357b4754c08628642bd5f3c596448a04
-      internalID: 314633216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_49
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4fabc90510913148b4df9a5a9e28111
-      internalID: -1439363661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_50
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8d5815992e90ff459990282e4af3bc3
-      internalID: 850785050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_51
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f9d8473b6f7b364193a103949f93c81
-      internalID: 1063135535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_52
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa9a9c7604bc6514592b0fd77a67a939
-      internalID: -1441118460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_53
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb7194bb506831543a32603db56bd4bd
-      internalID: 222559750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_54
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 305e3554970a3af4ba3039d0ac265ece
-      internalID: -678550717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_55
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93f5ab9bbfbc9d244a22d60cbffbd109
-      internalID: -1860060735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_56
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 447640428b9695d458177a3d31d34573
-      internalID: 357312918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_57
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0437181c8966f347b6faf6156c57ca6
-      internalID: 1791631972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_58
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78d9d512129ff2745b3a43bb34ab090a
-      internalID: -786209256
+      spriteID: 89fd9d5b9262b4e46884fc99adeaf7f3
+      internalID: 1997124549
       vertices: []
       indices: 
       edges: []
@@ -1413,8 +445,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21db6d45c2716874d89f00ee0469566a
-      internalID: -1299815321
+      spriteID: 474276b0d9306824380b0808383c1dd1
+      internalID: -1345204627
       vertices: []
       indices: 
       edges: []
@@ -1435,8 +467,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1a3faa0d105a6f46abee22c6a69b40b
-      internalID: -1573506361
+      spriteID: cbb1d9b9eb4e8364592ede8bdb2469be
+      internalID: 1135196078
       vertices: []
       indices: 
       edges: []
@@ -1457,228 +489,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5c86fe5f580a2c40ba12ea8445bb272
-      internalID: -1486726536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_62
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef260925f30660f45b644dc49bb736dc
-      internalID: -171320119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_63
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9850d2c87abe15647a3097552836cdd6
-      internalID: 1732378539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_64
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9cd04fba2dab724c9a7404ef741c0a5
-      internalID: 364209872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_65
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd1789eebcbd58349a0a8478899f7d3d
-      internalID: 841469765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_66
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08a78e8d917a4484bba42dff819d0297
-      internalID: -771173634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_67
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28952e2346b0ee64d89ad830f661f349
-      internalID: -594904448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_68
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ead76b8297e9c74b85bf731945f59ef
-      internalID: 1012858056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_69
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b97dc5cb8efdcd4d99b81c3d869120c
-      internalID: 1211010923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_70
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 638ac687a438faf488495918e9f5a6f5
-      internalID: 1957610594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_71
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 776ae67f71d8cd848ac2d6dd3f656351
-      internalID: -742632569
+      spriteID: d258c675006e1b940b8aae82e04935a3
+      internalID: -1349996849
       vertices: []
       indices: 
       edges: []
@@ -1699,8 +511,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c494fe11ffe78b42afeecc35c1eac25
-      internalID: 1990800073
+      spriteID: 0112144dd079d5a42952709c41c2dd07
+      internalID: -1639346245
       vertices: []
       indices: 
       edges: []
@@ -1721,8 +533,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3bbd37d5fa5b354781b2db400ad8579
-      internalID: 1887595253
+      spriteID: 99557ead83965b3498f20e6f3bc4090c
+      internalID: 803565475
       vertices: []
       indices: 
       edges: []
@@ -1743,8 +555,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84ffeb1e8df69844ba02784d2c37add5
-      internalID: 1728140317
+      spriteID: f4ed4b61b029a9248b45cbf726813746
+      internalID: -74376078
       vertices: []
       indices: 
       edges: []
@@ -1765,118 +577,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 365615cde5b5c7346834a76d5422726f
-      internalID: 1861994722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_76
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58f47268767d2e2419c267da12ff5295
-      internalID: 72837074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_77
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 284eb07a7bc09ba4e826c2379042f929
-      internalID: 497338898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_78
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0066e97749a6314496c7537300d37e0
-      internalID: -468982516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_79
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 011d32e688efc8b44b85efdf2db1389c
-      internalID: 727934094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_cauchemars3_80
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 799700945360c8c4599a0cbb76ac84ba
-      internalID: -1333046000
+      spriteID: 7a0fa3862afaf784db33380b1debf439
+      internalID: -471780471
       vertices: []
       indices: 
       edges: []
@@ -1897,8 +599,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5756d12da3d358a478d13732ff710f2f
-      internalID: 1034587095
+      spriteID: c3c13f2e090aad144a12bc5415b70e04
+      internalID: -1449733639
       vertices: []
       indices: 
       edges: []
@@ -1919,8 +621,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee7998bc9ab0763498aacaaed92ae8a2
-      internalID: 1265362927
+      spriteID: 2296972a766f9324a9fce60f8280dd8e
+      internalID: 1071221871
       vertices: []
       indices: 
       edges: []
@@ -1941,8 +643,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 619541ea4a2e94f42a39438964b8deca
-      internalID: -1717680170
+      spriteID: c2fa88fbec25adb41a63a83223ef5e75
+      internalID: 1678429277
       vertices: []
       indices: 
       edges: []
@@ -1963,8 +665,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b7a55b1610d87b46af1b72fd3000cea
-      internalID: 566509064
+      spriteID: 8f7e4fb03d4662f48adf28915e55b0c9
+      internalID: -1014657570
       vertices: []
       indices: 
       edges: []
@@ -1973,7 +675,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c1f0e183a60c83648b8ce4c48441497f
+    spriteID: 0da1668213c85c8488c678511fc6170c
     internalID: 0
     vertices: []
     indices: 
@@ -1986,90 +688,90 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Tiles_cauchemars3_0: 1069010487815665109
-      Tiles_cauchemars3_1: -2133180262
-      Tiles_cauchemars3_10: -622730919
-      Tiles_cauchemars3_11: 208504532
-      Tiles_cauchemars3_12: 812271515
-      Tiles_cauchemars3_13: 703208524
-      Tiles_cauchemars3_14: 950545456
-      Tiles_cauchemars3_15: -1309417575
-      Tiles_cauchemars3_16: -87837733
-      Tiles_cauchemars3_17: -1978040491
-      Tiles_cauchemars3_18: 1089693069
-      Tiles_cauchemars3_19: -193731028
-      Tiles_cauchemars3_2: -2106456598
-      Tiles_cauchemars3_20: -1982467144
-      Tiles_cauchemars3_21: -293177303
-      Tiles_cauchemars3_22: -687646138
-      Tiles_cauchemars3_23: -1817886341
-      Tiles_cauchemars3_24: 686621994
-      Tiles_cauchemars3_25: -900890659
-      Tiles_cauchemars3_26: -1123590969
-      Tiles_cauchemars3_27: 1315379778
-      Tiles_cauchemars3_28: -391741564
-      Tiles_cauchemars3_29: 476574304
-      Tiles_cauchemars3_3: 2055200555
-      Tiles_cauchemars3_30: 686535621
-      Tiles_cauchemars3_31: -1501850948
-      Tiles_cauchemars3_32: -655348812
-      Tiles_cauchemars3_33: 1865631647
-      Tiles_cauchemars3_34: -1777435161
-      Tiles_cauchemars3_35: -62796100
-      Tiles_cauchemars3_36: 1662400153
-      Tiles_cauchemars3_37: 1162492566
-      Tiles_cauchemars3_38: -404189169
-      Tiles_cauchemars3_39: -1931496301
-      Tiles_cauchemars3_4: 466966126
-      Tiles_cauchemars3_40: -1670262769
-      Tiles_cauchemars3_41: 1486450357
-      Tiles_cauchemars3_42: 171335702
-      Tiles_cauchemars3_43: -353798482
-      Tiles_cauchemars3_44: 1648778765
-      Tiles_cauchemars3_45: -1824307471
-      Tiles_cauchemars3_46: -558726363
-      Tiles_cauchemars3_47: 364561839
-      Tiles_cauchemars3_48: 314633216
-      Tiles_cauchemars3_49: -1439363661
-      Tiles_cauchemars3_5: -2147296758
-      Tiles_cauchemars3_50: 850785050
-      Tiles_cauchemars3_51: 1063135535
-      Tiles_cauchemars3_52: -1441118460
-      Tiles_cauchemars3_53: 222559750
-      Tiles_cauchemars3_54: -678550717
-      Tiles_cauchemars3_55: -1860060735
-      Tiles_cauchemars3_56: 357312918
-      Tiles_cauchemars3_57: 1791631972
-      Tiles_cauchemars3_58: -786209256
-      Tiles_cauchemars3_59: -1299815321
-      Tiles_cauchemars3_6: 1154472041
-      Tiles_cauchemars3_60: -1573506361
-      Tiles_cauchemars3_61: -1486726536
-      Tiles_cauchemars3_62: -171320119
-      Tiles_cauchemars3_63: 1732378539
-      Tiles_cauchemars3_64: 364209872
-      Tiles_cauchemars3_65: 841469765
-      Tiles_cauchemars3_66: -771173634
-      Tiles_cauchemars3_67: -594904448
-      Tiles_cauchemars3_68: 1012858056
-      Tiles_cauchemars3_69: 1211010923
-      Tiles_cauchemars3_7: 1839059797
-      Tiles_cauchemars3_70: 1957610594
-      Tiles_cauchemars3_71: -742632569
-      Tiles_cauchemars3_72: 1990800073
-      Tiles_cauchemars3_73: 1887595253
-      Tiles_cauchemars3_74: 1728140317
-      Tiles_cauchemars3_75: 1861994722
-      Tiles_cauchemars3_76: 72837074
-      Tiles_cauchemars3_77: 497338898
-      Tiles_cauchemars3_78: -468982516
-      Tiles_cauchemars3_79: 727934094
-      Tiles_cauchemars3_8: 796498432
-      Tiles_cauchemars3_80: -1333046000
-      Tiles_cauchemars3_81: 1034587095
-      Tiles_cauchemars3_82: 1265362927
-      Tiles_cauchemars3_83: -1717680170
-      Tiles_cauchemars3_84: 566509064
-      Tiles_cauchemars3_9: -1583092927
+      Tiles_cauchemars3_1: -1225982897
+      Tiles_cauchemars3_10: 1132621198
+      Tiles_cauchemars3_11: -67366718
+      Tiles_cauchemars3_12: 1082167906
+      Tiles_cauchemars3_13: -1372898660
+      Tiles_cauchemars3_14: 452249646
+      Tiles_cauchemars3_15: 68502675
+      Tiles_cauchemars3_16: 1842652894
+      Tiles_cauchemars3_17: 1765662912
+      Tiles_cauchemars3_18: 715452854
+      Tiles_cauchemars3_19: -1513433509
+      Tiles_cauchemars3_2: 1582003247
+      Tiles_cauchemars3_20: -629611492
+      Tiles_cauchemars3_21: 1340168779
+      Tiles_cauchemars3_22: 321214794
+      Tiles_cauchemars3_23: -2147237205
+      Tiles_cauchemars3_24: 990187303
+      Tiles_cauchemars3_25: -1069591475
+      Tiles_cauchemars3_26: -869594748
+      Tiles_cauchemars3_27: 1445793948
+      Tiles_cauchemars3_28: -319541071
+      Tiles_cauchemars3_29: 1314044658
+      Tiles_cauchemars3_3: -642715265
+      Tiles_cauchemars3_30: 476612316
+      Tiles_cauchemars3_31: -758868660
+      Tiles_cauchemars3_32: 622367590
+      Tiles_cauchemars3_33: -2100819644
+      Tiles_cauchemars3_34: -67777649
+      Tiles_cauchemars3_35: -659443813
+      Tiles_cauchemars3_36: 911044315
+      Tiles_cauchemars3_37: 687433182
+      Tiles_cauchemars3_38: -233846782
+      Tiles_cauchemars3_39: -1019161487
+      Tiles_cauchemars3_4: -1920064139
+      Tiles_cauchemars3_40: 1751789354
+      Tiles_cauchemars3_41: -1965412476
+      Tiles_cauchemars3_42: -828586728
+      Tiles_cauchemars3_43: 66626733
+      Tiles_cauchemars3_44: 1522369513
+      Tiles_cauchemars3_45: 1588002519
+      Tiles_cauchemars3_46: -251147057
+      Tiles_cauchemars3_47: -55268905
+      Tiles_cauchemars3_48: 1997124549
+      Tiles_cauchemars3_49: 60935052
+      Tiles_cauchemars3_5: -906882797
+      Tiles_cauchemars3_50: -670110535
+      Tiles_cauchemars3_51: 525575591
+      Tiles_cauchemars3_52: 142358838
+      Tiles_cauchemars3_53: 1297996078
+      Tiles_cauchemars3_54: -1563346092
+      Tiles_cauchemars3_55: -269045161
+      Tiles_cauchemars3_56: -634360989
+      Tiles_cauchemars3_57: -122395031
+      Tiles_cauchemars3_58: 878031959
+      Tiles_cauchemars3_59: -1345204627
+      Tiles_cauchemars3_6: -2111886782
+      Tiles_cauchemars3_60: 1135196078
+      Tiles_cauchemars3_61: -1349996849
+      Tiles_cauchemars3_62: 1303033601
+      Tiles_cauchemars3_63: 364085330
+      Tiles_cauchemars3_64: -544068789
+      Tiles_cauchemars3_65: 1616967778
+      Tiles_cauchemars3_66: 958352743
+      Tiles_cauchemars3_67: 2136674295
+      Tiles_cauchemars3_68: -1066054823
+      Tiles_cauchemars3_69: -354829237
+      Tiles_cauchemars3_7: -522712388
+      Tiles_cauchemars3_70: 586859626
+      Tiles_cauchemars3_71: -2011276758
+      Tiles_cauchemars3_72: -1639346245
+      Tiles_cauchemars3_73: 803565475
+      Tiles_cauchemars3_74: -74376078
+      Tiles_cauchemars3_75: -471780471
+      Tiles_cauchemars3_76: 634558215
+      Tiles_cauchemars3_77: -1702406996
+      Tiles_cauchemars3_78: 113047169
+      Tiles_cauchemars3_79: 1748816021
+      Tiles_cauchemars3_8: -1559981022
+      Tiles_cauchemars3_80: -268545091
+      Tiles_cauchemars3_81: -1449733639
+      Tiles_cauchemars3_82: 1071221871
+      Tiles_cauchemars3_83: 1678429277
+      Tiles_cauchemars3_84: -1014657570
+      Tiles_cauchemars3_9: -1028712108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

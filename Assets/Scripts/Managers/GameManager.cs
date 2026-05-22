@@ -1,3 +1,4 @@
+using Controllers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -43,7 +44,7 @@ namespace Managers
             if (context.started)
             {
                 Debug.Log("Respawn");
-                if (player != null && !player.activeSelf)
+                if (player != null)
                     RespawnPlayer();
             }
         }
@@ -63,9 +64,18 @@ namespace Managers
                 Debug.LogWarning("no checkpoint found");
                 return;
             }
-            
-            player.transform.position = spawnPosition;
-            player.SetActive(true);
+
+            if (!player.activeSelf)
+            {
+                player.transform.position = spawnPosition;
+                player.SetActive(true);
+            }
+            else if (player.activeSelf)
+            {
+                player.transform.position = spawnPosition;
+                Rigidbody2D _rb = player.GetComponent<Rigidbody2D>();
+                _rb.linearVelocity = Vector2.zero;
+            }
         }
     
         /*
