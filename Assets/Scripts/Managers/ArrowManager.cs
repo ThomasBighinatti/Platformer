@@ -135,9 +135,9 @@ namespace Managers
             _arrowNum++;
         }
         
-        private readonly Queue<Arrow> _momentumQueue = new Queue<Arrow>();
-        public void EnqueueMomentumArrow(Arrow arrow) => _momentumQueue.Enqueue(arrow);
-        private Momentum DequeueMomentumArrow() => _momentumQueue.Dequeue() as Momentum;
+        private readonly Stack<Arrow> _momentumQueue = new Stack<Arrow>();
+        public void PushMomentumArrow(Arrow arrow) => _momentumQueue.Push(arrow);
+        private Momentum PopMomentumArrow() => _momentumQueue.Pop() as Momentum;
         private bool MomentumQueueEmpty => _momentumQueue.Count <= 0;
 
         public void RecallArrow()
@@ -145,7 +145,7 @@ namespace Managers
             if (MomentumQueueEmpty)
                 return;
             
-            Momentum momentumArrowCalled = DequeueMomentumArrow();
+            Momentum momentumArrowCalled = PopMomentumArrow();
             momentumArrowCalled?.Recall();
         }
     }
