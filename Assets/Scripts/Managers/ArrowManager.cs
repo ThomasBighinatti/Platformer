@@ -135,18 +135,22 @@ namespace Managers
             _arrowNum++;
         }
         
-        private readonly Stack<Arrow> _momentumQueue = new Stack<Arrow>();
-        public void PushMomentumArrow(Arrow arrow) => _momentumQueue.Push(arrow);
-        private Momentum PopMomentumArrow() => _momentumQueue.Pop() as Momentum;
-        private bool MomentumQueueEmpty => _momentumQueue.Count <= 0;
+        private readonly Stack<Arrow> _momentumStack = new Stack<Arrow>();
+        public void PushMomentumArrow(Arrow arrow) => _momentumStack.Push(arrow);
+        private void PopMomentumArrow() => _momentumStack.Pop();
+        private Momentum PeekMomentumArrow() => _momentumStack.Peek() as Momentum;
+        
+        private bool MomentumStackEmpty => _momentumStack.Count <= 0;
 
         public void RecallArrow()
         {
-            if (MomentumQueueEmpty)
+            if (MomentumStackEmpty)
                 return;
-            
-            Momentum momentumArrowCalled = PopMomentumArrow();
-            momentumArrowCalled?.Recall();
+            Momentum momentumArrowCalled = PeekMomentumArrow();
+            if (!momentumArrowCalled.IsPlanted) 
+                return;
+            momentumArrowCalled.Recall();
+            PopMomentumArrow();
         }
     }
 }
