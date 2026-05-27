@@ -32,8 +32,8 @@ namespace Arrows
     
         protected Rigidbody2D Rb;
         protected bool CanUseGravity;
-        protected bool IsPlanted;
-
+        public bool IsPlanted { get; protected set; }
+        
         private void Start()
         {
             Rb = GetComponent<Rigidbody2D>();
