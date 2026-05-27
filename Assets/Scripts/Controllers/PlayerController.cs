@@ -200,7 +200,6 @@ namespace Controllers
             _boxCastCooldownCounter = boxCastCooldown;
                 
             playerAnimController.SetJumpContact();
-            Debug.Log("caca");
 
             return targetVelocity;
         }
@@ -333,6 +332,7 @@ namespace Controllers
             {
                 _rb.linearVelocity = Vector2.zero;
             }
+            Debug.Log(force );
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
             _isKnockedBack = true;
         }
