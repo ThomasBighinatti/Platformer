@@ -1,6 +1,5 @@
 using System.Collections;
 using Datas;
-using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -14,7 +13,7 @@ namespace Arrows
         [Header("To add to data")] 
         [SerializeField] protected Collider2D hitCollider;
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
-        private Vector2 arrowPosition;
+        private Vector2 _arrowPosition;
         
         private bool _canStartMoving;
         public bool CanStartMoving
@@ -32,11 +31,12 @@ namespace Arrows
     
         protected Rigidbody2D Rb;
         protected bool CanUseGravity;
-        protected bool IsPlanted;
-
+        public bool IsPlanted { get; protected set; }
+        
         private void Start()
         {
             Rb = GetComponent<Rigidbody2D>();
+            Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
         protected abstract void StartArrow();
