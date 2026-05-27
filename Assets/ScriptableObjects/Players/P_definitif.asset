@@ -24,4 +24,4 @@ MonoBehaviour:
   jumpCutMultiplier: 0.5
   coyoteTime: 0.2
   jumpBufferTime: 0.2
-  airControl: 30
+  airControl: 85
