@@ -49,7 +49,8 @@ namespace Arrows
                 Rb.linearVelocity = DirectionToPlayer * _recallSpeed; 
                 if (Vector2.Distance(transform.position, target) <= 2f)
                 {
-                    PlayerController.ActivateKnockback(_lastDirectionsToPlayer.Count >= 3 ? _lastDirectionsToPlayer[^3] : DirectionToPlayer, _recallSpeed * MomentumData.KnockbackForce);
+                    PlayerController.ActivateKnockback(_lastDirectionsToPlayer.Count >= 3 ? _lastDirectionsToPlayer[^3] : (target - _initialPositionOnRecall).normalized, 
+                        _recallSpeed * MomentumData.KnockbackForce);
                     Destroy(gameObject);
                 }
             }
@@ -72,14 +73,18 @@ namespace Arrows
         }
 
         private bool _recalling;
+        private Vector2 _initialPositionOnRecall;
 
         public void Recall()
         {
             _recalling = true;
             IsPlanted = false;
-            Rb.constraints = RigidbodyConstraints2D.None;
+            Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             Rb.linearVelocity = Vector2.zero;
             _recallSpeed = MomentumData.RecallInitialSpeed;
+
+            _initialPositionOnRecall = transform.position;
+
             if (transform.parent != null)
             {
                 transform.SetParent(null);
@@ -88,7 +93,6 @@ namespace Arrows
             if (_isOnStickyBlock)
             {
                 RecallOnSticky();
-                Debug.Log("caca");
             }
         }
 
