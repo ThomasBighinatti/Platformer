@@ -19,6 +19,7 @@ namespace Controllers
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [SerializeField] private bool stopVelocity;
         [SerializeField] private float jumpSlopeAngle;
+        private static float _stickyMult;
         [Space(10f)]
         
         [Header("Visualisation")]
@@ -100,11 +101,22 @@ namespace Controllers
             _rb.linearVelocity = velocity;
         }
 
+        public static void ChangeStickyMult(float newValue, bool reset)
+        {
+            if (reset)
+            {
+                _stickyMult = 1;
+                return;
+            }
+
+            _stickyMult = newValue;
+        }
+
         #region Movement
         
         private Vector2 Movement(Vector2 targetVelocity)
         {
-            float targetSpeedX = _moveInput.x * data.PlayerSpeed;
+            float targetSpeedX = _moveInput.x * data.PlayerSpeed * _stickyMult;
             
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
             bool isFloorNormal = groundHit.collider is not null && groundHit.normal.y > 0.5f;
@@ -200,7 +212,6 @@ namespace Controllers
             _boxCastCooldownCounter = boxCastCooldown;
                 
             playerAnimController.SetJumpContact();
-            Debug.Log("caca");
 
             return targetVelocity;
         }
@@ -333,6 +344,7 @@ namespace Controllers
             {
                 _rb.linearVelocity = Vector2.zero;
             }
+
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
             _isKnockedBack = true;
         }

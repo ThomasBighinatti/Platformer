@@ -27,7 +27,7 @@ public class TileManager : MonoBehaviour
 
         if (hitTile != null)
         {
-            Debug.Log($"tile {hitTile.name} touchée");
+            //Debug.Log($"tile {hitTile.name} touchée");
         }
 
         return hitTile;
@@ -44,7 +44,7 @@ public class TileManager : MonoBehaviour
                 break;
             */
             default:
-                Debug.Log("pas de particule pour cette tile");
+                //Debug.Log("pas de particule pour cette tile");
                 break;
         }
     }

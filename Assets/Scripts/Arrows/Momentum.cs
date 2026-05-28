@@ -12,7 +12,7 @@ namespace Arrows
         
         private float _recallSpeed;
 
-        private bool _isOnStickyBlock;
+        public bool _isOnStickyBlock;
         public void IsOnStickyBlock() => _isOnStickyBlock = true;
 
         protected override void StartArrow()
@@ -89,7 +89,7 @@ namespace Arrows
             {
                 transform.SetParent(null);
             }
-
+            
             if (_isOnStickyBlock)
             {
                 RecallOnSticky();
@@ -114,6 +114,12 @@ namespace Arrows
         private void RecallOnSticky()
         {
             gameObject.layer = LayerMask.NameToLayer("ArrowNoSticky");
+        }
+
+        public override void DestroyArrow()
+        {
+            ArrowManager.Instance.PopMomentumArrow();
+            base.DestroyArrow();
         }
     }
 }
