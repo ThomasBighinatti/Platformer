@@ -19,7 +19,7 @@ namespace Controllers
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         [SerializeField] private bool stopVelocity;
         [SerializeField] private float jumpSlopeAngle;
-        private static float _stickyMult;
+        private static float _stickyMult = 1;
         [Space(10f)]
         
         [Header("Visualisation")]
