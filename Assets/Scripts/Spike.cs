@@ -1,4 +1,6 @@
 using System;
+using Arrows;
+using Managers;
 using UnityEngine;
 
 public class Spike : MonoBehaviour
@@ -10,5 +12,12 @@ public class Spike : MonoBehaviour
         {
             other.gameObject.SetActive(false);
         }
+        else
+        {
+            Arrow _arrow =  other.gameObject.GetComponent<Arrow>();
+            _arrow.DestroyArrow();
+            Debug.Log("destroy fleche");
+        }
+
     }
 }
