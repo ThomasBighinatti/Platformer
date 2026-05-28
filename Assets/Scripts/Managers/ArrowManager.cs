@@ -135,7 +135,7 @@ namespace Managers
         }
         
         public void PushMomentumArrow(Arrow arrow) => _momentumStack.Push(arrow);
-        public void PopMomentumArrow() => _momentumStack.Pop();
+        private void PopMomentumArrow() => _momentumStack.Pop();
         private Momentum PeekMomentumArrow() => _momentumStack.Peek() as Momentum;
         private bool MomentumStackEmpty => _momentumStack.Count <= 0;
 
