@@ -8,6 +8,7 @@ namespace SaveSystem
 {
    public class SaveSystem
    {
+      
       private static string _folderName;
       private static string _extensionName;
       private static string _stringSaveType;
@@ -73,15 +74,13 @@ namespace SaveSystem
             Debug.LogError("No save file found !");
             return emptyData;
          }
-         else
+
+         string savedContent = File.ReadAllText(filePath);
+         if (EncryptionUtility.IsEncrypted(savedContent))
          {
-            string savedContent = File.ReadAllText(filePath);
-            if (EncryptionUtility.IsEncrypted(savedContent))
-            {
-               savedContent = EncryptionUtility.DecryptString(savedContent);
-            }
-            return JsonUtility.FromJson<DataToSave>(savedContent);
+            savedContent = EncryptionUtility.DecryptString(savedContent);
          }
+         return JsonUtility.FromJson<DataToSave>(savedContent);
       }
    
       public static void DeleteSave(string saveName = "DefaultSave")
@@ -90,5 +89,6 @@ namespace SaveSystem
          string filePath = folderPath + "/" + saveName + "." + _extensionName;
          File.Delete(filePath);
       }
+      
    }
 }
