@@ -1,15 +1,18 @@
 using Arrows;
+using Controllers;
+using Managers;
 using UnityEngine;
 
 namespace GPE
 {
     public class StickyPlatform : MonoBehaviour
     {
+        [SerializeField] private float onStickyMult = 0.5f;
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                other.transform.parent.SetParent(transform);
+                PlayerController.ChangeStickyMult(onStickyMult, false);
             }
         }
         
@@ -17,7 +20,7 @@ namespace GPE
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                other.transform.parent.SetParent(null);
+                PlayerController.ChangeStickyMult(onStickyMult, true);
             }
         }
 
