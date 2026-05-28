@@ -1,16 +1,23 @@
-using System;
 using Arrows;
 using UnityEngine;
 
-public class StickyPlatform : MonoBehaviour
+namespace GPE
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    public class StickyPlatform : MonoBehaviour
     {
-        if (other.gameObject.CompareTag("Arrow"))
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            Momentum momentumArrow = other.gameObject.GetComponent<Momentum>();
             
-            momentumArrow.IsOnStickyBlock();
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Arrow"))
+            {
+                Momentum momentumArrow = other.gameObject.GetComponent<Momentum>();
+            
+                momentumArrow.IsOnStickyBlock();
+            }
         }
     }
 }

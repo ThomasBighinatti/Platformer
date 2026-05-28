@@ -12,7 +12,7 @@ namespace Arrows
         
         private float _recallSpeed;
 
-        private bool _isOnStickyBlock;
+        public bool _isOnStickyBlock;
         public void IsOnStickyBlock() => _isOnStickyBlock = true;
 
         protected override void StartArrow()
@@ -41,6 +41,7 @@ namespace Arrows
         
         protected override void FixedUpdate()
         {
+            Debug.Log(_isOnStickyBlock);
             if (_recalling)
             {
                 Vector2 target = ArrowManager.PlayerTransform.position;
@@ -77,6 +78,12 @@ namespace Arrows
 
         public void Recall()
         {
+            if (_isOnStickyBlock)
+            {
+                Debug.Log("oui");
+                RecallOnSticky();
+            }
+            
             _recalling = true;
             IsPlanted = false;
             Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -88,11 +95,6 @@ namespace Arrows
             if (transform.parent != null)
             {
                 transform.SetParent(null);
-            }
-
-            if (_isOnStickyBlock)
-            {
-                RecallOnSticky();
             }
         }
 
