@@ -32,7 +32,7 @@ namespace GPE
         {
             if (!other.gameObject.CompareTag("Arrow")) 
                 return;
-            
+            Debug.Log("StickyBloc : Yes");
             Momentum momentumArrow = other.gameObject.GetComponent<Momentum>();
             if (momentumArrow == null)
             {
