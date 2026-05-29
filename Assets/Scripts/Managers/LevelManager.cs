@@ -14,9 +14,6 @@ namespace Managers
         [SerializeField] private GameObject player;
         public GameObject Player => player;
 
-        [SerializeField] private ButterflyController butterfly;
-        public ButterflyController Butterfly => butterfly;
-
         [SerializeField] private GameObject pointerParent;
         public GameObject PointerParent => pointerParent;
 
@@ -38,7 +35,7 @@ namespace Managers
         private void Init()
         {
             if (player == null) Debug.LogWarning("LevelManager : No Player");
-            if (butterfly == null) Debug.LogWarning("LevelManager : No Butterfly");
+
             if (pointerParent == null) Debug.LogWarning("LevelManager : No Pointer Parent");
             if (pointer == null) Debug.LogWarning("LevelManager : No Pointer");
         }

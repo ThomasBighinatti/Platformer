@@ -66,9 +66,9 @@ namespace Arrows
         protected IEnumerator WaitForDestroy()
         {
             yield return new WaitForSeconds(data.DestroyTime);
-            DestroyArrow();
+            Destroy(gameObject);
         }
-        
+
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
             if (!CanStartMoving)
@@ -101,9 +101,5 @@ namespace Arrows
 
         public void SetDynamic() => rb.bodyType = RigidbodyType2D.Dynamic;
 
-        public virtual void DestroyArrow()
-        {
-            Destroy(gameObject);
-        }
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace SaveSystem
 {
-    
     [Serializable]
     public struct ObjectData
     {

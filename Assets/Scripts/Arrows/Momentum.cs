@@ -101,7 +101,7 @@ namespace Arrows
             {
                 transform.SetParent(null);
             }
-            
+
             if (_isOnStickyBlock)
             {
                 RecallOnSticky();
@@ -126,12 +126,6 @@ namespace Arrows
         private void RecallOnSticky()
         {
             gameObject.layer = LayerMask.NameToLayer("ArrowNoSticky");
-        }
-
-        public override void DestroyArrow()
-        {
-            ArrowManager.Instance.PopMomentumArrow();
-            base.DestroyArrow();
         }
     }
 }
