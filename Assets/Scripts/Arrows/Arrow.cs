@@ -13,6 +13,7 @@ namespace Arrows
 
         [Header("To add to data")] 
         [SerializeField] protected Collider2D hitCollider;
+        // il y est du coup? 
         // serializefield temporaire qu'il faudra mettre par la suite dans le data
         private Vector2 _arrowPosition;
         

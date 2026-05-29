@@ -12,6 +12,8 @@ namespace Arrows
         
         private float _recallSpeed;
 
+        // y'a rien qui va niveau nomenclature, un fichier sur deux tes publics sont en majuscule en 1er,
+        // les autres en _, des fois c'est pour les private, etc
         public bool _isOnStickyBlock;
         public void IsOnStickyBlock() => _isOnStickyBlock = true;
 
@@ -77,6 +79,8 @@ namespace Arrows
             
             PlayerController.ActivateKnockback(_lastDirectionsToPlayer.Count >= 3 ? _lastDirectionsToPlayer[^3] : (target - _initialPositionOnRecall).normalized, 
                 _recallSpeed * MomentumData.KnockbackForce);
+            
+            // dommage de pas les pooler
             Destroy(gameObject);
         }
 

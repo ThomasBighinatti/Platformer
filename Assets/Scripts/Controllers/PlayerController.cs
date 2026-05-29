@@ -85,7 +85,7 @@ namespace Controllers
         private void FixedUpdate()
         {
             _jumpBufferCounter -= Time.fixedDeltaTime;
-            _boxCastCooldownCounter -= Time.fixedDeltaTime; //j'ai ecrit "=-" au lieu de "-="...
+            _boxCastCooldownCounter -= Time.fixedDeltaTime; //j'ai ecrit "=-" au lieu de "-="... // ha bah bravo
 
             Vector2 velocity = _rb.linearVelocity;
             
