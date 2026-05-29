@@ -1,15 +1,16 @@
 using System;
 using System.Collections.Generic;
 using Arrows;
-using Controllers;
 using Datas;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Managers
 {
+    
     public class ArrowManager : MonoBehaviour
     {
+        
         public static ArrowManager Instance;
 
         private void Awake()
@@ -23,65 +24,15 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
-
-        [SerializeField] private ButterflyController butterfly;
         
+        [Header("Settings")]
         [SerializeField] private List<ArrowGroupData> arrowGroupDatas;
-        
         [SerializeField] private Momentum momentumPrefab;
-
-        [SerializeField] private GameObject pointerParent;
-        [SerializeField] private GameObject pointer;
         
-        [SerializeField] private Transform playerTransform;
-        public static Transform PlayerTransform { get; private set; }
-        
-        private void Start()
-        {
-            CurrentArrowGroupData = arrowGroupDatas[0];
-            PlayerTransform = playerTransform;
-        }
-        
-        void OnEnable()
-        {
-            SceneManager.sceneLoaded += OnSceneLoaded;
-        }
-        
-        void OnDisable()
-        {
-            SceneManager.sceneLoaded -= OnSceneLoaded;
-        }
-        
-        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-        {
-            if(butterfly == null)
-                butterfly = LevelManager.Instance.butterfly;
-            if (momentumPrefab == null)
-                momentumPrefab = LevelManager.Instance.momentumPrefab;
-            if(pointerParent == null)
-                pointerParent = LevelManager.Instance.pointerParent;
-            if(pointer == null)
-                pointer = LevelManager.Instance.pointer;
-            if(playerTransform == null)
-                playerTransform = LevelManager.Instance.playerTransform;
-            //remettre les fleches
-
-        }
-
         private ArrowGroupData CurrentArrowGroupData { get; set; }
-
-        private Arrow GetArrowByType(ArrowType arrowType)
-        {
-            return arrowType switch
-            {
-                ArrowType.Momentum => momentumPrefab,
-                _ => throw new ArgumentOutOfRangeException(nameof(arrowType), arrowType, null)
-            };
-        }
-
         private Arrow CurrentArrowScript { get; set; }
         public bool ArrowScriptIsNull => CurrentArrowScript is null;
-
+        
         private int _arrowNum;
         
         private Vector2 _lookingTowards = Vector2.right;
@@ -99,8 +50,52 @@ namespace Managers
                 {
                     CurrentArrowScript.transform.eulerAngles = rotation;
                 }
-                pointerParent.transform.eulerAngles = rotation;
+                _pointerParent.transform.eulerAngles = rotation;
             }
+        }
+        
+        private readonly Stack<Arrow> _momentumStack = new Stack<Arrow>();
+        
+        private GameObject _pointerParent;
+        private GameObject _pointer;
+        
+        private void Start()
+        {
+            CurrentArrowGroupData = arrowGroupDatas[0]; //changer le mode fonctionnement du group data
+        }
+        
+        private void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+        
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (LevelManager.Instance != null)
+            {
+                _pointerParent = LevelManager.Instance.PointerParent;
+                _pointer = LevelManager.Instance.Pointer;
+                
+                //remettre les fleches
+            }
+            else
+            {
+                Debug.LogWarning("ArrowManager : No LevelManager");
+            }
+        }
+
+        private Arrow GetArrowByType(ArrowType arrowType)
+        {
+            return arrowType switch
+            {
+                ArrowType.Momentum => momentumPrefab,
+                _ => throw new ArgumentOutOfRangeException(nameof(arrowType), arrowType, null)
+            };
         }
         
         public void CreateArrow()
@@ -108,7 +103,7 @@ namespace Managers
             
             if (_arrowNum >= CurrentArrowGroupData.ArrowTypeList.Count)
             {
-                Debug.Log("no more arrows");
+                Debug.LogWarning("ArrowManager : No More Arrows");
                 _arrowNum = 0;
                 CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);
                 return;
@@ -116,7 +111,7 @@ namespace Managers
             
             CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
             
-            GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,pointer.transform);
+            GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,_pointer.transform);
             CurrentArrowScript = arrowCreation.GetComponent<Arrow>();
 
             float angle = Mathf.Atan2(LookingTowards.y, LookingTowards.x) * Mathf.Rad2Deg;
@@ -126,7 +121,11 @@ namespace Managers
         
         public void ShootArrow()
         {
-            
+            if (ArrowScriptIsNull)
+            {
+                Debug.LogWarning("ArrowManager : No Created Arrow");
+                return;
+            }
             CurrentArrowScript.SetDynamic();
             CurrentArrowScript.gameObject.transform.SetParent(null);
             CurrentArrowScript.CanStartMoving = true;
@@ -135,22 +134,23 @@ namespace Managers
             _arrowNum++;
         }
         
-        private readonly Stack<Arrow> _momentumStack = new Stack<Arrow>();
         public void PushMomentumArrow(Arrow arrow) => _momentumStack.Push(arrow);
         public void PopMomentumArrow() => _momentumStack.Pop();
         private Momentum PeekMomentumArrow() => _momentumStack.Peek() as Momentum;
-        
         private bool MomentumStackEmpty => _momentumStack.Count <= 0;
 
         public void RecallArrow()
         {
             if (MomentumStackEmpty)
                 return;
+            
             Momentum momentumArrowCalled = PeekMomentumArrow();
             if (!momentumArrowCalled.IsPlanted) 
                 return;
+            
             momentumArrowCalled.Recall();
             PopMomentumArrow();
         }
+        
     }
 }

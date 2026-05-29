@@ -43,33 +43,41 @@ namespace Arrows
         {
             if (_recalling)
             {
-                Vector2 target = ArrowManager.PlayerTransform.position;
-                DirectionToPlayer = (target - (Vector2)transform.position).normalized;
-                _recallSpeed += MomentumData.RecallAcceleration * Time.fixedDeltaTime;
-                Rb.linearVelocity = DirectionToPlayer * _recallSpeed; 
-                if (Vector2.Distance(transform.position, target) <= 2f)
-                {
-                    PlayerController.ActivateKnockback(_lastDirectionsToPlayer.Count >= 3 ? _lastDirectionsToPlayer[^3] : (target - _initialPositionOnRecall).normalized, 
-                        _recallSpeed * MomentumData.KnockbackForce);
-                    Destroy(gameObject);
-                }
+                RecallAction();
             }
-            else if (CanUseGravity)
+            else if (canUseGravity)
             {
-                Rb.gravityScale = Mathf.Lerp(Rb.gravityScale, data.GravityForce, data.GravityLerpForce);
+                rb.gravityScale = Mathf.Lerp(rb.gravityScale, data.GravityForce, data.GravityLerpForce);
             }
-            
             else
             {
                 return;
             }
-
             if (IsPlanted)
                 return;
 
-            Vector3 direction = Rb.linearVelocity;
+            DirectionToAngle();
+        }
+
+        private void DirectionToAngle()
+        {
+            Vector3 direction = rb.linearVelocity;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.eulerAngles = new Vector3(0, 0, angle);
+        }
+
+        private void RecallAction()
+        {
+            Vector2 target = LevelManager.Instance.Player.transform.position;
+            DirectionToPlayer = (target - (Vector2)transform.position).normalized;
+            _recallSpeed += MomentumData.RecallAcceleration * Time.fixedDeltaTime;
+            rb.linearVelocity = DirectionToPlayer * _recallSpeed;
+            if (!(Vector2.Distance(transform.position, target) <= 2f)) 
+                return;
+            
+            PlayerController.ActivateKnockback(_lastDirectionsToPlayer.Count >= 3 ? _lastDirectionsToPlayer[^3] : (target - _initialPositionOnRecall).normalized, 
+                _recallSpeed * MomentumData.KnockbackForce);
+            Destroy(gameObject);
         }
 
         private bool _recalling;
@@ -79,8 +87,8 @@ namespace Arrows
         {
             _recalling = true;
             IsPlanted = false;
-            Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            Rb.linearVelocity = Vector2.zero;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            rb.linearVelocity = Vector2.zero;
             _recallSpeed = MomentumData.RecallInitialSpeed;
 
             _initialPositionOnRecall = transform.position;

@@ -1,10 +1,11 @@
-
 using UnityEngine;
 
 namespace Managers
 {
+    
     public class SoundManager : MonoBehaviour
     {
+        
         public static SoundManager Instance;
 
         [Header("Sounds")]
@@ -23,6 +24,7 @@ namespace Managers
                 Destroy(transform.parent.gameObject);
                 return;
             }
+            
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
@@ -31,14 +33,18 @@ namespace Managers
         {
             if (mainMusic == null)
                 return;
+            
             musicSource.clip = mainMusic;
             musicSource.Play();
         }
+        
+        #region SFX
 
         public void SoundExample()
         {
             var soundToPlay = sfx[0];
             sfxSource.PlayOneShot(soundToPlay);
         }
+        #endregion
     }
 }

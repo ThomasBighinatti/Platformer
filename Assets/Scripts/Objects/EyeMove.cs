@@ -3,10 +3,10 @@ using DG.Tweening;
 using Managers;
 using UnityEngine;
 using Random = UnityEngine.Random;
-// ReSharper disable FunctionRecursiveOnAllPaths
 
 namespace Objects
 {
+    
     [SelectionBase]
     public class EyeMove : MonoBehaviour
     {
@@ -19,6 +19,7 @@ namespace Objects
         [SerializeField] private bool useShake = true;
         [SerializeField] private float shakeDistance = 5;
         [SerializeField] private float shakeStrength = 0.05f;
+        [Space(10f)]
 
         [Header("Eye Parts")]
         [SerializeField] private GameObject pupil;
@@ -30,8 +31,17 @@ namespace Objects
     
         private void Start()
         { 
-            _player = LevelManager.Instance.player;
+            if (LevelManager.Instance != null)
+            {
+                _player = LevelManager.Instance.Player;
+            }
+            else
+            {
+                Debug.LogWarning("EyeMove : No LevelManager");
+            }
+            
             _pupilCenter = pupil.transform.position;
+            
             StartCoroutine(WaitForLookCycle());
         }
     
@@ -56,7 +66,7 @@ namespace Objects
             {
                 float randomTime = Random.Range(randomTimeWaitMin, randomTimeWaitMax);
                 LookTowardsPlayer(randomTime);
-                yield return new WaitForSeconds(Random.Range(randomTimeWaitMin, randomTimeWaitMax));
+                yield return new WaitForSeconds(randomTime);
             }
         }
     

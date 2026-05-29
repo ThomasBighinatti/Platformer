@@ -17,12 +17,22 @@ namespace SaveSystem
             {
                 SaveManager.Instance.RegisterCheckpoint(index, transform.position);
             }
+            else
+            {
+                Debug.LogWarning("Checkpoint : No SaveManager");
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (SaveManager.Instance == null)
+            {
+                Debug.LogWarning("Checkpoint : No SaveManager");
+                return;
+            }
+            
             bool isNew = SaveManager.Instance.ChangeCurrentCheckpoint(index);
-            if (!isNew) 
+            if (!isNew)
                 return;
 
             SaveManager.Instance.Save();

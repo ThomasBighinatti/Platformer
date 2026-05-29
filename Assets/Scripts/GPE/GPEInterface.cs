@@ -1,6 +1,6 @@
 namespace GPE
 {
-    public interface IGpeInterface
+    public interface IResettable
     {
         public void ResetToInitialState();
     }
