@@ -24,24 +24,31 @@ namespace Objects
             switch (other.gameObject.tag)
             {
                 case "Player":
-                    Debug.Log("Killed");
-                    GameManager.Instance.RespawnPlayer();
+                    Debug.Log("KillZone : Killed");
+                    if (GameManager.Instance != null )
+                    {
+                        GameManager.Instance.RespawnPlayer();
+                    }
+                    else
+                    {
+                        Debug.LogWarning("KillZone : No GameManager");
+                    }
                     break;
+                
                 case "Arrow":
                     Arrow arrow =  other.gameObject.GetComponent<Arrow>();
                     if (arrow != null)
                     {
                         arrow.DestroyArrow();
-                        Debug.Log("Destroy Arrow");
+                        Debug.Log("KillZone : Destroy Arrow");
                     }
                     else
                     {
-                        Debug.Log("No Arrow Component");
+                        Debug.Log("KillZone : No Arrow Component");
                     }
                     break;
             }
         }
-
         
     }
 }

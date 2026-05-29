@@ -3,11 +3,15 @@ using UnityEngine;
 
 namespace GPE
 {
-    public class MovingPlatform : MonoBehaviour, IGpeInterface
+    
+    [RequireComponent(typeof(Collider2D))]
+    public class MovingPlatform : MonoBehaviour, IResettable
     {
+        
         [Header("Platform Settings")]
         [SerializeField] private MovingPlatformSettings settings;
         [Serializable]
+        
         private struct MovingPlatformSettings
         {
             public Direction direction;
@@ -103,11 +107,11 @@ namespace GPE
     
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Arrow"))
-            {
-                other.transform.SetParent(transform);
-                NumberOfInteractions++;
-            }
+            if (!other.gameObject.CompareTag("Arrow")) 
+                return;
+            
+            other.transform.SetParent(transform);
+            NumberOfInteractions++;
         }
 
         private void OnTriggerExit2D(Collider2D other)

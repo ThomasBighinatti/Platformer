@@ -41,8 +41,7 @@ namespace Controllers
                 Debug.LogError("No SpriteRenderer / Child" + exception);
             }
         }
-
-
+        
         private void Update()
         {
             ButterFlyPointerRefresh();

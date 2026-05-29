@@ -1,14 +1,17 @@
-using Controllers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace Managers
 {
+    
     public class GameManager : MonoBehaviour
     {
     
         public static GameManager Instance;
+        
+        private GameObject _player;
+        private Rigidbody2D _playerRb;
 
         private void Awake()
         {
@@ -20,96 +23,114 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
-
-        [SerializeField] private GameObject player;
         
-        void OnEnable()
+        private void OnEnable()
         {
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
         
-        void OnDisable()
+        private void OnDisable()
         {
             SceneManager.sceneLoaded -= OnSceneLoaded;
         }
         
-        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (player == null)
-                player = LevelManager.Instance.player;
+            if (LevelManager.Instance != null)
+            {
+                _player = LevelManager.Instance.Player;
+                _playerRb = _player.GetComponent<Rigidbody2D>();
+            }
+            else
+            {
+                Debug.LogWarning("GameManager : No LevelManager");
+            }
         }
         
         public void OnRetry(InputAction.CallbackContext context)
         {
-            if (context.started)
+            if (!context.started) 
+                return;
+            
+            
+            if (_player != null)
             {
-                Debug.Log("Respawn");
-                if (player != null)
-                    RespawnPlayer();
+                Debug.Log("GameManager : Respawn");
+                RespawnPlayer();
+            }
+            else
+            {
+                Debug.LogWarning("GameManager : No Player");
             }
         }
 
         public void RespawnPlayer()
         {
-            if (player == null)
+            if (_player == null)
             {
-                Debug.LogError("no player");
+                Debug.LogWarning("GameManager : No Player");
                 return;
             }
 
-            if (!SaveManager.Instance.CheckpointPositions.TryGetValue(
-                    SaveManager.Instance.CurrentCheckpointIndex, 
-                    out Vector3 spawnPosition))
+            if (SaveManager.Instance != null)
             {
-                Debug.LogWarning("no checkpoint found");
-                return;
-            }
+                if (!SaveManager.Instance.checkpointPositions.TryGetValue(SaveManager.Instance.CurrentCheckpointIndex, out Vector3 spawnPosition))
+                {
+                    Debug.LogWarning("GameManager : No Checkpoint Found");
+                    return;
+                }
 
-            if (!player.activeSelf)
-            {
-                player.transform.position = spawnPosition;
-                player.SetActive(true);
+                switch (_player.activeSelf)
+                {
+                    case false:
+                        _player.transform.position = spawnPosition;
+                        _player.SetActive(true);
+                        break;
+                    
+                    case true:
+                        _player.transform.position = spawnPosition;
+                        _playerRb.linearVelocity = Vector2.zero;
+                        break;
+                }
             }
-            else if (player.activeSelf)
+            else
             {
-                player.transform.position = spawnPosition;
-                Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
-                rb.linearVelocity = Vector2.zero;
+                Debug.LogWarning("GameManager : No SaveManager");
             }
+            
         }
     
         /*
-    #region "State Machine"
+        #region "State Machine"
 
-    public enum GameState
-    {
-        Game,
-        Menu
-    }
-
-    private GameState _currentGameState = GameState.Game;
-    public GameState CurrentGameState
-    {
-        get => _currentGameState;
-        set
+        public enum GameState
         {
-            if (_currentGameState == value) return;
-            _currentGameState = value;
-            SceneManager.LoadScene(GetSceneByState());
+            Game,
+            Menu
         }
-    }
 
-    private string GetSceneByState()
-    {
-        return CurrentGameState switch
+        private GameState _currentGameState = GameState.Game;
+        public GameState CurrentGameState
         {
-            GameState.Game => "Game",
-            GameState.Menu => "Menu",
-            _ => ""
-        };
-    }
+            get => _currentGameState;
+            set
+            {
+                if (_currentGameState == value) return;
+                _currentGameState = value;
+                SceneManager.LoadScene(GetSceneByState());
+            }
+        }
 
-    #endregion */
+        private string GetSceneByState()
+        {
+            return CurrentGameState switch
+            {
+                GameState.Game => "Game",
+                GameState.Menu => "Menu",
+                _ => ""
+            };
+        }
+        #endregion */
 
     }
 }

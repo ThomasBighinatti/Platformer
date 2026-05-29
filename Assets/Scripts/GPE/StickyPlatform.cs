@@ -1,13 +1,17 @@
 using Arrows;
 using Controllers;
-using Managers;
 using UnityEngine;
 
 namespace GPE
 {
+    
+    [RequireComponent(typeof(Collider2D))]
     public class StickyPlatform : MonoBehaviour
     {
+        
+        [Header("Platform Settings")]
         [SerializeField] private float onStickyMult = 0.5f;
+        
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (other.gameObject.CompareTag("Player"))
@@ -26,12 +30,18 @@ namespace GPE
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Arrow"))
-            {
-                Momentum momentumArrow = other.gameObject.GetComponent<Momentum>();
+            if (!other.gameObject.CompareTag("Arrow")) 
+                return;
             
-                momentumArrow.IsOnStickyBlock();
+            Momentum momentumArrow = other.gameObject.GetComponent<Momentum>();
+            if (momentumArrow == null)
+            {
+                Debug.Log("StickyPlatform : No Momentum Component");
+                return;
             }
+            
+            momentumArrow.IsOnStickyBlock();
         }
+        
     }
 }
