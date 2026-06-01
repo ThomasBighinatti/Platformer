@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Arrows;
 using Datas;
@@ -24,6 +25,9 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
+
+        [SerializeField] private GameObject _pinPointer;
+        [SerializeField] private ButterflyController butterfly;
         
         [Header("Settings")]
         [SerializeField] private List<ArrowGroupData> arrowGroupDatas;
@@ -151,6 +155,21 @@ namespace Managers
             momentumArrowCalled.Recall();
             PopMomentumArrow();
         }
-        
+
+        private void PinPoint()
+        {
+            LayerMask checkMask = LayerMask.GetMask("Default");
+            RaycastHit2D hit = Physics2D.Raycast(pointer.transform.position, _lookingTowards, 40,checkMask);
+            //Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.white, 0.1f);
+
+            if (hit.collider != null)
+            {
+                _pinPointer.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y);
+                Debug.DrawLine(pointer.transform.position, hit.point, Color.blue);
+                // Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.red, 0.1f);
+                    
+                _pinPointer.transform.position = hit.point;
+            }
+        }
     }
 }
