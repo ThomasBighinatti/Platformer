@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 namespace Controllers
 {
+    
     public class ArrowController : MonoBehaviour
     {
         
@@ -18,19 +19,25 @@ namespace Controllers
         
         public void OnShoot(InputAction.CallbackContext context)
         {
-
             InputDevice device = context.control.device;
             if (device is Keyboard or Mouse && !_isUsingMouse) return;
             if (device is Gamepad && _isUsingMouse) return;
             
-            if (context.started && ArrowManager.Instance.ArrowScriptIsNull)
+            if (ArrowManager.Instance != null)
             {
-                ArrowManager.Instance.CreateArrow();
-            }
+                if (context.started && ArrowManager.Instance.ArrowScriptIsNull)
+                {
+                    ArrowManager.Instance.CreateArrow();
+                }
 
-            else if (context.canceled && !ArrowManager.Instance.ArrowScriptIsNull)
+                else if (context.canceled && !ArrowManager.Instance.ArrowScriptIsNull)
+                {
+                    ArrowManager.Instance.ShootArrow();
+                }
+            }
+            else
             {
-                ArrowManager.Instance.ShootArrow();
+                Debug.LogWarning("ArrowController : No ArrowManager");
             }
         }
         
@@ -42,11 +49,16 @@ namespace Controllers
             }
             else
             {
-                Debug.LogError("camera problem");
+                Debug.LogError("ArrowController : Camera Problem");
             }
         }
 
         private void Update()
+        {
+            SetInputOnLook();
+        }
+
+        private void SetInputOnLook()
         {
             if (_isUsingMouse)
             {
@@ -61,9 +73,11 @@ namespace Controllers
             
             _currentInputOnLook = _inputOnLook;
 
+            
             ArrowManager.Instance.LookingTowards = _currentInputOnLook.normalized;
+            
         }
-        
+
         public void OnLook(InputAction.CallbackContext context)
         {
             if (context.canceled)
@@ -90,9 +104,15 @@ namespace Controllers
             if (!context.performed)
                 return;
             
-            ArrowManager.Instance.RecallArrow();
+            if(ArrowManager.Instance != null)
+            {
+                ArrowManager.Instance.RecallArrow();
+            }
+            else
+            {
+                Debug.LogWarning("ArrowController : No ArrowManager");
+            }
         }
         
-        // TODO bug sur recall deux fleches recall à cause du canceled qui devrait pourtant pas avoir lieu
     }
 }

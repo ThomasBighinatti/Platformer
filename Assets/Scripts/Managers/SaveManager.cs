@@ -6,23 +6,26 @@ using UnityEngine;
 
 namespace Managers
 {
+    
     public class SaveManager : MonoBehaviour
     {
+        
         public static SaveManager Instance;
         
-        public SaveSystemOption saveSystemOption;
-        public int CurrentCheckpointIndex { get; private set; }
-
-        public readonly Dictionary<int, Vector3> CheckpointPositions = new Dictionary<int, Vector3>();
+        
 
         [Header("Settings")]
-        public bool encryptData = false;
-
-
-        [SerializeField] private GameObject player;
+        public SaveSystemOption saveSystemOption;
+        public int CurrentCheckpointIndex { get; private set; }
+        
+        public readonly Dictionary<int, Vector3> checkpointPositions = new Dictionary<int, Vector3>();
+        
+        public bool encryptData;
         public DataToSave data;
-
-        public void Awake()
+        
+        private GameObject _player;
+        
+        private void Awake()
         {
             if (Instance != null)
             {
@@ -39,6 +42,15 @@ namespace Managers
         private void Start()
         {
             StartCoroutine(LoadAfterRegistration());
+
+            if (LevelManager.Instance != null)
+            {
+                _player = LevelManager.Instance.Player;
+            }
+            else
+            {
+                Debug.LogWarning("SaveManager : No LevelManager");
+            }
         }
 
         private IEnumerator LoadAfterRegistration()
@@ -49,7 +61,7 @@ namespace Managers
 
         public void RegisterCheckpoint(int index, Vector3 position)
         {
-            CheckpointPositions[index] = position;
+            checkpointPositions[index] = position;
         }
 
         public bool ChangeCurrentCheckpoint(int index)
@@ -80,14 +92,14 @@ namespace Managers
             data = loadedData;
             CurrentCheckpointIndex = data.datasToSave[0].checkpointIndex;
 
-            if (!CheckpointPositions.TryGetValue(CurrentCheckpointIndex, out Vector3 spawnPosition))
+            if (!checkpointPositions.TryGetValue(CurrentCheckpointIndex, out Vector3 spawnPosition))
                 return;
 
-            if (player is not null)
+            if (_player is not null)
             {
-                player.transform.position = spawnPosition;
+                _player.transform.position = spawnPosition;
             }
-                
         }
+        
     }
 }

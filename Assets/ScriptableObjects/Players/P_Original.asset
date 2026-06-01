@@ -16,8 +16,8 @@ MonoBehaviour:
   maxSpeed: 25
   playerAcceleration: 500
   jumpHeight: 6
-  timeToJumpApex: 0.8
-  timeToFall: 0.5
+  timeToJumpApex: 3
+  timeToFall: 3
   apexHangThreshold: 1
   apexHangGravityMult: 1
   maxFallSpeed: 12

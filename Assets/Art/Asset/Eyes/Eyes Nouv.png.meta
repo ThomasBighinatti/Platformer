@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,265 +146,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Eyes 1_0
+      name: Eyes Nouv_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 192
-        width: 30
-        height: 32
+        x: 2
+        y: 193
+        width: 28
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d7b5252a2f6ff5cb0800000000000000
-      internalID: -4872904749825762435
+      spriteID: 47bffdd7456a3d945ab995929667ddd4
+      internalID: 1615720632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_1
+      name: Eyes Nouv_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 134
-        width: 85
-        height: 84
+        x: 40
+        y: 135
+        width: 83
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c458432088f78f640800000000000000
-      internalID: 5113977599008474444
+      spriteID: 048bce5e99b38b644b99e5b389d5a69f
+      internalID: -1309024923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_2
+      name: Eyes Nouv_2
       rect:
         serializedVersion: 2
-        x: 180
-        y: 143
-        width: 60
-        height: 60
+        x: 181
+        y: 144
+        width: 58
+        height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1c46f817e0db341f0800000000000000
-      internalID: -1061797217396890431
+      spriteID: fb3c5ce8502a0a34496a8d2ce345fa78
+      internalID: 1161422620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_3
+      name: Eyes Nouv_3
       rect:
         serializedVersion: 2
-        x: 271
-        y: 174
-        width: 35
-        height: 35
+        x: 272
+        y: 175
+        width: 33
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8cf4c971d83d57fc0800000000000000
-      internalID: -3497656932643352632
+      spriteID: 3179b845d032c0d4886725ab79c78970
+      internalID: -959688987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_4
+      name: Eyes Nouv_4
       rect:
         serializedVersion: 2
-        x: 325
+        x: 326
+        y: 167
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0988bc5f1e56b4f8161f54ea803837
+      internalID: 830944537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes Nouv_5
+      rect:
+        serializedVersion: 2
+        x: 8
         y: 166
-        width: 50
-        height: 45
+        width: 17
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4129b9844554377f0800000000000000
-      internalID: -616072495721901548
+      spriteID: 0687bc485293a0146a8da7aada74da37
+      internalID: 1842170326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_5
+      name: Eyes Nouv_6
       rect:
         serializedVersion: 2
-        x: 7
-        y: 165
-        width: 19
-        height: 19
+        x: 134
+        y: 164
+        width: 22
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8f269cad255d9c060800000000000000
-      internalID: 6974340049794589432
+      spriteID: e3657b2871b733343b1e498e6f99e8b4
+      internalID: -2146641920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_6
+      name: Eyes Nouv_7
       rect:
         serializedVersion: 2
-        x: 133
-        y: 163
-        width: 24
-        height: 24
+        x: 12
+        y: 140
+        width: 7
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f845c6bab2df8e010800000000000000
-      internalID: 1218502063205143695
+      spriteID: 4ff9cfda140580e46af1e66707151f01
+      internalID: 2125819115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_7
+      name: Eyes Nouv_8
       rect:
         serializedVersion: 2
-        x: 11
-        y: 139
-        width: 9
-        height: 9
+        x: 297
+        y: 137
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 039c473c7e3979c00800000000000000
-      internalID: 907356473564383536
+      spriteID: 52077b3f6eb3d554aabfbd886223eff6
+      internalID: -1628584037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_8
+      name: Eyes Nouv_9
       rect:
         serializedVersion: 2
-        x: 296
-        y: 136
-        width: 16
-        height: 16
+        x: 8
+        y: 3
+        width: 118
+        height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3d1eb8de015569140800000000000000
-      internalID: 4726058390165119443
+      spriteID: d678df14ebd71e8468a8f4b255f98e19
+      internalID: 119055932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_9
+      name: Eyes Nouv_10
       rect:
         serializedVersion: 2
-        x: 7
-        y: 2
-        width: 120
-        height: 123
+        x: 139
+        y: 40
+        width: 43
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9689b9fa7ae6c9cc0800000000000000
-      internalID: -3702963127120586647
+      spriteID: f1533d41bb2e6b446903190fa0454254
+      internalID: 124017036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyes 1_10
+      name: Eyes Nouv_11
       rect:
         serializedVersion: 2
-        x: 138
-        y: 39
-        width: 45
-        height: 45
+        x: 209
+        y: 14
+        width: 99
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5079ea2595bc1b1a0800000000000000
-      internalID: -6795426778225666299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eyes 1_11
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 13
-        width: 101
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f859a880ded25e20800000000000000
-      internalID: 3337975261062322425
+      spriteID: ffc3e1278d5aa794f8c8cda8005cb70a
+      internalID: -882717152
       vertices: []
       indices: 
       edges: []
@@ -413,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8e8c60d862294574da502919c6a877cf
     internalID: 0
     vertices: []
     indices: 
@@ -421,20 +421,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Eyes 1_0: -4872904749825762435
-      Eyes 1_1: 5113977599008474444
-      Eyes 1_10: -6795426778225666299
-      Eyes 1_11: 3337975261062322425
-      Eyes 1_2: -1061797217396890431
-      Eyes 1_3: -3497656932643352632
-      Eyes 1_4: -616072495721901548
-      Eyes 1_5: 6974340049794589432
-      Eyes 1_6: 1218502063205143695
-      Eyes 1_7: 907356473564383536
-      Eyes 1_8: 4726058390165119443
-      Eyes 1_9: -3702963127120586647
+      Eyes Nouv_0: 1615720632
+      Eyes Nouv_1: -1309024923
+      Eyes Nouv_10: 124017036
+      Eyes Nouv_11: -882717152
+      Eyes Nouv_2: 1161422620
+      Eyes Nouv_3: -959688987
+      Eyes Nouv_4: 830944537
+      Eyes Nouv_5: 1842170326
+      Eyes Nouv_6: -2146641920
+      Eyes Nouv_7: 2125819115
+      Eyes Nouv_8: -1628584037
+      Eyes Nouv_9: 119055932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
