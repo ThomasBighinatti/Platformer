@@ -31,14 +31,14 @@ namespace Arrows
             }
         }
     
-        protected Rigidbody2D rb;
-        protected bool canUseGravity;
+        protected Rigidbody2D Rb;
+        protected bool CanUseGravity;
         public bool IsPlanted { get; protected set; }
         
         private void Start()
         {
-            rb = GetComponent<Rigidbody2D>();
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            Rb = GetComponent<Rigidbody2D>();
+            Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
         protected abstract void StartArrow();
@@ -50,7 +50,7 @@ namespace Arrows
 
         protected virtual void ArrowShot(Vector2 direction)
         {
-            rb.AddForce(direction * data.Strength);
+            Rb.AddForce(direction * data.Strength);
             if (data.UseGravity)
             {
                 StartCoroutine(WaitForGravity());
@@ -60,7 +60,7 @@ namespace Arrows
         private IEnumerator WaitForGravity()
         {
             yield return new WaitForSeconds(data.GravityActivationTime);
-            canUseGravity = true;
+            CanUseGravity = true;
         }
 
         protected IEnumerator WaitForDestroy()
@@ -68,13 +68,13 @@ namespace Arrows
             yield return new WaitForSeconds(data.DestroyTime);
             DestroyArrow();
         }
-        
+
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
             if (!CanStartMoving)
                 return;
             
-            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            Rb.constraints = RigidbodyConstraints2D.FreezeAll;
             IsPlanted = true;
             
             Tilemap hitMap = other.GetComponent<Tilemap>();
@@ -82,7 +82,7 @@ namespace Arrows
             if (hitMap != null)
             {
                 Vector2 hitPoint = other.ClosestPoint(transform.position);
-                Vector2 flightDirection = rb.linearVelocity.normalized; 
+                Vector2 flightDirection = Rb.linearVelocity.normalized; 
                 hitPoint += flightDirection * 0.1f;
                 
                 TileBase touchedTile = TileManager.Instance.GetTileType(hitPoint, hitMap);
@@ -99,11 +99,12 @@ namespace Arrows
             }
         }
 
-        public void SetDynamic() => rb.bodyType = RigidbodyType2D.Dynamic;
+        public void SetDynamic() => Rb.bodyType = RigidbodyType2D.Dynamic;
 
         public virtual void DestroyArrow()
         {
             Destroy(gameObject);
         }
+        
     }
 }

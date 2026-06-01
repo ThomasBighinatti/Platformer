@@ -14,7 +14,7 @@ namespace Arrows
 
         // y'a rien qui va niveau nomenclature, un fichier sur deux tes publics sont en majuscule en 1er,
         // les autres en _, des fois c'est pour les private, etc
-        public bool _isOnStickyBlock;
+        private bool _isOnStickyBlock;
         public void IsOnStickyBlock() => _isOnStickyBlock = true;
 
         protected override void StartArrow()
@@ -47,9 +47,9 @@ namespace Arrows
             {
                 RecallAction();
             }
-            else if (canUseGravity)
+            else if (CanUseGravity)
             {
-                rb.gravityScale = Mathf.Lerp(rb.gravityScale, data.GravityForce, data.GravityLerpForce);
+                Rb.gravityScale = Mathf.Lerp(Rb.gravityScale, data.GravityForce, data.GravityLerpForce);
             }
             else
             {
@@ -63,7 +63,7 @@ namespace Arrows
 
         private void DirectionToAngle()
         {
-            Vector3 direction = rb.linearVelocity;
+            Vector3 direction = Rb.linearVelocity;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.eulerAngles = new Vector3(0, 0, angle);
         }
@@ -73,7 +73,7 @@ namespace Arrows
             Vector2 target = LevelManager.Instance.Player.transform.position;
             DirectionToPlayer = (target - (Vector2)transform.position).normalized;
             _recallSpeed += MomentumData.RecallAcceleration * Time.fixedDeltaTime;
-            rb.linearVelocity = DirectionToPlayer * _recallSpeed;
+            Rb.linearVelocity = DirectionToPlayer * _recallSpeed;
             if (!(Vector2.Distance(transform.position, target) <= 2f)) 
                 return;
             
@@ -91,8 +91,8 @@ namespace Arrows
         {
             _recalling = true;
             IsPlanted = false;
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            rb.linearVelocity = Vector2.zero;
+            Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            Rb.linearVelocity = Vector2.zero;
             _recallSpeed = MomentumData.RecallInitialSpeed;
 
             _initialPositionOnRecall = transform.position;
@@ -101,7 +101,7 @@ namespace Arrows
             {
                 transform.SetParent(null);
             }
-            
+
             if (_isOnStickyBlock)
             {
                 RecallOnSticky();
@@ -127,7 +127,7 @@ namespace Arrows
         {
             gameObject.layer = LayerMask.NameToLayer("ArrowNoSticky");
         }
-
+        
         public override void DestroyArrow()
         {
             ArrowManager.Instance.PopMomentumArrow();
