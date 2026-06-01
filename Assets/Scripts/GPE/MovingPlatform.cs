@@ -126,7 +126,7 @@ namespace GPE
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                other.transform.SetParent(transform);
+                other.transform.parent.SetParent(transform);
             }
         }
 
@@ -134,7 +134,7 @@ namespace GPE
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                other.transform.SetParent(null);
+                other.transform.parent.SetParent(null);
             }
         }
         
