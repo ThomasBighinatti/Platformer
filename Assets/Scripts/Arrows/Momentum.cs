@@ -14,8 +14,6 @@ namespace Arrows
 
         // y'a rien qui va niveau nomenclature, un fichier sur deux tes publics sont en majuscule en 1er,
         // les autres en _, des fois c'est pour les private, etc
-        private bool _isOnStickyBlock;
-        public void IsOnStickyBlock() => _isOnStickyBlock = true;
 
         protected override void StartArrow()
         {
@@ -107,12 +105,8 @@ namespace Arrows
             {
                 transform.SetParent(null);
             }
-
-            if (_isOnStickyBlock)
-            {
-                RecallOnSticky();
-            }
-
+            
+            RecallForSticky();
         }
 
         protected override void OnTriggerEnter2D(Collider2D other)
@@ -130,7 +124,7 @@ namespace Arrows
             }
         }
 
-        private void RecallOnSticky()
+        private void RecallForSticky()
         {
             gameObject.layer = LayerMask.NameToLayer("ArrowNoSticky");
         }
