@@ -141,6 +141,7 @@ namespace Managers
 
         public void RecallArrow()
         {
+            Debug.Log(_momentumStack.Count);
             if (MomentumStackEmpty)
                 return;
             

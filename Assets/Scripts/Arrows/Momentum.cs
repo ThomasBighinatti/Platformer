@@ -85,17 +85,23 @@ namespace Arrows
         }
 
         private bool _recalling;
+        private bool _recalled;
         private Vector2 _initialPositionOnRecall;
 
         public void Recall()
         {
+            if (_recalled) 
+                return;
+            
             _recalling = true;
+            _recalled = true;
             IsPlanted = false;
+            
             Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             Rb.linearVelocity = Vector2.zero;
             _recallSpeed = MomentumData.RecallInitialSpeed;
 
-            _initialPositionOnRecall = transform.position;
+            _initialPositionOnRecall= transform.position;
 
             if (transform.parent != null)
             {
@@ -106,6 +112,7 @@ namespace Arrows
             {
                 RecallOnSticky();
             }
+
         }
 
         protected override void OnTriggerEnter2D(Collider2D other)
@@ -130,7 +137,10 @@ namespace Arrows
         
         public override void DestroyArrow()
         {
-            ArrowManager.Instance.PopMomentumArrow();
+            if (!_recalled)
+            {
+                ArrowManager.Instance.PopMomentumArrow();
+            }
             base.DestroyArrow();
         }
     }
