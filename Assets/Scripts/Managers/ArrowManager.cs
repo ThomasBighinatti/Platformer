@@ -26,8 +26,7 @@ namespace Managers
             DontDestroyOnLoad(transform.parent);
         }
 
-        [SerializeField] private GameObject _pinPointer;
-        [SerializeField] private ButterflyController butterfly;
+        [SerializeField] private GameObject pinPointer;
         
         [Header("Settings")]
         [SerializeField] private List<ArrowGroupData> arrowGroupDatas;
@@ -62,10 +61,21 @@ namespace Managers
         
         private GameObject _pointerParent;
         private GameObject _pointer;
+        private GameObject _pinPointer;
         
         private void Start()
         {
             CurrentArrowGroupData = arrowGroupDatas[0]; //changer le mode fonctionnement du group data
+            StartCoroutine(PinPointCoroutine());
+
+            IEnumerator PinPointCoroutine()
+            {
+                while (true)
+                {
+                    PinPoint();
+                    yield return new WaitForSeconds(0.016f);
+                }
+            }
         }
         
         private void OnEnable()
@@ -84,7 +94,8 @@ namespace Managers
             {
                 _pointerParent = LevelManager.Instance.PointerParent;
                 _pointer = LevelManager.Instance.Pointer;
-                
+                _pinPointer = LevelManager.Instance.PinPointer;
+
                 //remettre les fleches
             }
             else
@@ -159,13 +170,13 @@ namespace Managers
         private void PinPoint()
         {
             LayerMask checkMask = LayerMask.GetMask("Default");
-            RaycastHit2D hit = Physics2D.Raycast(pointer.transform.position, _lookingTowards, 40,checkMask);
+            RaycastHit2D hit = Physics2D.Raycast(_pointer.transform.position, _lookingTowards, 40,checkMask);
             //Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.white, 0.1f);
 
             if (hit.collider != null)
             {
                 _pinPointer.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y);
-                Debug.DrawLine(pointer.transform.position, hit.point, Color.blue);
+                Debug.DrawLine(_pointer.transform.position, hit.point, Color.blue);
                 // Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.red, 0.1f);
                     
                 _pinPointer.transform.position = hit.point;
