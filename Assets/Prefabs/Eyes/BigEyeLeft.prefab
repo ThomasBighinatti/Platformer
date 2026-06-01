@@ -282,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7058315976244356187}
-  - component: {fileID: 1214383896630571218}
+  - component: {fileID: 5527714102996247558}
   m_Layer: 0
   m_Name: BigEyeLeft
   m_TagString: Untagged
@@ -308,7 +308,7 @@ Transform:
   - {fileID: 2447342047183561440}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1214383896630571218
+--- !u!114 &5527714102996247558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -317,9 +317,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6472421170047864455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70fa7d2fe3a59b54dab0e269dd096a24, type: 3}
+  m_Script: {fileID: 11500000, guid: 436f414049e720a439c769483d0d96d3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EyeMove
+  m_EditorClassIdentifier: Assembly-CSharp::Objects.EyeMove
   centerDistance: 0.35
   offsetDistanceOnLook: 0.05
   randomTimeWaitMin: 2

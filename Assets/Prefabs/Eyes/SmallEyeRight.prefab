@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8373672143195554314}
-  - component: {fileID: 1557555391428406950}
+  - component: {fileID: 1051403838631890898}
   m_Layer: 0
   m_Name: SmallEyeRight
   m_TagString: Untagged
@@ -249,7 +249,7 @@ Transform:
   - {fileID: 1501506574110081781}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1557555391428406950
+--- !u!114 &1051403838631890898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7977129168983112968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70fa7d2fe3a59b54dab0e269dd096a24, type: 3}
+  m_Script: {fileID: 11500000, guid: 436f414049e720a439c769483d0d96d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeMove
   centerDistance: 0.08
