@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 2c1eced18152c7841afcce480a02aa5e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7659883647171201902
+    second: PANOS_0
+  - first:
+      213: -8618116953045359027
+    second: PANOS_1
+  - first:
+      213: 195723080474141049
+    second: PANOS_2
+  - first:
+      213: 3754074435528306986
+    second: PANOS_3
+  - first:
+      213: 7445988535448312545
+    second: PANOS_4
+  - first:
+      213: -4203317593945954632
+    second: PANOS_5
+  - first:
+      213: -107851633684282686
+    second: PANOS_6
+  - first:
+      213: 8838381339921271265
+    second: PANOS_7
+  - first:
+      213: 6230891828106120909
+    second: PANOS_8
+  - first:
+      213: 5559088981200982253
+    second: PANOS_9
+  - first:
+      213: 6977397959479883552
+    second: PANOS_10
+  - first:
+      213: -939488013246204737
+    second: PANOS_11
+  - first:
+      213: -855883222615546791
+    second: PANOS_12
+  - first:
+      213: 9142773919156361793
+    second: PANOS_13
+  - first:
+      213: 5127013290971091181
+    second: PANOS_14
+  - first:
+      213: 2896972085486961006
+    second: PANOS_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PANOS_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b8672e79f5d4a60800000000000000
+      internalID: 7659883647171201902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46a5fcba4c466880800000000000000
+      internalID: -8618116953045359027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971a10eca1957b200800000000000000
+      internalID: 195723080474141049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_3
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a213a062fc6291430800000000000000
+      internalID: 3754074435528306986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea17095f17755760800000000000000
+      internalID: 7445988535448312545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 167
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6a3be1be0daa5c0800000000000000
+      internalID: -4203317593945954632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c28dc5b285d08ef0800000000000000
+      internalID: -107851633684282686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_7
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9c27b300d38aa70800000000000000
+      internalID: 8838381339921271265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce4620ea13987650800000000000000
+      internalID: 6230891828106120909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0d54f99f9d52d40800000000000000
+      internalID: 5559088981200982253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 169
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027755fe972b4d060800000000000000
+      internalID: 6977397959479883552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 167
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4f8bb21a446f2f0800000000000000
+      internalID: -939488013246204737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 151
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954a8c26eba4f14f0800000000000000
+      internalID: -855883222615546791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_13
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 148
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a55016078a1ee70800000000000000
+      internalID: 9142773919156361793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 129
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0d90f8c6fc62740800000000000000
+      internalID: 5127013290971091181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PANOS_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 58
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e614caf43cc143820800000000000000
+      internalID: 2896972085486961006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99cb0c99ec6cca3439595b3e02726f33
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PANOS_0: 7659883647171201902
+      PANOS_1: -8618116953045359027
+      PANOS_10: 6977397959479883552
+      PANOS_11: -939488013246204737
+      PANOS_12: -855883222615546791
+      PANOS_13: 9142773919156361793
+      PANOS_14: 5127013290971091181
+      PANOS_15: 2896972085486961006
+      PANOS_2: 195723080474141049
+      PANOS_3: 3754074435528306986
+      PANOS_4: 7445988535448312545
+      PANOS_5: -4203317593945954632
+      PANOS_6: -107851633684282686
+      PANOS_7: 8838381339921271265
+      PANOS_8: 6230891828106120909
+      PANOS_9: 5559088981200982253
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
