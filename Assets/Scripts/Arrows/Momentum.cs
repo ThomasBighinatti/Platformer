@@ -14,8 +14,6 @@ namespace Arrows
 
         // y'a rien qui va niveau nomenclature, un fichier sur deux tes publics sont en majuscule en 1er,
         // les autres en _, des fois c'est pour les private, etc
-        private bool _isOnStickyBlock;
-        public void IsOnStickyBlock() => _isOnStickyBlock = true;
 
         protected override void StartArrow()
         {
@@ -85,27 +83,30 @@ namespace Arrows
         }
 
         private bool _recalling;
+        private bool _recalled;
         private Vector2 _initialPositionOnRecall;
 
         public void Recall()
         {
+            if (_recalled) 
+                return;
+            
             _recalling = true;
+            _recalled = true;
             IsPlanted = false;
+            
             Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             Rb.linearVelocity = Vector2.zero;
             _recallSpeed = MomentumData.RecallInitialSpeed;
 
-            _initialPositionOnRecall = transform.position;
+            _initialPositionOnRecall= transform.position;
 
             if (transform.parent != null)
             {
                 transform.SetParent(null);
             }
-
-            if (_isOnStickyBlock)
-            {
-                RecallOnSticky();
-            }
+            
+            RecallForSticky();
         }
 
         protected override void OnTriggerEnter2D(Collider2D other)
@@ -123,14 +124,17 @@ namespace Arrows
             }
         }
 
-        private void RecallOnSticky()
+        private void RecallForSticky()
         {
             gameObject.layer = LayerMask.NameToLayer("ArrowNoSticky");
         }
         
         public override void DestroyArrow()
         {
-            ArrowManager.Instance.PopMomentumArrow();
+            if (!_recalled)
+            {
+                ArrowManager.Instance.PopMomentumArrow();
+            }
             base.DestroyArrow();
         }
     }

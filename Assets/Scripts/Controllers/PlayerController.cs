@@ -20,6 +20,7 @@ namespace Controllers
         [SerializeField] private bool stopVelocity;
         [SerializeField] private float jumpSlopeAngle;
         private static float _stickyMult = 1;
+        private static bool _onStickyCanJump = true;
         [Space(10f)]
         
         [Header("Visualisation")]
@@ -101,16 +102,17 @@ namespace Controllers
             _rb.linearVelocity = velocity;
         }
 
-        public static void ChangeStickyMult(float newValue, bool reset)
+        public static void OnSticky(float newValue, bool reset)
         {
             if (reset)
             {
                 _stickyMult = 1;
+                _onStickyCanJump = true;
                 return;
-                // super caca
             }
-
             _stickyMult = newValue;
+            _onStickyCanJump = false;
+            
         }
 
         #region Movement
@@ -186,7 +188,7 @@ namespace Controllers
         #region Jump
         private Vector2 Jump(Vector2 targetVelocity)
         {
-            bool canJump = _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f;
+            bool canJump = _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && _onStickyCanJump;
             if (!canJump || (onSlope && !canJumpOnSlope)) 
                 return targetVelocity;
             
