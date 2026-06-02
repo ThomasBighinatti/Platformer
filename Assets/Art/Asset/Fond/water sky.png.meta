@@ -1,0 +1,2366 @@
+fileFormatVersion: 2
+guid: c3b224e22e38bd5459f573a35f312055
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1599723010506010864
+    second: water sky_0
+  - first:
+      213: 7932651925209006242
+    second: water sky_1
+  - first:
+      213: -1276469072356200888
+    second: water sky_2
+  - first:
+      213: 796148255965688561
+    second: water sky_3
+  - first:
+      213: 8276115576010990501
+    second: water sky_4
+  - first:
+      213: 5533113155437726907
+    second: water sky_5
+  - first:
+      213: -6940807799757138833
+    second: water sky_6
+  - first:
+      213: 3653760024556239014
+    second: water sky_7
+  - first:
+      213: -2443152616810851710
+    second: water sky_8
+  - first:
+      213: -1768334011012999927
+    second: water sky_9
+  - first:
+      213: -4471773011501972876
+    second: water sky_10
+  - first:
+      213: 6831697999378693010
+    second: water sky_11
+  - first:
+      213: 7387124460554885697
+    second: water sky_12
+  - first:
+      213: 5945689962531267058
+    second: water sky_13
+  - first:
+      213: -2506014146818339882
+    second: water sky_14
+  - first:
+      213: -178884215224772380
+    second: water sky_15
+  - first:
+      213: 7322832312626234264
+    second: water sky_16
+  - first:
+      213: 1985901674567896500
+    second: water sky_17
+  - first:
+      213: 3059892980907274978
+    second: water sky_18
+  - first:
+      213: -7887616439854140526
+    second: water sky_19
+  - first:
+      213: -1911431646203384385
+    second: water sky_20
+  - first:
+      213: -8480590975491251299
+    second: water sky_21
+  - first:
+      213: -5074940224156131509
+    second: water sky_22
+  - first:
+      213: -6243729675072862035
+    second: water sky_23
+  - first:
+      213: -8347553810790556957
+    second: water sky_24
+  - first:
+      213: 5548785921406458750
+    second: water sky_25
+  - first:
+      213: 7557441663400600510
+    second: water sky_26
+  - first:
+      213: -5690215021153382695
+    second: water sky_27
+  - first:
+      213: 5625286281920263023
+    second: water sky_28
+  - first:
+      213: 5460611153649623426
+    second: water sky_29
+  - first:
+      213: -8082381023201598610
+    second: water sky_30
+  - first:
+      213: 1188579591901665377
+    second: water sky_31
+  - first:
+      213: -1941942225108125496
+    second: water sky_32
+  - first:
+      213: 1942182838209770264
+    second: water sky_33
+  - first:
+      213: 6119783496180304183
+    second: water sky_34
+  - first:
+      213: -9149853429230386170
+    second: water sky_35
+  - first:
+      213: 3470821519113632304
+    second: water sky_36
+  - first:
+      213: 3813546668059440135
+    second: water sky_37
+  - first:
+      213: -5750481574007129839
+    second: water sky_38
+  - first:
+      213: -2262658603950753150
+    second: water sky_39
+  - first:
+      213: 3946069278471116977
+    second: water sky_40
+  - first:
+      213: 7866233855218548112
+    second: water sky_41
+  - first:
+      213: -5597609877731144630
+    second: water sky_42
+  - first:
+      213: -5841937603576283219
+    second: water sky_43
+  - first:
+      213: 2974736023462626308
+    second: water sky_44
+  - first:
+      213: 8364448435736872297
+    second: water sky_45
+  - first:
+      213: 2938087194321257979
+    second: water sky_46
+  - first:
+      213: -3028329351854802420
+    second: water sky_47
+  - first:
+      213: -2562911212040171964
+    second: water sky_48
+  - first:
+      213: 1720272113274915796
+    second: water sky_49
+  - first:
+      213: -8076445734132124867
+    second: water sky_50
+  - first:
+      213: 5630628359028595153
+    second: water sky_51
+  - first:
+      213: 6742245131157604568
+    second: water sky_52
+  - first:
+      213: 9058730998419494496
+    second: water sky_53
+  - first:
+      213: -4802487025655660966
+    second: water sky_54
+  - first:
+      213: 3177145660102113007
+    second: water sky_55
+  - first:
+      213: -802421231264962970
+    second: water sky_56
+  - first:
+      213: 1491354233333294194
+    second: water sky_57
+  - first:
+      213: -147454046338321864
+    second: water sky_58
+  - first:
+      213: -770170093646038932
+    second: water sky_59
+  - first:
+      213: 1471830937556105139
+    second: water sky_60
+  - first:
+      213: 512768486508339610
+    second: water sky_61
+  - first:
+      213: 7866936864371847914
+    second: water sky_62
+  - first:
+      213: -4010470835107332070
+    second: water sky_63
+  - first:
+      213: -4349135143713097160
+    second: water sky_64
+  - first:
+      213: -2494518346359793569
+    second: water sky_65
+  - first:
+      213: -6041199846019794107
+    second: water sky_66
+  - first:
+      213: 821813826166066855
+    second: water sky_67
+  - first:
+      213: 9223192359583685370
+    second: water sky_68
+  - first:
+      213: 5073017448217040822
+    second: water sky_69
+  - first:
+      213: -2958550163459887244
+    second: water sky_70
+  - first:
+      213: -161711134453725411
+    second: water sky_71
+  - first:
+      213: 192020334733451401
+    second: water sky_72
+  - first:
+      213: -4580512053250086268
+    second: water sky_73
+  - first:
+      213: 6506012454140966914
+    second: water sky_74
+  - first:
+      213: -3845590585563659221
+    second: water sky_75
+  - first:
+      213: -4997592233622947404
+    second: water sky_76
+  - first:
+      213: -4397247216134658721
+    second: water sky_77
+  - first:
+      213: -1883427430174305494
+    second: water sky_78
+  - first:
+      213: -2776809868650279648
+    second: water sky_79
+  - first:
+      213: -3216883450944510073
+    second: water sky_80
+  - first:
+      213: 2070724731570338410
+    second: water sky_81
+  - first:
+      213: 9208496990185939233
+    second: water sky_82
+  - first:
+      213: 4245230177423147460
+    second: water sky_83
+  - first:
+      213: -147477731212551472
+    second: water sky_84
+  - first:
+      213: -3115069066808058353
+    second: water sky_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: water sky_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 10240
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0ba343a9b533610800000000000000
+      internalID: 1599723010506010864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 553
+        width: 390
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0c6e0a5e0761e60800000000000000
+      internalID: 7932651925209006242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 551
+        width: 110
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84eaf674422194ee0800000000000000
+      internalID: -1276469072356200888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_3
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 550
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2b161ee9c7c0b00800000000000000
+      internalID: 796148255965688561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_4
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 552
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a36634844baad270800000000000000
+      internalID: 8276115576010990501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 528
+        width: 807
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc08e3691199cc40800000000000000
+      internalID: 5533113155437726907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_6
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 550
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f641731841c4daf90800000000000000
+      internalID: -6940807799757138833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_7
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 552
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a872364263c4b230800000000000000
+      internalID: 3653760024556239014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_8
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 528
+        width: 807
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2825ceea3ad281ed0800000000000000
+      internalID: -2443152616810851710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_9
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 550
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9051455069d9577e0800000000000000
+      internalID: -1768334011012999927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_10
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 552
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4720f35732211f1c0800000000000000
+      internalID: -4471773011501972876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_11
+      rect:
+        serializedVersion: 2
+        x: 3425
+        y: 528
+        width: 807
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bb6b172211fce50800000000000000
+      internalID: 6831697999378693010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_12
+      rect:
+        serializedVersion: 2
+        x: 4220
+        y: 550
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a19f6ee86548660800000000000000
+      internalID: 7387124460554885697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_13
+      rect:
+        serializedVersion: 2
+        x: 4300
+        y: 552
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f12841f485538250800000000000000
+      internalID: 5945689962531267058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_14
+      rect:
+        serializedVersion: 2
+        x: 4705
+        y: 528
+        width: 807
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db0ac03969d83dd0800000000000000
+      internalID: -2506014146818339882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_15
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 550
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e85a9701c9748df0800000000000000
+      internalID: -178884215224772380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_16
+      rect:
+        serializedVersion: 2
+        x: 5580
+        y: 552
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893c6d7b03def9560800000000000000
+      internalID: 7322832312626234264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_17
+      rect:
+        serializedVersion: 2
+        x: 5985
+        y: 528
+        width: 807
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd097f1d075f8b10800000000000000
+      internalID: 1985901674567896500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_18
+      rect:
+        serializedVersion: 2
+        x: 6780
+        y: 550
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e270b1447ce67a20800000000000000
+      internalID: 3059892980907274978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_19
+      rect:
+        serializedVersion: 2
+        x: 6860
+        y: 552
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29376f963ae898290800000000000000
+      internalID: -7887616439854140526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_20
+      rect:
+        serializedVersion: 2
+        x: 7265
+        y: 528
+        width: 807
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd6b938b0b3975e0800000000000000
+      internalID: -1911431646203384385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_21
+      rect:
+        serializedVersion: 2
+        x: 8060
+        y: 550
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93e57c9073ee4a80800000000000000
+      internalID: -8480590975491251299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_22
+      rect:
+        serializedVersion: 2
+        x: 8140
+        y: 552
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f15da11c03299b0800000000000000
+      internalID: -5074940224156131509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_23
+      rect:
+        serializedVersion: 2
+        x: 8545
+        y: 528
+        width: 807
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da887b3f0f0d959a0800000000000000
+      internalID: -6243729675072862035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_24
+      rect:
+        serializedVersion: 2
+        x: 9340
+        y: 550
+        width: 139
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eade5c4908872c80800000000000000
+      internalID: -8347553810790556957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_25
+      rect:
+        serializedVersion: 2
+        x: 9420
+        y: 552
+        width: 336
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bde14956f310d40800000000000000
+      internalID: 5548785921406458750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_26
+      rect:
+        serializedVersion: 2
+        x: 9825
+        y: 528
+        width: 415
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3eabdd62d61e860800000000000000
+      internalID: 7557441663400600510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 90
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de8f88169b4801b0800000000000000
+      internalID: -5690215021153382695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_28
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 539
+        width: 104
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f633cb1c118011e40800000000000000
+      internalID: 5625286281920263023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_29
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 541
+        width: 226
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28162d5a9ecf7cb40800000000000000
+      internalID: 5460611153649623426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_30
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 542
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63e5bc184d95df80800000000000000
+      internalID: -8082381023201598610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 525
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168d39a67deae7010800000000000000
+      internalID: 1188579591901665377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_32
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 544
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8391ac5d5dc05e0800000000000000
+      internalID: -1941942225108125496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_33
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 544
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8137a50500504fa10800000000000000
+      internalID: 1942182838209770264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_34
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 532
+        width: 248
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73900207aa6dde450800000000000000
+      internalID: 6119783496180304183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_35
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 542
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60445dbb8c0350180800000000000000
+      internalID: -9149853429230386170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_36
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 525
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03abc8d48c5da2030800000000000000
+      internalID: 3470821519113632304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_37
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 544
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704be045d707ce430800000000000000
+      internalID: 3813546668059440135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_38
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 544
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11930edc97f2230b0800000000000000
+      internalID: -5750481574007129839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_39
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 532
+        width: 248
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ab88fdcfb6990e0800000000000000
+      internalID: -2262658603950753150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_40
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 542
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b85a520a1143c630800000000000000
+      internalID: 3946069278471116977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_41
+      rect:
+        serializedVersion: 2
+        x: 2969
+        y: 525
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09df374a30a7a2d60800000000000000
+      internalID: 7866233855218548112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_42
+      rect:
+        serializedVersion: 2
+        x: 3149
+        y: 544
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c0e9e397b4152b0800000000000000
+      internalID: -5597609877731144630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_43
+      rect:
+        serializedVersion: 2
+        x: 3353
+        y: 544
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafb6d293b44deea0800000000000000
+      internalID: -5841937603576283219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_44
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 532
+        width: 248
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4044c0b07a2684920800000000000000
+      internalID: 2974736023462626308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_45
+      rect:
+        serializedVersion: 2
+        x: 4147
+        y: 542
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9650b2a198d741470800000000000000
+      internalID: 8364448435736872297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_46
+      rect:
+        serializedVersion: 2
+        x: 4249
+        y: 525
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf584a09cbe26c820800000000000000
+      internalID: 2938087194321257979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_47
+      rect:
+        serializedVersion: 2
+        x: 4429
+        y: 544
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a3ecfcf7639f5d0800000000000000
+      internalID: -3028329351854802420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_48
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 544
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44eca7fd4d5be6cd0800000000000000
+      internalID: -2562911212040171964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_49
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 532
+        width: 248
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db03c46f52afd710800000000000000
+      internalID: 1720272113274915796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_50
+      rect:
+        serializedVersion: 2
+        x: 5427
+        y: 542
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33f5594563baef80800000000000000
+      internalID: -8076445734132124867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_51
+      rect:
+        serializedVersion: 2
+        x: 5529
+        y: 525
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9d32209a2042e40800000000000000
+      internalID: 5630628359028595153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_52
+      rect:
+        serializedVersion: 2
+        x: 5709
+        y: 544
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8814f8934419d50800000000000000
+      internalID: 6742245131157604568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_53
+      rect:
+        serializedVersion: 2
+        x: 5913
+        y: 544
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0661d9c09d317bd70800000000000000
+      internalID: 9058730998419494496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_54
+      rect:
+        serializedVersion: 2
+        x: 5992
+        y: 532
+        width: 248
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e3f5dae732a5db0800000000000000
+      internalID: -4802487025655660966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_55
+      rect:
+        serializedVersion: 2
+        x: 6707
+        y: 542
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe67f06052d771c20800000000000000
+      internalID: 3177145660102113007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_56
+      rect:
+        serializedVersion: 2
+        x: 6809
+        y: 525
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666683e342a3dd4f0800000000000000
+      internalID: -802421231264962970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_57
+      rect:
+        serializedVersion: 2
+        x: 6989
+        y: 544
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2742b1016ca52b410800000000000000
+      internalID: 1491354233333294194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_58
+      rect:
+        serializedVersion: 2
+        x: 7193
+        y: 544
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8327f4b735324fdf0800000000000000
+      internalID: -147454046338321864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_59
+      rect:
+        serializedVersion: 2
+        x: 7272
+        y: 532
+        width: 248
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68399f516ecf45f0800000000000000
+      internalID: -770170093646038932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_60
+      rect:
+        serializedVersion: 2
+        x: 7987
+        y: 542
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7367a807efc6410800000000000000
+      internalID: 1471830937556105139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_61
+      rect:
+        serializedVersion: 2
+        x: 8089
+        y: 525
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a912852c838bd1700800000000000000
+      internalID: 512768486508339610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_62
+      rect:
+        serializedVersion: 2
+        x: 8269
+        y: 544
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae23f47b569fc2d60800000000000000
+      internalID: 7866936864371847914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_63
+      rect:
+        serializedVersion: 2
+        x: 8473
+        y: 544
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a100d5b1602f758c0800000000000000
+      internalID: -4010470835107332070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_64
+      rect:
+        serializedVersion: 2
+        x: 8552
+        y: 532
+        width: 248
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a30d621a4c4a3c0800000000000000
+      internalID: -4349135143713097160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_65
+      rect:
+        serializedVersion: 2
+        x: 9267
+        y: 542
+        width: 227
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58978fc7c0b16dd0800000000000000
+      internalID: -2494518346359793569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_66
+      rect:
+        serializedVersion: 2
+        x: 9369
+        y: 525
+        width: 453
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b78d86fb8592ca0800000000000000
+      internalID: -6041199846019794107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_67
+      rect:
+        serializedVersion: 2
+        x: 9549
+        y: 544
+        width: 147
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae022c125ba76b00800000000000000
+      internalID: 821813826166066855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_68
+      rect:
+        serializedVersion: 2
+        x: 9753
+        y: 544
+        width: 351
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa1510a59c5fff70800000000000000
+      internalID: 9223192359583685370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_69
+      rect:
+        serializedVersion: 2
+        x: 9832
+        y: 532
+        width: 248
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7d55cbd7af66640800000000000000
+      internalID: 5073017448217040822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_70
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 528
+        width: 249
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47facc82d4e11f6d0800000000000000
+      internalID: -2958550163459887244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_71
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 531
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1709aa749c71cdf0800000000000000
+      internalID: -161711134453725411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_72
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 534
+        width: 187
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98060712a713aa200800000000000000
+      internalID: 192020334733451401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_73
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 531
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a22a06e80ce60c0800000000000000
+      internalID: -4580512053250086268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_74
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 534
+        width: 187
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208f6515bdff94a50800000000000000
+      internalID: 6506012454140966914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_75
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 531
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2444ebbcb7b1aac0800000000000000
+      internalID: -3845590585563659221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_76
+      rect:
+        serializedVersion: 2
+        x: 4007
+        y: 534
+        width: 187
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b937a6875cf4aab0800000000000000
+      internalID: -4997592233622947404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_77
+      rect:
+        serializedVersion: 2
+        x: 4563
+        y: 531
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55e7bc54f6d9f2c0800000000000000
+      internalID: -4397247216134658721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_78
+      rect:
+        serializedVersion: 2
+        x: 5287
+        y: 534
+        width: 187
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23db382bb8bcd5e0800000000000000
+      internalID: -1883427430174305494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_79
+      rect:
+        serializedVersion: 2
+        x: 5843
+        y: 531
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d0d4af22ac679d0800000000000000
+      internalID: -2776809868650279648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_80
+      rect:
+        serializedVersion: 2
+        x: 6567
+        y: 534
+        width: 187
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787ae9e8b855b53d0800000000000000
+      internalID: -3216883450944510073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_81
+      rect:
+        serializedVersion: 2
+        x: 7123
+        y: 531
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6abdd41c21bcbc10800000000000000
+      internalID: 2070724731570338410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_82
+      rect:
+        serializedVersion: 2
+        x: 7847
+        y: 534
+        width: 187
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121694f49372bcf70800000000000000
+      internalID: 9208496990185939233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_83
+      rect:
+        serializedVersion: 2
+        x: 8403
+        y: 531
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1431baa561aea30800000000000000
+      internalID: 4245230177423147460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_84
+      rect:
+        serializedVersion: 2
+        x: 9127
+        y: 534
+        width: 187
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da9bcae8cd04fdf0800000000000000
+      internalID: -147477731212551472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water sky_85
+      rect:
+        serializedVersion: 2
+        x: 9683
+        y: 531
+        width: 144
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e1916203d05c4d0800000000000000
+      internalID: -3115069066808058353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      water sky_0: 1599723010506010864
+      water sky_1: 7932651925209006242
+      water sky_10: -4471773011501972876
+      water sky_11: 6831697999378693010
+      water sky_12: 7387124460554885697
+      water sky_13: 5945689962531267058
+      water sky_14: -2506014146818339882
+      water sky_15: -178884215224772380
+      water sky_16: 7322832312626234264
+      water sky_17: 1985901674567896500
+      water sky_18: 3059892980907274978
+      water sky_19: -7887616439854140526
+      water sky_2: -1276469072356200888
+      water sky_20: -1911431646203384385
+      water sky_21: -8480590975491251299
+      water sky_22: -5074940224156131509
+      water sky_23: -6243729675072862035
+      water sky_24: -8347553810790556957
+      water sky_25: 5548785921406458750
+      water sky_26: 7557441663400600510
+      water sky_27: -5690215021153382695
+      water sky_28: 5625286281920263023
+      water sky_29: 5460611153649623426
+      water sky_3: 796148255965688561
+      water sky_30: -8082381023201598610
+      water sky_31: 1188579591901665377
+      water sky_32: -1941942225108125496
+      water sky_33: 1942182838209770264
+      water sky_34: 6119783496180304183
+      water sky_35: -9149853429230386170
+      water sky_36: 3470821519113632304
+      water sky_37: 3813546668059440135
+      water sky_38: -5750481574007129839
+      water sky_39: -2262658603950753150
+      water sky_4: 8276115576010990501
+      water sky_40: 3946069278471116977
+      water sky_41: 7866233855218548112
+      water sky_42: -5597609877731144630
+      water sky_43: -5841937603576283219
+      water sky_44: 2974736023462626308
+      water sky_45: 8364448435736872297
+      water sky_46: 2938087194321257979
+      water sky_47: -3028329351854802420
+      water sky_48: -2562911212040171964
+      water sky_49: 1720272113274915796
+      water sky_5: 5533113155437726907
+      water sky_50: -8076445734132124867
+      water sky_51: 5630628359028595153
+      water sky_52: 6742245131157604568
+      water sky_53: 9058730998419494496
+      water sky_54: -4802487025655660966
+      water sky_55: 3177145660102113007
+      water sky_56: -802421231264962970
+      water sky_57: 1491354233333294194
+      water sky_58: -147454046338321864
+      water sky_59: -770170093646038932
+      water sky_6: -6940807799757138833
+      water sky_60: 1471830937556105139
+      water sky_61: 512768486508339610
+      water sky_62: 7866936864371847914
+      water sky_63: -4010470835107332070
+      water sky_64: -4349135143713097160
+      water sky_65: -2494518346359793569
+      water sky_66: -6041199846019794107
+      water sky_67: 821813826166066855
+      water sky_68: 9223192359583685370
+      water sky_69: 5073017448217040822
+      water sky_7: 3653760024556239014
+      water sky_70: -2958550163459887244
+      water sky_71: -161711134453725411
+      water sky_72: 192020334733451401
+      water sky_73: -4580512053250086268
+      water sky_74: 6506012454140966914
+      water sky_75: -3845590585563659221
+      water sky_76: -4997592233622947404
+      water sky_77: -4397247216134658721
+      water sky_78: -1883427430174305494
+      water sky_79: -2776809868650279648
+      water sky_8: -2443152616810851710
+      water sky_80: -3216883450944510073
+      water sky_81: 2070724731570338410
+      water sky_82: 9208496990185939233
+      water sky_83: 4245230177423147460
+      water sky_84: -147477731212551472
+      water sky_85: -3115069066808058353
+      water sky_9: -1768334011012999927
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
