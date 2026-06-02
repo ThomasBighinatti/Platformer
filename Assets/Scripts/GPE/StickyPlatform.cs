@@ -16,7 +16,7 @@ namespace GPE
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                PlayerController.ChangeStickyMult(onStickyMult, false);
+                PlayerController.OnSticky(onStickyMult, false);
             }
         }
         
@@ -24,23 +24,8 @@ namespace GPE
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                PlayerController.ChangeStickyMult(onStickyMult, true);
+                PlayerController.OnSticky(onStickyMult, true);
             }
-        }
-
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (!other.gameObject.CompareTag("Arrow")) 
-                return;
-            Debug.Log("StickyBloc : Yes");
-            Momentum momentumArrow = other.gameObject.GetComponent<Momentum>();
-            if (momentumArrow == null)
-            {
-                Debug.Log("StickyPlatform : No Momentum Component");
-                return;
-            }
-            
-            momentumArrow.IsOnStickyBlock();
         }
         
     }
