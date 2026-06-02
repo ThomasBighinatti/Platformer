@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 258d74559fb8b5f4581148926ba9011a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4106643365679781833
+    second: Police_select_screen_0
+  - first:
+      213: 679330013227439259
+    second: Police_select_screen_1
+  - first:
+      213: 1220697017818921564
+    second: Police_select_screen_2
+  - first:
+      213: -3297342302045644529
+    second: Police_select_screen_3
+  - first:
+      213: 7192155528282666815
+    second: Police_select_screen_4
+  - first:
+      213: -309118187004510375
+    second: Police_select_screen_5
+  - first:
+      213: -2450399900071151918
+    second: Police_select_screen_6
+  - first:
+      213: -430237626895470144
+    second: Police_select_screen_7
+  - first:
+      213: -4208721505250250310
+    second: Police_select_screen_8
+  - first:
+      213: 6718298900255174018
+    second: Police_select_screen_9
+  - first:
+      213: -618136114428481483
+    second: Police_select_screen_10
+  - first:
+      213: 87458025458116378
+    second: Police_select_screen_11
+  - first:
+      213: -2894659474935685303
+    second: Police_select_screen_12
+  - first:
+      213: 3103968032666435384
+    second: Police_select_screen_13
+  - first:
+      213: 3101408868527011942
+    second: Police_select_screen_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Police_select_screen_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 459
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7de86126abdf830800000000000000
+      internalID: 4106643365679781833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 459
+        width: 62
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94deab3c077d6900800000000000000
+      internalID: 679330013227439259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 459
+        width: 112
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ab97d5879c0f010800000000000000
+      internalID: 1220697017818921564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_3
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 459
+        width: 112
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0953b775ac7d32d0800000000000000
+      internalID: -3297342302045644529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_4
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 459
+        width: 82
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3776a8e85bafc360800000000000000
+      internalID: 7192155528282666815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_5
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 459
+        width: 112
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fbbfd85aac5bbf0800000000000000
+      internalID: -309118187004510375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_6
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 459
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d63b9e064e6efdd0800000000000000
+      internalID: -2450399900071151918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_7
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 459
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c173e7682d770af0800000000000000
+      internalID: -430237626895470144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_8
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 459
+        width: 112
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1f209f61e9795c0800000000000000
+      internalID: -4208721505250250310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_9
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 459
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d6b9431413c3d50800000000000000
+      internalID: 6718298900255174018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_10
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 139
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53076ac9a70fb67f0800000000000000
+      internalID: -618136114428481483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_11
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 139
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17203c5c96b63100800000000000000
+      internalID: 87458025458116378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_12
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 139
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f5dba4b8a14d7d0800000000000000
+      internalID: -2894659474935685303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_13
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 139
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f304dea72831b20800000000000000
+      internalID: 3103968032666435384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Police_select_screen_14
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 139
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6687cc71fea6a0b20800000000000000
+      internalID: 3101408868527011942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Police_select_screen_0: 4106643365679781833
+      Police_select_screen_1: 679330013227439259
+      Police_select_screen_10: -618136114428481483
+      Police_select_screen_11: 87458025458116378
+      Police_select_screen_12: -2894659474935685303
+      Police_select_screen_13: 3103968032666435384
+      Police_select_screen_14: 3101408868527011942
+      Police_select_screen_2: 1220697017818921564
+      Police_select_screen_3: -3297342302045644529
+      Police_select_screen_4: 7192155528282666815
+      Police_select_screen_5: -309118187004510375
+      Police_select_screen_6: -2450399900071151918
+      Police_select_screen_7: -430237626895470144
+      Police_select_screen_8: -4208721505250250310
+      Police_select_screen_9: 6718298900255174018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
