@@ -16,6 +16,8 @@ namespace Objects
         [SerializeField, Range(0, 1)] private float offsetDistanceOnLook;
         [SerializeField] private float randomTimeWaitMin;
         [SerializeField] private float randomTimeWaitMax;
+        [SerializeField] private float randomTimeWaitMinAfter;
+        [SerializeField] private float randomTimeWaitMaxAfter;
         [SerializeField] private bool useShake = true;
         [SerializeField] private float shakeDistance = 5;
         [SerializeField] private float shakeStrength = 0.05f;
@@ -64,7 +66,7 @@ namespace Objects
         {
             while (this)
             {
-                float randomTime = Random.Range(randomTimeWaitMin, randomTimeWaitMax);
+                float randomTime = !IsInRange ? Random.Range(randomTimeWaitMin, randomTimeWaitMax) : Random.Range(randomTimeWaitMinAfter, randomTimeWaitMaxAfter);
                 LookTowardsPlayer(randomTime);
                 yield return new WaitForSeconds(randomTime);
             }

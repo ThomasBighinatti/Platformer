@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5154578225042568839}
-  - component: {fileID: 1031809684540084115}
+  - component: {fileID: 8603244105332022455}
   m_Layer: 0
   m_Name: MediumEyeRight
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 172429351923396699}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1031809684540084115
+--- !u!114 &8603244105332022455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,17 +44,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 3064772291342189498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70fa7d2fe3a59b54dab0e269dd096a24, type: 3}
+  m_Script: {fileID: 11500000, guid: 436f414049e720a439c769483d0d96d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeMove
-  pupil: {fileID: 7182704131764439866}
   centerDistance: 0.2
   offsetDistanceOnLook: 0.025
   randomTimeWaitMin: 2
   randomTimeWaitMax: 4
-  shakeParent: {fileID: 7534489308702393246}
+  randomTimeWaitMinAfter: 0.5
+  randomTimeWaitMaxAfter: 1
+  useShake: 1
   shakeDistance: 5
   shakeStrength: 0.025
+  pupil: {fileID: 7182704131764439866}
+  shakeParent: {fileID: 7534489308702393246}
 --- !u!1 &3423791841922186074
 GameObject:
   m_ObjectHideFlags: 0
