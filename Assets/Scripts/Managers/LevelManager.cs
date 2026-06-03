@@ -20,6 +20,9 @@ namespace Managers
         [SerializeField] private GameObject pointer;
         public GameObject Pointer => pointer;
 
+        [SerializeField] private GameObject pinPointer;
+        public GameObject PinPointer => pinPointer; 
+
         private void Awake()
         {
             if (Instance != null)
@@ -37,6 +40,7 @@ namespace Managers
             if (player == null) Debug.LogWarning("LevelManager : No Player");
             if (pointerParent == null) Debug.LogWarning("LevelManager : No Pointer Parent");
             if (pointer == null) Debug.LogWarning("LevelManager : No Pointer");
+            if(pinPointer == null) Debug.LogWarning("LevelManager : No PinPointer ");
         }
     }
 }
