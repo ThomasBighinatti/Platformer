@@ -30,6 +30,13 @@ namespace SaveSystem
                 Debug.LogWarning("Checkpoint : No SaveManager");
                 return;
             }
+            if (ArrowManager.Instance == null)
+            {
+                Debug.LogWarning("Checkpoint : No ArrowManager");
+                return;
+            }
+            
+            ArrowManager.Instance.ChangeArrowNumByCheckpoint(index-1);
             
             bool isNew = SaveManager.Instance.ChangeCurrentCheckpoint(index);
             if (!isNew)
