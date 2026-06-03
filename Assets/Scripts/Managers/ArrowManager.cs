@@ -59,20 +59,6 @@ namespace Managers
         private GameObject _pointer;
         private GameObject _pinPointer;
         
-        private void Start()
-        {
-            StartCoroutine(PinPointCoroutine());
-
-            IEnumerator PinPointCoroutine()
-            {
-                while (true)
-                {
-                    PinPoint();
-                    yield return new WaitForSeconds(0.016f);
-                }
-            }
-        }
-        
         private void OnEnable()
         {
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -97,6 +83,15 @@ namespace Managers
             else
             {
                 Debug.LogWarning("ArrowManager : No LevelManager");
+            }
+        }
+        
+        private IEnumerator PinPointCoroutine()
+        {
+            while (true)
+            {
+                PinPoint();
+                yield return new WaitForSeconds(0.016f);
             }
         }
 
