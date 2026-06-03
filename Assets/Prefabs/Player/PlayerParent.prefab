@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3708536261644610280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6751620891413989964}
+  m_Layer: 3
+  m_Name: ArrowNumUi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6751620891413989964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708536261644610280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.34, y: 0.851, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2973593012177479234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4196913844294549168
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +248,7 @@ MonoBehaviour:
     m_ActionName: 'GameManager/New action[/Keyboard/enter]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: df70fa95-8a34-4494-b137-73ab6b9c7d37
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1001 &1398875417097826950
@@ -334,14 +365,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2993785878603857389, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
+      propertyPath: m_Name
+      value: ButterflyPointerRef
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046080455111817490, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
+      propertyPath: m_Name
+      value: PlayerSprite
+      objectReference: {fileID: 0}
     - target: {fileID: 5443203443257125303, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
       propertyPath: groundLayer.m_Bits
       value: 2049
       objectReference: {fileID: 0}
+    - target: {fileID: 6751407848771513344, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
+      propertyPath: m_Name
+      value: ButterflyPointer
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 532129347838672911, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1873199001419656685, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6751620891413989964}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41945f38c27969a4687f55011e925fb0, type: 3}
 --- !u!114 &2225452237004711426 stripped

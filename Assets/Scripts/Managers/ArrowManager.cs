@@ -67,6 +67,12 @@ namespace Managers
         private void OnDisable()
         {
             SceneManager.sceneLoaded -= OnSceneLoaded;
+
+            if (_pinPointCoroutine == null) 
+                return;
+            
+            StopCoroutine(_pinPointCoroutine);
+            _pinPointCoroutine = null;
         }
         
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -76,15 +82,25 @@ namespace Managers
                 _pointerParent = LevelManager.Instance.PointerParent;
                 _pointer = LevelManager.Instance.Pointer;
                 _pinPointer = LevelManager.Instance.PinPointer;
-                StartCoroutine(PinPointCoroutine());
+                
+                if (_pinPointCoroutine != null)
+                    StopCoroutine(_pinPointCoroutine);
 
-                //remettre les fleches
+                _pinPointCoroutine = StartCoroutine(PinPointCoroutine());
             }
             else
             {
+                if (_pinPointCoroutine != null)
+                {
+                    StopCoroutine(_pinPointCoroutine);
+                    _pinPointCoroutine = null;
+                }
+                
                 Debug.LogWarning("ArrowManager : No LevelManager");
             }
         }
+
+        private Coroutine _pinPointCoroutine;
         
         private IEnumerator PinPointCoroutine()
         {
