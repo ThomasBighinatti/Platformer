@@ -131,7 +131,6 @@ namespace Managers
                 _ => ""
             };
         }
-
         public void ChangeStateToGame() => _currentGameState = GameState.Game;
         public void ChangeStateToMenu() => _currentGameState = GameState.Menu;
 
@@ -141,5 +140,17 @@ namespace Managers
         {
             _currentGameState = gameState;
         }
+
+        public void StartNewGame()
+        {
+            SaveSystem.SaveSystem.DeleteSave();
+            GetSceneByState();
+        }
+
+        public void SelectLevel()
+        {
+            
+        }
+        
     }
 }
