@@ -25,8 +25,6 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
-
-        [SerializeField] private GameObject pinPointer;
         
         [Header("Settings")]
         [SerializeField] private List<ArrowGroupData> arrowGroupDatas;
@@ -66,16 +64,6 @@ namespace Managers
         private void Start()
         {
             CurrentArrowGroupData = arrowGroupDatas[0]; //changer le mode fonctionnement du group data
-            StartCoroutine(PinPointCoroutine());
-
-            IEnumerator PinPointCoroutine()
-            {
-                while (true)
-                {
-                    PinPoint();
-                    yield return new WaitForSeconds(0.016f);
-                }
-            }
         }
         
         private void OnEnable()
@@ -95,12 +83,22 @@ namespace Managers
                 _pointerParent = LevelManager.Instance.PointerParent;
                 _pointer = LevelManager.Instance.Pointer;
                 _pinPointer = LevelManager.Instance.PinPointer;
+                StartCoroutine(PinPointCoroutine());
 
                 //remettre les fleches
             }
             else
             {
                 Debug.LogWarning("ArrowManager : No LevelManager");
+            }
+        }
+
+        IEnumerator PinPointCoroutine()
+        {
+            while (true)
+            {
+                PinPoint();
+                yield return new WaitForSeconds(0.016f);
             }
         }
 
