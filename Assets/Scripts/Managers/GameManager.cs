@@ -143,14 +143,19 @@ namespace Managers
 
         public void StartNewGame()
         {
+            //si pas de save{}
             SaveSystem.SaveSystem.DeleteSave();
             GetSceneByState();
         }
-
-        public void SelectLevel()
+        
+        public void ContinueGame()
         {
-            
+            GetSceneByState();
+            SaveManager.Instance.Load();
         }
         
+        //select level dans le Menu Manager
+        
+        public void QuitGame() =>  Application.Quit();
     }
 }
