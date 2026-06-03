@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78bcd06393d8944b58f99c2c767a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  gameState: 0
 --- !u!1 &361566208199902176
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,15 +89,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50d94231aa53654184a81a32f6aaf20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Managers.ArrowManager
-  butterfly: {fileID: 0}
-  arrowGroupDatas:
-  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
-  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
-  - {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
+  arrowNumDatas: {fileID: 11400000, guid: 81df7d542dcff1a4a9f5f4b58d2cd0c7, type: 2}
   momentumPrefab: {fileID: 8920119914344864403, guid: 8c3fd71490e01ed49861aa5aedff7d8e, type: 3}
-  pointerParent: {fileID: 0}
-  pointer: {fileID: 0}
-  playerTransform: {fileID: 0}
 --- !u!1 &2455506443512566023
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +302,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SaveManagerV2
   saveSystemOption: {fileID: 11400000, guid: cc127ba1767b4ae44a06ce60b31796a7, type: 2}
   encryptData: 1
-  player: {fileID: 0}
   data:
     datasToSave: []
