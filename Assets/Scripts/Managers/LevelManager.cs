@@ -22,7 +22,7 @@ namespace Managers
 
         [SerializeField] private GameObject pinPointer;
         public GameObject PinPointer => pinPointer; 
-
+        
         private void Awake()
         {
             if (Instance != null)

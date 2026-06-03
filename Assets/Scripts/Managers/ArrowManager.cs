@@ -25,8 +25,6 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
-
-        [SerializeField] private GameObject pinPointer;
         
         [Header("Settings")]
         [SerializeField] private ArrowNumData arrowNumDatas;
@@ -92,6 +90,7 @@ namespace Managers
                 _pointerParent = LevelManager.Instance.PointerParent;
                 _pointer = LevelManager.Instance.Pointer;
                 _pinPointer = LevelManager.Instance.PinPointer;
+                StartCoroutine(PinPointCoroutine());
 
                 //remettre les fleches
             }
