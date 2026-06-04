@@ -130,7 +130,7 @@ namespace Managers
         
         private void PlayShootUiAnimation(Animation uiArrow)
         {
-            uiArrow.Play("");
+            uiArrow.Play("UiArrowAnim");
         }
         
         public void CreateArrow()

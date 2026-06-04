@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8491169128038302834}
   - component: {fileID: 7589076515343268191}
+  - component: {fileID: 4885471008881590449}
   m_Layer: 3
   m_Name: Arrow3
   m_TagString: Untagged
@@ -91,6 +92,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &4885471008881590449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280307802909536653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed925e8ed2b34347b102db08d7af4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UiArrow
 --- !u!1 &1069365057409281894
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,6 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8730635370938334567}
   - component: {fileID: 6589730316192930712}
+  - component: {fileID: 4668861795601219413}
   m_Layer: 3
   m_Name: Arrow4
   m_TagString: Untagged
@@ -182,6 +196,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &4668861795601219413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069365057409281894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed925e8ed2b34347b102db08d7af4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UiArrow
 --- !u!1 &3708536261644610280
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6969228384103292625}
   - component: {fileID: 7144770753809610765}
+  - component: {fileID: 898490764685342259}
   m_Layer: 3
   m_Name: Arrow2
   m_TagString: Untagged
@@ -528,6 +555,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &898490764685342259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4455746029828245146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed925e8ed2b34347b102db08d7af4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UiArrow
 --- !u!1 &4560284966006197426
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +577,9 @@ GameObject:
   m_Component:
   - component: {fileID: 447682292381136028}
   - component: {fileID: 4447612319336444878}
+  - component: {fileID: 9190695494746359296}
+  - component: {fileID: 3614772861366911418}
+  - component: {fileID: 6418372184488836506}
   m_Layer: 3
   m_Name: Arrow1
   m_TagString: Untagged
@@ -619,6 +661,57 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &9190695494746359296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560284966006197426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed925e8ed2b34347b102db08d7af4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!111 &3614772861366911418
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560284966006197426}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 20cd9f458188206459479dbfb22dccb4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 20cd9f458188206459479dbfb22dccb4, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!95 &6418372184488836506
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560284966006197426}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712912176182e1c4f8e13e80bc865973, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1398875417097826950
 PrefabInstance:
   m_ObjectHideFlags: 0

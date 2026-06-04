@@ -112,6 +112,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -119,10 +132,10 @@ TextureImporter:
       name: UIArrowHeadAnim_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 12
-        width: 7
-        height: 9
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +154,10 @@ TextureImporter:
       name: UIArrowHeadAnim_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 11
-        width: 5
-        height: 11
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +176,10 @@ TextureImporter:
       name: UIArrowHeadAnim_2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 8
-        width: 1
-        height: 17
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +198,10 @@ TextureImporter:
       name: UIArrowHeadAnim_3
       rect:
         serializedVersion: 2
-        x: 112
-        y: 6
-        width: 1
-        height: 21
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,10 +220,10 @@ TextureImporter:
       name: UIArrowHeadAnim_4
       rect:
         serializedVersion: 2
-        x: 144
-        y: 6
-        width: 1
-        height: 21
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,12 +242,12 @@ TextureImporter:
       name: UIArrowHeadAnim_5
       rect:
         serializedVersion: 2
-        x: 176
-        y: 6
-        width: 1
-        height: 21
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,7 +282,6 @@ TextureImporter:
       UIArrowHeadAnim_3: -40488492
       UIArrowHeadAnim_4: -527599570
       UIArrowHeadAnim_5: 1050750611
-      UIArrowHeadAnim_6: -396101665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

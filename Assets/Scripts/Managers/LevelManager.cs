@@ -1,8 +1,5 @@
 using System.Collections.Generic;
-using Arrows;
-using Controllers;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Managers
 {
