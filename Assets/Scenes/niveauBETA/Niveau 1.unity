@@ -5509,6 +5509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 352800843}
   - component: {fileID: 352800844}
+  - component: {fileID: 352800845}
   m_Layer: 0
   m_Name: AlguesBg_0
   m_TagString: Untagged
@@ -5590,6 +5591,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &352800845
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352800842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 34c2bc2bb330c4c49a9eb22b205fe403, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &394671585
 GameObject:
   m_ObjectHideFlags: 0
@@ -5825,6 +5848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 663037647}
   - component: {fileID: 663037648}
+  - component: {fileID: 663037649}
   m_Layer: 0
   m_Name: AlguesBg_2 (2)
   m_TagString: Untagged
@@ -5906,6 +5930,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &663037649
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663037646}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44a4aeed3427d1946a2463ec7e561030, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &677529621
 GameObject:
   m_ObjectHideFlags: 0
@@ -12740,11 +12786,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   player: {fileID: 963853148}
-  butterfly: {fileID: 2093820160}
-  momentumPrefab: {fileID: 8920119914344864403, guid: 8c3fd71490e01ed49861aa5aedff7d8e, type: 3}
   pointerParent: {fileID: 739515153}
   pointer: {fileID: 1461515979}
-  playerTransform: {fileID: 756207340}
 --- !u!4 &1539123584
 Transform:
   m_ObjectHideFlags: 0
@@ -12770,6 +12813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1549215064}
   - component: {fileID: 1549215065}
+  - component: {fileID: 1549215066}
   m_Layer: 0
   m_Name: AlguesBg_1 (1)
   m_TagString: Untagged
@@ -12851,6 +12895,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1549215066
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549215063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 341b28ac68b78fb42ba3e395f7746bb1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1565711990
 GameObject:
   m_ObjectHideFlags: 0
@@ -19582,6 +19648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2135585369}
   - component: {fileID: 2135585370}
+  - component: {fileID: 2135585371}
   m_Layer: 0
   m_Name: AlguesBg_1
   m_TagString: Untagged
@@ -19598,7 +19665,7 @@ Transform:
   m_GameObject: {fileID: 2135585368}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.360525, y: 4.260607, z: 0}
+  m_LocalPosition: {x: -0.75, y: 1.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19663,6 +19730,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &2135585371
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135585368}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a965988237d408f41b4652adb6b2090d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2166560274029855977
 PrefabInstance:
   m_ObjectHideFlags: 0

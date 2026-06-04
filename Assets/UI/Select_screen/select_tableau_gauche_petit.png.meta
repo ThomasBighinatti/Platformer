@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5ee24a9d31aa02f478e634a3c76aeeb6
+guid: 6ca76d8d1f6f1a942966851ddc56c105
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8266673507007068325
-    second: Tiles_select_screen_0
+      213: -5708534932287087278
+    second: select_tableau_gauche_petit_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tiles_select_screen_0
+      name: select_tableau_gauche_petit_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 32
+        width: 19
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5706bc7e30e64d80800000000000000
-      internalID: -8266673507007068325
+      spriteID: 25d9e1569b537c0b0800000000000000
+      internalID: -5708534932287087278
       vertices: []
       indices: 
       edges: []
@@ -138,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tiles_select_screen_0: -8266673507007068325
+      select_tableau_gauche_petit_0: -5708534932287087278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
