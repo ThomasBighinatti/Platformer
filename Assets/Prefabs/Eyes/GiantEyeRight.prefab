@@ -51,6 +51,8 @@ MonoBehaviour:
   offsetDistanceOnLook: 0.1
   randomTimeWaitMin: 2
   randomTimeWaitMax: 4
+  randomTimeWaitMinAfter: 0.5
+  randomTimeWaitMaxAfter: 1
   useShake: 1
   shakeDistance: 5
   shakeStrength: 0.1
