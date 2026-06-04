@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Arrows;
 using Controllers;
 using UnityEngine;
@@ -23,6 +24,9 @@ namespace Managers
         [SerializeField] private GameObject pinPointer;
         public GameObject PinPointer => pinPointer; 
         
+        [SerializeField] private List<Animation> playerUiArrows;
+        public List<Animation> PlayerUiArrows => playerUiArrows; 
+        
         private void Awake()
         {
             if (Instance != null)
@@ -40,7 +44,8 @@ namespace Managers
             if (player == null) Debug.LogWarning("LevelManager : No Player");
             if (pointerParent == null) Debug.LogWarning("LevelManager : No Pointer Parent");
             if (pointer == null) Debug.LogWarning("LevelManager : No Pointer");
-            if(pinPointer == null) Debug.LogWarning("LevelManager : No PinPointer ");
+            if (pinPointer == null) Debug.LogWarning("LevelManager : No Pin Pointer ");
+            if (playerUiArrows == null) Debug.LogWarning("LevelManager : No Player Ui Arrows ");
         }
     }
 }

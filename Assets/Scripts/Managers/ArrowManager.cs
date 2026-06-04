@@ -82,6 +82,7 @@ namespace Managers
                 _pointerParent = LevelManager.Instance.PointerParent;
                 _pointer = LevelManager.Instance.Pointer;
                 _pinPointer = LevelManager.Instance.PinPointer;
+                _playerUiArrows = LevelManager.Instance.PlayerUiArrows;
                 
                 if (_pinPointCoroutine != null)
                     StopCoroutine(_pinPointCoroutine);
@@ -111,10 +112,25 @@ namespace Managers
             }
         }
 
+        private List<Animation> _playerUiArrows;
+
         public void ChangeArrowNumByCheckpoint(int index)
         {
             _currentArrowNum = arrowNumDatas.ArrowNumList[index];
             Debug.Log("ArrowManager : " + _currentArrowNum);
+
+            int currentIndex = 0;
+            
+            foreach (Animation uiArrow in _playerUiArrows)
+            {
+                uiArrow.gameObject.SetActive(currentIndex < _currentArrowNum);
+                currentIndex++;
+            }
+        }
+        
+        private void PlayShootUiAnimation(Animation uiArrow)
+        {
+            uiArrow.Play("");
         }
         
         public void CreateArrow()
@@ -127,6 +143,8 @@ namespace Managers
             }
             
             _currentArrowNum--;
+            PlayShootUiAnimation(_playerUiArrows[_currentArrowNum]);
+            
             Debug.Log("ArrowManager : " + _currentArrowNum);
             CurrentArrowScript = momentumPrefab; //non adaptable mais on s'en fout
             
