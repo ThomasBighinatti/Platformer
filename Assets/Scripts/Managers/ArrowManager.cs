@@ -58,6 +58,7 @@ namespace Managers
         private GameObject _pointerParent;
         private GameObject _pointer;
         private GameObject _pinPointer;
+        private List<Animator> _playerUiArrows;
         
         private void OnEnable()
         {
@@ -82,6 +83,7 @@ namespace Managers
                 _pointerParent = LevelManager.Instance.PointerParent;
                 _pointer = LevelManager.Instance.Pointer;
                 _pinPointer = LevelManager.Instance.PinPointer;
+                _playerUiArrows = LevelManager.Instance.PlayerUiArrows;
                 
                 if (_pinPointCoroutine != null)
                     StopCoroutine(_pinPointCoroutine);
@@ -115,11 +117,28 @@ namespace Managers
         {
             _currentArrowNum = arrowNumDatas.ArrowNumList[index];
             Debug.Log("ArrowManager : " + _currentArrowNum);
+            
+            int currentIndex = 0;
+            
+            foreach (Animator uiArrow in _playerUiArrows)
+            {
+                bool active = currentIndex < _currentArrowNum;
+                uiArrow.gameObject.SetActive(active);
+                if (active)
+                {
+                    uiArrow.Play("Base", 0, 0f);
+                }
+                currentIndex++;
+            }
+        }
+        
+        private void PlayShootUiAnimation(Animator uiArrow)
+        {
+            uiArrow.Play("ArrowUiAnim", 0, 0f);
         }
         
         public void CreateArrow()
         {
-            
             if (_currentArrowNum <= 0)
             {
                 Debug.LogWarning("ArrowManager : No More Arrows");
@@ -127,6 +146,8 @@ namespace Managers
             }
             
             _currentArrowNum--;
+            PlayShootUiAnimation(_playerUiArrows[_currentArrowNum]);
+            
             Debug.Log("ArrowManager : " + _currentArrowNum);
             CurrentArrowScript = momentumPrefab; //non adaptable mais on s'en fout
             
