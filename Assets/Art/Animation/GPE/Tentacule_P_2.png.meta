@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 63379eda751cd0840a1214a86fa2294d
+guid: 3a5691445d594c043a64d3aff1fb0010
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 565856229195026826
-    second: Tentacule_S_1_0
-  - first:
-      213: -1939220001298853076
-    second: Tentacule_S_1_1
+      213: 91428252412379730
+    second: Tentacule_P_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,45 +113,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tentacule_S_1_0
+      name: Tentacule_P_2_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 20
-        height: 6
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a819c1f0e335ad700800000000000000
-      internalID: 565856229195026826
+      spriteID: 252897bd281d44100800000000000000
+      internalID: 91428252412379730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tentacule_S_1_1
+      name: Tentacule_P_2_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 38
-        height: 6
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c23df39eea18615e0800000000000000
-      internalID: -1939220001298853076
+      spriteID: 1799cf5687058514793b09b72d3971ea
+      internalID: 1573197644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tentacule_P_2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a701a6409b849442a4a3a44ad93b91f
+      internalID: -1301888850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tentacule_P_2_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178d352a563efaf49a659a4c12e168f7
+      internalID: 1828059196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tentacule_P_2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d48e4b54f3aba419b765bb23540e8a
+      internalID: 1671305620
       vertices: []
       indices: 
       edges: []
@@ -163,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ac667319a1aff224baadec7ca9f7af85
     internalID: 0
     vertices: []
     indices: 
@@ -171,10 +234,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Tentacule_S_1_0: 565856229195026826
-      Tentacule_S_1_1: -1939220001298853076
+      Tentacule_P_2_0: 91428252412379730
+      Tentacule_P_2_1: 1573197644
+      Tentacule_P_2_2: -1301888850
+      Tentacule_P_2_3: 1828059196
+      Tentacule_P_2_4: 1671305620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
