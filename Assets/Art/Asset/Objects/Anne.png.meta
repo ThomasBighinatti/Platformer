@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 63379eda751cd0840a1214a86fa2294d
+guid: ac59f1b4e1bd5c0458de3b37560bc1a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 565856229195026826
-    second: Tentacule_S_1_0
-  - first:
-      213: -1939220001298853076
-    second: Tentacule_S_1_1
+      213: -2536988823791121784
+    second: Anne_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tentacule_S_1_0
+      name: Anne_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 20
-        height: 6
+        x: 16
+        y: 9
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a819c1f0e335ad700800000000000000
-      internalID: 565856229195026826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tentacule_S_1_1
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 0
-        width: 38
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c23df39eea18615e0800000000000000
-      internalID: -1939220001298853076
+      spriteID: 88a4bc63b1ecaccd0800000000000000
+      internalID: -2536988823791121784
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tentacule_S_1_0: 565856229195026826
-      Tentacule_S_1_1: -1939220001298853076
+      Anne_0: -2536988823791121784
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
