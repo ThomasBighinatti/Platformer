@@ -132,6 +132,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: BateauCasse_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 107
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18378b6fee654c7c0800000000000000
+      internalID: -4052018180385115263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BateauCasse_0
       rect:
         serializedVersion: 2
@@ -145,9 +167,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5190ecb17ba3c40b0800000000000000
+      spriteID: 1df265f482bcb9e45bb490cb445db598
       internalID: -5743150866684311275
       vertices: []
       indices: 
@@ -167,32 +189,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 71e3f6fc7b2928fb0800000000000000
+      spriteID: 5f148c3e379de274babdf4adc8c65c44
       internalID: -4646990547336085993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BateauCasse_2
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 0
-        width: 107
-        height: 74
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18378b6fee654c7c0800000000000000
-      internalID: -4052018180385115263
       vertices: []
       indices: 
       edges: []
