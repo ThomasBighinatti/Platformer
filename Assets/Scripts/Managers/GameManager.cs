@@ -155,7 +155,7 @@ namespace Managers
         public void StartFromLevel(int checkpointIndex)
         {
             SaveSystem.SaveSystem.DeleteSave();
-            SaveManager.Instance.ChangeCurrentCheckpoint(checkpointIndex);
+            SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
             CurrentGameState = GameState.Game;
         }
         

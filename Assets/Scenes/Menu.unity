@@ -2425,6 +2425,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4470692114478901948, guid: c60d07096d3cef440bbd7d9def7179a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470692114478901948, guid: c60d07096d3cef440bbd7d9def7179a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470692114478901948, guid: c60d07096d3cef440bbd7d9def7179a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1126054463}
+    - target: {fileID: 4470692114478901948, guid: c60d07096d3cef440bbd7d9def7179a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470692114478901948, guid: c60d07096d3cef440bbd7d9def7179a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectPreviousStage
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470692114478901948, guid: c60d07096d3cef440bbd7d9def7179a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Managers.MainMenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470692114478901948, guid: c60d07096d3cef440bbd7d9def7179a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4500347647220377440, guid: c60d07096d3cef440bbd7d9def7179a2, type: 3}
       propertyPath: m_Name
       value: Previous Level
@@ -2442,6 +2470,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1265346553}
     m_Modifications:
+    - target: {fileID: 352243105329010638, guid: ea39c435d3c1bdc449032b42ac7f75e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 352243105329010638, guid: ea39c435d3c1bdc449032b42ac7f75e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 352243105329010638, guid: ea39c435d3c1bdc449032b42ac7f75e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1126054463}
+    - target: {fileID: 352243105329010638, guid: ea39c435d3c1bdc449032b42ac7f75e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 352243105329010638, guid: ea39c435d3c1bdc449032b42ac7f75e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectNextStage
+      objectReference: {fileID: 0}
+    - target: {fileID: 352243105329010638, guid: ea39c435d3c1bdc449032b42ac7f75e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Managers.MainMenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 352243105329010638, guid: ea39c435d3c1bdc449032b42ac7f75e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6454867365935658086, guid: ea39c435d3c1bdc449032b42ac7f75e3, type: 3}
       propertyPath: m_Name
       value: Next Level
