@@ -1,61 +1,65 @@
-using System;
 using System.Collections.Generic;
-using Managers;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainMenuManager : MonoBehaviour
+namespace Managers
 {
-    [SerializeField] private GameObject selectLevelPanel;
-    [SerializeField] private GameObject mainMenuPanel;
-    [SerializeField] private List<StageData> stageList;
-    [SerializeField] private Image stageImage;
-    private int stageIndex = 1;
-
-    public void NewGame() => GameManager.Instance.StartNewGame();
-    public void ContinueGame() => GameManager.Instance.ContinueGame();
-
-    private void Start()
+    public class MainMenuManager : MonoBehaviour
     {
-        UpdateStageDisplay();
-    }
+        [SerializeField] private GameObject selectLevelPanel;
+        [SerializeField] private GameObject mainMenuPanel;
+        [SerializeField] private List<StageData> levelList;
+        [SerializeField] private Image levelImage;
+        private int levelIndex = 0;
+    
+    
 
-    public void SelectLevel()
-    {
-        if (selectLevelPanel == null && mainMenuPanel == null)
-        {
-            mainMenuPanel.SetActive(false);
-            selectLevelPanel.SetActive(true); 
-        }
-        else
-        {
-            Debug.LogWarning("Menu Manager : missing panel");
-        }
-    }
+        public void NewGame() => GameManager.Instance.StartNewGame();
+        public void ContinueGame() => GameManager.Instance.ContinueGame();
 
-    public void SelectNextStage()
-    {
-        if (stageIndex < stageList.Count)
+        private void Start()
         {
-            stageIndex++;
             UpdateStageDisplay();
         }
-        else return;
-    }
 
-    public void SelectPreviousStage()
-    {
-        if (stageIndex > 0)
+        public void SelectLevel()
         {
-            stageIndex--;
-            UpdateStageDisplay();
+            if (selectLevelPanel == null && mainMenuPanel == null)
+            {
+                mainMenuPanel.SetActive(false);
+                selectLevelPanel.SetActive(true); 
+            }
+            else
+            {
+                Debug.LogWarning("Menu Manager : missing panel");
+            }
         }
-        else return;
-    }
 
-    private void UpdateStageDisplay()
-    {
-        stageImage.sprite = stageList[stageIndex].stageSprite;
+        public void SelectNextStage()
+        {
+            if (levelIndex < levelList.Count)
+            {
+                levelIndex++;
+                UpdateStageDisplay();
+            }
+            else return;
+        }
+
+        public void SelectPreviousStage()
+        {
+            if (levelIndex > 0)
+            {
+                levelIndex--;
+                UpdateStageDisplay();
+            }
+            else return;
+        }
+
+        private void UpdateStageDisplay()
+        {
+            levelImage.sprite = levelList[levelIndex].levelSprite;
+        }
+    
+        //faire spawn sur le niveau selectionné ici ou dans le gm(checkpoint 7 pour niveau 2 et 13 pour niveau 3)
     }
 }
