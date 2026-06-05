@@ -81,6 +81,8 @@ namespace Controllers
             {
                 Debug.LogError("No Data Entered");
             }
+            _explosionAnimator = explosionAnimator;
+            _explosionAnimator.gameObject.SetActive(false);
         }
         
         private void FixedUpdate()
@@ -341,6 +343,9 @@ namespace Controllers
         
         #endregion
 
+        [SerializeField] private Animator explosionAnimator;
+        private static Animator _explosionAnimator;
+
         public static void ActivateKnockback(Vector2 direction, float force)
         {
             if (_stopVelocity)
@@ -349,7 +354,31 @@ namespace Controllers
             }
 
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
+            Debug.Log(force);
+            
+            _explosionAnimator.gameObject.SetActive(true);
+            PlayExplosionAnim(force);
+            
             _isKnockedBack = true;
+        }
+
+        private static void PlayExplosionAnim(float force)
+        {
+            switch (force)
+            {
+                case < 24:
+                    _explosionAnimator.Play("Impact1Anim", 0, 0f);
+                    break;
+                case < 26:
+                    _explosionAnimator.Play("Impact2Anim", 0, 0f);
+                    break;
+                case < 28:
+                    _explosionAnimator.Play("Impact3Anim", 0, 0f);
+                    break;
+                case < 30:
+                    _explosionAnimator.Play("Impact4Anim", 0, 0f);
+                    break;
+            }
         }
         
         private void OnDrawGizmosSelected()

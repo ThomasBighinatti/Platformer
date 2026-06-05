@@ -82,7 +82,7 @@ namespace Managers
             SaveSystem.SaveSystem.SaveData(data);
         }
 
-        private void Load()
+        public void Load()
         {
             DataToSave loadedData = SaveSystem.SaveSystem.LoadData();
 

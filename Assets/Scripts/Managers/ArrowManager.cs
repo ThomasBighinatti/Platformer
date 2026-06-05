@@ -25,18 +25,14 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
-
-        [SerializeField] private GameObject pinPointer;
         
         [Header("Settings")]
-        [SerializeField] private List<ArrowGroupData> arrowGroupDatas;
+        [SerializeField] private ArrowNumData arrowNumDatas;
         [SerializeField] private Momentum momentumPrefab;
-        
-        private ArrowGroupData CurrentArrowGroupData { get; set; }
+
+        private int _currentArrowNum;
         private Arrow CurrentArrowScript { get; set; }
         public bool ArrowScriptIsNull => CurrentArrowScript is null;
-        
-        private int _arrowNum;
         
         private Vector2 _lookingTowards = Vector2.right;
         public Vector2 LookingTowards
@@ -62,21 +58,7 @@ namespace Managers
         private GameObject _pointerParent;
         private GameObject _pointer;
         private GameObject _pinPointer;
-        
-        private void Start()
-        {
-            CurrentArrowGroupData = arrowGroupDatas[0]; //changer le mode fonctionnement du group data
-            StartCoroutine(PinPointCoroutine());
-
-            IEnumerator PinPointCoroutine()
-            {
-                while (true)
-                {
-                    PinPoint();
-                    yield return new WaitForSeconds(0.016f);
-                }
-            }
-        }
+        private List<Animator> _playerUiArrows;
         
         private void OnEnable()
         {
@@ -86,6 +68,12 @@ namespace Managers
         private void OnDisable()
         {
             SceneManager.sceneLoaded -= OnSceneLoaded;
+
+            if (_pinPointCoroutine == null) 
+                return;
+            
+            StopCoroutine(_pinPointCoroutine);
+            _pinPointCoroutine = null;
         }
         
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -95,36 +83,73 @@ namespace Managers
                 _pointerParent = LevelManager.Instance.PointerParent;
                 _pointer = LevelManager.Instance.Pointer;
                 _pinPointer = LevelManager.Instance.PinPointer;
+                _playerUiArrows = LevelManager.Instance.PlayerUiArrows;
+                
+                if (_pinPointCoroutine != null)
+                    StopCoroutine(_pinPointCoroutine);
 
-                //remettre les fleches
+                _pinPointCoroutine = StartCoroutine(PinPointCoroutine());
             }
             else
             {
+                if (_pinPointCoroutine != null)
+                {
+                    StopCoroutine(_pinPointCoroutine);
+                    _pinPointCoroutine = null;
+                }
+                
                 Debug.LogWarning("ArrowManager : No LevelManager");
             }
         }
 
-        private Arrow GetArrowByType(ArrowType arrowType)
+        private Coroutine _pinPointCoroutine;
+        
+        private IEnumerator PinPointCoroutine()
         {
-            return arrowType switch
+            while (true)
             {
-                ArrowType.Momentum => momentumPrefab,
-                _ => throw new ArgumentOutOfRangeException(nameof(arrowType), arrowType, null)
-            };
+                PinPoint();
+                yield return new WaitForSeconds(0.016f);
+            }
+        }
+
+        public void ChangeArrowNumByCheckpoint(int index)
+        {
+            _currentArrowNum = arrowNumDatas.ArrowNumList[index];
+            Debug.Log("ArrowManager : " + _currentArrowNum);
+            
+            int currentIndex = 0;
+            
+            foreach (Animator uiArrow in _playerUiArrows)
+            {
+                bool active = currentIndex < _currentArrowNum;
+                uiArrow.gameObject.SetActive(active);
+                if (active)
+                {
+                    uiArrow.Play("Base", 0, 0f);
+                }
+                currentIndex++;
+            }
+        }
+        
+        private void PlayShootUiAnimation(Animator uiArrow)
+        {
+            uiArrow.Play("ArrowUiAnim", 0, 0f);
         }
         
         public void CreateArrow()
         {
-            
-            if (_arrowNum >= CurrentArrowGroupData.ArrowTypeList.Count)
+            if (_currentArrowNum <= 0)
             {
                 Debug.LogWarning("ArrowManager : No More Arrows");
-                _arrowNum = 0;
-                CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[0]);
                 return;
             }
             
-            CurrentArrowScript = GetArrowByType(CurrentArrowGroupData.ArrowTypeList[_arrowNum]);
+            _currentArrowNum--;
+            PlayShootUiAnimation(_playerUiArrows[_currentArrowNum]);
+            
+            Debug.Log("ArrowManager : " + _currentArrowNum);
+            CurrentArrowScript = momentumPrefab; //non adaptable mais on s'en fout
             
             GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,_pointer.transform);
             CurrentArrowScript = arrowCreation.GetComponent<Arrow>();
@@ -146,7 +171,6 @@ namespace Managers
             CurrentArrowScript.CanStartMoving = true;
             
             CurrentArrowScript = null;
-            _arrowNum++;
         }
         
         public void PushMomentumArrow(Arrow arrow) => _momentumStack.Push(arrow);
@@ -174,14 +198,14 @@ namespace Managers
             RaycastHit2D hit = Physics2D.Raycast(_pointer.transform.position, _lookingTowards, 40,checkMask);
             //Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.white, 0.1f);
 
-            if (hit.collider != null)
-            {
-                _pinPointer.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y);
-                Debug.DrawLine(_pointer.transform.position, hit.point, Color.blue);
-                // Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.red, 0.1f);
+            if (hit.collider is null) 
+                return;
+            
+            _pinPointer.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y);
+            Debug.DrawLine(_pointer.transform.position, hit.point, Color.blue);
+            // Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.red, 0.1f);
                     
-                _pinPointer.transform.position = hit.point;
-            }
+            _pinPointer.transform.position = hit.point;
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -99,8 +100,8 @@ namespace Managers
             }
             
         }
-    
-        /*
+
+        [SerializeField] private GameState gameState;
         #region "State Machine"
 
         public enum GameState
@@ -109,7 +110,7 @@ namespace Managers
             Menu
         }
 
-        private GameState _currentGameState = GameState.Game;
+        private GameState _currentGameState;
         public GameState CurrentGameState
         {
             get => _currentGameState;
@@ -130,7 +131,31 @@ namespace Managers
                 _ => ""
             };
         }
-        #endregion */
+        public void ChangeStateToGame() => _currentGameState = GameState.Game;
+        public void ChangeStateToMenu() => _currentGameState = GameState.Menu;
 
+        #endregion
+
+        private void Start()
+        {
+            _currentGameState = gameState;
+        }
+
+        public void StartNewGame()
+        {
+            //si pas de save{}
+            SaveSystem.SaveSystem.DeleteSave();
+            GetSceneByState();
+        }
+        
+        public void ContinueGame()
+        {
+            GetSceneByState();
+            SaveManager.Instance.Load();
+        }
+        
+        //select level dans le Menu Manager
+        
+        public void QuitGame() =>  Application.Quit();
     }
 }
