@@ -50,6 +50,7 @@ namespace Arrows
 
         protected virtual void ArrowShot(Vector2 direction)
         {
+            transform.position -= (Vector3)direction;
             Rb.AddForce(direction * data.Strength);
             if (data.UseGravity)
             {
