@@ -1179,7 +1179,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 69c24d16833ed89498b23c04a4e030ae, type: 2}
   - {fileID: 11400000, guid: 1b1c9fbedf5f5424a9de9041dd21f27b, type: 2}
   - {fileID: 11400000, guid: ff89cbb312b64ba4ca5b10c6074db2ee, type: 2}
-  levelImage: {fileID: 0}
+  levelImage: {fileID: 919820301}
+  levelStartCheckpoints: 00000000070000000d000000
 --- !u!1 &1265346552
 GameObject:
   m_ObjectHideFlags: 0
