@@ -10,6 +10,8 @@ namespace Managers
         [SerializeField] private GameObject mainMenuPanel;
         [SerializeField] private List<StageData> levelList;
         [SerializeField] private Image levelImage;
+        [SerializeField] private int[] levelStartCheckpoints = { 0, 7, 13 };
+        
         private int levelIndex = 0;
     
     
@@ -24,7 +26,7 @@ namespace Managers
 
         public void SelectLevel()
         {
-            if (selectLevelPanel == null && mainMenuPanel == null)
+            if (selectLevelPanel != null && mainMenuPanel != null)
             {
                 mainMenuPanel.SetActive(false);
                 selectLevelPanel.SetActive(true); 
@@ -37,7 +39,7 @@ namespace Managers
 
         public void SelectNextStage()
         {
-            if (levelIndex < levelList.Count)
+            if (levelIndex < levelList.Count - 1)
             {
                 levelIndex++;
                 UpdateStageDisplay();
@@ -60,6 +62,10 @@ namespace Managers
             levelImage.sprite = levelList[levelIndex].levelSprite;
         }
     
-        //faire spawn sur le niveau selectionné ici ou dans le gm(checkpoint 7 pour niveau 2 et 13 pour niveau 3)
+        public void StartFromSelectedLevel()
+        {
+            int startCheckpoint = levelStartCheckpoints[levelIndex];
+            GameManager.Instance.StartFromLevel(startCheckpoint);
+        }
     }
 }

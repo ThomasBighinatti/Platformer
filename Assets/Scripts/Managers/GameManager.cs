@@ -131,8 +131,8 @@ namespace Managers
                 _ => ""
             };
         }
-        public void ChangeStateToGame() => _currentGameState = GameState.Game;
-        public void ChangeStateToMenu() => _currentGameState = GameState.Menu;
+        public void ChangeStateToGame() => CurrentGameState = GameState.Game;
+        public void ChangeStateToMenu() => CurrentGameState = GameState.Menu;
 
         #endregion
 
@@ -143,18 +143,21 @@ namespace Managers
 
         public void StartNewGame()
         {
-            //si pas de save{}
             SaveSystem.SaveSystem.DeleteSave();
-            GetSceneByState();
+            CurrentGameState = GameState.Game;
         }
         
         public void ContinueGame()
         {
-            GetSceneByState();
-            SaveManager.Instance.Load();
+            CurrentGameState = GameState.Game;
         }
         
-        //select level dans le Menu Manager
+        public void StartFromLevel(int checkpointIndex)
+        {
+            SaveSystem.SaveSystem.DeleteSave();
+            SaveManager.Instance.ChangeCurrentCheckpoint(checkpointIndex);
+            CurrentGameState = GameState.Game;
+        }
         
         public void QuitGame() =>  Application.Quit();
     }
