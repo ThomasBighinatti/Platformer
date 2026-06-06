@@ -366,7 +366,6 @@ namespace Controllers
             }
 
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
-            Debug.Log(force);
             
             _explosionAnimator.gameObject.SetActive(true);
             PlayExplosionAnim(force);

@@ -116,7 +116,7 @@ namespace Managers
                         break;
                     
                     case true:
-                        _player.transform.position = spawnPosition;
+                        _player.transform.position = spawnPosition; 
                         _playerRb.linearVelocity = Vector2.zero;
                         break;
                 }
