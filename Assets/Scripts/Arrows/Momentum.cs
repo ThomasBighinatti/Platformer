@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using Controllers;
 using Datas;
+using GPE;
 using Managers;
 using UnityEngine;
 
 namespace Arrows
 {
-    public class Momentum : Arrow
+    public class Momentum : Arrow, IResettable
     {
         private MomentumArrowData MomentumData => data as MomentumArrowData;
         
@@ -72,6 +73,7 @@ namespace Arrows
             DirectionToPlayer = (target - (Vector2)transform.position).normalized;
             _recallSpeed += MomentumData.RecallAcceleration * Time.fixedDeltaTime;
             Rb.linearVelocity = DirectionToPlayer * _recallSpeed;
+
             if (!(Vector2.Distance(transform.position, target) <= 2f)) 
                 return;
             
