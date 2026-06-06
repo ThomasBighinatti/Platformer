@@ -116,7 +116,6 @@ namespace Managers
         public void ChangeArrowNumByCheckpoint(int index)
         {
             _currentArrowNum = arrowNumDatas.ArrowNumList[index];
-            Debug.Log("ArrowManager : " + _currentArrowNum);
             
             int currentIndex = 0;
             
@@ -148,7 +147,6 @@ namespace Managers
             _currentArrowNum--;
             PlayShootUiAnimation(_playerUiArrows[_currentArrowNum]);
             
-            Debug.Log("ArrowManager : " + _currentArrowNum);
             CurrentArrowScript = momentumPrefab; //non adaptable mais on s'en fout
             
             GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,_pointer.transform);

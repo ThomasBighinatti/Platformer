@@ -1,12 +1,13 @@
 using System.Collections;
 using Datas;
+using GPE;
 using Managers;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace Arrows
 {
-    public abstract class Arrow : MonoBehaviour
+    public abstract class Arrow : MonoBehaviour,IResettable
     {
         
         [SerializeField] protected ArrowData data;
@@ -39,7 +40,10 @@ namespace Arrows
         {
             Rb = GetComponent<Rigidbody2D>();
             Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            GameManager.Instance.Subscribe(this);
         }
+        
+        private void OnDisable() => GameManager.Instance.Unsubscribe(this);
 
         protected abstract void StartArrow();
         /*if (!data.UseDestroy)
@@ -106,6 +110,10 @@ namespace Arrows
         {
             Destroy(gameObject);
         }
-        
+
+        public void ResetToInitialState()
+        {
+            DestroyArrow();
+        }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using Managers;
 using UnityEngine;
 
 namespace GPE
@@ -51,8 +52,12 @@ namespace GPE
             Debug.DrawRay(transform.position,GetDirection() * settings.distance,Color.red,float.MaxValue);
             _initialPos = transform.position;
             _targetPos = _initialPos + GetDirection() * settings.distance;
+            GameManager.Instance.Subscribe(this);
         }
-    
+
+        private void OnDisable() => GameManager.Instance.Unsubscribe(this);
+        
+
         private void FixedUpdate()
         {
             MovingStateLimits();

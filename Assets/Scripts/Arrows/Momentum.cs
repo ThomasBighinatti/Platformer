@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using Controllers;
 using Datas;
+using GPE;
 using Managers;
 using UnityEngine;
 
 namespace Arrows
 {
-    public class Momentum : Arrow
+    public class Momentum : Arrow, IResettable
     {
         private MomentumArrowData MomentumData => data as MomentumArrowData;
         
