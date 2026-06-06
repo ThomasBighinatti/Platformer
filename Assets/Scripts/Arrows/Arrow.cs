@@ -106,8 +106,14 @@ namespace Arrows
 
         public void SetDynamic() => Rb.bodyType = RigidbodyType2D.Dynamic;
 
+        protected bool isBeingDestroyed;
+        
         public virtual void DestroyArrow()
         {
+            if (isBeingDestroyed)
+                return;
+
+            isBeingDestroyed = true;
             Destroy(gameObject);
         }
 
