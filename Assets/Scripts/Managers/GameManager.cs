@@ -153,7 +153,7 @@ namespace Managers
         {
             return CurrentGameState switch
             {
-                GameState.Game => "Game",
+                GameState.Game => "asemblage", //"asemblage" pour tester
                 GameState.Menu => "Menu",
                 _ => ""
             };
