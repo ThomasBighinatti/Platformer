@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Controllers;
 using GPE;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -107,19 +108,13 @@ namespace Managers
                 }
                 
                 ResetNotify();
-
-                switch (_player.activeSelf)
-                {
-                    case false:
-                        _player.transform.position = spawnPosition;
-                        _player.SetActive(true);
-                        break;
-                    
-                    case true:
-                        _player.transform.position = spawnPosition;
-                        _playerRb.linearVelocity = Vector2.zero;
-                        break;
-                }
+                
+                _player.SetActive(true);
+                _player.transform.position = spawnPosition; 
+                _playerRb.linearVelocity = Vector2.zero;
+                _playerScript.DeactivateExplosionAnimator();
+                 
+                
             }
             else
             {
@@ -163,9 +158,13 @@ namespace Managers
 
         #endregion
 
+
+        private PlayerController _playerScript;
+            
         private void Start()
         {
             _currentGameState = gameState;
+            _playerScript = _player.GetComponent<PlayerController>();
         }
 
         public void StartNewGame()

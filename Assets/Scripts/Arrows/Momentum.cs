@@ -133,6 +133,9 @@ namespace Arrows
         
         public override void DestroyArrow()
         {
+            if (isBeingDestroyed)
+                return;
+            
             if (!_recalled)
             {
                 ArrowManager.Instance.PopMomentumArrow();
