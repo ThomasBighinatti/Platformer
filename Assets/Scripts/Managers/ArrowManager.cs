@@ -203,6 +203,8 @@ namespace Managers
             // Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.red, 0.1f);
                     
             _pinPointer.transform.position = hit.point;
+            float angle = Mathf.Atan2(_lookingTowards.y, _lookingTowards.x) * Mathf.Rad2Deg;
+            _pinPointer.transform.rotation = Quaternion.Euler(0, 0, angle+90);
         }
     }
 }
