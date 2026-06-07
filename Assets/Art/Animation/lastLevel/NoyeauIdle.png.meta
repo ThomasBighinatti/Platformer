@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 9ec079ca4a64d2d4e9dcc04a610e5a75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8092643697993615900
+    second: NoyeauIdle_0
+  - first:
+      213: -8781399151782011953
+    second: NoyeauIdle_1
+  - first:
+      213: -7249157725305130083
+    second: NoyeauIdle_2
+  - first:
+      213: 3393717923166123261
+    second: NoyeauIdle_3
+  - first:
+      213: -7745422815893763670
+    second: NoyeauIdle_4
+  - first:
+      213: 8375976807118382557
+    second: NoyeauIdle_5
+  - first:
+      213: 2126107124505788778
+    second: NoyeauIdle_6
+  - first:
+      213: 5034974679022498466
+    second: NoyeauIdle_7
+  - first:
+      213: 5647612318290170889
+    second: NoyeauIdle_8
+  - first:
+      213: -5350780418427041100
+    second: NoyeauIdle_9
+  - first:
+      213: 6434430370041854162
+    second: NoyeauIdle_10
+  - first:
+      213: 4715768335843050898
+    second: NoyeauIdle_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NoyeauIdle_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5794fee6721bf80800000000000000
+      internalID: -8092643697993615900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_1
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbdd1f4ff3322680800000000000000
+      internalID: -8781399151782011953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_2
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93b86ed471d56b90800000000000000
+      internalID: -7249157725305130083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4713e6878e81f20800000000000000
+      internalID: 3393717923166123261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_4
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa942776cfab28490800000000000000
+      internalID: -7745422815893763670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_5
+      rect:
+        serializedVersion: 2
+        x: 3174
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5a33b37827d3470800000000000000
+      internalID: 8375976807118382557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_6
+      rect:
+        serializedVersion: 2
+        x: 3782
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6148964a23718d10800000000000000
+      internalID: 2126107124505788778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_7
+      rect:
+        serializedVersion: 2
+        x: 4390
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2f83c4bc2dfd540800000000000000
+      internalID: 5034974679022498466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_8
+      rect:
+        serializedVersion: 2
+        x: 4998
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9045ecc2b79506e40800000000000000
+      internalID: 5647612318290170889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_9
+      rect:
+        serializedVersion: 2
+        x: 5606
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba4a802f853eb5b0800000000000000
+      internalID: -5350780418427041100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_10
+      rect:
+        serializedVersion: 2
+        x: 6214
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8745a9450bb4950800000000000000
+      internalID: 6434430370041854162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoyeauIdle_11
+      rect:
+        serializedVersion: 2
+        x: 6822
+        y: 91
+        width: 354
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295c5f4f056c17140800000000000000
+      internalID: 4715768335843050898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NoyeauIdle_0: -8092643697993615900
+      NoyeauIdle_1: -8781399151782011953
+      NoyeauIdle_10: 6434430370041854162
+      NoyeauIdle_11: 4715768335843050898
+      NoyeauIdle_2: -7249157725305130083
+      NoyeauIdle_3: 3393717923166123261
+      NoyeauIdle_4: -7745422815893763670
+      NoyeauIdle_5: 8375976807118382557
+      NoyeauIdle_6: 2126107124505788778
+      NoyeauIdle_7: 5034974679022498466
+      NoyeauIdle_8: 5647612318290170889
+      NoyeauIdle_9: -5350780418427041100
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
