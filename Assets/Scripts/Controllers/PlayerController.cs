@@ -386,7 +386,7 @@ namespace Controllers
                 case < 28:
                     _explosionAnimator.Play("Impact3Anim", 0, 0f);
                     break;
-                case >= 30:
+                case >= 28:
                     _explosionAnimator.Play("Impact4Anim", 0, 0f);
                     break;
             }
