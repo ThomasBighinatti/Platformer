@@ -6,7 +6,6 @@ namespace Arrows
     {
         public void ExplosionEndDeactivation()
         {
-            Debug.Log("ExplosionRelay : Deact");
             gameObject.SetActive(false);
         }
     }

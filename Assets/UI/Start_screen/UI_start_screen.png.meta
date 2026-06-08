@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fd2cd2ef42355f94a875103efe5ca5d6
+guid: 386af88535d3f2a4b9794962e0ac7049
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -14,6 +14,30 @@ TextureImporter:
   - first:
       213: 1676500233929543734
     second: UI_start_screen_3
+  - first:
+      213: -5355621345126364331
+    second: UI_start_screen_4
+  - first:
+      213: -1366057589970675852
+    second: UI_start_screen_5
+  - first:
+      213: -683692391813313655
+    second: UI_start_screen_6
+  - first:
+      213: 7398230755645396229
+    second: UI_start_screen_7
+  - first:
+      213: -1603931741303936055
+    second: UI_start_screen_8
+  - first:
+      213: -8540594500551531845
+    second: UI_start_screen_9
+  - first:
+      213: -8501650916439932169
+    second: UI_start_screen_10
+  - first:
+      213: -8764141572662142614
+    second: UI_start_screen_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,12 +149,12 @@ TextureImporter:
       name: UI_start_screen_0
       rect:
         serializedVersion: 2
-        x: 309
-        y: 329
-        width: 12
-        height: 42
+        x: 30
+        y: 22
+        width: 228
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,37 +168,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_start_screen_1
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 229
-        width: 322
-        height: 252
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 38a10492fc7e9b4b0800000000000000
-      internalID: -5424049399254738301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: UI_start_screen_2
       rect:
         serializedVersion: 2
-        x: 2239
-        y: 229
-        width: 322
-        height: 252
+        x: 308
+        y: 22
+        width: 230
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,23 +190,89 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_start_screen_3
+      name: UI_start_screen_4
       rect:
         serializedVersion: 2
-        x: 2559
-        y: 329
-        width: 12
-        height: 42
+        x: 585
+        y: 22
+        width: 234
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 630da3d8410244710800000000000000
-      internalID: 1676500233929543734
+      spriteID: 55b4e3c03c20da5b0800000000000000
+      internalID: -5355621345126364331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_start_screen_6
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 22
+        width: 238
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b845a54690386f0800000000000000
+      internalID: -683692391813313655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_start_screen_8
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 22
+        width: 234
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbea9b4490bdb9e0800000000000000
+      internalID: -1603931741303936055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_start_screen_10
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 22
+        width: 230
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f249310981140a80800000000000000
+      internalID: -8501650916439932169
       vertices: []
       indices: 
       edges: []
@@ -213,7 +281,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a0efb8484970fd04c8980b32f1d5442a
     internalID: 0
     vertices: []
     indices: 
@@ -225,8 +293,16 @@ TextureImporter:
     nameFileIdTable:
       UI_start_screen_0: -8510413408006804905
       UI_start_screen_1: -5424049399254738301
+      UI_start_screen_10: -8501650916439932169
+      UI_start_screen_11: -8764141572662142614
       UI_start_screen_2: 6099164534367680830
       UI_start_screen_3: 1676500233929543734
+      UI_start_screen_4: -5355621345126364331
+      UI_start_screen_5: -1366057589970675852
+      UI_start_screen_6: -683692391813313655
+      UI_start_screen_7: 7398230755645396229
+      UI_start_screen_8: -1603931741303936055
+      UI_start_screen_9: -8540594500551531845
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

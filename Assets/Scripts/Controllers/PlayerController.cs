@@ -84,7 +84,7 @@ namespace Controllers
             _explosionAnimator = explosionAnimator;
             _explosionAnimator.gameObject.SetActive(false);
         }
-        
+
         private void FixedUpdate()
         {
             _jumpBufferCounter -= Time.fixedDeltaTime;
@@ -366,7 +366,6 @@ namespace Controllers
             }
 
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
-            Debug.Log(force);
             
             _explosionAnimator.gameObject.SetActive(true);
             PlayExplosionAnim(force);
@@ -387,10 +386,15 @@ namespace Controllers
                 case < 28:
                     _explosionAnimator.Play("Impact3Anim", 0, 0f);
                     break;
-                case < 30:
+                case >= 30:
                     _explosionAnimator.Play("Impact4Anim", 0, 0f);
                     break;
             }
+        }
+        
+        public void DeactivateExplosionAnimator()
+        {
+            _explosionAnimator.gameObject.SetActive(false);
         }
         
         private void OnDrawGizmosSelected()
