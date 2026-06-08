@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Controllers;
 using GPE;
 using UnityEngine;
@@ -40,17 +42,34 @@ namespace Managers
         
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (LevelManager.Instance != null)
+            if (LevelManager.Instance != null && _currentGameState == GameState.Game)
             {
                 _player = LevelManager.Instance.Player;
                 _playerRb = _player.GetComponent<Rigidbody2D>();
             }
             else
             {
-                Debug.LogWarning("GameManager : No LevelManager");
+                Debug.LogWarning("GameManager : No LevelManager or player is in menu");
             }
         }
-        
+
+        public void OnPause(InputAction.CallbackContext context)
+        {
+            if (!context.started) return;
+            Debug.Log($"OnPause called — état actuel : {_currentGameState}");
+
+            if (context.started && _currentGameState == GameState.Game)
+            {
+                ChangeStateToPause();
+            }
+            
+            else if (context.started && _currentGameState == GameState.Pause)
+            {
+                ChangeStateToGame();
+                Debug.Log("Game");
+            }
+        }
+
         public void OnRetry(InputAction.CallbackContext context)
         {
             if (!context.started) 
@@ -129,18 +148,42 @@ namespace Managers
         public enum GameState
         {
             Game,
-            Menu
+            Menu,
+            Pause
         }
 
+        private GameState _previousGameState;
         private GameState _currentGameState;
+
         public GameState CurrentGameState
         {
             get => _currentGameState;
             set
             {
-                if (_currentGameState == value) return;
+                if (_currentGameState == value && value != GameState.Pause) return;
+
+                if (_currentGameState == GameState.Pause && value != GameState.Pause)
+                {
+                    Time.timeScale = 1f;
+                    LevelManager.Instance.pauseMenu.SetActive(false);
+                }
+
+                _previousGameState = _currentGameState;
                 _currentGameState = value;
-                SceneManager.LoadScene(GetSceneByState());
+
+                if (value == GameState.Pause)
+                {
+                    LevelManager.Instance.pauseMenu.SetActive(true);
+                    Time.timeScale = 0f;
+                }
+                else if (_previousGameState == GameState.Pause)
+                {
+                    
+                }
+                else
+                {
+                    SceneManager.LoadScene(GetSceneByState());
+                }
             }
         }
 
@@ -156,6 +199,7 @@ namespace Managers
         public void ChangeStateToGame() => CurrentGameState = GameState.Game;
         public void ChangeStateToMenu() => CurrentGameState = GameState.Menu;
 
+        public void ChangeStateToPause() => CurrentGameState = GameState.Pause;
         #endregion
 
 
@@ -173,18 +217,39 @@ namespace Managers
             CurrentGameState = GameState.Game;
         }
         
-        public void ContinueGame()
+        public async void ContinueGame()
         {
-            CurrentGameState = GameState.Game;
+            try
+            {
+                CurrentGameState = GameState.Game;
+                await Task.Delay(2000);
+                RespawnPlayer();
+            }
+            catch (Exception e)
+            {
+                throw; // TODO handle exception
+            }
         }
         
-        public void StartFromLevel(int checkpointIndex)
+        public async void StartFromLevel(int checkpointIndex)
         {
-            SaveSystem.SaveSystem.DeleteSave();
-            SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
-            CurrentGameState = GameState.Game;
+            try
+            {
+                SaveSystem.SaveSystem.DeleteSave();
+                CurrentGameState = GameState.Game;
+                SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
+                await Task.Delay(2000); // pour attendre le chargement et faire spawn le player (jsp pourquoi mais yield return null n'etait pas suffisant)
+                RespawnPlayer();
+                //Debug.Log("(GM) checkpoint index " + checkpointIndex);
+            }
+            catch (Exception e)
+            {
+                throw; // TODO handle exception
+            }
         }
-        
+
         public void QuitGame() =>  Application.Quit();
+
+        public void GoToMenu() => SceneManager.LoadScene("Menu");
     }
 }

@@ -22,7 +22,9 @@ namespace Managers
         public GameObject PinPointer => pinPointer; 
         
         [SerializeField] private List<Animator> playerUiArrows;
-        public List<Animator> PlayerUiArrows => playerUiArrows; 
+        public List<Animator> PlayerUiArrows => playerUiArrows;
+
+        [SerializeField] public GameObject pauseMenu;
         
         private void Awake()
         {

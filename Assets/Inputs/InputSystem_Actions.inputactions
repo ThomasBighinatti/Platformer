@@ -82,7 +82,7 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "641cd816-40e6-41b4-8c3d-04687c349290",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -984,9 +984,18 @@
             "id": "89e97b9e-124a-4044-8e19-3c3c4cb76dd6",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Respawn",
                     "type": "Button",
                     "id": "cc7363df-8bd9-40fe-8782-7cb0297eff62",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "7ebfed4b-fa90-4736-89c2-7e1e62a5b0be",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -1001,7 +1010,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "New action",
+                    "action": "Respawn",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1012,7 +1021,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "New action",
+                    "action": "Respawn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d2a7e8f4-2e87-4751-bdc1-4900bf37f7e3",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c70f5cf2-8c3c-4f79-975a-a156d7686473",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
