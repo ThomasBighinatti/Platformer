@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Arrow
+  - Foreground
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Trigger
   - StickyBlock
   - ArrowNoSticky
-  - 
+  - foreground
   - 
   - 
   - 
@@ -44,6 +45,9 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 1862323169
+    locked: 0
+  - name: Foreground
+    uniqueID: 3343509065
     locked: 0
   m_RenderingLayers:
   - Default
