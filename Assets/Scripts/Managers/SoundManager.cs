@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Managers
@@ -16,6 +17,7 @@ namespace Managers
         [Header("Audio Sources")] 
         [SerializeField] private AudioSource musicSource;
         [SerializeField] private AudioSource sfxSource;
+        [SerializeField] private int musicIndexAtSpawn;
 
         private void Awake()
         {
@@ -29,14 +31,84 @@ namespace Managers
             DontDestroyOnLoad(transform.parent);
         }
 
-        /*private void Start()
+        private void Start()
         {
-            if (mainMusic == null)
+            _currentMusicTooPlay = musicIndexAtSpawn;
+            PlayMainMusic();
+        }
+        
+        #region Main
+
+        private int _currentMusicTooPlay;
+
+        public void ChangeMainMusic(int index)
+        {
+            if (index < 0 || index >= mainMusics.Length)
                 return;
             
-            musicSource.clip = mainMusic;
+            _currentMusicTooPlay = index;
+            PlayMainMusic();
+        }
+
+        private void PlayMainMusic()
+        {
+            if (_currentMusicTooPlay == 0)
+            {
+                PlayFirstMusic();
+            }
+            else
+            {
+                StopMusic();
+            }
+        }
+        
+        private void PlayFirstMusic()
+        {
+            Debug.Log(_currentMusicTooPlay);
+            if (mainMusics[0] == null)
+            {
+                return;
+            }
+
+            musicSource.clip = mainMusics[0];
+            musicSource.loop = true;
             musicSource.Play();
-        }*/
+        }
+
+        private IEnumerator PlayMusicSequence(int index)
+        {
+            Debug.Log(_currentMusicTooPlay);
+            if (index < 0 || index >= mainMusics.Length || mainMusics[index] is null)
+                yield break;
+
+            musicSource.clip = mainMusics[index];
+            musicSource.Play();
+            
+            yield return new WaitForSeconds(musicSource.clip.length);
+            
+            StartCoroutine(PlayMusicSequence(_currentMusicTooPlay));
+        }
+
+        private void StopMusic()
+        {
+            StartCoroutine(StartFade(3f, 0f));
+        }
+        
+        private IEnumerator StartFade(float duration, float targetVolume)
+        {
+            float currentTime = 0;
+            float start = musicSource.volume;
+            while (currentTime < duration)
+            {
+                currentTime += Time.deltaTime;
+                musicSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+                yield return null;
+            }
+            musicSource.Stop();
+            StartCoroutine(PlayMusicSequence(_currentMusicTooPlay));
+        }
+        
+        #endregion
         
         #region SFX
 

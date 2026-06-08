@@ -72,7 +72,6 @@ namespace Controllers
                 return;
             
             _currentInputOnLook = _inputOnLook;
-
             
             ArrowManager.Instance.LookingTowards = _currentInputOnLook.normalized;
             
