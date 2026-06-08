@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c5118b9904b69478a6261291fd8724, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: AssemblyData::StageData
-  levelSprite: {fileID: 78624216, guid: 1c62a930501638f4a9243c5ee228a009, type: 3}
+  levelSprite: {fileID: 8053899242462091416, guid: 2983655b3b764cf49bfdb0addde257f5, type: 3}
