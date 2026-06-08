@@ -52,7 +52,24 @@ namespace Managers
                 Debug.LogWarning("GameManager : No LevelManager or player is in menu");
             }
         }
-        
+
+        public void OnPause(InputAction.CallbackContext context)
+        {
+            if (!context.started) return;
+            Debug.Log($"OnPause called — état actuel : {_currentGameState}");
+
+            if (context.started && _currentGameState == GameState.Game)
+            {
+                ChangeStateToPause();
+            }
+            
+            else if (context.started && _currentGameState == GameState.Pause)
+            {
+                ChangeStateToGame();
+                Debug.Log("Game");
+            }
+        }
+
         public void OnRetry(InputAction.CallbackContext context)
         {
             if (!context.started) 
@@ -131,18 +148,42 @@ namespace Managers
         public enum GameState
         {
             Game,
-            Menu
+            Menu,
+            Pause
         }
 
+        private GameState _previousGameState;
         private GameState _currentGameState;
+
         public GameState CurrentGameState
         {
             get => _currentGameState;
             set
             {
-                if (_currentGameState == value) return;
+                if (_currentGameState == value && value != GameState.Pause) return;
+
+                if (_currentGameState == GameState.Pause && value != GameState.Pause)
+                {
+                    Time.timeScale = 1f;
+                    LevelManager.Instance.pauseMenu.SetActive(false);
+                }
+
+                _previousGameState = _currentGameState;
                 _currentGameState = value;
-                SceneManager.LoadScene(GetSceneByState());
+
+                if (value == GameState.Pause)
+                {
+                    LevelManager.Instance.pauseMenu.SetActive(true);
+                    Time.timeScale = 0f;
+                }
+                else if (_previousGameState == GameState.Pause)
+                {
+                    
+                }
+                else
+                {
+                    SceneManager.LoadScene(GetSceneByState());
+                }
             }
         }
 
@@ -158,6 +199,7 @@ namespace Managers
         public void ChangeStateToGame() => CurrentGameState = GameState.Game;
         public void ChangeStateToMenu() => CurrentGameState = GameState.Menu;
 
+        public void ChangeStateToPause() => CurrentGameState = GameState.Pause;
         #endregion
 
 
@@ -207,5 +249,7 @@ namespace Managers
         }
 
         public void QuitGame() =>  Application.Quit();
+
+        public void GoToMenu() => SceneManager.LoadScene("Menu");
     }
 }
