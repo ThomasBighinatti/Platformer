@@ -77,9 +77,12 @@ namespace Managers
 
         private IEnumerator PlayMusicSequence(int index)
         {
-            Debug.Log(_currentMusicTooPlay);
+            Debug.Log(_currentMusicTooPlay + "caca");
+            
             if (index < 0 || index >= mainMusics.Length || mainMusics[index] is null)
                 yield break;
+
+            musicSource.volume = 100f;
 
             musicSource.clip = mainMusics[index];
             musicSource.Play();
