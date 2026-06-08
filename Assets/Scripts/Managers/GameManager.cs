@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Controllers;
 using GPE;
 using UnityEngine;
@@ -40,14 +42,14 @@ namespace Managers
         
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (LevelManager.Instance != null)
+            if (LevelManager.Instance != null && _currentGameState == GameState.Game)
             {
                 _player = LevelManager.Instance.Player;
                 _playerRb = _player.GetComponent<Rigidbody2D>();
             }
             else
             {
-                Debug.LogWarning("GameManager : No LevelManager");
+                Debug.LogWarning("GameManager : No LevelManager or player is in menu");
             }
         }
         
@@ -173,18 +175,37 @@ namespace Managers
             CurrentGameState = GameState.Game;
         }
         
-        public void ContinueGame()
+        public async void ContinueGame()
         {
-            CurrentGameState = GameState.Game;
+            try
+            {
+                CurrentGameState = GameState.Game;
+                await Task.Delay(2000);
+                RespawnPlayer();
+            }
+            catch (Exception e)
+            {
+                throw; // TODO handle exception
+            }
         }
         
-        public void StartFromLevel(int checkpointIndex)
+        public async void StartFromLevel(int checkpointIndex)
         {
-            SaveSystem.SaveSystem.DeleteSave();
-            SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
-            CurrentGameState = GameState.Game;
+            try
+            {
+                SaveSystem.SaveSystem.DeleteSave();
+                CurrentGameState = GameState.Game;
+                SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
+                await Task.Delay(2000); // pour attendre le chargement et faire spawn le player (jsp pourquoi mais yield return null n'etait pas suffisant)
+                RespawnPlayer();
+                //Debug.Log("(GM) checkpoint index " + checkpointIndex);
+            }
+            catch (Exception e)
+            {
+                throw; // TODO handle exception
+            }
         }
-        
+
         public void QuitGame() =>  Application.Quit();
     }
 }

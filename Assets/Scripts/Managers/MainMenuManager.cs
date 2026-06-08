@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Managers
@@ -11,6 +13,9 @@ namespace Managers
         [SerializeField] private List<StageData> levelList;
         [SerializeField] private Image levelImage;
         [SerializeField] private int[] levelStartCheckpoints = { 0, 7, 13 };
+        [SerializeField] private GameObject nextLevelButton;
+        [SerializeField] private GameObject defaultButton;
+        
         
         private int levelIndex = 0;
     
@@ -24,17 +29,43 @@ namespace Managers
             UpdateStageDisplay();
         }
 
-        public void SelectLevel()
+        public void EnableSelect()
         {
             if (selectLevelPanel != null && mainMenuPanel != null)
             {
                 mainMenuPanel.SetActive(false);
-                selectLevelPanel.SetActive(true); 
+                selectLevelPanel.SetActive(true);
+                StartCoroutine(SelectDefaultButton());
             }
             else
             {
                 Debug.LogWarning("Menu Manager : missing panel");
             }
+        }
+        public void EnableMenu()
+        {
+            if (selectLevelPanel != null && mainMenuPanel != null)
+            {
+                mainMenuPanel.SetActive(true);
+                selectLevelPanel.SetActive(false);
+                StartCoroutine(MenuDefaultButton());
+            }
+            else
+            {
+                Debug.LogWarning("Menu Manager : missing panel");
+            }
+        }
+
+        IEnumerator SelectDefaultButton()
+        {
+            yield return null; // attend une frame
+            EventSystem.current.SetSelectedGameObject(nextLevelButton);
+        }
+        
+        IEnumerator MenuDefaultButton()
+        {
+            yield return null; // attend une frame
+            EventSystem.current.SetSelectedGameObject(defaultButton);
         }
 
         public void SelectNextStage()
