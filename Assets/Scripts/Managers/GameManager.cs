@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using Controllers;
+using GPE;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -6,7 +9,7 @@ using UnityEngine.SceneManagement;
 namespace Managers
 {
     
-    public class GameManager : MonoBehaviour
+    public class GameManager : MonoBehaviour, ISubject
     {
     
         public static GameManager Instance;
@@ -64,6 +67,29 @@ namespace Managers
                 Debug.LogWarning("GameManager : No Player");
             }
         }
+        
+        private List<IResettable> _resettables = new List<IResettable>();
+        
+        public void Subscribe(IResettable resettable) => _resettables.Add(resettable);
+        public void Unsubscribe(IResettable resettable)
+        {
+            try
+            {
+                _resettables.Remove(resettable);
+            }
+            catch (NullReferenceException exception)
+            {
+                Debug.LogError("Not in subscriber list" + exception);
+            }
+        }
+        
+        public void ResetNotify()
+        {
+            for (int i = _resettables.Count - 1; i >= 0; i--)
+            {
+                _resettables[i].ResetToInitialState();
+            }
+        }
 
         public void RespawnPlayer()
         {
@@ -80,19 +106,15 @@ namespace Managers
                     Debug.LogWarning("GameManager : No Checkpoint Found");
                     return;
                 }
-
-                switch (_player.activeSelf)
-                {
-                    case false:
-                        _player.transform.position = spawnPosition;
-                        _player.SetActive(true);
-                        break;
-                    
-                    case true:
-                        _player.transform.position = spawnPosition;
-                        _playerRb.linearVelocity = Vector2.zero;
-                        break;
-                }
+                
+                ResetNotify();
+                
+                _player.SetActive(true);
+                _player.transform.position = spawnPosition; 
+                _playerRb.linearVelocity = Vector2.zero;
+                _playerScript.DeactivateExplosionAnimator();
+                 
+                
             }
             else
             {
@@ -126,35 +148,42 @@ namespace Managers
         {
             return CurrentGameState switch
             {
-                GameState.Game => "Game",
+                GameState.Game => "asemblage", //"asemblage" pour tester
                 GameState.Menu => "Menu",
                 _ => ""
             };
         }
-        public void ChangeStateToGame() => _currentGameState = GameState.Game;
-        public void ChangeStateToMenu() => _currentGameState = GameState.Menu;
+        public void ChangeStateToGame() => CurrentGameState = GameState.Game;
+        public void ChangeStateToMenu() => CurrentGameState = GameState.Menu;
 
         #endregion
 
+
+        private PlayerController _playerScript;
+            
         private void Start()
         {
             _currentGameState = gameState;
+            _playerScript = _player.GetComponent<PlayerController>();
         }
 
         public void StartNewGame()
         {
-            //si pas de save{}
             SaveSystem.SaveSystem.DeleteSave();
-            GetSceneByState();
+            CurrentGameState = GameState.Game;
         }
         
         public void ContinueGame()
         {
-            GetSceneByState();
-            SaveManager.Instance.Load();
+            CurrentGameState = GameState.Game;
         }
         
-        //select level dans le Menu Manager
+        public void StartFromLevel(int checkpointIndex)
+        {
+            SaveSystem.SaveSystem.DeleteSave();
+            SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
+            CurrentGameState = GameState.Game;
+        }
         
         public void QuitGame() =>  Application.Quit();
     }

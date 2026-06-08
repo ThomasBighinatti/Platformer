@@ -101,5 +101,9 @@ namespace Managers
             }
         }
         
+        public void ForceSetCheckpoint(int index)
+        {
+            CurrentCheckpointIndex = index;
+        }
     }
 }

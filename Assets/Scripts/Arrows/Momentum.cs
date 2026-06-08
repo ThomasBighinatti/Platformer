@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using Controllers;
 using Datas;
+using GPE;
 using Managers;
 using UnityEngine;
 
 namespace Arrows
 {
-    public class Momentum : Arrow
+    public class Momentum : Arrow, IResettable
     {
         private MomentumArrowData MomentumData => data as MomentumArrowData;
         
@@ -132,6 +133,9 @@ namespace Arrows
         
         public override void DestroyArrow()
         {
+            if (isBeingDestroyed)
+                return;
+            
             if (!_recalled)
             {
                 ArrowManager.Instance.PopMomentumArrow();
