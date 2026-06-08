@@ -10,7 +10,7 @@ namespace Managers
 
         [Header("Sounds")]
         [SerializeField] private AudioClip[] sfx;
-        [SerializeField] private AudioClip mainMusic;
+        [SerializeField] private AudioClip[] mainMusics;
         
 
         [Header("Audio Sources")] 
@@ -29,14 +29,14 @@ namespace Managers
             DontDestroyOnLoad(transform.parent);
         }
 
-        private void Start()
+        /*private void Start()
         {
             if (mainMusic == null)
                 return;
             
             musicSource.clip = mainMusic;
             musicSource.Play();
-        }
+        }*/
         
         #region SFX
 
