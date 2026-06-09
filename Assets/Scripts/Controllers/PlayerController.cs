@@ -84,7 +84,7 @@ namespace Controllers
             _explosionAnimator = explosionAnimator;
             _explosionAnimator.gameObject.SetActive(false);
         }
-        
+
         private void FixedUpdate()
         {
             _jumpBufferCounter -= Time.fixedDeltaTime;
@@ -188,6 +188,8 @@ namespace Controllers
         #endregion
         
         #region Jump
+        
+        private bool _isPlayerJumping;
         private Vector2 Jump(Vector2 targetVelocity)
         {
             bool canJump = _coyoteTimeCounter > 0f && _jumpBufferCounter > 0f && _onStickyCanJump;
@@ -211,6 +213,8 @@ namespace Controllers
                     targetVelocity = jumpForceVector;
                     break;
             }
+            
+            _isPlayerJumping = true;
 
             _coyoteTimeCounter = 0f;
             _jumpBufferCounter = 0f;
@@ -232,17 +236,25 @@ namespace Controllers
         
         private Vector2 JumpCut(Vector2 targetVelocity)
         {
-            if (!_jumpButtonReleased || !(targetVelocity.y > 0f)) 
+            if (!_isPlayerJumping || !_jumpButtonReleased || !(targetVelocity.y > 0f)) 
                 return targetVelocity;
 
             targetVelocity.y *= data.JumpCutMultiplier;
             _jumpButtonReleased = false;
+            _isPlayerJumping = false;
 
             return targetVelocity;
         }
 
         private Vector2 ApplyCustomGravity(Vector2 targetVelocity)
         {
+            
+            if (grounded || targetVelocity.y <= 0f)
+            {
+                _isPlayerJumping = false;
+                _jumpButtonReleased = false; 
+            }
+            
             if (grounded && !onSlope && targetVelocity.y <= 0.01f)
             {
                 targetVelocity.y = -0.1f;
@@ -354,7 +366,6 @@ namespace Controllers
             }
 
             _rb.AddForce(force * direction, ForceMode2D.Impulse);
-            Debug.Log(force);
             
             _explosionAnimator.gameObject.SetActive(true);
             PlayExplosionAnim(force);
@@ -375,10 +386,15 @@ namespace Controllers
                 case < 28:
                     _explosionAnimator.Play("Impact3Anim", 0, 0f);
                     break;
-                case < 30:
+                case >= 28:
                     _explosionAnimator.Play("Impact4Anim", 0, 0f);
                     break;
             }
+        }
+        
+        public void DeactivateExplosionAnimator()
+        {
+            _explosionAnimator.gameObject.SetActive(false);
         }
         
         private void OnDrawGizmosSelected()

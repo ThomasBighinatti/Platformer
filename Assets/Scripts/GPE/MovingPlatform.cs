@@ -1,5 +1,8 @@
 using System;
+using System.Collections.Generic;
+using Managers;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GPE
 {
@@ -10,8 +13,17 @@ namespace GPE
         
         [Header("Platform Settings")]
         [SerializeField] private MovingPlatformSettings settings;
-        [Serializable]
+
+        [Space(10f)] [Header("Visual Settings")] 
+        [SerializeField] private float lengthScale;
+        [SerializeField] private float heightScale;
+        // two by two
+        [SerializeField] private List<Sprite> armVertical;
+        [SerializeField] private List<Sprite> armHorizontal;
+        [SerializeField] private List<Sprite> hands;
+        [SerializeField] private List<Sprite> ends;
         
+        [Serializable] 
         private struct MovingPlatformSettings
         {
             public Direction direction;
@@ -21,6 +33,8 @@ namespace GPE
     
         private Vector2 _initialPos;
         private Vector2 _targetPos;
+
+        private GameObject _parent;
 
         #region Direction GD
     
@@ -48,11 +62,77 @@ namespace GPE
 
         private void Start()
         {
-            Debug.DrawRay(transform.position,GetDirection() * settings.distance,Color.red,float.MaxValue);
             _initialPos = transform.position;
             _targetPos = _initialPos + GetDirection() * settings.distance;
+            
+            _parent = new GameObject(gameObject.name + "Parent");
+            gameObject.transform.SetParent(_parent.transform);
+            Debug.DrawRay(transform.position,GetDirection() * settings.distance,Color.red,float.MaxValue);
+            
+            GameManager.Instance.Subscribe(this);
+
+            switch (settings.direction)
+            {
+                case Direction.Up:
+                    SpawnVisuals(heightScale, armVertical, hands[0], hands[1], ends[0], ends[1], GetDirection());
+                    break;
+                case Direction.Right:
+                    SpawnVisuals(lengthScale, armHorizontal, hands[2], hands[3], ends[2], ends[3], GetDirection());
+                    break;
+                case Direction.Down:
+                    SpawnVisuals(heightScale, armVertical, hands[4], hands[5], ends[4], ends[5], GetDirection());
+                    break;
+                case Direction.Left:
+                    SpawnVisuals(lengthScale, armHorizontal, hands[6], hands[7], ends[6], ends[7], GetDirection());
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
-    
+        
+        /*est ce qu'on peut juste faire un truc ou on met la main en 0,0 et apres ajouter des valeurs en fonction de ce qu'il faut ?
+         exemple si la plateforme bouge vers le bas, et que ses dimensions sont 1.5 de hauteur est bien on descend de 0.25 mais si elle est de trois de hauteur, 
+         on monte de 0.5 ? et faire ça pour toutes les directions proportionellement ? ducoup si on va vers la droite et quon a 1,5 de largeur 
+         on deplace à droite de 0.25 mais au contraire si elle est de 3 de largeur on déplace de 0.5 vers la gauche*/
+
+        private List<GameObject> _armsList = new List<GameObject>();
+        
+        private void SpawnVisuals(float scale, List<Sprite> armSprites, Sprite handA, Sprite handB, Sprite endA, Sprite endB, Vector2 direction)
+        {
+            float dividedScale = scale / 6f;
+            if (scale > 1.5f)
+            {
+                dividedScale = -dividedScale;
+            }
+            
+            GameObject hand = new GameObject("Hand");
+            hand.transform.SetParent(transform);
+            hand.transform.localPosition = direction * dividedScale;
+            Debug.Log(direction);
+            Debug.Log(dividedScale);
+            Debug.Log(direction * dividedScale);
+            hand.AddComponent<SpriteRenderer>().sprite = Random.Range(0, 2) == 0 ? handA : handB;
+            
+            Vector2 offset = new Vector2(-direction.y, direction.x) * 0.2f;
+            
+            for (int i = 0; i < (int)settings.distance; i++)
+            {
+                GameObject arm = new GameObject("Arm " + i);
+                arm.transform.SetParent(transform);
+                arm.transform.position = _initialPos + direction * (dividedScale + i + 0.5f) + offset;
+                arm.transform.SetParent(_parent.transform);
+                arm.AddComponent<SpriteRenderer>().sprite = armSprites[i % armSprites.Count];
+                _armsList.Add(arm);
+            }
+            
+            GameObject end = new GameObject("End");
+            end.transform.SetParent(_parent.transform);
+            end.transform.position = _initialPos + direction * (dividedScale + settings.distance + 0.75f) + offset;
+            end.AddComponent<SpriteRenderer>().sprite = Random.Range(0, 2) == 0 ? endA : endB;
+        }
+
+        private void OnDisable() => GameManager.Instance.Unsubscribe(this);
+
         private void FixedUpdate()
         {
             MovingStateLimits();
@@ -72,6 +152,7 @@ namespace GPE
             {
                 case MovingState.Static:
                     return;
+                
                 case MovingState.MoveTo:
                     transform.position = Vector3.MoveTowards(transform.position, _targetPos, settings.speed * Time.fixedDeltaTime);
                     if (Vector2.Distance(transform.position, _targetPos) <= 0.001)
@@ -79,7 +160,9 @@ namespace GPE
                         transform.position = _targetPos;
                         _movingState = MovingState.Static;
                     }
+                    UpdateArms();
                     break;
+                
                 case MovingState.MoveBack:
                     transform.position = Vector3.MoveTowards(transform.position, _initialPos, settings.speed * Time.fixedDeltaTime);
                     if (Vector2.Distance(transform.position, _initialPos) <= 0.001)
@@ -87,9 +170,21 @@ namespace GPE
                         transform.position = _initialPos;
                         _movingState = MovingState.Static;
                     }
+                    UpdateArms();
                     break;
+                
                 default:
                     throw new ArgumentOutOfRangeException();
+            }
+        }
+        
+        private void UpdateArms()
+        {
+            float distanceTravelled = Vector2.Distance(_initialPos, transform.position);
+    
+            for (int i = 0; i < _armsList.Count; i++)
+            {
+                _armsList[i].SetActive(distanceTravelled <= i + 0.5f);
             }
         }
 

@@ -101,5 +101,10 @@ namespace Managers
             }
         }
         
+        public void ForceSetCheckpoint(int index)
+        {
+            CurrentCheckpointIndex = index;
+            Debug.Log($"Checkpoint forcé (SM) : {CurrentCheckpointIndex}");
+        }
     }
 }

@@ -1,4 +1,9 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Controllers;
+using GPE;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -6,7 +11,7 @@ using UnityEngine.SceneManagement;
 namespace Managers
 {
     
-    public class GameManager : MonoBehaviour
+    public class GameManager : MonoBehaviour, ISubject
     {
     
         public static GameManager Instance;
@@ -37,17 +42,34 @@ namespace Managers
         
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (LevelManager.Instance != null)
+            if (LevelManager.Instance != null && _currentGameState == GameState.Game)
             {
                 _player = LevelManager.Instance.Player;
                 _playerRb = _player.GetComponent<Rigidbody2D>();
             }
             else
             {
-                Debug.LogWarning("GameManager : No LevelManager");
+                Debug.LogWarning("GameManager : No LevelManager or player is in menu");
             }
         }
-        
+
+        public void OnPause(InputAction.CallbackContext context)
+        {
+            if (!context.started) return;
+            Debug.Log($"OnPause called — état actuel : {_currentGameState}");
+
+            if (context.started && _currentGameState == GameState.Game)
+            {
+                ChangeStateToPause();
+            }
+            
+            else if (context.started && _currentGameState == GameState.Pause)
+            {
+                ChangeStateToGame();
+                Debug.Log("Game");
+            }
+        }
+
         public void OnRetry(InputAction.CallbackContext context)
         {
             if (!context.started) 
@@ -62,6 +84,29 @@ namespace Managers
             else
             {
                 Debug.LogWarning("GameManager : No Player");
+            }
+        }
+        
+        private List<IResettable> _resettables = new List<IResettable>();
+        
+        public void Subscribe(IResettable resettable) => _resettables.Add(resettable);
+        public void Unsubscribe(IResettable resettable)
+        {
+            try
+            {
+                _resettables.Remove(resettable);
+            }
+            catch (NullReferenceException exception)
+            {
+                Debug.LogError("Not in subscriber list" + exception);
+            }
+        }
+        
+        public void ResetNotify()
+        {
+            for (int i = _resettables.Count - 1; i >= 0; i--)
+            {
+                _resettables[i].ResetToInitialState();
             }
         }
 
@@ -80,19 +125,15 @@ namespace Managers
                     Debug.LogWarning("GameManager : No Checkpoint Found");
                     return;
                 }
-
-                switch (_player.activeSelf)
-                {
-                    case false:
-                        _player.transform.position = spawnPosition;
-                        _player.SetActive(true);
-                        break;
-                    
-                    case true:
-                        _player.transform.position = spawnPosition;
-                        _playerRb.linearVelocity = Vector2.zero;
-                        break;
-                }
+                
+                ResetNotify();
+                
+                _player.SetActive(true);
+                _player.transform.position = spawnPosition; 
+                _playerRb.linearVelocity = Vector2.zero;
+                _playerScript.DeactivateExplosionAnimator();
+                 
+                
             }
             else
             {
@@ -107,18 +148,42 @@ namespace Managers
         public enum GameState
         {
             Game,
-            Menu
+            Menu,
+            Pause
         }
 
+        private GameState _previousGameState;
         private GameState _currentGameState;
+
         public GameState CurrentGameState
         {
             get => _currentGameState;
             set
             {
-                if (_currentGameState == value) return;
+                if (_currentGameState == value && value != GameState.Pause) return;
+
+                if (_currentGameState == GameState.Pause && value != GameState.Pause)
+                {
+                    Time.timeScale = 1f;
+                    LevelManager.Instance.pauseMenu.SetActive(false);
+                }
+
+                _previousGameState = _currentGameState;
                 _currentGameState = value;
-                SceneManager.LoadScene(GetSceneByState());
+
+                if (value == GameState.Pause)
+                {
+                    LevelManager.Instance.pauseMenu.SetActive(true);
+                    Time.timeScale = 0f;
+                }
+                else if (_previousGameState == GameState.Pause)
+                {
+                    
+                }
+                else
+                {
+                    SceneManager.LoadScene(GetSceneByState());
+                }
             }
         }
 
@@ -126,36 +191,65 @@ namespace Managers
         {
             return CurrentGameState switch
             {
-                GameState.Game => "Game",
+                GameState.Game => "asemblage", //"asemblage" pour tester
                 GameState.Menu => "Menu",
                 _ => ""
             };
         }
-        public void ChangeStateToGame() => _currentGameState = GameState.Game;
-        public void ChangeStateToMenu() => _currentGameState = GameState.Menu;
+        public void ChangeStateToGame() => CurrentGameState = GameState.Game;
+        public void ChangeStateToMenu() => CurrentGameState = GameState.Menu;
 
+        public void ChangeStateToPause() => CurrentGameState = GameState.Pause;
         #endregion
 
+
+        private PlayerController _playerScript;
+            
         private void Start()
         {
             _currentGameState = gameState;
+            _playerScript = _player.GetComponent<PlayerController>();
         }
 
         public void StartNewGame()
         {
-            //si pas de save{}
             SaveSystem.SaveSystem.DeleteSave();
-            GetSceneByState();
+            CurrentGameState = GameState.Game;
         }
         
-        public void ContinueGame()
+        public async void ContinueGame()
         {
-            GetSceneByState();
-            SaveManager.Instance.Load();
+            try
+            {
+                CurrentGameState = GameState.Game;
+                await Task.Delay(2000);
+                RespawnPlayer();
+            }
+            catch (Exception e)
+            {
+                throw; // TODO handle exception
+            }
         }
         
-        //select level dans le Menu Manager
-        
+        public async void StartFromLevel(int checkpointIndex)
+        {
+            try
+            {
+                SaveSystem.SaveSystem.DeleteSave();
+                CurrentGameState = GameState.Game;
+                SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
+                await Task.Delay(2000); // pour attendre le chargement et faire spawn le player (jsp pourquoi mais yield return null n'etait pas suffisant)
+                RespawnPlayer();
+                //Debug.Log("(GM) checkpoint index " + checkpointIndex);
+            }
+            catch (Exception e)
+            {
+                throw; // TODO handle exception
+            }
+        }
+
         public void QuitGame() =>  Application.Quit();
+
+        public void GoToMenu() => SceneManager.LoadScene("Menu");
     }
 }

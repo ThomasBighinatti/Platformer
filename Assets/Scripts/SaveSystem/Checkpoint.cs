@@ -44,5 +44,6 @@ namespace SaveSystem
 
             SaveManager.Instance.Save();
         }
+        
     }
 }

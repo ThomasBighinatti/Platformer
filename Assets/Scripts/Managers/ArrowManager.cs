@@ -116,7 +116,6 @@ namespace Managers
         public void ChangeArrowNumByCheckpoint(int index)
         {
             _currentArrowNum = arrowNumDatas.ArrowNumList[index];
-            Debug.Log("ArrowManager : " + _currentArrowNum);
             
             int currentIndex = 0;
             
@@ -148,7 +147,6 @@ namespace Managers
             _currentArrowNum--;
             PlayShootUiAnimation(_playerUiArrows[_currentArrowNum]);
             
-            Debug.Log("ArrowManager : " + _currentArrowNum);
             CurrentArrowScript = momentumPrefab; //non adaptable mais on s'en fout
             
             GameObject arrowCreation = Instantiate(CurrentArrowScript.gameObject,_pointer.transform);
@@ -180,7 +178,6 @@ namespace Managers
 
         public void RecallArrow()
         {
-            Debug.Log(_momentumStack.Count);
             if (MomentumStackEmpty)
                 return;
             
@@ -206,6 +203,8 @@ namespace Managers
             // Debug.DrawRay(pointer.transform.position, _lookingTowards * 10f, Color.red, 0.1f);
                     
             _pinPointer.transform.position = hit.point;
+            float angle = Mathf.Atan2(_lookingTowards.y, _lookingTowards.x) * Mathf.Rad2Deg;
+            _pinPointer.transform.rotation = Quaternion.Euler(0, 0, angle+90);
         }
     }
 }

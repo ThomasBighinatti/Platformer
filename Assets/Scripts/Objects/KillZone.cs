@@ -24,7 +24,6 @@ namespace Objects
             switch (other.gameObject.tag)
             {
                 case "Player":
-                    Debug.Log("KillZone : Killed");
                     if (GameManager.Instance != null )
                     {
                         GameManager.Instance.RespawnPlayer();
@@ -40,7 +39,6 @@ namespace Objects
                     if (arrow != null)
                     {
                         arrow.DestroyArrow();
-                        Debug.Log("KillZone : Destroy Arrow");
                     }
                     else
                     {

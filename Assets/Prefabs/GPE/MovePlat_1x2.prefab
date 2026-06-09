@@ -51,6 +51,44 @@ MonoBehaviour:
     direction: 4
     speed: 5
     distance: 5
+  lengthScale: 1.5
+  heightScale: 3
+  armVertical:
+  - {fileID: -3820089894364710941, guid: 6e40b4d148f2de643bcfbc6c8bf13e3b, type: 3}
+  - {fileID: 7364135806498252645, guid: 6e40b4d148f2de643bcfbc6c8bf13e3b, type: 3}
+  - {fileID: 6501273534846479358, guid: 6e40b4d148f2de643bcfbc6c8bf13e3b, type: 3}
+  - {fileID: -474996173307285722, guid: 6e40b4d148f2de643bcfbc6c8bf13e3b, type: 3}
+  - {fileID: -4585338190488035529, guid: 932d18d40d6a1f340b31ea02028c3d99, type: 3}
+  - {fileID: -7689884495719547073, guid: 932d18d40d6a1f340b31ea02028c3d99, type: 3}
+  - {fileID: 5883516243564868435, guid: 932d18d40d6a1f340b31ea02028c3d99, type: 3}
+  - {fileID: -2072268088896307071, guid: 932d18d40d6a1f340b31ea02028c3d99, type: 3}
+  armHorizontal:
+  - {fileID: -8258857597128362690, guid: 19207b927043ce64dba1e4ea67bc00e9, type: 3}
+  - {fileID: -3750128509773232047, guid: 19207b927043ce64dba1e4ea67bc00e9, type: 3}
+  - {fileID: -7043488850347224868, guid: 19207b927043ce64dba1e4ea67bc00e9, type: 3}
+  - {fileID: 9039771226998313428, guid: 19207b927043ce64dba1e4ea67bc00e9, type: 3}
+  - {fileID: -6620255170059110036, guid: 72793c093d2b0ff439b11cde1dd98c54, type: 3}
+  - {fileID: 4448224069861767855, guid: 72793c093d2b0ff439b11cde1dd98c54, type: 3}
+  - {fileID: 5114686330962401650, guid: 72793c093d2b0ff439b11cde1dd98c54, type: 3}
+  - {fileID: 5995089079844989361, guid: 72793c093d2b0ff439b11cde1dd98c54, type: 3}
+  hands:
+  - {fileID: -3508516906847040095, guid: 932d18d40d6a1f340b31ea02028c3d99, type: 3}
+  - {fileID: -8256299109602444505, guid: 932d18d40d6a1f340b31ea02028c3d99, type: 3}
+  - {fileID: -3471287203862353531, guid: 72793c093d2b0ff439b11cde1dd98c54, type: 3}
+  - {fileID: 2457832142359360331, guid: 72793c093d2b0ff439b11cde1dd98c54, type: 3}
+  - {fileID: 2518161137375260213, guid: 6e40b4d148f2de643bcfbc6c8bf13e3b, type: 3}
+  - {fileID: 7042362732257254061, guid: 6e40b4d148f2de643bcfbc6c8bf13e3b, type: 3}
+  - {fileID: 472835381839933604, guid: 19207b927043ce64dba1e4ea67bc00e9, type: 3}
+  - {fileID: -7446136230583907177, guid: 19207b927043ce64dba1e4ea67bc00e9, type: 3}
+  ends:
+  - {fileID: -2605818593807593535, guid: 932d18d40d6a1f340b31ea02028c3d99, type: 3}
+  - {fileID: -7284475107304274079, guid: 932d18d40d6a1f340b31ea02028c3d99, type: 3}
+  - {fileID: 6446244392828132153, guid: 72793c093d2b0ff439b11cde1dd98c54, type: 3}
+  - {fileID: 235680208816982008, guid: 72793c093d2b0ff439b11cde1dd98c54, type: 3}
+  - {fileID: -3050636945620404298, guid: 6e40b4d148f2de643bcfbc6c8bf13e3b, type: 3}
+  - {fileID: 2825344191095922649, guid: 6e40b4d148f2de643bcfbc6c8bf13e3b, type: 3}
+  - {fileID: -271004813625282075, guid: 19207b927043ce64dba1e4ea67bc00e9, type: 3}
+  - {fileID: -6289653091134039702, guid: 19207b927043ce64dba1e4ea67bc00e9, type: 3}
 --- !u!61 &101341187215220668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -190,7 +228,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6771236049255241643, guid: 83c20cd83b1c8904f9e5ec5c68aaedd3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
