@@ -128,6 +128,14 @@ namespace Managers
             AudioClip soundToPlay = sfx[(int)sound];
             sfxSource.PlayOneShot(soundToPlay);
         }
+
+        private AudioSource _playerAudioSource;
+
+        public void PlayerRunSound()
+        {
+            AudioClip soundToPlay = sfx[(int)MainSfx.Running];
+            
+        }
         
         public void Vibration(float low, float high, float duration)
         {
@@ -143,7 +151,6 @@ namespace Managers
             yield return new WaitForSeconds(duration);
             Gamepad.current.ResetHaptics();
         }
-        
         
         #endregion
     }
