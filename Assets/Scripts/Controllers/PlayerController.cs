@@ -1,4 +1,5 @@
 using Datas;
+using Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 // ReSharper disable CompareOfFloatsByEqualityOperator
@@ -221,6 +222,7 @@ namespace Controllers
             _boxCastCooldownCounter = boxCastCooldown;
                 
             playerAnimController.SetJumpContact();
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.StartJump);
 
             return targetVelocity;
         }
@@ -322,6 +324,7 @@ namespace Controllers
             {
                 playerAnimController.SetLand();
                 playerAnimController.landed = true;
+                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.EndJump);
             }
             else if (!onSlope && !grounded)
             {

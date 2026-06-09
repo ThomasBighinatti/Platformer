@@ -33,93 +33,111 @@ namespace Managers
 
         private void Start()
         {
-            _currentMusicTooPlay = musicIndexAtSpawn;
-            PlayMainMusic();
+            //CurrentMusicToPlay = musicIndexAtSpawn;
         }
         
         #region Main
-
-        private int _currentMusicTooPlay;
-
-        public void ChangeMainMusic(int index)
-        {
-            if (index < 0 || index >= mainMusics.Length)
-                return;
-            
-            _currentMusicTooPlay = index;
-            PlayMainMusic();
-        }
-
-        private void PlayMainMusic()
-        {
-            if (_currentMusicTooPlay == 0)
-            {
-                PlayFirstMusic();
-            }
-            else
-            {
-                StopMusic();
-            }
-        }
         
-        private void PlayFirstMusic()
-        {
-            Debug.Log(_currentMusicTooPlay);
-            if (mainMusics[0] == null)
-            {
-                return;
-            }
+        private Coroutine _musicCoroutine;
+        private int? _nextMusicIndex;
 
-            musicSource.clip = mainMusics[0];
-            musicSource.loop = true;
-            musicSource.Play();
+        private int? _currentMusicToPlay;
+        public int? CurrentMusicToPlay
+        {
+            get => _currentMusicToPlay;
+            set
+            {
+                if (_currentMusicToPlay == value) return;
+
+                bool isComingFromMenu = _currentMusicToPlay is 0 or null;
+                bool isGoingToMenu = value == 0;
+                _currentMusicToPlay = value;
+
+                if (_currentMusicToPlay == null) 
+                    return;
+
+                if (isComingFromMenu || isGoingToMenu)
+                {
+                    _nextMusicIndex = null;
+                    if (_musicCoroutine != null) 
+                        StopCoroutine(_musicCoroutine);
+                    
+                    musicSource.Stop();
+                    _musicCoroutine = StartCoroutine(PlayMusic((int)_currentMusicToPlay));
+                }
+                else
+                {
+                    _nextMusicIndex = _currentMusicToPlay;
+                }
+            }
         }
 
-        private IEnumerator PlayMusicSequence(int index)
+        private IEnumerator PlayMusic(int index)
         {
-            Debug.Log(_currentMusicTooPlay + "caca");
-            
             if (index < 0 || index >= mainMusics.Length || mainMusics[index] is null)
                 yield break;
 
-            musicSource.volume = 100f;
-
+            musicSource.volume = 1f;
             musicSource.clip = mainMusics[index];
+            musicSource.loop = (index == 0);
             musicSource.Play();
-            
-            yield return new WaitForSeconds(musicSource.clip.length);
-            
-            StartCoroutine(PlayMusicSequence(_currentMusicTooPlay));
-        }
 
-        private void StopMusic()
-        {
-            StartCoroutine(StartFade(3f, 0f));
-        }
-        
-        private IEnumerator StartFade(float duration, float targetVolume)
-        {
-            float currentTime = 0;
-            float start = musicSource.volume;
-            while (currentTime < duration)
-            {
-                currentTime += Time.deltaTime;
-                musicSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
-                yield return null;
-            }
-            musicSource.Stop();
-            StartCoroutine(PlayMusicSequence(_currentMusicTooPlay));
+            if (index == 0) 
+                yield break; 
+
+            yield return new WaitForSecondsRealtime(musicSource.clip.length);
+
+            if (_nextMusicIndex == null) 
+                yield break;
+            
+            int next = (int)_nextMusicIndex;
+            _nextMusicIndex = null;
+            _musicCoroutine = StartCoroutine(PlayMusic(next));
         }
         
         #endregion
         
         #region SFX
-
-        public void SoundExample()
+        
+        public enum MainSfx
         {
-            var soundToPlay = sfx[0];
+            Running = 0,
+            StartJump = 1,
+            EndJump = 2,
+            Death = 3,
+            Respawn = 4,
+            ArrowPlanted = 5,
+            ArrowReturn = 6,
+            ArrowShot = 7,
+            ArrowAim = 8,
+            MovingPlat = 9,
+            StickyPlanted = 10,
+            StickyReturn = 11,
+            CrystalBroken = 12,
+            CrystalImpact = 13,
+            CrystalStartBreak = 14
+        }
+
+        public enum MenuSfx
+        {
+            ArrowMenu = 15,
+            InputMenu = 16,
+            ScreenSelect = 17
+        }
+        
+        public void SoundPlay(MainSfx sound)
+        {
+            AudioClip soundToPlay = sfx[(int)sound];
             sfxSource.PlayOneShot(soundToPlay);
         }
+        
+        public void SoundPlay(MenuSfx sound)
+        {
+            AudioClip soundToPlay = sfx[(int)sound];
+            sfxSource.PlayOneShot(soundToPlay);
+        }
+        
+        
         #endregion
     }
 }

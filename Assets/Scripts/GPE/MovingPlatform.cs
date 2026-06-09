@@ -90,10 +90,6 @@ namespace GPE
             }
         }
         
-        /*est ce qu'on peut juste faire un truc ou on met la main en 0,0 et apres ajouter des valeurs en fonction de ce qu'il faut ?
-         exemple si la plateforme bouge vers le bas, et que ses dimensions sont 1.5 de hauteur est bien on descend de 0.25 mais si elle est de trois de hauteur, 
-         on monte de 0.5 ? et faire ça pour toutes les directions proportionellement ? ducoup si on va vers la droite et quon a 1,5 de largeur 
-         on deplace à droite de 0.25 mais au contraire si elle est de 3 de largeur on déplace de 0.5 vers la gauche*/
 
         private List<GameObject> _armsList = new List<GameObject>();
         
@@ -195,6 +191,10 @@ namespace GPE
             set
             {
                 if (value < 0) value = 0;
+                if (_numberOfInteractions == 0 && value == 1)
+                {
+                    SoundManager.Instance.SoundPlay(SoundManager.MainSfx.MovingPlat);
+                }
                 _numberOfInteractions = value;
                 _movingState = _numberOfInteractions > 0 ? MovingState.MoveTo : MovingState.MoveBack;
             }

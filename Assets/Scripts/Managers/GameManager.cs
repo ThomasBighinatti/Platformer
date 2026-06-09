@@ -132,7 +132,8 @@ namespace Managers
                 _player.transform.position = spawnPosition; 
                 _playerRb.linearVelocity = Vector2.zero;
                 _playerScript.DeactivateExplosionAnimator();
-                 
+                
+                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.Respawn);
                 
             }
             else

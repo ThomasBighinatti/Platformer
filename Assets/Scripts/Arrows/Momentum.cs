@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Arrows
 {
-    public class Momentum : Arrow, IResettable
+    public class Momentum : Arrow
     {
         private MomentumArrowData MomentumData => data as MomentumArrowData;
         
@@ -100,6 +100,8 @@ namespace Arrows
             Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             Rb.linearVelocity = Vector2.zero;
             _recallSpeed = MomentumData.RecallInitialSpeed;
+            
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.ArrowReturn);
 
             _initialPositionOnRecall= transform.position;
 

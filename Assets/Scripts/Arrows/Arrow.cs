@@ -25,6 +25,7 @@ namespace Arrows
             set
             {
                 _canStartMoving = value;
+                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.ArrowShot);
                 if (_canStartMoving)
                 {
                     StartArrow();
@@ -56,6 +57,7 @@ namespace Arrows
         {
             transform.position -= (Vector3)direction;
             Rb.AddForce(direction * data.Strength);
+            
             if (data.UseGravity)
             {
                 StartCoroutine(WaitForGravity());
@@ -81,6 +83,7 @@ namespace Arrows
             
             Rb.constraints = RigidbodyConstraints2D.FreezeAll;
             IsPlanted = true;
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.ArrowPlanted);
             
             Tilemap hitMap = other.GetComponent<Tilemap>();
     
@@ -96,7 +99,6 @@ namespace Arrows
                 {
                     TileManager.Instance.SpawnParticleForTile(touchedTile, hitPoint);
                 }
-                
             }
             else
             {

@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 9040530534668985699}
   - component: {fileID: 323070033468126684}
   - component: {fileID: 1737368146887319042}
+  - component: {fileID: 6795842275813449133}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -318,6 +319,45 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6795842275813449133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2422715699375897282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac78a202a85a894bafa810a0fe9614d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Managers.SoundManager
+  sfx:
+  - {fileID: 8300000, guid: 7071324621e16374ba01d678fde2c6e6, type: 3}
+  - {fileID: 8300000, guid: 5aa7fd5a94ac7074e9bab31be0e1ee6e, type: 3}
+  - {fileID: 8300000, guid: fae52ad877d14e240a1d1225a482238c, type: 3}
+  - {fileID: 8300000, guid: e34d8ed8a8d8acb4595e2b49907aac12, type: 3}
+  - {fileID: 8300000, guid: d24b1dcd1301f9b449a864f400da59db, type: 3}
+  - {fileID: 8300000, guid: 1628972824165e947aed4f46f5d5476e, type: 3}
+  - {fileID: 8300000, guid: 5451cd5d098fd8842b5d5bb8ed97d386, type: 3}
+  - {fileID: 8300000, guid: 9859d1781e80b9946932a177a54c25c8, type: 3}
+  - {fileID: 8300000, guid: a956cd6527da9334f9bdb1fcb82c3eac, type: 3}
+  - {fileID: 8300000, guid: 3e6b96ff9710f7748be4b012b627f1d3, type: 3}
+  - {fileID: 8300000, guid: 7ea31e5c453383649b99e85470085647, type: 3}
+  - {fileID: 8300000, guid: 92e272f612c690549b678fc096aa7df0, type: 3}
+  - {fileID: 8300000, guid: ce076f38af464624b94e67dcc81df4a0, type: 3}
+  - {fileID: 8300000, guid: 4e0a9fef0242d994e89525ea83cad4fe, type: 3}
+  - {fileID: 8300000, guid: d694519f30fac4142a9886358d4ffe4b, type: 3}
+  - {fileID: 8300000, guid: f649bfde2a690804f8c8195c988c5cf0, type: 3}
+  - {fileID: 8300000, guid: 6e575a481bf58e94bbf4c1c5fe48826b, type: 3}
+  - {fileID: 8300000, guid: 0ef3da4bf4f3c5d4cbf500f83e838c17, type: 3}
+  mainMusics:
+  - {fileID: 8300000, guid: b0f01524e6c2a9f4fb89b8a1336c34e1, type: 3}
+  - {fileID: 8300000, guid: 5649d5197fb863d45b0613ff1179b879, type: 3}
+  - {fileID: 8300000, guid: 02e477495d4e9a64fbdeaf269d4ffa1e, type: 3}
+  - {fileID: 8300000, guid: 4fcfdba02941f0448a07cd6fc836d3a9, type: 3}
+  musicSource: {fileID: 323070033468126684}
+  sfxSource: {fileID: 1737368146887319042}
+  musicIndexAtSpawn: 0
 --- !u!1 &2455506443512566023
 GameObject:
   m_ObjectHideFlags: 0

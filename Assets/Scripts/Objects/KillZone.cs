@@ -26,6 +26,7 @@ namespace Objects
                 case "Player":
                     if (GameManager.Instance != null )
                     {
+                        SoundManager.Instance.SoundPlay(SoundManager.MainSfx.Death);
                         GameManager.Instance.RespawnPlayer();
                     }
                     else
