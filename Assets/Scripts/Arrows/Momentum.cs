@@ -79,7 +79,6 @@ namespace Arrows
             
             PlayerController.ActivateKnockback(_lastDirectionsToPlayer.Count >= 3 ? _lastDirectionsToPlayer[^3] : (target - _initialPositionOnRecall).normalized, 
                 _recallSpeed * MomentumData.KnockbackForce);
-            SoundManager.Instance.Vibration(0.4f,0.4f,0.3f);
             
             // dommage de pas les pooler
             Destroy(gameObject);
