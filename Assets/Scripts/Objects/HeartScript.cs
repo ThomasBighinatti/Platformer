@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Threading.Tasks;
 using Managers;
 using UnityEngine;
 
@@ -8,7 +7,7 @@ namespace Objects
     public class HeartScript : MonoBehaviour
     {
         [SerializeField] private Animator animator;
-        private void OnCollisionEnter2D(Collision2D other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Arrow"))
             {
@@ -24,8 +23,6 @@ namespace Objects
         private IEnumerator WaitBroken()
         {
             SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalImpact);
-            yield return new WaitForSecondsRealtime(0.6f);
-            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalStartBreak);
             yield return new WaitForSecondsRealtime(0.6f);
             SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalBroken);
         }

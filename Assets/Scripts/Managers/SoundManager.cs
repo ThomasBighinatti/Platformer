@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
+using Controllers;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Managers
 {
@@ -101,6 +103,29 @@ namespace Managers
         #endregion
         
         #region SFX
+        
+        private void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+        
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (LevelManager.Instance != null &&  GameManager.Instance.CurrentGameState == GameManager.GameState.Game)
+            {
+                _playerAudioSource = LevelManager.Instance.Player.GetComponent<AudioSource>();
+                _pointerAudioSource = LevelManager.Instance.Pointer.GetComponent<AudioSource>();
+            }
+            else
+            {
+                Debug.LogWarning("SoundManager : No LevelManager");
+            }
+        }
         
         public enum MainSfx
         {
