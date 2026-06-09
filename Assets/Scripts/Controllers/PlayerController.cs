@@ -216,6 +216,7 @@ namespace Controllers
             }
             
             _isPlayerJumping = true;
+            grounded = false;
 
             _coyoteTimeCounter = 0f;
             _jumpBufferCounter = 0f;

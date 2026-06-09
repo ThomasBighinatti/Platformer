@@ -75,7 +75,7 @@ namespace Managers
 
             musicSource.volume = 1f;
             musicSource.clip = mainMusics[index];
-            musicSource.loop = true;
+            musicSource.loop = index == 0;
             musicSource.Play();
 
             if (index == 0) 
