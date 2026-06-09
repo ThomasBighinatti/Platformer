@@ -25,8 +25,13 @@ namespace Controllers
             
             if (ArrowManager.Instance != null)
             {
-                if (context.canceled)
+                if (context.started && !SoundManager.Instance.AimSoundIsPlaying())
                 {
+                    SoundManager.Instance.AimStartSound();
+                }
+                if (context.canceled && SoundManager.Instance.AimSoundIsPlaying())
+                {
+                    SoundManager.Instance.AimEndSound();
                     ArrowManager.Instance.CreateArrow();
                     ArrowManager.Instance.ShootArrow();
                 }

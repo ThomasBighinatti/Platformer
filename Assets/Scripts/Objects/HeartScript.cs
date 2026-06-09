@@ -13,9 +13,6 @@ namespace Objects
             if (other.gameObject.CompareTag("Arrow"))
             {
                 animator.Play("Noyau Explosion",  0, 0f);
-                Debug.Log("gros caca qui pue");
-                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalImpact);
-                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalStartBreak);
                 StartCoroutine(WaitBroken());
             }
             else
@@ -26,7 +23,10 @@ namespace Objects
 
         private IEnumerator WaitBroken()
         {
-            yield return new WaitForSecondsRealtime(1f);
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalImpact);
+            yield return new WaitForSecondsRealtime(0.6f);
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalStartBreak);
+            yield return new WaitForSecondsRealtime(0.6f);
             SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalBroken);
         }
     }

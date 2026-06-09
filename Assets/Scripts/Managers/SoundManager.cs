@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -74,7 +75,7 @@ namespace Managers
             if (index < 0 || index >= mainMusics.Length || mainMusics[index] is null)
                 yield break;
 
-            musicSource.volume = 1f;
+            musicSource.volume = 0f;
             musicSource.clip = mainMusics[index];
             musicSource.loop = index == 0;
             musicSource.Play();
@@ -130,11 +131,52 @@ namespace Managers
         }
 
         private AudioSource _playerAudioSource;
+        private AudioSource _pointerAudioSource;
 
-        public void PlayerRunSound()
+        private void Start()
         {
-            AudioClip soundToPlay = sfx[(int)MainSfx.Running];
+            if (GameManager.Instance.CurrentGameState == GameManager.GameState.Game)
+            {
+                _playerAudioSource = LevelManager.Instance.Player.GetComponent<AudioSource>();
+                _pointerAudioSource = LevelManager.Instance.Pointer.GetComponent<AudioSource>();
+            }
+        }
+
+        public void PlayerStartRunSound()
+        {
+            if (_playerAudioSource.isPlaying && _playerAudioSource.clip == sfx[(int)MainSfx.Running]) 
+                return;
             
+            _playerAudioSource.loop = true;
+            _playerAudioSource.clip = sfx[(int)MainSfx.Running];
+            _playerAudioSource.Play();
+        }
+
+        public void PlayerEndRunSound()
+        {
+            _playerAudioSource.loop = false;
+            _playerAudioSource.Stop();
+        }
+
+        public void AimStartSound()
+        {
+            if (_pointerAudioSource.isPlaying && _pointerAudioSource.clip == sfx[(int)MainSfx.ArrowAim]) 
+                return;
+            
+            _pointerAudioSource.loop = true;
+            _pointerAudioSource.clip = sfx[(int)MainSfx.ArrowAim];
+            _pointerAudioSource.Play();
+        }
+        
+        public void AimEndSound()
+        {
+            _pointerAudioSource.loop = false;
+            _pointerAudioSource.Stop();
+        }
+
+        public bool AimSoundIsPlaying()
+        {
+            return _pointerAudioSource.isPlaying;
         }
         
         public void Vibration(float low, float high, float duration)

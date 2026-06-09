@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -39,6 +40,14 @@ namespace Controllers
                 if (_mainState == value)
                     return;
                 _mainState = value;
+                if (GetWalk())
+                {
+                    SoundManager.Instance.PlayerStartRunSound();
+                }
+                else
+                {
+                    SoundManager.Instance.PlayerEndRunSound();
+                }
                 if (GetJump())
                 {
                     ChangeToJumpState = true;
@@ -49,6 +58,7 @@ namespace Controllers
 
         public void SetIdle()  => MainState = MainAnimState.Idle;
         
+        public bool GetWalk()  => MainState == MainAnimState.Walk;
         public void SetWalk()  => MainState = MainAnimState.Walk;
         
         public bool GetJump()  => MainState == MainAnimState.Jump;
