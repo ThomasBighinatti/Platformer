@@ -23,9 +23,6 @@ TextureImporter:
   - first:
       213: 5995089079844989361
     second: GPE-mains gauche_6
-  - first:
-      213: 235680208816982008
-    second: GPE-mains gauche_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -138,8 +135,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 77
-        width: 83
+        y: 26
+        width: 84
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,10 +156,10 @@ TextureImporter:
       name: GPE-mains gauche_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 107
-        width: 58
-        height: 24
+        x: 148
+        y: 54
+        width: 41
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +178,10 @@ TextureImporter:
       name: GPE-mains gauche_2
       rect:
         serializedVersion: 2
-        x: 141
-        y: 107
-        width: 58
-        height: 24
+        x: 4
+        y: 2
+        width: 36
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +200,10 @@ TextureImporter:
       name: GPE-mains gauche_3
       rect:
         serializedVersion: 2
-        x: 199
-        y: 106
-        width: 32
-        height: 27
+        x: 41
+        y: 2
+        width: 36
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +222,10 @@ TextureImporter:
       name: GPE-mains gauche_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 83
-        height: 70
+        x: 79
+        y: 2
+        width: 36
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +244,10 @@ TextureImporter:
       name: GPE-mains gauche_5
       rect:
         serializedVersion: 2
-        x: 83
-        y: 29
-        width: 58
-        height: 24
+        x: 116
+        y: 2
+        width: 36
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +266,10 @@ TextureImporter:
       name: GPE-mains gauche_6
       rect:
         serializedVersion: 2
-        x: 141
-        y: 29
-        width: 58
-        height: 23
+        x: 153
+        y: 2
+        width: 36
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,28 +280,6 @@ TextureImporter:
       bones: []
       spriteID: 1b9ebf831c5d23350800000000000000
       internalID: 5995089079844989361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GPE-mains gauche_7
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 28
-        width: 31
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f74027b6ed454300800000000000000
-      internalID: 235680208816982008
       vertices: []
       indices: 
       edges: []
@@ -330,7 +305,6 @@ TextureImporter:
       GPE-mains gauche_4: 2457832142359360331
       GPE-mains gauche_5: 5114686330962401650
       GPE-mains gauche_6: 5995089079844989361
-      GPE-mains gauche_7: 235680208816982008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
