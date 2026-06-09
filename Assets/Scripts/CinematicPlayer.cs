@@ -12,6 +12,7 @@ public class CinematicPlayer : MonoBehaviour
 
     public void PlayCinematic()
     {
+        SoundManager.Instance.StopSound();
         GameManager.Instance.CurrentGameState = GameManager.GameState.Pause;
         cinematicCanvas.SetActive(true);
         videoPlayer.Play();
@@ -23,6 +24,7 @@ public class CinematicPlayer : MonoBehaviour
 
     private void EndCinematic()
     {
+        SoundManager.Instance.VolumeNormal();
         cinematicCanvas.SetActive(false);
         GameManager.Instance.CurrentGameState = GameManager.GameState.Menu;
     }

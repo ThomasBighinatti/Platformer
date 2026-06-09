@@ -99,6 +99,16 @@ namespace Managers
         }
         
         #endregion
+
+        public void StopSound()
+        {
+            musicSource.volume = 0f;
+        }
+
+        public void VolumeNormal()
+        {
+            musicSource.volume = 1f;
+        }
         
         #region SFX
         
