@@ -20,8 +20,6 @@ namespace Managers
         
         private int levelIndex = 0;
 
-
-
         public void NewGame()
         {
             SoundManager.Instance.SoundPlay(SoundManager.MainSfx.InputMenu);

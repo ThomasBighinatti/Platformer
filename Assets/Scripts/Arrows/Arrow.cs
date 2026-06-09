@@ -82,9 +82,11 @@ namespace Arrows
                 return;
             
             Rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            if (!IsPlanted)
+            {
+                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.ArrowPlanted);
+            }
             IsPlanted = true;
-            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.ArrowPlanted);
-            
             Tilemap hitMap = other.GetComponent<Tilemap>();
     
             if (hitMap != null)

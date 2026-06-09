@@ -88,6 +88,8 @@ MonoBehaviour:
   - {fileID: 104695671063029701, guid: 60e408a839807be4899023b6bd03e64f, type: 3}
   startAnim: {fileID: 7400000, guid: 07ff11204d16a0f42a0c084785107628, type: 2}
   endAnim: {fileID: 7400000, guid: 0a66d18add258234bb7859b4a01fb048, type: 2}
+  spriteRenderer: {fileID: 3888824661681602671}
+  initialSprite: {fileID: 7163759215679273333, guid: 83c20cd83b1c8904f9e5ec5c68aaedd3, type: 3}
 --- !u!61 &3327354728066637798
 BoxCollider2D:
   m_ObjectHideFlags: 0

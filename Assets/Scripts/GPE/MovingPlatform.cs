@@ -92,6 +92,7 @@ namespace GPE
             }
 
             _moveAnimator = gameObject.GetComponent<Animator>();
+            
         }
 
         private List<GameObject> _armsList = new List<GameObject>();
@@ -248,7 +249,12 @@ namespace GPE
             transform.position = _initialPos;
             _movingState = MovingState.Static;
             NumberOfInteractions = 0;
+            _moveAnimator.enabled = false;
+            spriteRenderer.sprite = initialSprite;
+            _moveAnimator.enabled = true;
         }
 
+        [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private Sprite initialSprite;
     }
 }

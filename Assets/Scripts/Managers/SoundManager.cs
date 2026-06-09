@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using Controllers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -77,7 +75,7 @@ namespace Managers
             if (index < 0 || index >= mainMusics.Length || mainMusics[index] is null)
                 yield break;
 
-            musicSource.volume = 0f;
+            musicSource.volume = 1f;
             musicSource.clip = mainMusics[index];
             musicSource.loop = index == 0;
             musicSource.Play();
