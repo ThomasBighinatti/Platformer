@@ -29,6 +29,10 @@ namespace Managers
         [SerializeField] public GameObject pauseMenu;
         
         [SerializeField] private GameObject defaultSelectedButton;
+        
+        
+        [SerializeField] private CinematicPlayer cinematicPlayer;
+        public CinematicPlayer CinematicPlayer => cinematicPlayer;
 
         public void GoToMainMenu() => GameManager.Instance.ChangeStateToMenu();
         
