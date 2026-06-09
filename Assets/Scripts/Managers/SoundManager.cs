@@ -133,17 +133,17 @@ namespace Managers
             sfxSource.PlayOneShot(soundToPlay);
         }
         
-        public void Vibration(float lowFreq, float highFreq, float duration)
+        public void Vibration(float low, float high, float duration)
         {
             if (Gamepad.current == null) 
                 return;
             
-            StartCoroutine(VibrationCoroutine(lowFreq, highFreq, duration));
+            StartCoroutine(VibrationCoroutine(low, high, duration));
         }
 
-        private IEnumerator VibrationCoroutine(float lowFreq, float highFreq, float duration)
+        private IEnumerator VibrationCoroutine(float low, float high, float duration)
         {
-            Gamepad.current.SetMotorSpeeds(lowFreq, highFreq);
+            Gamepad.current.SetMotorSpeeds(low, high);
             yield return new WaitForSeconds(duration);
             Gamepad.current.ResetHaptics();
         }
