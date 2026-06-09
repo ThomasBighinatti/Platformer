@@ -84,7 +84,6 @@ namespace Controllers
             }
             _explosionAnimator = explosionAnimator;
             _explosionAnimator.gameObject.SetActive(false);
-
         }
 
         private void FixedUpdate()
