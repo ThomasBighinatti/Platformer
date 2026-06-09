@@ -252,6 +252,8 @@ namespace GPE
             _moveAnimator.Rebind();
             _moveAnimator.Update(0f); 
             spriteRenderer.sprite = initialSprite;
+            UpdateArms();
+            
         }
 
         [SerializeField] private SpriteRenderer spriteRenderer;

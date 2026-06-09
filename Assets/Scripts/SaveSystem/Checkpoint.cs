@@ -38,6 +38,8 @@ namespace SaveSystem
             
             ArrowManager.Instance.ChangeArrowNumByCheckpoint(index-1);
             
+            GameManager.Instance.RespawnPlayer();
+            
             bool isNew = SaveManager.Instance.ChangeCurrentCheckpoint(index);
             if (!isNew)
                 return;
