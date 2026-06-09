@@ -24,14 +24,11 @@ namespace Managers
 
         public void NewGame()
         {
-            animator.Play("PressStartMenu", 0, 0f);
-            GameManager.Instance.StartNewGame();
+            animator.Play("PressStartMenu");
         }
-
         public void ContinueGame()
         {
-            
-            GameManager.Instance.ContinueGame();
+            animator.Play("PressContinueMenu");
         } 
 
         private void Start()
@@ -109,7 +106,7 @@ namespace Managers
             int startCheckpoint = levelStartCheckpoints[levelIndex];
             GameManager.Instance.StartFromLevel(startCheckpoint);
         }
-
+        
         public void QuitGame() => GameManager.Instance.QuitGame();
     }
 }
