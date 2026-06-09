@@ -37,7 +37,7 @@ namespace Arrows
         protected bool CanUseGravity;
         public bool IsPlanted { get; protected set; }
         
-        private void Start()
+        private void Awake()
         {
             Rb = GetComponent<Rigidbody2D>();
             Rb.constraints = RigidbodyConstraints2D.FreezeRotation;

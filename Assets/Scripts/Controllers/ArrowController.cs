@@ -25,14 +25,9 @@ namespace Controllers
             
             if (ArrowManager.Instance != null)
             {
-                if (context.started && ArrowManager.Instance.ArrowScriptIsNull)
+                if (context.canceled)
                 {
                     ArrowManager.Instance.CreateArrow();
-                }
-
-                else if (context.canceled && !ArrowManager.Instance.ArrowScriptIsNull)
-                {
-                    
                     ArrowManager.Instance.ShootArrow();
                 }
             }

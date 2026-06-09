@@ -74,16 +74,16 @@ namespace GPE
             switch (settings.direction)
             {
                 case Direction.Up:
-                    SpawnVisuals(heightScale, armVertical, hands[0], hands[1], ends[0], ends[1], GetDirection());
+                    SpawnVisuals(heightScale, armVertical, hands[0], ends[0], GetDirection());
                     break;
                 case Direction.Right:
-                    SpawnVisuals(lengthScale, armHorizontal, hands[2], hands[3], ends[2], ends[3], GetDirection());
+                    SpawnVisuals(lengthScale, armHorizontal, hands[1], ends[1], GetDirection());
                     break;
                 case Direction.Down:
-                    SpawnVisuals(heightScale, armVertical, hands[4], hands[5], ends[4], ends[5], GetDirection());
+                    SpawnVisuals(heightScale, armVertical, hands[2], ends[2], GetDirection());
                     break;
                 case Direction.Left:
-                    SpawnVisuals(lengthScale, armHorizontal, hands[6], hands[7], ends[6], ends[7], GetDirection());
+                    SpawnVisuals(lengthScale, armHorizontal, hands[3], ends[3], GetDirection());
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -93,7 +93,7 @@ namespace GPE
 
         private List<GameObject> _armsList = new List<GameObject>();
         
-        private void SpawnVisuals(float scale, List<Sprite> armSprites, Sprite handA, Sprite handB, Sprite endA, Sprite endB, Vector2 direction)
+        private void SpawnVisuals(float scale, List<Sprite> armSprites, Sprite handSprite, Sprite endSprite, Vector2 direction)
         {
             float dividedScale = scale / 6f;
             if (scale > 1.5f)
@@ -104,7 +104,7 @@ namespace GPE
             GameObject hand = new GameObject("Hand");
             hand.transform.SetParent(transform);
             hand.transform.localPosition = direction * dividedScale;
-            hand.AddComponent<SpriteRenderer>().sprite = Random.Range(0, 2) == 0 ? handA : handB;
+            hand.AddComponent<SpriteRenderer>().sprite = handSprite;
             
             Vector2 offset = new Vector2(-direction.y, direction.x) * 0.2f;
             
@@ -112,7 +112,7 @@ namespace GPE
             {
                 GameObject arm = new GameObject("Arm " + i);
                 arm.transform.SetParent(transform);
-                arm.transform.position = _initialPos + direction * (dividedScale + i + 0.5f) + offset;
+                arm.transform.position = _initialPos + direction * (dividedScale + i + 0.5f) + (direction == Vector2.right ? offset : -offset);
                 arm.transform.SetParent(_parent.transform);
                 arm.AddComponent<SpriteRenderer>().sprite = armSprites[i % armSprites.Count];
                 _armsList.Add(arm);
@@ -120,8 +120,8 @@ namespace GPE
             
             GameObject end = new GameObject("End");
             end.transform.SetParent(_parent.transform);
-            end.transform.position = _initialPos + direction * (dividedScale + settings.distance + 0.75f) + offset;
-            end.AddComponent<SpriteRenderer>().sprite = Random.Range(0, 2) == 0 ? endA : endB;
+            end.transform.position = _initialPos + direction * (dividedScale + settings.distance + 0.5f) + (direction == Vector2.right ? offset : -offset);
+            end.AddComponent<SpriteRenderer>().sprite = endSprite;
         }
 
         private void OnDisable() => GameManager.Instance.Unsubscribe(this);
