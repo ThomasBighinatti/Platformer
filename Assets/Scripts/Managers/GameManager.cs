@@ -240,7 +240,7 @@ namespace Managers
             }
             catch (Exception e)
             {
-                throw; //TODO handle exception
+                Debug.Log(e); //TODO handle exception
             }
         }
         
@@ -254,7 +254,7 @@ namespace Managers
             }
             catch (Exception e)
             {
-                throw; // TODO handle exception
+                Debug.Log(e); // TODO handle exception
             }
         }
         
@@ -270,7 +270,7 @@ namespace Managers
             }
             catch (Exception e)
             {
-                throw; // TODO handle exception
+                Debug.Log(e); // TODO handle exception
             }
         }
 
