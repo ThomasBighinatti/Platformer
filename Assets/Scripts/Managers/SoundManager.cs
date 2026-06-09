@@ -30,11 +30,6 @@ namespace Managers
             Instance = this;
             DontDestroyOnLoad(transform.parent);
         }
-
-        private void Start()
-        {
-            //CurrentMusicToPlay = musicIndexAtSpawn;
-        }
         
         #region Main
         

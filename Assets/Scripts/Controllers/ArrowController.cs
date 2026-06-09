@@ -32,6 +32,7 @@ namespace Controllers
 
                 else if (context.canceled && !ArrowManager.Instance.ArrowScriptIsNull)
                 {
+                    
                     ArrowManager.Instance.ShootArrow();
                 }
             }

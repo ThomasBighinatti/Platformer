@@ -104,9 +104,6 @@ namespace GPE
             GameObject hand = new GameObject("Hand");
             hand.transform.SetParent(transform);
             hand.transform.localPosition = direction * dividedScale;
-            Debug.Log(direction);
-            Debug.Log(dividedScale);
-            Debug.Log(direction * dividedScale);
             hand.AddComponent<SpriteRenderer>().sprite = Random.Range(0, 2) == 0 ? handA : handB;
             
             Vector2 offset = new Vector2(-direction.y, direction.x) * 0.2f;

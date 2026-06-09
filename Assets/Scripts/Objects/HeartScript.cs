@@ -1,20 +1,33 @@
-using System;
+using System.Collections;
+using System.Threading.Tasks;
+using Managers;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class HeartScript : MonoBehaviour
+namespace Objects
 {
-    [SerializeField] private Animator animator;
-    private void OnCollisionEnter(Collision other)
+    public class HeartScript : MonoBehaviour
     {
-        Debug.Log("gros caca qui pue");
-        if (other.gameObject.CompareTag("Arrow"))
+        [SerializeField] private Animator animator;
+        private void OnCollisionEnter(Collision other)
         {
-            animator.Play("Noyau Explosion",  0, 0f);
+            Debug.Log("gros caca qui pue");
+            if (other.gameObject.CompareTag("Arrow"))
+            {
+                animator.Play("Noyau Explosion",  0, 0f);
+                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalImpact);
+                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalStartBreak);
+                StartCoroutine(WaitBroken());
+            }
+            else
+            {
+                return;
+            }
         }
-        else
+
+        private IEnumerator WaitBroken()
         {
-            return;
+            yield return new WaitForSecondsRealtime(1f);
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalBroken);
         }
     }
 }

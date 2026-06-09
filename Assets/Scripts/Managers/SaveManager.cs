@@ -16,8 +16,23 @@ namespace Managers
 
         [Header("Settings")]
         public SaveSystemOption saveSystemOption;
-        public int CurrentCheckpointIndex { get; private set; }
-        
+
+        private int _currentCheckpointIndex;
+        public int CurrentCheckpointIndex
+        {
+            get => _currentCheckpointIndex;
+            private set
+            {
+                _currentCheckpointIndex = value;
+                SoundManager.Instance.CurrentMusicToPlay = _currentCheckpointIndex switch
+                {
+                    < 7 => 1,
+                    < 13 => 2,
+                    _ => 3
+                };
+            }
+        }
+
         public readonly Dictionary<int, Vector3> checkpointPositions = new Dictionary<int, Vector3>();
         
         public bool encryptData;
@@ -25,6 +40,7 @@ namespace Managers
         
         private GameObject _player;
         
+
         private void Awake()
         {
             if (Instance != null)

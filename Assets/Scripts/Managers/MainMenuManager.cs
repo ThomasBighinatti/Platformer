@@ -27,6 +27,7 @@ namespace Managers
         private void Start()
         {
             UpdateStageDisplay();
+            SoundManager.Instance.CurrentMusicToPlay = 0;
         }
 
         public void EnableSelect()
