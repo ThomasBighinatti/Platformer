@@ -85,6 +85,9 @@ namespace Controllers
             _explosionAnimator = explosionAnimator;
             _explosionAnimator.gameObject.SetActive(false);
         }
+        
+        private float _groundedGraceTimer;
+        private bool _wasGrounded;
 
         private void FixedUpdate()
         {
@@ -139,7 +142,24 @@ namespace Controllers
             }
             bool isFloorNormal = isValidGround && groundHit.normal.y > 0.5f;
 
-            grounded = isFloorNormal && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
+            bool rawGrounded = isFloorNormal && _boxCastCooldownCounter <= 0f;
+
+            if (rawGrounded)
+            {
+                _groundedGraceTimer = 0.05f;
+                grounded = true;
+            }
+            else if (_wasGrounded && _boxCastCooldownCounter <= 0f)
+            {
+                _groundedGraceTimer -= Time.fixedDeltaTime;
+                grounded = _groundedGraceTimer > 0f;
+            }
+            else
+            {
+                grounded = false;
+            }
+
+            _wasGrounded = grounded; //perso au sol si raycast + si le cooldown est a 0
             
             if (grounded)
             {
