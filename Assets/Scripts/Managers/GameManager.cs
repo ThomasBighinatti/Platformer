@@ -234,8 +234,8 @@ namespace Managers
             try
             {
                 SaveSystem.SaveSystem.DeleteSave();
+                await Task.Delay(100);
                 CurrentGameState = GameState.Game;
-                await Task.Delay(10);
                 RespawnPlayer();
             }
             catch (Exception e)
@@ -249,7 +249,7 @@ namespace Managers
             try
             {
                 CurrentGameState = GameState.Game;
-                await Task.Delay(10);
+                await Task.Delay(100);
                 RespawnPlayer();
             }
             catch (Exception e)
@@ -265,7 +265,7 @@ namespace Managers
                 SaveSystem.SaveSystem.DeleteSave();
                 CurrentGameState = GameState.Game;
                 SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
-                await Task.Delay(10); // pour attendre le chargement et faire spawn le player (jsp pourquoi mais yield return null n'etait pas suffisant)
+                await Task.Delay(100); // pour attendre le chargement et faire spawn le player (jsp pourquoi mais yield return null n'etait pas suffisant)
                 RespawnPlayer();
             }
             catch (Exception e)
