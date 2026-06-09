@@ -125,7 +125,20 @@ namespace Controllers
             float targetSpeedX = _moveInput.x * data.PlayerSpeed * _stickyMult;
             
             RaycastHit2D groundHit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
-            bool isFloorNormal = groundHit.collider is not null && groundHit.normal.y > 0.5f;
+            
+            bool isValidGround = groundHit.collider is not null;
+            if (isValidGround && groundHit.collider.usedByEffector)
+            {
+                float playerBottom = _playerCollider.bounds.min.y;
+                float platformTop = groundHit.collider.bounds.max.y;
+        
+                if (playerBottom < platformTop - 0.05f)
+                {
+                    isValidGround = false; 
+                }
+            }
+            bool isFloorNormal = isValidGround && groundHit.normal.y > 0.5f;
+
             grounded = isFloorNormal && _boxCastCooldownCounter <= 0f; //perso au sol si raycast + si le cooldown est a 0
             
             if (grounded)
