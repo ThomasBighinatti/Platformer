@@ -43,6 +43,8 @@ namespace SaveSystem
                 return;
 
             SaveManager.Instance.Save();
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.ScreenSelect);
+            
         }
         
     }

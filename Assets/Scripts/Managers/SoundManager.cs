@@ -75,7 +75,7 @@ namespace Managers
 
             musicSource.volume = 1f;
             musicSource.clip = mainMusics[index];
-            musicSource.loop = (index == 0);
+            musicSource.loop = true;
             musicSource.Play();
 
             if (index == 0) 
@@ -111,23 +111,13 @@ namespace Managers
             StickyReturn = 11,
             CrystalBroken = 12,
             CrystalImpact = 13,
-            CrystalStartBreak = 14
-        }
-
-        public enum MenuSfx
-        {
-            ArrowMenu = 15,
-            InputMenu = 16,
-            ScreenSelect = 17
+            CrystalStartBreak = 14,
+            ScreenSelect = 15,
+            ArrowMenu = 16,
+            InputMenu = 17
         }
         
         public void SoundPlay(MainSfx sound)
-        {
-            AudioClip soundToPlay = sfx[(int)sound];
-            sfxSource.PlayOneShot(soundToPlay);
-        }
-        
-        public void SoundPlay(MenuSfx sound)
         {
             AudioClip soundToPlay = sfx[(int)sound];
             sfxSource.PlayOneShot(soundToPlay);

@@ -347,9 +347,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ce076f38af464624b94e67dcc81df4a0, type: 3}
   - {fileID: 8300000, guid: 4e0a9fef0242d994e89525ea83cad4fe, type: 3}
   - {fileID: 8300000, guid: d694519f30fac4142a9886358d4ffe4b, type: 3}
+  - {fileID: 8300000, guid: 0ef3da4bf4f3c5d4cbf500f83e838c17, type: 3}
   - {fileID: 8300000, guid: f649bfde2a690804f8c8195c988c5cf0, type: 3}
   - {fileID: 8300000, guid: 6e575a481bf58e94bbf4c1c5fe48826b, type: 3}
-  - {fileID: 8300000, guid: 0ef3da4bf4f3c5d4cbf500f83e838c17, type: 3}
   mainMusics:
   - {fileID: 8300000, guid: b0f01524e6c2a9f4fb89b8a1336c34e1, type: 3}
   - {fileID: 8300000, guid: 5649d5197fb863d45b0613ff1179b879, type: 3}
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 0000000049e649c7e1cb006f
+  m_ApplyToSortingLayers: 0000000049e649c7e1cb006f0f76970d
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
