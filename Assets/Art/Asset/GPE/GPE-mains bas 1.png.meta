@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: 19207b927043ce64dba1e4ea67bc00e9
+guid: 9f013010bfe9dcc448130956b93c0ea3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6289653091134039702
-    second: GPE-mains droite_0
+      213: 1863223134104635555
+    second: GPE-mains bas 1_0
   - first:
-      213: -8258857597128362690
-    second: GPE-mains droite_1
+      213: -4455385998760733237
+    second: GPE-mains bas 1_1
   - first:
-      213: -3750128509773232047
-    second: GPE-mains droite_2
+      213: -6597401569536577841
+    second: GPE-mains bas 1_2
   - first:
-      213: 472835381839933604
-    second: GPE-mains droite_3
+      213: 3852927226799405671
+    second: GPE-mains bas 1_3
   - first:
-      213: -271004813625282075
-    second: GPE-mains droite_4
+      213: -359367821998414584
+    second: GPE-mains bas 1_4
   - first:
-      213: -7043488850347224868
-    second: GPE-mains droite_5
+      213: 8326157989129646825
+    second: GPE-mains bas 1_5
   - first:
-      213: 9039771226998313428
-    second: GPE-mains droite_6
-  - first:
-      213: -7446136230583907177
-    second: GPE-mains droite_7
+      213: -2624567833155782623
+    second: GPE-mains bas 1_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GPE-mains droite_0
+      name: GPE-mains bas 1_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 92
-        width: 31
-        height: 27
+        y: 153
+        width: 20
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a69948e66d9a6b8a0800000000000000
-      internalID: -6289653091134039702
+      spriteID: 3a8c895919f7bd910800000000000000
+      internalID: 1863223134104635555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GPE-mains droite_1
+      name: GPE-mains bas 1_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 95
-        width: 58
-        height: 23
+        x: 53
+        y: 148
+        width: 27
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e35b0a0d5c4a26d80800000000000000
-      internalID: -8258857597128362690
+      spriteID: bc51e9e2a0a4b22c0800000000000000
+      internalID: -4455385998760733237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GPE-mains droite_2
+      name: GPE-mains bas 1_2
       rect:
         serializedVersion: 2
-        x: 90
-        y: 94
-        width: 58
-        height: 24
+        x: 1
+        y: 116
+        width: 20
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 158c6e84dfdd4fbc0800000000000000
-      internalID: -3750128509773232047
+      spriteID: fceea2f1a325174a0800000000000000
+      internalID: -6597401569536577841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GPE-mains droite_3
+      name: GPE-mains bas 1_3
       rect:
         serializedVersion: 2
-        x: 148
-        y: 77
-        width: 83
-        height: 70
+        x: 1
+        y: 79
+        width: 20
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,86 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a03ecb4649df8600800000000000000
-      internalID: 472835381839933604
+      spriteID: 76a3fca26e8587530800000000000000
+      internalID: 3852927226799405671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GPE-mains droite_4
+      name: GPE-mains bas 1_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 14
-        width: 32
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e1b17fce823d3cf0800000000000000
-      internalID: -271004813625282075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GPE-mains droite_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 58
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd011a76530804e90800000000000000
-      internalID: -7043488850347224868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GPE-mains droite_6
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 16
-        width: 58
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d118044908b37d70800000000000000
-      internalID: 9039771226998313428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GPE-mains droite_7
-      rect:
-        serializedVersion: 2
-        x: 148
+        x: 25
         y: 0
-        width: 83
-        height: 70
+        width: 71
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,8 +234,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79c41e2bc820aa890800000000000000
-      internalID: -7446136230583907177
+      spriteID: 8052412bed4430bf0800000000000000
+      internalID: -359367821998414584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GPE-mains bas 1_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 41
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e27ad5c3947c8370800000000000000
+      internalID: 8326157989129646825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GPE-mains bas 1_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12835d71679a39bd0800000000000000
+      internalID: -2624567833155782623
       vertices: []
       indices: 
       edges: []
@@ -323,14 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GPE-mains droite_0: -6289653091134039702
-      GPE-mains droite_1: -8258857597128362690
-      GPE-mains droite_2: -3750128509773232047
-      GPE-mains droite_3: 472835381839933604
-      GPE-mains droite_4: -271004813625282075
-      GPE-mains droite_5: -7043488850347224868
-      GPE-mains droite_6: 9039771226998313428
-      GPE-mains droite_7: -7446136230583907177
+      GPE-mains bas 1_0: 1863223134104635555
+      GPE-mains bas 1_1: -4455385998760733237
+      GPE-mains bas 1_2: -6597401569536577841
+      GPE-mains bas 1_3: 3852927226799405671
+      GPE-mains bas 1_4: -359367821998414584
+      GPE-mains bas 1_5: 8326157989129646825
+      GPE-mains bas 1_6: -2624567833155782623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
