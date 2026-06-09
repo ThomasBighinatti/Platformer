@@ -18,6 +18,7 @@ namespace Managers
         
         private GameObject _player;
         private Rigidbody2D _playerRb;
+        private CinematicPlayer _cinematicPlayer;
 
         private void Awake()
         {
@@ -47,7 +48,7 @@ namespace Managers
                 _player = LevelManager.Instance.Player;
                 _playerRb = _player.GetComponent<Rigidbody2D>();
                 _playerScript = _player.GetComponent<PlayerController>();
-                
+                _cinematicPlayer = LevelManager.Instance.CinematicPlayer;
             }
             else
             {
@@ -58,14 +59,17 @@ namespace Managers
         public void OnPause(InputAction.CallbackContext context)
         {
             if (!context.started) return;
-
-            if (context.started)
+            
+            if (_cinematicPlayer != null && _cinematicPlayer.gameObject.activeSelf) //ne fonctionne pas
             {
-                HandlePause();
+                _cinematicPlayer.SkipCinematic();
+                return;
             }
+
+            HandlePause();
         }
 
-        public void HandlePause()
+        public void HandlePause() // peut pause avec esc/start mais peut pas unpause ???
         {
             if (_currentGameState == GameState.Pause)
                     ChangeStateToGame();
@@ -231,6 +235,7 @@ namespace Managers
             {
                 SaveSystem.SaveSystem.DeleteSave();
                 CurrentGameState = GameState.Game;
+                await Task.Delay(10);
                 RespawnPlayer();
             }
             catch (Exception e)

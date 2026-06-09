@@ -24,10 +24,12 @@ namespace Managers
 
         public void NewGame()
         {
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.InputMenu);
             animator.Play("PressStartMenu");
         }
         public void ContinueGame()
         {
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.InputMenu);
             animator.Play("PressContinueMenu");
         } 
 
@@ -41,6 +43,7 @@ namespace Managers
         {
             if (selectLevelPanel != null && mainMenuPanel != null)
             {
+                SoundManager.Instance.SoundPlay(SoundManager.MainSfx.InputMenu);
                 mainMenuPanel.SetActive(false);
                 selectLevelPanel.SetActive(true);
                 StartCoroutine(SelectDefaultButton());
@@ -78,6 +81,7 @@ namespace Managers
 
         public void SelectNextStage()
         {
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.ArrowMenu);
             if (levelIndex < levelList.Count - 1)
             {
                 levelIndex++;
@@ -88,6 +92,7 @@ namespace Managers
 
         public void SelectPreviousStage()
         {
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.ArrowMenu);
             if (levelIndex > 0)
             {
                 levelIndex--;
@@ -103,6 +108,7 @@ namespace Managers
     
         public void StartFromSelectedLevel()
         {
+            SoundManager.Instance.SoundPlay(SoundManager.MainSfx.InputMenu);
             int startCheckpoint = levelStartCheckpoints[levelIndex];
             GameManager.Instance.StartFromLevel(startCheckpoint);
         }
