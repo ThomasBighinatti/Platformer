@@ -43,7 +43,8 @@ namespace Managers
             get => _currentMusicToPlay;
             set
             {
-                if (_currentMusicToPlay == value) return;
+                if (_currentMusicToPlay == value) 
+                    return;
 
                 bool isComingFromMenu = _currentMusicToPlay is 0 or null;
                 bool isGoingToMenu = value == 0;
@@ -81,10 +82,15 @@ namespace Managers
             if (index == 0) 
                 yield break; 
 
-            yield return new WaitForSecondsRealtime(musicSource.clip.length);
+            while (_nextMusicIndex == null)
+            {
+                yield return new WaitForSecondsRealtime(musicSource.clip.length);
 
-            if (_nextMusicIndex == null) 
-                yield break;
+                if (_nextMusicIndex != null)
+                    break;
+                
+                musicSource.Play();
+            }
             
             int next = (int)_nextMusicIndex;
             _nextMusicIndex = null;

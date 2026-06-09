@@ -22,6 +22,8 @@ namespace GPE
         [SerializeField] private List<Sprite> armHorizontal;
         [SerializeField] private List<Sprite> hands;
         [SerializeField] private List<Sprite> ends;
+
+        private Animator _moveAnimator;
         
         [Serializable] 
         private struct MovingPlatformSettings
@@ -88,8 +90,9 @@ namespace GPE
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+
+            _moveAnimator = gameObject.GetComponent<Animator>();
         }
-        
 
         private List<GameObject> _armsList = new List<GameObject>();
         
@@ -181,6 +184,9 @@ namespace GPE
             }
         }
 
+        [SerializeField] private AnimationClip startAnim;
+        [SerializeField] private AnimationClip endAnim;
+        
         private int _numberOfInteractions;
         private int NumberOfInteractions
         {
@@ -188,10 +194,17 @@ namespace GPE
             set
             {
                 if (value < 0) value = 0;
-                if (_numberOfInteractions == 0 && value == 1)
+                switch (_numberOfInteractions)
                 {
-                    SoundManager.Instance.SoundPlay(SoundManager.MainSfx.MovingPlat);
+                    case 0 when value == 1:
+                        SoundManager.Instance.SoundPlay(SoundManager.MainSfx.MovingPlat);
+                        _moveAnimator.Play(startAnim.name);
+                        break;
+                    case 1 when value == 0:
+                        _moveAnimator.Play(endAnim.name);
+                        break;
                 }
+
                 _numberOfInteractions = value;
                 _movingState = _numberOfInteractions > 0 ? MovingState.MoveTo : MovingState.MoveBack;
             }
