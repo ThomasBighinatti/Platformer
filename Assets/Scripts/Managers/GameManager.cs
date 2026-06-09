@@ -56,20 +56,21 @@ namespace Managers
         public void OnPause(InputAction.CallbackContext context)
         {
             if (!context.started) return;
-            Debug.Log($"OnPause called — état actuel : {_currentGameState}");
 
-            if (context.started && _currentGameState == GameState.Game)
+            if (context.started)
             {
-                ChangeStateToPause();
-            }
-            
-            else if (context.started && _currentGameState == GameState.Pause)
-            {
-                ChangeStateToGame();
-                Debug.Log("Game");
+                HandlePause();
             }
         }
 
+        public void HandlePause()
+        {
+            if (_currentGameState == GameState.Pause)
+                    ChangeStateToGame();
+            else if (_currentGameState == GameState.Game)
+                ChangeStateToPause();
+        }
+        
         public void OnRetry(InputAction.CallbackContext context)
         {
             if (!context.started) 
@@ -152,7 +153,7 @@ namespace Managers
             Pause
         }
 
-        private GameState _previousGameState;
+        private bool _wasInPause;
         private GameState _currentGameState;
 
         public GameState CurrentGameState
@@ -160,29 +161,23 @@ namespace Managers
             get => _currentGameState;
             set
             {
-                if (_currentGameState == value && value != GameState.Pause) return;
-
-                if (_currentGameState == GameState.Pause && value != GameState.Pause)
-                {
-                    Time.timeScale = 1f;
-                    LevelManager.Instance.pauseMenu.SetActive(false);
-                }
-
-                _previousGameState = _currentGameState;
                 _currentGameState = value;
 
-                if (value == GameState.Pause)
-                {
-                    LevelManager.Instance.pauseMenu.SetActive(true);
-                    Time.timeScale = 0f;
-                }
-                else if (_previousGameState == GameState.Pause)
-                {
-                    
-                }
+                if (_currentGameState == GameState.Pause)
+                    Pause();
+
                 else
                 {
-                    SceneManager.LoadScene(GetSceneByState());
+                    if (_wasInPause && _currentGameState == GameState.Menu)
+                    {
+                        Resume();
+                        SceneManager.LoadScene(GetSceneByState());
+                    }
+                    else if (_wasInPause)
+                        Resume();
+                    
+                    else 
+                        SceneManager.LoadScene(GetSceneByState());
                 }
             }
         }
@@ -195,6 +190,23 @@ namespace Managers
                 GameState.Menu => "Menu",
                 _ => ""
             };
+        }
+
+        public void Pause()
+        {
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.pauseMenu.SetActive(true);
+            }
+            Time.timeScale = 0f;
+            _wasInPause = true;
+        }
+
+        public void Resume()
+        {
+            LevelManager.Instance.pauseMenu.SetActive(false);
+            Time.timeScale = 1f;
+            _wasInPause = false;
         }
         public void ChangeStateToGame() => CurrentGameState = GameState.Game;
         public void ChangeStateToMenu() => CurrentGameState = GameState.Menu;
@@ -222,7 +234,7 @@ namespace Managers
             try
             {
                 CurrentGameState = GameState.Game;
-                await Task.Delay(2000);
+                await Task.Delay(10);
                 RespawnPlayer();
             }
             catch (Exception e)
@@ -238,9 +250,8 @@ namespace Managers
                 SaveSystem.SaveSystem.DeleteSave();
                 CurrentGameState = GameState.Game;
                 SaveManager.Instance.ForceSetCheckpoint(checkpointIndex);
-                await Task.Delay(2000); // pour attendre le chargement et faire spawn le player (jsp pourquoi mais yield return null n'etait pas suffisant)
+                await Task.Delay(10); // pour attendre le chargement et faire spawn le player (jsp pourquoi mais yield return null n'etait pas suffisant)
                 RespawnPlayer();
-                //Debug.Log("(GM) checkpoint index " + checkpointIndex);
             }
             catch (Exception e)
             {
@@ -249,7 +260,6 @@ namespace Managers
         }
 
         public void QuitGame() =>  Application.Quit();
-
-        public void GoToMenu() => SceneManager.LoadScene("Menu");
+        
     }
 }

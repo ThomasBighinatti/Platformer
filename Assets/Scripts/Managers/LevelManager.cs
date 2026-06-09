@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Managers
 {
@@ -26,6 +28,18 @@ namespace Managers
 
         [SerializeField] public GameObject pauseMenu;
         
+        [SerializeField] private GameObject defaultSelectedButton;
+
+        public void GoToMainMenu() => GameManager.Instance.ChangeStateToMenu();
+        
+        public void Quit() => GameManager.Instance.QuitGame();
+        
+        public void Resume() => GameManager.Instance.ChangeStateToGame();
+        
+        public void RespawnPlayer() => GameManager.Instance.RespawnPlayer();
+
+        public void Pause() => GameManager.Instance.Pause();
+        
         private void Awake()
         {
             if (Instance != null)
@@ -45,6 +59,28 @@ namespace Managers
             if (pointer == null) Debug.LogWarning("LevelManager : No Pointer");
             if (pinPointer == null) Debug.LogWarning("LevelManager : No Pin Pointer ");
             if (playerUiArrows == null) Debug.LogWarning("LevelManager : No Player Ui Arrows ");
+        }
+
+        public void ShowPauseMenu()
+        {
+            pauseMenu.SetActive(true);
+            StartCoroutine(SelectDefaultButtonCoroutine());
+        }
+
+        public void HidePauseMenu()
+        {
+            pauseMenu.SetActive(false);
+        }
+
+        private IEnumerator SelectDefaultButtonCoroutine()
+        {
+            yield return null;
+            if (defaultSelectedButton == null)
+            {
+                Debug.Log("LevelManager : no defaultSelectedButton");
+                yield break;
+            }
+            EventSystem.current.SetSelectedGameObject(defaultSelectedButton);
         }
     }
 }
