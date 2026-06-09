@@ -182,39 +182,6 @@ TextureImporter:
   - first:
       213: 1598907684966612953
     second: respawn_59
-  - first:
-      213: 1874092185263829859
-    second: respawn_60
-  - first:
-      213: -6238777293779965148
-    second: respawn_61
-  - first:
-      213: -3180645602830020880
-    second: respawn_62
-  - first:
-      213: -3214115924704358156
-    second: respawn_63
-  - first:
-      213: -1224243926493629816
-    second: respawn_64
-  - first:
-      213: 1442989693498416043
-    second: respawn_65
-  - first:
-      213: 481454602127472581
-    second: respawn_66
-  - first:
-      213: 4648625034953225475
-    second: respawn_67
-  - first:
-      213: -144480991850400230
-    second: respawn_68
-  - first:
-      213: -5032178387316592594
-    second: respawn_69
-  - first:
-      213: 2592334170983981094
-    second: respawn_70
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -247,7 +214,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -261,7 +228,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -308,19 +275,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -537,10 +491,10 @@ TextureImporter:
       name: respawn_9
       rect:
         serializedVersion: 2
-        x: 1071
-        y: 0
-        width: 34
-        height: 60
+        x: 1213
+        y: 37
+        width: 15
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -559,10 +513,10 @@ TextureImporter:
       name: respawn_10
       rect:
         serializedVersion: 2
-        x: 1199
+        x: 1225
         y: 0
-        width: 34
-        height: 61
+        width: 284
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -581,10 +535,10 @@ TextureImporter:
       name: respawn_11
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 35
-        width: 11
-        height: 14
+        x: 290
+        y: 41
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -603,10 +557,10 @@ TextureImporter:
       name: respawn_12
       rect:
         serializedVersion: 2
-        x: 1844
+        x: 343
         y: 41
-        width: 9
-        height: 11
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,10 +579,10 @@ TextureImporter:
       name: respawn_13
       rect:
         serializedVersion: 2
-        x: 1850
-        y: 47
-        width: 13
-        height: 15
+        x: 346
+        y: 35
+        width: 10
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -647,10 +601,10 @@ TextureImporter:
       name: respawn_14
       rect:
         serializedVersion: 2
-        x: 1862
-        y: 42
-        width: 8
-        height: 16
+        x: 347
+        y: 24
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -669,10 +623,10 @@ TextureImporter:
       name: respawn_15
       rect:
         serializedVersion: 2
-        x: 1866
-        y: 36
-        width: 9
-        height: 17
+        x: 348
+        y: 42
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -691,10 +645,10 @@ TextureImporter:
       name: respawn_16
       rect:
         serializedVersion: 2
-        x: 1958
-        y: 0
-        width: 55
-        height: 65
+        x: 424
+        y: 30
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -713,10 +667,10 @@ TextureImporter:
       name: respawn_17
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 0
-        width: 58
-        height: 68
+        x: 460
+        y: 31
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -735,10 +689,10 @@ TextureImporter:
       name: respawn_18
       rect:
         serializedVersion: 2
-        x: 290
-        y: 41
-        width: 6
-        height: 6
+        x: 946
+        y: 11
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -757,10 +711,10 @@ TextureImporter:
       name: respawn_19
       rect:
         serializedVersion: 2
-        x: 343
-        y: 41
-        width: 6
-        height: 6
+        x: 1071
+        y: 10
+        width: 41
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -779,10 +733,10 @@ TextureImporter:
       name: respawn_20
       rect:
         serializedVersion: 2
-        x: 346
+        x: 1205
         y: 35
-        width: 10
-        height: 9
+        width: 8
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -801,10 +755,10 @@ TextureImporter:
       name: respawn_21
       rect:
         serializedVersion: 2
-        x: 347
-        y: 24
-        width: 13
-        height: 19
+        x: 417
+        y: 12
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -823,10 +777,10 @@ TextureImporter:
       name: respawn_22
       rect:
         serializedVersion: 2
-        x: 348
-        y: 42
-        width: 6
-        height: 6
+        x: 460
+        y: 7
+        width: 21
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -845,10 +799,10 @@ TextureImporter:
       name: respawn_23
       rect:
         serializedVersion: 2
-        x: 424
-        y: 30
-        width: 16
-        height: 16
+        x: 551
+        y: 15
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -867,10 +821,10 @@ TextureImporter:
       name: respawn_24
       rect:
         serializedVersion: 2
-        x: 460
-        y: 31
-        width: 16
-        height: 16
+        x: 581
+        y: 11
+        width: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -889,10 +843,10 @@ TextureImporter:
       name: respawn_25
       rect:
         serializedVersion: 2
-        x: 1329
-        y: 0
-        width: 30
-        height: 46
+        x: 692
+        y: 11
+        width: 29
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -911,10 +865,10 @@ TextureImporter:
       name: respawn_26
       rect:
         serializedVersion: 2
-        x: 1457
-        y: 0
-        width: 29
-        height: 44
+        x: 1196
+        y: 28
+        width: 13
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -933,10 +887,10 @@ TextureImporter:
       name: respawn_27
       rect:
         serializedVersion: 2
-        x: 1585
-        y: 0
-        width: 29
-        height: 46
+        x: 1203
+        y: 30
+        width: 9
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -955,10 +909,10 @@ TextureImporter:
       name: respawn_28
       rect:
         serializedVersion: 2
-        x: 1713
-        y: 0
-        width: 29
-        height: 44
+        x: 1227
+        y: 34
+        width: 9
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -977,10 +931,10 @@ TextureImporter:
       name: respawn_29
       rect:
         serializedVersion: 2
-        x: 1835
-        y: 0
-        width: 40
-        height: 47
+        x: 827
+        y: 20
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -999,10 +953,10 @@ TextureImporter:
       name: respawn_30
       rect:
         serializedVersion: 2
-        x: 1870
-        y: 30
-        width: 10
-        height: 12
+        x: 1193
+        y: 17
+        width: 17
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1021,10 +975,10 @@ TextureImporter:
       name: respawn_31
       rect:
         serializedVersion: 2
-        x: 417
-        y: 12
-        width: 19
-        height: 24
+        x: 1223
+        y: 26
+        width: 11
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1043,10 +997,10 @@ TextureImporter:
       name: respawn_32
       rect:
         serializedVersion: 2
-        x: 460
-        y: 7
-        width: 21
-        height: 31
+        x: 345
+        y: 10
+        width: 13
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1065,10 +1019,10 @@ TextureImporter:
       name: respawn_33
       rect:
         serializedVersion: 2
-        x: 551
-        y: 15
-        width: 20
-        height: 20
+        x: 346
+        y: 18
+        width: 15
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1087,10 +1041,10 @@ TextureImporter:
       name: respawn_34
       rect:
         serializedVersion: 2
-        x: 581
-        y: 11
-        width: 23
-        height: 24
+        x: 553
+        y: 5
+        width: 18
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1109,10 +1063,10 @@ TextureImporter:
       name: respawn_35
       rect:
         serializedVersion: 2
-        x: 692
-        y: 11
-        width: 29
-        height: 27
+        x: 572
+        y: 0
+        width: 8
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1131,10 +1085,10 @@ TextureImporter:
       name: respawn_36
       rect:
         serializedVersion: 2
-        x: 951
-        y: 13
-        width: 18
-        height: 24
+        x: 579
+        y: 1
+        width: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1153,10 +1107,10 @@ TextureImporter:
       name: respawn_37
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 30
-        width: 8
-        height: 8
+        x: 1198
+        y: 4
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1175,10 +1129,10 @@ TextureImporter:
       name: respawn_38
       rect:
         serializedVersion: 2
-        x: 1868
-        y: 34
-        width: 6
-        height: 6
+        x: 282
+        y: 7
+        width: 16
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1197,10 +1151,10 @@ TextureImporter:
       name: respawn_39
       rect:
         serializedVersion: 2
-        x: 827
-        y: 20
-        width: 10
-        height: 10
+        x: 295
+        y: 5
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1219,10 +1173,10 @@ TextureImporter:
       name: respawn_40
       rect:
         serializedVersion: 2
-        x: 1837
-        y: 16
-        width: 11
-        height: 13
+        x: 342
+        y: 9
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1241,8 +1195,8 @@ TextureImporter:
       name: respawn_41
       rect:
         serializedVersion: 2
-        x: 1839
-        y: 26
+        x: 342
+        y: 5
         width: 6
         height: 6
       alignment: 0
@@ -1263,10 +1217,10 @@ TextureImporter:
       name: respawn_42
       rect:
         serializedVersion: 2
-        x: 1868
-        y: 15
-        width: 15
-        height: 14
+        x: 347
+        y: 7
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1285,10 +1239,10 @@ TextureImporter:
       name: respawn_43
       rect:
         serializedVersion: 2
-        x: 1869
-        y: 24
-        width: 10
-        height: 9
+        x: 422
+        y: 0
+        width: 18
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1307,10 +1261,10 @@ TextureImporter:
       name: respawn_44
       rect:
         serializedVersion: 2
-        x: 345
-        y: 10
-        width: 13
-        height: 9
+        x: 439
+        y: 0
+        width: 6
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1329,10 +1283,10 @@ TextureImporter:
       name: respawn_45
       rect:
         serializedVersion: 2
-        x: 346
-        y: 18
-        width: 15
-        height: 6
+        x: 443
+        y: 0
+        width: 9
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1351,10 +1305,10 @@ TextureImporter:
       name: respawn_46
       rect:
         serializedVersion: 2
-        x: 553
-        y: 5
-        width: 18
-        height: 14
+        x: 451
+        y: 1
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1373,10 +1327,10 @@ TextureImporter:
       name: respawn_47
       rect:
         serializedVersion: 2
-        x: 572
-        y: 0
-        width: 8
-        height: 18
+        x: 457
+        y: 2
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1395,10 +1349,10 @@ TextureImporter:
       name: respawn_48
       rect:
         serializedVersion: 2
-        x: 579
-        y: 1
-        width: 16
-        height: 17
+        x: 564
+        y: 0
+        width: 9
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1417,10 +1371,10 @@ TextureImporter:
       name: respawn_49
       rect:
         serializedVersion: 2
-        x: 1837
-        y: 12
-        width: 7
-        height: 8
+        x: 1215
+        y: 1
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1439,10 +1393,10 @@ TextureImporter:
       name: respawn_50
       rect:
         serializedVersion: 2
-        x: 1871
-        y: 10
-        width: 9
-        height: 11
+        x: 1227
+        y: 6
+        width: 12
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1461,10 +1415,10 @@ TextureImporter:
       name: respawn_51
       rect:
         serializedVersion: 2
-        x: 282
-        y: 7
-        width: 16
-        height: 8
+        x: 1230
+        y: 11
+        width: 8
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1483,8 +1437,8 @@ TextureImporter:
       name: respawn_52
       rect:
         serializedVersion: 2
-        x: 295
-        y: 5
+        x: 287
+        y: 0
         width: 6
         height: 6
       alignment: 0
@@ -1505,10 +1459,10 @@ TextureImporter:
       name: respawn_53
       rect:
         serializedVersion: 2
-        x: 335
-        y: 4
-        width: 6
-        height: 6
+        x: 293
+        y: 1
+        width: 9
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1527,10 +1481,10 @@ TextureImporter:
       name: respawn_54
       rect:
         serializedVersion: 2
-        x: 339
-        y: 4
-        width: 6
-        height: 6
+        x: 298
+        y: 0
+        width: 8
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1549,10 +1503,10 @@ TextureImporter:
       name: respawn_55
       rect:
         serializedVersion: 2
-        x: 342
-        y: 9
-        width: 6
-        height: 6
+        x: 305
+        y: 0
+        width: 33
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1571,8 +1525,8 @@ TextureImporter:
       name: respawn_56
       rect:
         serializedVersion: 2
-        x: 342
-        y: 5
+        x: 335
+        y: 4
         width: 6
         height: 6
       alignment: 0
@@ -1593,9 +1547,9 @@ TextureImporter:
       name: respawn_57
       rect:
         serializedVersion: 2
-        x: 346
-        y: 4
-        width: 6
+        x: 335
+        y: 0
+        width: 9
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1615,8 +1569,8 @@ TextureImporter:
       name: respawn_58
       rect:
         serializedVersion: 2
-        x: 347
-        y: 7
+        x: 339
+        y: 4
         width: 6
         height: 6
       alignment: 0
@@ -1637,10 +1591,10 @@ TextureImporter:
       name: respawn_59
       rect:
         serializedVersion: 2
-        x: 422
-        y: 0
-        width: 18
-        height: 17
+        x: 346
+        y: 4
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1651,248 +1605,6 @@ TextureImporter:
       bones: []
       spriteID: 9dfb31f6116703610800000000000000
       internalID: 1598907684966612953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_60
-      rect:
-        serializedVersion: 2
-        x: 439
-        y: 0
-        width: 6
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3637cf2c9ec120a10800000000000000
-      internalID: 1874092185263829859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_61
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 0
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 42be8731b196b69a0800000000000000
-      internalID: -6238777293779965148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_62
-      rect:
-        serializedVersion: 2
-        x: 451
-        y: 1
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0fe88ee0da31cd3d0800000000000000
-      internalID: -3180645602830020880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_63
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 2
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f01219789a2563d0800000000000000
-      internalID: -3214115924704358156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_64
-      rect:
-        serializedVersion: 2
-        x: 564
-        y: 0
-        width: 9
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 882faea92ac920fe0800000000000000
-      internalID: -1224243926493629816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_65
-      rect:
-        serializedVersion: 2
-        x: 1869
-        y: 6
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: babd58f1b77860410800000000000000
-      internalID: 1442989693498416043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_66
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 0
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c7f847e8687ea600800000000000000
-      internalID: 481454602127472581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_67
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 1
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 305ff5ef6db338040800000000000000
-      internalID: 4648625034953225475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_68
-      rect:
-        serializedVersion: 2
-        x: 298
-        y: 0
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a16f5fbad43befdf0800000000000000
-      internalID: -144480991850400230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_69
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 0
-        width: 33
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e20b8991b6c1a2ab0800000000000000
-      internalID: -5032178387316592594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: respawn_70
-      rect:
-        serializedVersion: 2
-        x: 335
-        y: 0
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6206b989132d9f320800000000000000
-      internalID: 2592334170983981094
       vertices: []
       indices: 
       edges: []
@@ -1968,18 +1680,7 @@ TextureImporter:
       respawn_58: 4495455183913589350
       respawn_59: 1598907684966612953
       respawn_6: -311638048009782242
-      respawn_60: 1874092185263829859
-      respawn_61: -6238777293779965148
-      respawn_62: -3180645602830020880
-      respawn_63: -3214115924704358156
-      respawn_64: -1224243926493629816
-      respawn_65: 1442989693498416043
-      respawn_66: 481454602127472581
-      respawn_67: 4648625034953225475
-      respawn_68: -144480991850400230
-      respawn_69: -5032178387316592594
       respawn_7: 1946699229542385625
-      respawn_70: 2592334170983981094
       respawn_8: 4143326383023897421
       respawn_9: 4764444960356192646
   mipmapLimitGroupName: 
