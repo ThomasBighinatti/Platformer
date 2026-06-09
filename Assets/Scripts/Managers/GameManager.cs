@@ -234,8 +234,9 @@ namespace Managers
             try
             {
                 SaveSystem.SaveSystem.DeleteSave();
-                await Task.Delay(100);
+                SaveManager.Instance.ForceSetCheckpoint(0);
                 CurrentGameState = GameState.Game;
+                await Task.Delay(100);
                 RespawnPlayer();
             }
             catch (Exception e)
