@@ -99,5 +99,7 @@ namespace Managers
             int startCheckpoint = levelStartCheckpoints[levelIndex];
             GameManager.Instance.StartFromLevel(startCheckpoint);
         }
+
+        public void QuitGame() => GameManager.Instance.QuitGame();
     }
 }

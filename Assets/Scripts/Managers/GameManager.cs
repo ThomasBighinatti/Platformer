@@ -46,6 +46,8 @@ namespace Managers
             {
                 _player = LevelManager.Instance.Player;
                 _playerRb = _player.GetComponent<Rigidbody2D>();
+                _playerScript = _player.GetComponent<PlayerController>();
+                
             }
             else
             {
@@ -221,13 +223,20 @@ namespace Managers
         private void Start()
         {
             _currentGameState = gameState;
-            _playerScript = _player.GetComponent<PlayerController>();
         }
 
-        public void StartNewGame()
+        public async void StartNewGame()
         {
-            SaveSystem.SaveSystem.DeleteSave();
-            CurrentGameState = GameState.Game;
+            try
+            {
+                SaveSystem.SaveSystem.DeleteSave();
+                CurrentGameState = GameState.Game;
+                RespawnPlayer();
+            }
+            catch (Exception e)
+            {
+                throw; //TODO handle exception
+            }
         }
         
         public async void ContinueGame()

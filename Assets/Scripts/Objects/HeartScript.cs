@@ -8,12 +8,12 @@ namespace Objects
     public class HeartScript : MonoBehaviour
     {
         [SerializeField] private Animator animator;
-        private void OnCollisionEnter(Collision other)
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            Debug.Log("gros caca qui pue");
             if (other.gameObject.CompareTag("Arrow"))
             {
                 animator.Play("Noyau Explosion",  0, 0f);
+                Debug.Log("gros caca qui pue");
                 SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalImpact);
                 SoundManager.Instance.SoundPlay(SoundManager.MainSfx.CrystalStartBreak);
                 StartCoroutine(WaitBroken());
