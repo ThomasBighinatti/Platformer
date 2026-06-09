@@ -191,6 +191,7 @@ namespace GPE
                 if (_numberOfInteractions == 0 && value == 1)
                 {
                     SoundManager.Instance.SoundPlay(SoundManager.MainSfx.MovingPlat);
+                    SoundManager.Instance.Vibration(0.1f,0.1f,0.8f);
                 }
                 _numberOfInteractions = value;
                 _movingState = _numberOfInteractions > 0 ? MovingState.MoveTo : MovingState.MoveBack;

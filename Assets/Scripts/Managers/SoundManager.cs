@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Managers
 {
@@ -130,6 +131,21 @@ namespace Managers
         {
             AudioClip soundToPlay = sfx[(int)sound];
             sfxSource.PlayOneShot(soundToPlay);
+        }
+        
+        public void Vibration(float lowFreq, float highFreq, float duration)
+        {
+            if (Gamepad.current == null) 
+                return;
+            
+            StartCoroutine(VibrationCoroutine(lowFreq, highFreq, duration));
+        }
+
+        private IEnumerator VibrationCoroutine(float lowFreq, float highFreq, float duration)
+        {
+            Gamepad.current.SetMotorSpeeds(lowFreq, highFreq);
+            yield return new WaitForSeconds(duration);
+            Gamepad.current.ResetHaptics();
         }
         
         
