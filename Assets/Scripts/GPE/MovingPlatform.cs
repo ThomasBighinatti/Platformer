@@ -246,6 +246,7 @@ namespace GPE
         
         public void ResetToInitialState()
         {
+            Debug.Log("caca");
             transform.position = _initialPos;
             _movingState = MovingState.Static;
             NumberOfInteractions = 0;
