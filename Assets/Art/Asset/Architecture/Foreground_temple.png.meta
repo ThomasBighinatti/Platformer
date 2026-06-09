@@ -162,7 +162,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 47d4cba27bb44be4f8eaf0a66008f02c, type: 3}
+      name: _MaskTex
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:

@@ -21,7 +21,7 @@ TagManager:
   - StickyBlock
   - ArrowNoSticky
   - foreground
-  - 
+  - Butterfly
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3343509065
+    locked: 0
+  - name: Butterfly
+    uniqueID: 228029967
     locked: 0
   m_RenderingLayers:
   - Default
