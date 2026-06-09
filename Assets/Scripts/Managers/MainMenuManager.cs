@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Managers
@@ -15,14 +16,23 @@ namespace Managers
         [SerializeField] private int[] levelStartCheckpoints = { 0, 7, 13 };
         [SerializeField] private GameObject nextLevelButton;
         [SerializeField] private GameObject defaultButton;
-        
+        [SerializeField] private Animator animator; 
         
         private int levelIndex = 0;
-    
-    
 
-        public void NewGame() => GameManager.Instance.StartNewGame();
-        public void ContinueGame() => GameManager.Instance.ContinueGame();
+
+
+        public void NewGame()
+        {
+            animator.Play("PressStartMenu", 0, 0f);
+            GameManager.Instance.StartNewGame();
+        }
+
+        public void ContinueGame()
+        {
+            
+            GameManager.Instance.ContinueGame();
+        } 
 
         private void Start()
         {
