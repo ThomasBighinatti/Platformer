@@ -246,13 +246,12 @@ namespace GPE
         
         public void ResetToInitialState()
         {
-            Debug.Log("caca");
             transform.position = _initialPos;
             _movingState = MovingState.Static;
-            NumberOfInteractions = 0;
-            _moveAnimator.enabled = false;
+            _numberOfInteractions = 0; 
+            _moveAnimator.Rebind();
+            _moveAnimator.Update(0f); 
             spriteRenderer.sprite = initialSprite;
-            _moveAnimator.enabled = true;
         }
 
         [SerializeField] private SpriteRenderer spriteRenderer;
