@@ -1,16 +1,32 @@
 using System.Collections.Generic;
 using Controllers;
 using Datas;
-using GPE;
 using Managers;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 namespace Arrows
 {
     public class Momentum : Arrow
     {
         private MomentumArrowData MomentumData => data as MomentumArrowData;
-        
+
+        private Light2D _nextLight;
+
+        protected override void Awake()
+        {
+            base.Awake();
+            _nextLight = gameObject.GetComponent<Light2D>();
+        }
+
+        public void SetHighlight(bool active)
+        {
+            if (_nextLight != null)
+            {
+                _nextLight.enabled = active;
+            }
+        }
+
         private float _recallSpeed;
 
         // y'a rien qui va niveau nomenclature, un fichier sur deux tes publics sont en majuscule en 1er,

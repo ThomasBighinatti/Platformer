@@ -55,6 +55,8 @@ namespace Managers
         
         private readonly Stack<Arrow> _momentumStack = new Stack<Arrow>();
         
+        public event Action OnMomentumStackChanged;
+        
         private GameObject _pointerParent;
         private GameObject _pointer;
         private GameObject _pinPointer;
@@ -63,11 +65,13 @@ namespace Managers
         private void OnEnable()
         {
             SceneManager.sceneLoaded += OnSceneLoaded;
+            OnMomentumStackChanged += HighlightNextArrow;
         }
         
         private void OnDisable()
         {
             SceneManager.sceneLoaded -= OnSceneLoaded;
+            OnMomentumStackChanged -= HighlightNextArrow;
 
             if (_pinPointCoroutine == null) 
                 return;
@@ -171,8 +175,16 @@ namespace Managers
             CurrentArrowScript = null;
         }
         
-        public void PushMomentumArrow(Arrow arrow) => _momentumStack.Push(arrow);
-        public void PopMomentumArrow() => _momentumStack.Pop();
+        public void PushMomentumArrow(Arrow arrow)
+        {
+            _momentumStack.Push(arrow);
+            OnMomentumStackChanged?.Invoke();
+        }
+        public void PopMomentumArrow()
+        {
+            _momentumStack.Pop();
+            OnMomentumStackChanged?.Invoke();
+        }
         private Momentum PeekMomentumArrow() => _momentumStack.Peek() as Momentum;
         private bool MomentumStackEmpty => _momentumStack.Count <= 0;
 
@@ -180,13 +192,32 @@ namespace Managers
         {
             if (MomentumStackEmpty)
                 return;
-            
+    
             Momentum momentumArrowCalled = PeekMomentumArrow();
             if (!momentumArrowCalled.IsPlanted) 
                 return;
-            
+
+            momentumArrowCalled.SetHighlight(false);
+    
             momentumArrowCalled.Recall();
             PopMomentumArrow();
+        }
+
+        private void HighlightNextArrow()
+        {
+            if (MomentumStackEmpty)
+                return;
+    
+            int index = 0;
+            foreach (Arrow arrow in _momentumStack)
+            {
+                Momentum momentumArrow = arrow as Momentum;
+                if (momentumArrow != null)
+                {
+                    momentumArrow.SetHighlight(index == 0);
+                }
+                index++;
+            }
         }
 
         private void PinPoint()
