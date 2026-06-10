@@ -58,21 +58,16 @@ namespace Managers
 
         public void OnPause(InputAction.CallbackContext context)
         {
-            if (!context.started) return;
-            
-            if (_cinematicPlayer != null && _cinematicPlayer.gameObject.activeSelf) //ne fonctionne pas
-            {
-                _cinematicPlayer.SkipCinematic();
+            if (!context.started) 
                 return;
-            }
 
             HandlePause();
         }
 
-        public void HandlePause() // peut pause avec esc/start mais peut pas unpause ???
+        private void HandlePause() // peut pause avec esc/start mais peut pas unpause ???
         {
             if (_currentGameState == GameState.Pause)
-                    ChangeStateToGame();
+                ChangeStateToGame();
             else if (_currentGameState == GameState.Game)
                 ChangeStateToPause();
         }
@@ -81,7 +76,6 @@ namespace Managers
         {
             if (!context.started) 
                 return;
-            
             
             if (_player != null)
             {
@@ -168,7 +162,9 @@ namespace Managers
             get => _currentGameState;
             set
             {
+                Debug.Log(_currentGameState);
                 _currentGameState = value;
+                Debug.Log(_currentGameState);
 
                 if (_currentGameState == GameState.Pause)
                     Pause();
@@ -217,7 +213,6 @@ namespace Managers
         }
         public void ChangeStateToGame() => CurrentGameState = GameState.Game;
         public void ChangeStateToMenu() => CurrentGameState = GameState.Menu;
-
         public void ChangeStateToPause() => CurrentGameState = GameState.Pause;
         #endregion
 

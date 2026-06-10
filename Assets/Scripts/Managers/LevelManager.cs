@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 namespace Managers
 {
@@ -42,7 +43,7 @@ namespace Managers
         
         public void RespawnPlayer() => GameManager.Instance.RespawnPlayer();
 
-        public void Pause() => GameManager.Instance.Pause();
+        public void Pause(InputAction.CallbackContext context) => GameManager.Instance.OnPause(context);
         
         private void Awake()
         {

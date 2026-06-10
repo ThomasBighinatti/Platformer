@@ -19,6 +19,9 @@ namespace Controllers
         
         public void OnShoot(InputAction.CallbackContext context)
         {
+            if (GameManager.Instance.CurrentGameState == GameManager.GameState.Pause)
+                return;
+            
             InputDevice device = context.control.device;
             if (device is Keyboard or Mouse && !_isUsingMouse) return;
             if (device is Gamepad && _isUsingMouse) return;
@@ -61,6 +64,10 @@ namespace Controllers
 
         private void SetInputOnLook()
         {
+            
+            if (GameManager.Instance.CurrentGameState == GameManager.GameState.Pause)
+                return;
+            
             if (_isUsingMouse)
             {
                 _inputOnLook = Mouse.current.position.ReadValue() - (Vector2)_camera.WorldToScreenPoint(transform.position);
@@ -80,6 +87,10 @@ namespace Controllers
 
         public void OnLook(InputAction.CallbackContext context)
         {
+            
+            if (GameManager.Instance.CurrentGameState == GameManager.GameState.Pause)
+                return;
+            
             if (context.canceled)
                 return;
             
@@ -101,6 +112,10 @@ namespace Controllers
 
         public void OnRecall(InputAction.CallbackContext context)
         {
+            
+            if (GameManager.Instance.CurrentGameState == GameManager.GameState.Pause)
+                return;
+            
             if (!context.performed)
                 return;
             
