@@ -1,5 +1,6 @@
 using Managers;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,7 @@ public class CinematicPlayer : MonoBehaviour
         Time.timeScale = 0f;
         //GameManager.Instance.CurrentGameState = GameManager.GameState.Pause;
         cinematicCanvas.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
         videoPlayer.Play();
         videoPlayer.loopPointReached += OnVideoEnd; // loopPointReached = qunad la video se finit
     }
@@ -46,5 +48,6 @@ public class CinematicPlayer : MonoBehaviour
         SoundManager.Instance.VolumeNormal();
         cinematicCanvas.SetActive(false);
         GameManager.Instance.CurrentGameState = GameManager.GameState.Menu;
+        Time.timeScale = 1f;
     }
 }
